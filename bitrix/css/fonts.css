@@ -1,0 +1,60 @@
+@font-face {
+	font-family: "BloggerSans";
+	src: url("../fonts/BloggerSans.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "BloggerSansLight";
+	src: url("../fonts/BloggerSansLight.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "MuseoSansCyrl700";
+	src: url("../fonts/MuseoSansCyrl700.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "MuseoSansCyrl500";
+	src: url("../fonts/MuseoSansCyrl500.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "MuseoSansCyrl500Italic";
+	src: url("../fonts/MuseoSansCyrl500Italic.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "MuseoSansCyrl300";
+	src: url("../fonts/MuseoSansCyrl300.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OSRegular";
+	src: url("../fonts/OSRegular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OSBold";
+	src: url("../fonts/OSBold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OSSemibold";
+	src: url("../fonts/OSSemibold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OSLight";
+	src: url("../fonts/OSLight.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
