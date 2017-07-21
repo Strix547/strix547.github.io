@@ -1,0 +1,397 @@
+@media screen and (max-width: 1150px) {
+	.top-line .logo {
+	margin-right: 5%;
+	}
+	.contacts {
+		height: 1100px;
+	}
+	.contacts .form-block {
+		width: 608px;
+		height: 1050px;
+		margin-top: -525px;
+		margin-left: -304px;
+	}
+	.contacts .form-block .left {
+		display: block;
+		float: none;
+		padding: 50px 0 50px 36px;
+	}
+	.contacts .right {
+		float: none;
+		margin: 0 auto;
+	}
+	.cost .numbers {
+		justify-content: space-around;
+	}
+	.cost .numbers .body {
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 1078px) {
+
+	.constructor {
+		height: auto;
+	}
+	.constructor .desktop {
+		display: none;
+	}
+	.constructor .mobile {
+  	display: block;
+  }
+	.constructor .left,
+	.constructor .right {
+		float: none;
+	}
+	.constructor .left {
+  		text-align: center;
+  	}
+	.constructor .left .services {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		text-align: justify;
+		margin: 50px 0 0 0;
+	}
+	.constructor .left h3 {
+		text-align: center;
+	}
+	.constructor .left p {
+		white-space: normal;
+	}
+	
+	.constructor .left .delivery,
+	.constructor .left .documents {
+  		margin-top: 0;
+  		margin-right: 40px;
+  	}
+	  .constructor .left .order {
+	  	margin-top: 0;
+	  }
+	.constructor .right {
+		margin: 30px auto;
+	}
+	.constructor .left {
+  	float: left;
+  	background: url(../img/delivery.png) no-repeat 0 35px,
+				url(../img/documents.png) no-repeat 40% 35px,
+				url(../img/order.png) no-repeat 90% 35px;
+  }
+	footer .center {
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 998px) {
+	header .top-line {
+		display: none;
+	}
+	header .mobile {
+		display: block;
+	}
+	   header #btn-menu + label{
+	      display: inline-block;
+	   }
+	  header #btn-menu + label + .list-menu{
+	    display: none;
+	  }
+	  header #btn-menu:checked + label + .list-menu{
+	    display: block;
+	}
+	.official {
+		height: auto;
+	}
+	.official .desktop {
+		display: none;
+	}
+	.official .mobile {
+		display: block;
+	}
+	.official .mobile img {
+		max-width: 100%;
+		height: auto;
+	}
+	.official .advantages.mobile span {
+		padding-right: 10px;
+	}
+	.official .advantages.mobile p {
+		display: inline-block;
+		color: #000000;
+		text-align: center;
+		white-space: normal;
+	}
+	.official .advantages.mobile li:last-child p {
+		padding-bottom: 20px
+	}
+
+}
+
+@media screen and (max-width: 910px) {
+	footer {
+		height: auto;
+	}
+	footer .left,
+	footer .center,
+	footer .right {
+		text-align: center;
+		display: block;
+		float: none;
+	}
+	footer .center {
+		width: auto;
+		margin: 20px 0px;
+	}
+
+	footer .right p {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	footer .right a {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 615px) {
+	.contacts {
+		background: none;
+	}
+	.contacts .form-block {
+		height: 600px;
+		margin-top: -500px;
+	}
+	.contacts .form-block .left {
+		text-align: center;
+		float: none;
+		padding: 0;
+	}
+	h1 {
+		font-size: 30px;
+		padding: 20px 0;
+		line-height: 40px;
+		white-space: normal;
+	}
+	.contacts .form-block .left p {
+		white-space: normal;
+		margin-top: 30px;
+		padding: 0 0 20px 0;
+		font-size: 18px;
+	}
+	.contacts .right {
+		float: none;
+		margin: 0 auto;
+	}
+	.official h2 {
+		padding-top: 0;
+	}
+	.contacts {
+	width: 100%;
+	height: 943px;
+	position: static;
+	background: url(../img/header-bg.jpg) no-repeat 50% 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.contacts .form-block {
+	width: auto;
+	height: 943px;
+	position: static;
+	top: 0;
+	left: 0;
+	margin: 0;
+	background-color: #fff;
+}
+}
+
+@media screen and (max-width: 573px) {
+	.constructor .left .services {
+		display: block;
+	}
+	.constructor .left .services h3 {
+		text-align: left;
+	}
+	.constructor .left .services .documents,
+	.constructor .left .services .order {
+		margin-top: 20px;
+	}
+	.constructor .left {
+  	float: left;
+  	background: none;
+  }
+}
+
+@media screen and (max-width: 506px) {
+	h2 {
+		white-space: normal;
+		font-size: 2.5em;
+		padding: 0 10px;
+	}
+	h2 > span {
+		padding: 0 5px;
+	}
+}
+
+@media screen and (max-width: 461px) {
+	h1 {
+		max-width: 320px;
+		font-size: 34px;
+		margin: 0 auto;
+	}
+	.contacts .form-block .left p {
+		max-width: 320px;
+		margin: 0 auto;
+		border-left: none;
+	}
+	.contacts .right {
+		width: 352px;
+	}
+	.contacts .right input[type="text"], .contacts .right input[type="tel"] {
+		width: 285px;
+	}
+	.contacts .right input[type="submit"] {
+		width: 285px;
+	}
+	.constructor .right {
+		width: 342px;
+	}
+	.constructor .right .custom-select {
+		width: 300px;
+	}
+	.constructor .right label {
+		margin-right: 165px;
+	}
+	.constructor .right input[type="text"]:nth-of-type(1) {
+		width: 181px;
+	}
+	.constructor .right input[type="text"]:nth-of-type(2) {
+		width: 62px;
+		padding-left: 10px;
+	}
+	.constructor .right .custom-select p {
+		left: -74px;
+	}
+	.constructor .right .custom-select:nth-of-type(2)::after, .constructor .right .custom-select:nth-of-type(3)::after {
+		margin: 10px 0 0 37px;
+	}
+	.constructor .right .custom-select:nth-of-type(2)::before, .constructor .right .custom-select:nth-of-type(3)::before {
+		margin: 20px 0 0 118px;
+	}
+	.constructor .right .custom-select::after {
+		margin: -36px 0 0 118px;
+	}
+	.constructor .right .custom-select::before {
+		margin: 22px 0 0 276px;
+	}
+	.file_input_div {
+		float: left;
+		margin-left: 20px;
+	}
+	.constructor .right .load {
+		top: 5px;
+		right: 62px;
+		padding: 0;
+	}
+	.constructor .right select {
+		width: 300px;
+	}
+	#chose_file_text {
+		margin-left: -116px;
+		margin-top: 35px;
+	}
+	.constructor .right input[type="tel"] {
+		width: 300px;
+	}
+	.constructor .right input#name-cons {
+		width: 300px;
+	}
+	.constructor .right input[type="submit"] {
+		width: 300px;
+	}
+	h2 {
+		padding: 0;
+	}
+	.constructor .right .custom-select::after {
+		margin: 11px 0 0 -34px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.contacts .right {
+		height: 530px;
+		width: 290px;
+	}
+	.contacts .right input[type="text"], .contacts .right input[type="tel"] {
+		width: 208px;
+	}
+	.contacts .right input[type="submit"] {
+		width: 200px;
+	}
+	.contacts .right a {
+		line-height: 30px;
+	}
+	.official .advantages.mobile p {
+		font-size: 19px;
+		text-align: left;
+	}
+	.official .advantages.mobile li:last-child p {
+		margin-left: -20px;
+	}
+	.constructor .right {
+		width: 273px;
+	}
+	.constructor .right select {
+		width: 230px;
+	}
+	#chose_file_text {
+    margin-left: -118px;
+    margin-top: 12px;
+}
+	.constructor .right .custom-select {
+		width: 230px;
+	}
+	.constructor .right .custom-select::after {
+		margin: -36px 0 0 84px;
+	}
+	.constructor .right .custom-select::before {
+		margin: 22px 0 0 206px;
+	}
+	.constructor .right label {
+		margin-right: 95px;
+	}
+	.constructor .right input[type="text"]:nth-of-type(1) {
+		width: 117px;
+	}
+	.constructor .right input[type="text"]:nth-of-type(2) {
+	    width: 56px;
+	    padding-left: 5px;
+	}
+	.constructor .right .custom-select:nth-of-type(2)::after, .constructor .right .custom-select:nth-of-type(3)::after {
+	    margin: 10px 0 0 4px;
+	}
+	.constructor .right .custom-select:nth-of-type(2)::before, .constructor .right .custom-select:nth-of-type(3)::before {
+	    margin: 20px 0 0 84px;
+	}
+	.constructor .right .custom-select p {
+	    left: -42px;
+	}
+	.constructor .right .load {
+	    right: 25px;
+	}
+	.constructor .right input[type="tel"] {
+	    width: 230px;
+	}
+	.constructor .right input#name-cons {
+	    width: 230px;
+	}
+	.constructor .right input[type="submit"] {
+	    width: 230px;
+	}
+	h2 > span {
+	    font-size: 33px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+}

@@ -1,0 +1,48 @@
+@font-face {
+	font-family: "RRBold";
+	src: url("../fonts/Red Ring Bold.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RRLight";
+	src: url("../fonts/RedRing-Light.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RRMedium";
+	src: url("../fonts/Red Ring Medium.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RRBlack";
+	src: url("../fonts/RedRing-Black.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RRMedium";
+	src: url("../fonts/RedRing-Light.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RRRegular";
+	src: url("../fonts/RedRing-Regular.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSans";
+	src: url("../fonts/OpenSansRegular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansBold";
+	src: url("../fonts/OpenSansBold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
