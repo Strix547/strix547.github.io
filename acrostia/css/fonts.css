@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "damion";
+	src: url("../fonts/damion/damion-regular.eot");
+	src: url("../fonts/damion/damion-regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/damion/damion-regular.woff") format("woff"),
+	url("../fonts/damion/damion-regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "lato";
+	src: url("../fonts/lato/lato-regular.eot");
+	src: url("../fonts/lato/lato-regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/lato/lato-regular.woff") format("woff"),
+	url("../fonts/lato/lato-regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "lato-black";
+	src: url("../fonts/lato_black/lato-black.eot");
+	src: url("../fonts/lato_black/lato-black.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/lato_black/lato-black.woff") format("woff"),
+	url("../fonts/lato_black/lato-black.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "lato-light";
+	src: url("../fonts/lato_light/lato-light.eot");
+	src: url("../fonts/lato_light/lato-light.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/lato_light/lato-light.woff") format("woff"),
+	url("../fonts/lato_light/lato-light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "lato-bold";
+	src: url("../fonts/lato_bold/lato-bold.eot");
+	src: url("../fonts/lato_bold/lato-bold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/lato_bold/lato-bold.woff") format("woff"),
+	url("../fonts/lato_bold/lato-bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

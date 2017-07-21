@@ -1,0 +1,247 @@
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+/* -------------------------------
+  HOME
+ ----------------------------------*/	
+
+.menu li a {
+	padding: 40px 15px 15px 15px;
+}
+
+.slider-cap {
+	width: 600px;
+	height: 140px;
+	margin-left: -300px;
+	margin-top: -60px;
+	
+}
+
+.slider-cap > span {
+	font-size: 85px;
+	padding-right: 30px;
+	line-height: 140px;
+}
+
+.slider-cap > p {
+	font-size: 40px;
+	line-height: 40px;
+	padding-top: 30px;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+	font-size: 40px;
+}
+
+/* -------------------------------
+  SERVICES
+ ----------------------------------*/
+
+.service-body {
+	width: 215px;
+	height: 380px;
+}
+
+.service-body h2 {
+	font-size: 26px;
+}
+
+.service-body p {
+	font-size: 13px;
+}
+
+/* -------------------------------
+  ABOUT
+ ----------------------------------*/
+
+.team .member {
+	width: 215px;
+}
+
+.social {
+	margin-right: 15px;
+}
+
+.social:first-child {
+	margin-left: 20px;
+}
+
+.about .inscription:after {
+	right: 83px;
+}
+
+/* -------------------------------
+  WORK
+ ----------------------------------*/
+
+.photo img {
+	position: relative;
+	width: 215px;
+	height: 180px;
+}
+
+.picture-name {
+	width: 215px;
+	height: 50px;
+	background-color: #fff;
+	float: bottom;
+}
+
+.overlay {
+    width: 215px;
+    height: 180px;
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+h1 {
+	font-size: 50px;
+}
+
+/* -------------------------------
+  HOME
+ ----------------------------------*/
+
+.menu li a {
+	padding: 40px 15px 15px 15px;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+	font-size: 35px;
+}
+
+.slider-cap {
+	width: 500px;
+	height: 120px;
+	margin-left: -250px;
+	margin-top: -53px;
+	
+}
+
+.slider-cap > span {
+	font-size: 70px;
+	padding-right: 25px;
+	line-height: 120px;
+}
+
+.slider-cap > p {
+	font-size: 35px;
+	line-height: 35px;
+	padding-top: 28px;
+	padding-left: 30px;
+}
+
+/* -------------------------------
+  SERVICES
+ ----------------------------------*/
+
+.services {
+	height: 1350px;
+}
+
+.our-services {
+	margin-top: 60px;
+}
+
+.service-body {
+	margin-left: 10%;
+	margin-bottom: 10%;
+}
+
+/* -------------------------------
+  ABOUT
+ ----------------------------------*/
+
+.about {
+	height: 1400px;
+}
+
+.about .inscription:after {
+	right: 85px;
+}
+
+.team .member {
+	margin-left: 10%;
+	margin-bottom: 10%;
+}
+
+/* -------------------------------
+  WORKS
+ ----------------------------------*/
+.work {
+	height: 1750px;
+}
+
+.picture-body {
+	margin-left: 12%;
+}
+
+.overlay {
+    left: 56px;
+}
+
+.overlay .border {
+	width: 46px;
+	height: 46px;
+	margin: 30% 0 0 43%;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+}
+
+/* -------------------------------
+  CONTACTS
+ ----------------------------------*/
+
+.ask-form {
+	margin-left: 70px;
+}
+
+.ask-form textarea {
+	width: 450px;
+}
+
+.contacts .button {
+	margin-left: 70px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+.menu li a {
+	padding: 40px 15px 15px 15px;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+	font-size: 25px;
+}
+
+.slider-cap {
+	width: 500px;
+	height: 120px;
+	margin-left: -250px;
+	margin-top: -53px;
+	
+}
+
+.slider-cap > span {
+	font-size: 70px;
+	padding-right: 25px;
+	line-height: 120px;
+}
+
+.slider-cap > p {
+	font-size: 35px;
+	line-height: 35px;
+	padding-top: 28px;
+	padding-left: 30px;
+}
+.service-body {
+	text-align: center;
+}
+}
