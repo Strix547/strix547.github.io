@@ -1,0 +1,112 @@
+@font-face {
+	font-family: "ProximaNovaBlack";
+	src: url("../fonts/ProximaNovaBlack.eot");
+	src: url("../fonts/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNovaBlack.woff") format("woff"),
+	url("../fonts/ProximaNovaBlack.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNovaBold";
+	src: url("../fonts/ProximaNovaBold.eot");
+	src: url("../fonts/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNovaBold.woff") format("woff"),
+	url("../fonts/ProximaNovaBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ProximaNovaRegular";
+	src: url("../fonts/ProximaNovaRegular.eot");
+	src: url("../fonts/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNovaRegular.woff") format("woff"),
+	url("../fonts/ProximaNovaRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "SegoeUIBold";
+	src: url("../fonts/SegoeUIBold.eot");
+	src: url("../fonts/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/SegoeUIBold.woff") format("woff"),
+	url("../fonts/SegoeUIBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "SegoeUIItalic";
+	src: url("../fonts/SegoeUIItalic.eot");
+	src: url("../fonts/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/SegoeUIItalic.woff") format("woff"),
+	url("../fonts/SegoeUIItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "SegoeUILight";
+	src: url("../fonts/SegoeUILight.eot");
+	src: url("../fonts/SegoeUILight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/SegoeUILight.woff") format("woff"),
+	url("../fonts/SegoeUILight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "SegoeUIRegular";
+	src: url("../fonts/SegoeUIRegular.eot");
+	src: url("../fonts/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/SegoeUIRegular.woff") format("woff"),
+	url("../fonts/SegoeUIRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "SegoeUISemiBold";
+	src: url("../fonts/SegoeUISemiBold.eot");
+	src: url("../fonts/SegoeUISemiBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/SegoeUISemiBold.woff") format("woff"),
+	url("../fonts/SegoeUISemiBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansBold";
+	src: url("../fonts/OpenSansBold.eot");
+	src: url("../fonts/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansBold.woff") format("woff"),
+	url("../fonts/OpenSansBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "MyriadProRegular";
+	src: url("../fonts/MyriadProRegular.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "PTSansBold";
+	src: url("../fonts/PTSansBold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansRegular";
+	src: url("../fonts/OpenSansRegular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "PTSansCaptionBold";
+	src: url("../fonts/PTSansCaptionBold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "PTSansRegular";
+	src: url("../fonts/PTSansRegular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+

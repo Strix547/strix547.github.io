@@ -1,0 +1,1140 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  letter-spacing: 1px;
+  color: #332125; }
+
+.wrapper {
+  max-width: 1150px;
+  margin: 0 auto; }
+
+header {
+  position: relative;
+  height: 105px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 20px 30px 50px rgba(0, 0, 0, 0.23); }
+  header .logo {
+    float: left;
+    margin-top: 6px;
+    display: inline-block; }
+    header .logo a {
+      width: 305px;
+      height: 79px; }
+  header .telephone {
+    line-height: 105px;
+    font-family: "ProximaNovaBold";
+    display: inline-block;
+    font-size: 26px;
+    text-decoration: none;
+    color: #000; }
+  header nav {
+    display: inline-block;
+    float: right; }
+    header nav .top-menu li {
+      display: inline-block;
+      line-height: 103px;
+      margin-left: 16px; }
+      header nav .top-menu li a {
+        font-family: "MyriadProRegular";
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #000;
+        text-decoration: none;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 5px; }
+        header nav .top-menu li a:hover {
+          border-bottom: 2px solid #ffab00; }
+
+header .mobile {
+  float: left;
+  display: none;
+  background: #fff; }
+
+header .mobile .logo {
+  display: inline-block;
+  float: right; }
+
+header .list-menu {
+  margin-top: 20px;
+  list-style: none; }
+
+header .list-menu > li:first-child > a {
+  margin-top: 20px; }
+
+header .list-menu > li > a {
+  font-family: "ProximaNovaRegular";
+  color: #000;
+  display: block;
+  padding: 10px 15px; }
+
+header .list-menu > li > a:hover {
+  background: #ffab00;
+  text-decoration: none;
+  color: #fff; }
+
+header #btn-menu {
+  display: none; }
+
+header #btn-menu + label {
+  font-family: "ProximaNovaRegular";
+  display: none;
+  position: relative;
+  color: #000;
+  height: 20px;
+  z-index: 1;
+  cursor: pointer;
+  padding-top: 38px; }
+
+header #btn-menu + label:before {
+  content: '\f0c9';
+  display: inline-block;
+  font-family: 'FontAwesome';
+  font-size: 22px;
+  margin-right: 20px; }
+
+header #btn-menu:checked + label:before {
+  content: '\f00d';
+  color: #f00; }
+
+.first {
+  background-size: auto, cover !important;
+  background-position: 80% 50%, 50% 50%;
+  background-repeat: no-repeat;
+  padding-bottom: 39px; }
+  .first h1 {
+    font-family: "ProximaNovaBlack";
+    font-size: 52px;
+    line-height: 64px;
+    color: #fff;
+    padding-top: 105px;
+    white-space: pre-line;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.7); }
+  .first p:first-of-type {
+    font-family: "ProximaNovaRegular";
+    font-size: 26px;
+    padding-top: 45px;
+    line-height: 40px;
+    color: #fff;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    white-space: pre-line;
+    text-transform: uppercase; }
+  .first form {
+    width: 1044px;
+    height: 102px;
+    margin: 88px auto 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.16); }
+    .first form label {
+      font-family: "PTSansBold";
+      font-size: 26px;
+      line-height: 100px;
+      text-transform: uppercase;
+      color: #000;
+      letter-spacing: 2.3px;
+      padding-left: 37px; }
+    .first form input[type="text"] {
+      width: 275px;
+      height: 41px;
+      padding-left: 24px;
+      margin-left: 30px;
+      background-color: #f9f9f9;
+      border: 1px solid #dedede;
+      letter-spacing: 1px;
+      font-family: "ProximaNovaRegular";
+      font-size: 16px; }
+      .first form input[type="text"]:hover {
+        border-color: #ffab00; }
+    .first form input[type="submit"] {
+      width: 301px;
+      height: 45px;
+      margin-left: 35px;
+      border: none;
+      background-color: #ffab00;
+      color: #fff;
+      box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.2);
+      font-family: "OpenSansBold";
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: center;
+      cursor: pointer; }
+      .first form input[type="submit"]:hover {
+        box-shadow: inset 6px 6px 14px 0 rgba(0, 0, 0, 0.16); }
+  .first p:last-child {
+    font-family: "SegoeUIRegular";
+    font-size: 13px;
+    color: #fff;
+    padding-top: 12px;
+    text-align: center; }
+
+.desicion {
+  padding-bottom: 70px;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.23); }
+  .desicion h2 {
+    font-family: "ProximaNovaBold";
+    font-size: 48px;
+    padding-top: 62px;
+    text-align: center;
+    text-transform: uppercase; }
+  .desicion h4 {
+    font-family: "ProximaNovaRegular";
+    font-size: 28px;
+    padding-top: 12px;
+    text-align: center;
+    text-transform: uppercase; }
+  .desicion .standart {
+    width: 1012px;
+    height: 403px;
+    position: relative;
+    margin: 95px auto 0 auto;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.16);
+    background-color: #fff; }
+    .desicion .standart h3 {
+      position: relative;
+      z-index: 1;
+      font-family: "ProximaNovaBold";
+      font-size: 28px;
+      text-transform: uppercase;
+      white-space: pre-line;
+      line-height: 38px;
+      padding: 45px 0 57px  45px; }
+    .desicion .standart p {
+      font-family: "ProximaNovaRegular";
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 0 0 50px 87px; }
+      .desicion .standart p:before {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        margin-top: -5px;
+        margin-left: -40px;
+        background-image: url(../img/sprite.png);
+        background-position: 0 0;
+        background-repeat: no-repeat; }
+      .desicion .standart p:nth-of-type(2):before {
+        background-image: url(../img/sprite.png);
+        background-position: -82px 0;
+        background-repeat: no-repeat; }
+      .desicion .standart p:nth-of-type(3):before {
+        background-image: url(../img/sprite.png);
+        background-position: -170px 0;
+        background-repeat: no-repeat; }
+    .desicion .standart img {
+      position: absolute;
+      top: -83px;
+      right: -50px; }
+  .desicion a.btn {
+    display: block;
+    width: 330px;
+    height: 45px;
+    line-height: 45px;
+    border: none;
+    margin: 69px auto 0 auto;
+    background-color: #ffab00;
+    color: #fff;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.2);
+    font-family: "OpenSansBold";
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer; }
+    .desicion a.btn:hover {
+      box-shadow: inset 6px 6px 14px 0 rgba(0, 0, 0, 0.16); }
+
+.benefits {
+  height: 450px; }
+  .benefits h3 {
+    font-family: "ProximaNovaRegular";
+    font-size: 30px;
+    line-height: 42px;
+    text-align: left;
+    padding-top: 65px;
+    text-transform: uppercase;
+    white-space: pre-line; }
+    .benefits h3:before {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 2px;
+      margin-top: 103px;
+      background-color: #ffab00; }
+  .benefits .causes {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .benefits .causes p {
+      display: inline-block;
+      font-family: "ProximaNovaRegular";
+      font-size: 20px;
+      color: #000;
+      text-transform: uppercase;
+      line-height: 32px;
+      padding-top: 150px;
+      vertical-align: top;
+      white-space: pre-line; }
+      .benefits .causes p:before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url(../img/sprite.png);
+        background-position: 0 -100px;
+        background-repeat: no-repeat;
+        margin-top: -100px; }
+      .benefits .causes p:nth-of-type(2) {
+        max-width: 160px; }
+        .benefits .causes p:nth-of-type(2):before {
+          background-image: url(../img/sprite.png);
+          background-position: -221px -100px;
+          background-repeat: no-repeat; }
+      .benefits .causes p:nth-of-type(3):before {
+        background-image: url(../img/sprite.png);
+        background-position: -445px -100px;
+        background-repeat: no-repeat; }
+      .benefits .causes p:nth-of-type(4) {
+        max-width: 240px;
+        white-space: normal; }
+        .benefits .causes p:nth-of-type(4):before {
+          background-image: url(../img/sprite.png);
+          background-position: -720px -100px;
+          background-repeat: no-repeat; }
+      .benefits .causes p a {
+        font-family: "OpenSansRegular";
+        font-size: 13px;
+        color: #000000;
+        border-bottom: 1px dashed #000000;
+        text-decoration: none; }
+        .benefits .causes p a:hover {
+          border-bottom: none; }
+
+.scheme {
+  height: 985px;
+  background-position: 78% 100%,50% 0;
+  background-repeat: no-repeat,repeat;
+  background-size: auto,cover; }
+  .scheme h3 {
+    font-family: "ProximaNovaRegular";
+    font-size: 30px;
+    color: #fff;
+    padding-top: 260px;
+    text-transform: uppercase; }
+    .scheme h3:before {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 2px;
+      margin-top: 58px;
+      background-color: #fff; }
+  .scheme .pluses {
+    width: 354px;
+    height: 467px;
+    margin-top: 84px;
+    border: 4px solid #f9f9f9;
+    background-color: #ff9008; }
+    .scheme .pluses .head {
+      width: 100%;
+      height: 90px;
+      background-color: #fff; }
+      .scheme .pluses .head h4 {
+        font-family: "SegoeUIBold";
+        font-size: 22px;
+        color: #ffab00;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 90px; }
+    .scheme .pluses p {
+      font-family: "ProximaNovaRegular";
+      font-size: 18px;
+      color: #fff;
+      padding-left: 68px;
+      text-transform: uppercase;
+      white-space: pre-line;
+      margin-bottom: 30px; }
+      .scheme .pluses p:before {
+        content: "+";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background-color: #ff7510;
+        color: #fff;
+        box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        font-family: "SegoeUIBold";
+        font-size: 24px;
+        line-height: 18px;
+        text-align: center;
+        margin-left: -40px;
+        margin-top: -4px; }
+      .scheme .pluses p:first-of-type {
+        margin-top: 32px; }
+      .scheme .pluses p span {
+        font-size: 14px; }
+  .scheme a {
+    font-family: "OpenSansRegular";
+    font-size: 13px;
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 188px;
+    margin-top: 70px;
+    padding-bottom: 3px; }
+    .scheme a:hover {
+      border-bottom: none; }
+
+.technologic {
+  padding-bottom: 55px;
+  background-color: #fff; }
+  .technologic h2 {
+    font-family: "SegoeUIBold";
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 65px;
+    text-align: center; }
+  .technologic h4 {
+    font-family: "ProximaNovaRegular";
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-top: 25px;
+    text-align: center; }
+  .technologic .advantages {
+    display: inline-block;
+    margin-top: 51px; }
+    .technologic .advantages li {
+      display: inline-block;
+      width: 530px;
+      margin-bottom: 40px; }
+      .technologic .advantages li:nth-child(3) {
+        margin-bottom: 65px; }
+      .technologic .advantages li:nth-child(5), .technologic .advantages li:nth-child(6) {
+        margin-bottom: 0; }
+      .technologic .advantages li:nth-child(2) h5:before {
+        content: "4"; }
+      .technologic .advantages li:nth-child(3) h5:before {
+        content: "2"; }
+      .technologic .advantages li:nth-child(4) h5:before {
+        content: "5"; }
+      .technologic .advantages li:nth-child(5) h5:before {
+        content: "3"; }
+      .technologic .advantages li:nth-child(6) h5:before {
+        content: "6"; }
+      .technologic .advantages li:nth-child(odd) {
+        margin-left: 36px;
+        float: left; }
+      .technologic .advantages li:nth-child(even) {
+        float: right; }
+      .technologic .advantages li h5 {
+        font-family: "ProximaNovaBold";
+        font-size: 20px;
+        text-transform: uppercase;
+        padding-bottom: 4px; }
+        .technologic .advantages li h5:before {
+          content: "1";
+          position: absolute;
+          width: 22px;
+          height: 24px;
+          line-height: 24px;
+          background-color: #ffb400;
+          font-family: "ProximaNovaBold";
+          font-size: 18px;
+          color: #fff;
+          text-align: center;
+          border-radius: 50%;
+          padding-left: 2px;
+          margin-top: -2px;
+          margin-left: -35px;
+          box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.2); }
+      .technologic .advantages li p {
+        font-family: "ProximaNovaRegular";
+        font-size: 16px;
+        line-height: 25px;
+        white-space: pre-line;
+        text-transform: uppercase; }
+  .technologic a.btn {
+    display: block;
+    width: 100%;
+    height: 89px;
+    line-height: 89px;
+    margin-top: 50px;
+    font-family: "ProximaNovaBold";
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.16);
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    background: url(../img/technologic-button-bg.png) 50% 28% no-repeat #ffb400;
+    -webkit-transition: 0.3s;
+            transition: 0.3s; }
+    .technologic a.btn:hover {
+      opacity: 0.7;
+      -webkit-transition: 0.3s;
+              transition: 0.3s; }
+
+.variations {
+  background-color: #f1f8e9;
+  background-repeat: no-repeat;
+  background-position: 100% 125%;
+  padding-bottom: 265px; }
+  .variations h2 {
+    font-family: "ProximaNovaBold";
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 63px; }
+  .variations .houses {
+    width: 100%;
+    margin-top: 60px;
+    background-color: #fff;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.18); }
+    .variations .houses .house {
+      width: 16.7%;
+      height: 336px;
+      display: inline-block;
+      position: relative;
+      margin-right: -5px;
+      margin-bottom: -2px;
+      box-sizing: border-box;
+      border: 5px solid #fff; }
+      .variations .houses .house:nth-child(1) {
+        background: url(../img/var-house1.png) 50% 35% no-repeat, url(../img/var-house1-bg.png) 50% 5% no-repeat;
+        -webkit-transition: 0.5s;
+                transition: 0.5s; }
+        .variations .houses .house:nth-child(1):hover {
+          border: 5px solid #ffab00;
+          background-color: #e1e3d4;
+          -webkit-transition: 0.5s;
+                  transition: 0.5s; }
+      .variations .houses .house:nth-child(2) {
+        background: url(../img/var-house2.png) 50% 35% no-repeat, url(../img/var-house2-bg.png) 50% 35% no-repeat;
+        -webkit-transition: 0.5s;
+                transition: 0.5s; }
+        .variations .houses .house:nth-child(2):hover {
+          border: 5px solid #ffab00;
+          background-color: #e1e3d4;
+          -webkit-transition: 0.5s;
+                  transition: 0.5s; }
+      .variations .houses .house:nth-child(3) {
+        background: url(../img/var-house3.png) 50% 35% no-repeat, url(../img/var-house3-bg.png) 50% 35% no-repeat;
+        -webkit-transition: 0.5s;
+                transition: 0.5s; }
+        .variations .houses .house:nth-child(3):hover {
+          border: 5px solid #ffab00;
+          background-color: #e1e3d4;
+          -webkit-transition: 0.5s;
+                  transition: 0.5s; }
+      .variations .houses .house:nth-child(4) {
+        background: url(../img/var-house4.png) 50% 35% no-repeat, url(../img/var-house4-bg.png) 50% 35% no-repeat;
+        -webkit-transition: 0.5s;
+                transition: 0.5s; }
+        .variations .houses .house:nth-child(4):hover {
+          border: 5px solid #ffab00;
+          background-color: #e1e3d4;
+          -webkit-transition: 0.5s;
+                  transition: 0.5s; }
+      .variations .houses .house:nth-child(5) {
+        background: url(../img/var-house5.png) 50% 40% no-repeat, url(../img/var-house5-bg.png) 50% 35% no-repeat;
+        -webkit-transition: 0.5s;
+                transition: 0.5s; }
+        .variations .houses .house:nth-child(5):hover {
+          border: 5px solid #ffab00;
+          background-color: #e1e3d4;
+          -webkit-transition: 0.5s;
+                  transition: 0.5s; }
+      .variations .houses .house:nth-child(6) {
+        background: url(../img/var-house2.png) 50% 35% no-repeat, url(../img/var-house2-bg.png) 50% 35% no-repeat;
+        -webkit-transition: 0.5s;
+                transition: 0.5s; }
+        .variations .houses .house:nth-child(6):hover {
+          border: 5px solid #ffab00;
+          background-color: #e1e3d4;
+          -webkit-transition: 0.5s;
+                  transition: 0.5s; }
+      .variations .houses .house h4 {
+        font-family: "ProximaNovaBold";
+        font-size: 26px;
+        text-align: center;
+        left: 18%;
+        position: absolute;
+        bottom: 30px; }
+        .variations .houses .house h4:before {
+          content: "";
+          position: absolute;
+          width: 86px;
+          height: 4px;
+          background-color: #ffab00;
+          left: 50%;
+          margin-left: -43px;
+          margin-top: -17px; }
+  .variations .arrow p {
+    font-family: "SegoeUIRegular";
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 21px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 43px; }
+    .variations .arrow p:before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 60px;
+      margin-left: -250px;
+      margin-top: -20px;
+      background: url(../img/arrow1.png) no-repeat; }
+  .variations .equipment .minimum {
+    width: 289px;
+    height: 569px;
+    background-color: #fff;
+    text-align: center;
+    float: left;
+    display: inline-block;
+    margin-top: 120px;
+    margin-left: 140px; }
+    .variations .equipment .minimum h3 {
+      font-family: "PTSansBold";
+      font-size: 26px;
+      color: #ffab00;
+      padding-top: 25px; }
+    .variations .equipment .minimum h5 {
+      font-family: "OpenSansRegular";
+      font-size: 20px;
+      color: #000;
+      text-transform: uppercase;
+      padding-top: 15px; }
+  .variations .equipment .include li {
+    font-family: "OpenSansRegular";
+    font-size: 14px;
+    color: #000;
+    line-height: 18px;
+    white-space: pre-line;
+    text-align: left;
+    padding-left: 28px;
+    padding-bottom: 20px; }
+    .variations .equipment .include li:first-child {
+      padding-top: 30px; }
+  .variations .equipment .include a.send {
+    display: block;
+    width: 194px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #ffab00;
+    color: #fff;
+    font-family: "OpenSansBold";
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #ffc000;
+    margin: 5px auto 0 auto;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.2); }
+    .variations .equipment .include a.send:hover {
+      opacity: 0.7;
+      box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2); }
+  .variations .equipment .max {
+    width: 294px;
+    height: 1029px;
+    margin-top: 90px;
+    background-color: #fff;
+    border: 3px solid #ffab00;
+    text-align: center;
+    display: inline-block;
+    float: left; }
+    .variations .equipment .max h3 {
+      font-family: "PTSansBold";
+      font-size: 26px;
+      color: #ffab00;
+      padding-top: 30px; }
+    .variations .equipment .max h5 {
+      font-family: "OpenSansRegular";
+      font-size: 20px;
+      color: #000;
+      text-transform: uppercase;
+      padding-top: 5px; }
+  .variations .equipment .standart {
+    width: 280px;
+    height: 779px;
+    display: inline-block;
+    background-color: #fff;
+    margin-top: 35px;
+    text-align: center; }
+    .variations .equipment .standart h3 {
+      font-family: "PTSansBold";
+      font-size: 26px;
+      color: #ffab00;
+      padding-top: 25px; }
+    .variations .equipment .standart h5 {
+      font-family: "OpenSansRegular";
+      font-size: 20px;
+      color: #000;
+      text-transform: uppercase;
+      padding-top: 15px; }
+
+.feedbacks {
+  height: 771px;
+  background-color: #fff; }
+  .feedbacks h2 {
+    font-family: "ProximaNovaBold";
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 63px; }
+  .feedbacks .wrapper {
+    position: relative; }
+  .feedbacks .feed .left {
+    width: 457px;
+    float: left;
+    display: inline-block;
+    margin-right: 59px; }
+    .feedbacks .feed .left .main-img {
+      height: 301px;
+      background: url(../img/slider-img.png) no-repeat -180px -60px; }
+    .feedbacks .feed .left .bottom-images {
+      width: 457px;
+      margin-top: 27px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .feedbacks .feed .left .bottom-images .low-img {
+        width: 95px;
+        height: 78px;
+        display: inline-block;
+        background: url(../img/slider-img-low.png) no-repeat 50% 50%; }
+  .feedbacks .feed .right {
+    display: block; }
+    .feedbacks .feed .right p {
+      font-family: "SegoeUIRegular";
+      font-size: 16px;
+      color: #000;
+      white-space: pre-line;
+      line-height: 22px; }
+    .feedbacks .feed .right img {
+      margin-top: 20px;
+      float: left; }
+    .feedbacks .feed .right p:last-child {
+      display: inline-block;
+      padding-top: 45px;
+      font-family: "PTSansCaptionBold";
+      font-size: 26px;
+      color: #000; }
+
+.gallery {
+  height: 1278px;
+  background-color: #f1f8e9;
+  background-repeat: no-repeat;
+  background-position: 92% 104%;
+  padding-bottom: 30px;
+  position: relative; }
+  .gallery h2 {
+    font-family: "ProximaNovaBold";
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 63px; }
+  .gallery .slider {
+    position: relative; }
+    .gallery .slider .gallery-slider {
+      position: relative; }
+      .gallery .slider .gallery-slider .slide {
+        width: 300px;
+        height: 170px;
+        border: 14px solid #ffab00;
+        position: relative; }
+        .gallery .slider .gallery-slider .slide .bg {
+          width: 272px;
+          height: 170px;
+          position: absolute;
+          display: block;
+          background: url(../img/sprite.png) 115px -245px no-repeat rgba(0, 0, 0, 0.3);
+          opacity: 0;
+          -webkit-transition: 0.3s;
+                  transition: 0.3s; }
+        .gallery .slider .gallery-slider .slide:hover .bg {
+          opacity: 1;
+          -webkit-transition: 0.3s;
+                  transition: 0.3s; }
+        .gallery .slider .gallery-slider .slide img {
+          width: 300px;
+          height: 170px; }
+  .gallery .arrow p {
+    font-family: "SegoeUIRegular";
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 21px;
+    float: right;
+    margin-right: 174px;
+    margin-top: 43px; }
+    .gallery .arrow p:before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 60px;
+      margin-left: -90px;
+      margin-top: 40px;
+      background: url(../img/arrow2.png) no-repeat; }
+  .gallery h3 {
+    font-family: "ProximaNovaRegular";
+    font-size: 30px;
+    line-height: 42px;
+    white-space: pre-line;
+    text-transform: uppercase;
+    padding: 120px 0 0 100px; }
+    .gallery h3:before {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 2px;
+      background-color: #ffab00;
+      margin-top: 118px; }
+  .gallery iframe {
+    margin: 94px 0 0 100px;
+    position: absolute; }
+  .gallery .excursion {
+    width: 300px;
+    height: 475px;
+    background: url(../img/gallery-input-bg.png) 97% 125% no-repeat #fff;
+    margin: 94px 110px 0 0;
+    padding-left: 32px;
+    float: right;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.16); }
+    .gallery .excursion h5 {
+      font-family: "ProximaNovaBold";
+      font-size: 16px;
+      color: #000;
+      text-transform: uppercase;
+      padding-top: 35px; }
+    .gallery .excursion p {
+      font-family: "ProximaNovaRegular";
+      font-size: 16px;
+      color: #000;
+      padding-top: 10px; }
+    .gallery .excursion a.send {
+      display: block;
+      width: 170px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      background-color: #ffab00;
+      color: #fff;
+      font-family: "ProximaNovaRegular";
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid #ffc000;
+      margin-top: 15px;
+      box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.2); }
+      .gallery .excursion a.send:hover {
+        opacity: 0.7;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2); }
+
+.questions {
+  height: 695px;
+  background-position: 50% 50%;
+  background-size: cover; }
+  .questions .wrapper {
+    height: 100%;
+    background-color: #fff
+    /* ╤Б╤В╨╕╨╗╨╕ ╨▒╨╗╨╛╨║╨░ ╨░╨║╨║╨╛╤А╨┤╨╡╨╛╨╜ */
+    /* ╤Б╨╡╨║╤Ж╨╕╨╕ ╨░╨║╨║╨╛╤А╨┤╨╡╨╛╨╜╨░ */
+    /* ╨╖╨░╨│╨╛╨╗╨╛╨▓╨║╨╕ ╨┐╨░╨╜╨╡╨╗╨╡╨╣ ╨░╨║╨║╨╛╤А╨┤╨╡╨╛╨╜╨░ */
+    /* ╨╖╨░╨│╨╛╨╗╨╛╨▓╨╛╨║ ╨░╨║╤В╨╕╨▓╨╜╨╛╨│╨╛ ╨▒╨╗╨╛╨║╨░  */
+    /* ╨▒╨╗╨╛╨║╨╕ ╤Б ╤Б╨╛╨┤╨╡╤А╨╢╨░╨╜╨╕╨╡╨╝ */ }
+    .questions .wrapper h2 {
+      font-family: "ProximaNovaBold";
+      font-size: 50px;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 63px; }
+    .questions .wrapper .accordion {
+      width: 100%;
+      margin-top: 70px;
+      margin-left: 150px;
+      max-width: 750px; }
+    .questions .wrapper .accordion .accordion_item {
+      margin-bottom: 28px;
+      position: relative; }
+    .questions .wrapper .accordion .title_block {
+      display: inline-block;
+      font-family: "PTSansBold";
+      font-size: 30px;
+      color: #ffab00;
+      border-bottom: 3px dashed #ffab00;
+      cursor: pointer; }
+    .questions .wrapper .accordion .title_block:hover {
+      opacity: 0.7; }
+    .questions .wrapper .accordion .active_block .title_block {
+      border-bottom: 2px dashed #fff;
+      opacity: 0.7; }
+    .questions .wrapper .accordion .info {
+      margin-top: -23px;
+      font-family: "PTSansRegular";
+      font-size: 20px;
+      line-height: 31px;
+      display: none;
+      overflow: hidden;
+      white-space: pre-line; }
+    .questions .wrapper .accordion .info_item {
+      margin-bottom: 20px; }
+
+.contacts {
+  position: relative;
+  height: 749px;
+  background-color: #fff; }
+  .contacts .bg {
+    width: 100%;
+    position: absolute;
+    z-index: 1; }
+  .contacts .block {
+    width: 746px;
+    height: 475px;
+    margin-top: 132px;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.16);
+    z-index: 2; }
+    .contacts .block .our-contacts {
+      width: 374px;
+      height: 475px;
+      background-color: #ffab00;
+      float: left; }
+      .contacts .block .our-contacts h3 {
+        font-family: "ProximaNovaBold";
+        font-size: 26px;
+        padding-top: 52px;
+        color: #fff;
+        padding-left: 40px; }
+        .contacts .block .our-contacts h3:before {
+          content: "";
+          position: absolute;
+          margin-top: 55px;
+          width: 79px;
+          height: 4px;
+          background-color: #fff; }
+      .contacts .block .our-contacts p {
+        font-family: "SegoeUIRegular";
+        font-size: 20px;
+        color: #fff;
+        line-height: 25px;
+        padding-left: 40px; }
+        .contacts .block .our-contacts p:first-of-type {
+          padding-top: 63px;
+          padding-bottom: 28px; }
+        .contacts .block .our-contacts p span {
+          text-decoration: underline; }
+    .contacts .block .send-application {
+      width: 372px;
+      height: 475px;
+      position: relative;
+      text-align: center;
+      float: right; }
+      .contacts .block .send-application h3 {
+        font-family: "PTSansBold";
+        font-size: 26px;
+        color: #000;
+        text-transform: uppercase;
+        padding-top: 54px; }
+      .contacts .block .send-application p {
+        font-family: "MyriadProRegular";
+        font-size: 17px;
+        color: #000;
+        padding-top: 10px; }
+      .contacts .block .send-application form {
+        width: 372px;
+        margin-top: 35px; }
+        .contacts .block .send-application form input {
+          width: 274px;
+          height: 39px;
+          margin: 0 auto;
+          background-color: #f9f9f9;
+          border: 1px solid #dedede;
+          padding-left: 25px;
+          font-family: "OpenSansRegular";
+          font-size: 16px;
+          color: #838383;
+          letter-spacing: 1px;
+          margin-bottom: 21px; }
+          .contacts .block .send-application form input:hover {
+            border-color: #ffab00; }
+        .contacts .block .send-application form input[type="submit"] {
+          width: 301px;
+          height: 45px;
+          line-height: 45px;
+          background-color: #ffab00;
+          font-family: "OpenSansRegular";
+          font-size: 18px;
+          letter-spacing: 1px;
+          color: #fff;
+          text-transform: uppercase;
+          text-align: center;
+          box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.2);
+          margin-bottom: 0; }
+          .contacts .block .send-application form input[type="submit"]:hover {
+            opacity: 0.7;
+            box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.2); }
+      .contacts .block .send-application p:last-child {
+        font-family: "SegoeUIRegular";
+        font-size: 13px;
+        margin-top: 10px;
+        text-align: center;
+        color: #838383;
+        white-space: pre-line; }
+
+.contacts .wrapper > p {
+  position: absolute;
+  z-index: 5;
+  font-family: "OpenSansRegular";
+  font-size: 14px;
+  color: #000;
+  margin-top: 35px;
+  margin-left: 23px;
+  bottom: 90px; }
+  .contacts .wrapper > p a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px dashed #000; }
+    .contacts .wrapper > p a:hover {
+      border-bottom: none; }
+
+#modal_form {
+  width: 372px;
+  height: 475px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -215px;
+  margin-left: -185px;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  background-color: #fff;
+  text-align: center; }
+  #modal_form h3 {
+    font-family: "PTSansBold";
+    font-size: 26px;
+    color: #000;
+    text-transform: uppercase;
+    padding-top: 54px; }
+  #modal_form p {
+    font-family: "MyriadProRegular";
+    font-size: 17px;
+    color: #000;
+    padding-top: 10px; }
+  #modal_form form {
+    width: 372px;
+    margin-top: 35px; }
+    #modal_form form input {
+      width: 274px;
+      height: 39px;
+      margin: 0 auto;
+      background-color: #f9f9f9;
+      border: 1px solid #dedede;
+      padding-left: 25px;
+      font-family: "OpenSansRegular";
+      font-size: 16px;
+      color: #838383;
+      letter-spacing: 1px;
+      margin-bottom: 21px; }
+      #modal_form form input:hover {
+        border-color: #ffab00; }
+    #modal_form form input[type="submit"] {
+      width: 301px;
+      height: 45px;
+      line-height: 45px;
+      background-color: #ffab00;
+      font-family: "OpenSansRegular";
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 0; }
+      #modal_form form input[type="submit"]:hover {
+        opacity: 0.7;
+        box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.2); }
+  #modal_form p:last-child {
+    font-family: "SegoeUIRegular";
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+    color: #838383;
+    white-space: pre-line; }
+
+#overlay {
+  z-index: 3;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
