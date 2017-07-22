@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<title>New Freelance</title>
+</head>
+<body>
+	<header>
+		<div id="wrapper">
+			<div class="logo">
+				<a href="#"><img src="img/header-logo.png" alt="Новый Фриланс"></a>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-menu">
+					<li><a href="#">Фрилансеру</a></li>
+					<li><a href="#">Заказчику</a></li>
+					<li><a href="#">Заказчику</a></li>
+					<li><a href="#">Разместить задание</a></li>
+					<li>
+						<a href="#">Ещё</a>
+						<ul class="second-level">
+							<li><a href="#">Найти задание</a></li>
+							<li><a href="#">Найти вакансию</a></li>
+							<li><a href="#">Платный аккаунт</a></li>
+							<li><a href="#">Пункт еще один</a></li>
+							<li><a href="#">Пункт еще один</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="buttons">
+				<div class="btn sign-in">Вход</div>
+				<div class="btn sign-up">Регистрация</div>
+			</div>
+			<nav class="mobile">
+				<a class="logo" href="#"><img src="img/header-logo.png" alt="Новый Фриланс"></a>
+				<input type="checkbox" id="btn-menu">
+				<label for="btn-menu"></label>
+				<ul class="list-menu">
+				    <li><a href="#">Фрилансеру</a></li>
+					<li><a href="#">Заказчику</a></li>
+					<li><a href="#">Заказчику</a></li>
+					<li><a href="#">Разместить задание</a></li>
+					<li>
+						<a href="#">Ещё</a>
+						<ul class="second-level">
+							<li><a href="#">Найти задание</a></li>
+							<li><a href="#">Найти вакансию</a></li>
+							<li><a href="#">Платный аккаунт</a></li>
+							<li><a href="#">Пункт еще один</a></li>
+							<li><a href="#">Пункт еще один</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="content">
+		<div id="wrapper">
+			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+			sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua. Ut enim ad minim veniam, quis nostrud
+			exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</h1>
+			<div class="buttons">
+				<div class="executor">Исполнитель</div>
+				<div class="employer">Работадатель</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div id="wrapper">
+			<div class="left">
+				<div class="copyright">
+					<p>Новый Фриланс © 2005-2017</p>
+				</div>
+				<div class="social">
+					<p>Мы в социальных сетях:</p>
+					<a href="#"><img src="img/vk.jpg" alt="vk"></a>
+					<a href="#"><img src="img/facebook.jpg" alt="facebook"></a>
+				</div>
+			</div>
+			<div class="footer-menu">
+				<div class="column">
+					<p>Мой профиль</p>
+					<a href="#">Сообщения</a>
+					<a href="#">Проекты</a>
+					<a href="#">Заказы</a>
+					<a href="#">Настройки</a>
+					<a href="#">Выход</a>
+				</div>
+				<div class="column">
+					<p>Мой профиль</p>
+					<a href="#">Выбрать специализацию</a>
+					<a href="#">Заполнить портфолио</a>
+					<a href="#">Добавить услуги</a>
+					<a href="#">Загрузить резюме</a>
+				</div>
+				<div class="column">
+					<p>Сервисы</p>
+					<a href="#">Поиск по сайту</a>
+					<a href="#">Безопасная сделка</a>
+					<a href="#">Аккаунт PRO</a>
+					<a href="#">Реклама профиля на сайте</a>
+				</div>
+				<div class="column">
+					<p>Сервисы</p>
+					<a href="#">Помощь</a>
+					<a href="#">Правила</a>
+					<a href="#">Команда</a>
+					<a href="#">Контакты</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		 $(function (){
+            if($('.file_input_button').length)
+            {
+                $('#chose_file').click(function(){
+                    $('.file_input_hidden').click();
+                    return(false);
+                });
+
+                $('.file_input_hidden').change(function(){
+                    $('#chose_file_text').html($(this).val());
+                }).change(); // .change() в конце для того чтобы событие сработало при обновлении страницы
+            }
+        });
+	</script>
+</body>
+</html>

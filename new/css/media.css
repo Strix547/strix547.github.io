@@ -1,0 +1,135 @@
+@media screen and (max-width: 1200px) {
+	.content h1 {
+	    font-family: "RobotoBlack";
+	    font-size: 23px;
+	    color: #010101;
+	    line-height: 30px;
+	    text-align: center;
+	    padding: 68px 40px 0 40px;
+	    white-space: normal;
+	}
+	.header-nav {
+		display: none;
+	}
+	.logo {
+		display: none;
+	}
+	header .top-line {
+		display: none;
+	}
+	header .mobile {
+		display: block;
+	}
+	.buttons {
+		margin-right: 20px;
+	}
+	   header #btn-menu + label{
+	      display: inline-block;
+	   }
+	  header #btn-menu + label + .list-menu{
+	    display: none;
+	  }
+	  header #btn-menu:checked + label + .list-menu{
+	    display: block;
+	}
+	footer .left {
+	    float: none;
+	    margin: 20px auto 0 auto;
+	    width: 300px;
+	}
+	footer .footer-menu {
+		padding: 0 20px;
+		justify-content: space-around;
+	}
+}
+
+@media screen and (max-width: 1072px) {
+	.content .buttons {
+	    float: none;
+	    margin: 70px 0 0 0px;
+	}
+	.content .buttons .executor {
+	    display: block;
+	    margin: 60px auto;
+	}
+	.content .buttons .employer {
+	    display: block;
+	    margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	header .mobile .logo {
+	    left: 9%;
+	}
+}
+
+@media screen and (max-width: 843px) {
+	footer .footer-menu .column:nth-child(3) {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 692px) {
+	footer .footer-menu {
+		text-align: center;
+	}
+	footer .footer-menu .column {
+		width: 50%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	header {
+	    height: 97px;
+	}
+	header .mobile .logo {
+    	left: 32%;
+	}
+	header .mobile .logo {
+	    margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 485px) {
+	.content .buttons .executor {
+	    width: 90%;
+	    display: block;
+	    font-size: 24px;
+	}
+	.content .buttons .employer {
+	    width: 90%;
+	    font-size: 24px;
+	    display: block;
+	}
+	.content {
+		height: 755px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	footer .footer-menu .column {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 336px) {
+	header {
+	    height: 97px;
+	}
+	header .mobile .logo {
+    	left: 31%;
+	}
+	header .mobile .logo {
+	    margin-top: 80px;
+	}
+	.buttons .sign-in {
+	    margin-bottom: 10px;
+	}
+	.buttons .sign-in,
+	.buttons .sign-up {
+	    margin-left: 13px;
+	}
+}
