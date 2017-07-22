@@ -81,7 +81,7 @@ header .list-menu > li > a{
 }
 
 header .list-menu > li > a:hover{
-  background: #ff6904;
+  background: #01b195;
   color: #fff;
 }
 
@@ -176,7 +176,7 @@ header .logo {
 }
 
 header .logo img {
-	width: 150px;
+	width: 140px;
 	height: auto;
 }
 
@@ -193,6 +193,14 @@ header .header-menu li:hover {
 	background-color: #01b195;
 }
 
+header .header-menu li.active {
+	background-color: #01b195;
+}
+
+header .list-menu li.active {
+	background-color: #01b195;
+}
+
 header .header-menu li a {
 	display: block;
 	line-height: 49px;
@@ -201,6 +209,10 @@ header .header-menu li a {
 	color: #fff;
 	text-decoration: none;
 	padding: 0 18px;
+}
+
+header .header-menu li:last-child {
+	width: 75px;
 }
 
 header .header-menu li:last-child a::before {
@@ -277,6 +289,11 @@ header .second-level a::before {
 	width: 115px;
 	padding-left: 10px;
 	margin-right: 18px;
+}
+
+.buttons .sign-in:hover,
+.buttons .sign-up:hover {
+	background-color: #ff8b3d;
 }
 
 .buttons .sign-in:before {
@@ -402,6 +419,22 @@ footer .social p {
 
 footer .social a:first-of-type {
 	margin-right: 6px;
+}
+
+footer .social a:first-of-type:hover {
+	background: url('../img/vk-active.jpg');
+}
+
+footer .social a img:last-of-type {
+	display: none;
+}
+
+footer .social a:hover img:last-of-type {
+	display: block;
+}
+
+footer .social a:hover img:first-of-type {
+	display: none;
 }
 
 footer .footer-menu {
