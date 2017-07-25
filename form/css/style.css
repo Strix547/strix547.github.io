@@ -1,0 +1,1006 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+}
+
+HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; 
+}
+
+body {
+  height: 3000px;
+  line-height: 1; 
+}
+
+ol, ul {
+  list-style: none; 
+}
+
+blockquote, q {
+  quotes: none; 
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; 
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; 
+}
+
+.select-wrapper {
+  position: relative;
+  width: 128px;
+  height: 28px;
+  margin-top: 23px;
+  border: 1px solid #d2d2d2;
+}
+
+.select-wrapper select {
+  width: 300px;
+  height: 28px;
+  padding: 0 20px 0 7px;
+  background: transparent;
+  border: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select-wrapper:hover {
+  box-shadow: 0px 0px 1px gray;
+}
+
+.select-wrapper select::-ms-expand{
+    display: none;
+}
+
+.select-arrow {
+  position: absolute;
+  z-index: -9999;
+  border: 5px solid transparent; 
+  border-bottom: 0;
+  right: 8px;
+  top: 11px;
+  border-top-color: black;
+}
+
+#wrapper {
+  width: 865px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.bread-crumbs {
+  margin-top: 5px;
+}
+
+.bread-crumbs a {
+    color: #16447c;
+}
+
+.bread-crumbs a:hover {
+    text-decoration: none;
+}
+
+form {
+  width: 863px;
+  margin-top: 16px;
+  border: 1px solid #dcdcdc;
+}
+
+form header {
+  height: 223px;
+  padding: 30px 35px 0 29px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+form header h1 {
+  font-size: 32px;
+  display: inline-block;
+}
+
+form header a {
+  margin-top: 13px;
+  float: right;
+  text-decoration: none;
+  color: #2e588a;
+}
+
+form header a:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 25px;
+  margin-left: -20px;
+  margin-top: -3px;
+  background: url('../img/copy-icon.jpg') no-repeat;
+}
+
+form header .members {
+  margin-top: 30px;
+}
+
+form header .member {
+  width: 141px;
+  height: 122px;
+  padding: 13px 0 0 12px;
+  background-color: #f2fae8;
+  float: left;
+  margin-right: 8px;
+}
+
+form header .member p:nth-child(2) {
+  padding: 20px 0 10px 0;
+  color: #94988d;
+}
+
+form header .member p:last-child {
+  white-space: pre-line;
+  font-size: 17px;
+}
+
+form header .member:nth-child(2) {
+  background-color: #fef6e9;
+}
+
+form header .member:nth-child(3),
+form header .member:nth-child(4),
+form header .member:nth-child(5) {
+  background-color: transparent;
+}
+
+form header .member:nth-child(4) p:first-child,
+form header .member:nth-child(5) p:first-child {
+  color: #7f7f7f;
+}
+
+
+
+
+form header .member:last-child {
+  margin-right: 0;
+}
+
+form header .member .select-wrapper {
+  position: relative;
+  width: 128px;
+  height: 28px;
+  margin-top: 23px;
+  border: 1px solid #d2d2d2;
+}
+
+form header .member .select-wrapper select {
+  width: 128px;
+  height: 28px;
+}
+
+/* PASPORTS */
+
+form .pasports {
+  padding: 30px 54px 32px 29px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+form .pasports .pasport:first-child {
+  display: inline-block;
+}
+form .pasports .pasport:nth-child(2) {
+  float: right;
+}
+
+form .pasports .pasport p {
+  font-size: 18px;
+  padding-bottom: 28px;
+}
+
+form .pasports .pasport label {
+  color: #898989;
+  position: absolute;
+  margin-top: -20px;
+}
+
+form .pasports .pasport input {
+  height: 28px;
+  border: 1px solid #d6d6d6;
+  margin-right: 8px;
+  padding-left: 8px;
+  font-size: 14px;
+}
+
+form .pasports .pasport input:first-of-type {
+  width: 50px;
+}
+
+form .pasports .pasport input:nth-of-type(2) {
+  width: 110px;
+}
+
+form .pasports .pasport input:nth-of-type(3) {
+  width: 110px;
+  cursor: pointer;
+  background: transparent;
+}
+
+form .pasports .pasport label:nth-of-type(3):after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left: 13px;
+  margin-top: 27px;
+  z-index: -1;
+  background: url('../img/date-icon.jpg') transparent no-repeat;
+}
+
+form .pasports .pasport label:nth-of-type(4) {
+  display: block;
+  margin-top: 8px;
+}
+
+form .pasports .pasport input:nth-of-type(4) {
+  width: 318px;
+  float: none;
+  display: block;
+  margin-top: 32px;
+}
+
+form .pasports .pasport:last-of-type p:last-child {
+  font-size: 13px;
+  color: #b2b2b2;
+  padding-top: 5px;
+}
+
+form .pasports .pasport label:nth-of-type(5) {
+  display: block;
+  margin-top: 8px;
+}
+
+form .pasports .pasport input:nth-of-type(5) {
+  width: 110px;
+  float: none;
+  cursor: pointer;
+  display: block;
+  margin-top: 32px;
+  background: transparent;
+}
+
+form .pasports .pasport label:nth-of-type(5):after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left: -5px;
+  margin-top: 30px;
+  z-index: -1;
+  background: url('../img/date-icon.jpg') transparent no-repeat;
+}
+
+form .pasports .bottom {
+  margin-top: 35px;
+}
+
+form .pasports .bottom label {
+  display: block;
+  position: absolute;
+  margin-top: -15px;
+  color: #898989;
+  font-size: 15px;
+}
+
+form .pasports .bottom label:nth-of-type(3) {
+  margin-left: 330px;
+  margin-top: -53px;
+}
+
+form .pasports .bottom label:nth-of-type(4) {
+  margin-left: 659px;
+  margin-top: -53px;
+}
+
+form .pasports .select-wrapper {
+  position: relative;
+  width: 318px;
+  height: 28px;
+  margin-top: 5px;
+  border: 1px solid #d2d2d2;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+form .pasports .select-wrapper select {
+  width: 318px;
+  height: 28px;
+}
+
+form .pasports .select-wrapper:first-of-type {
+  margin-bottom: 30px;
+}
+form .pasports .bottom input {
+  width: 110px;
+  height: 28px;
+  border: 1px solid #d2d2d2;
+  padding-left: 8px;
+}
+
+/* BUSINESS-TRIP */
+
+form .business-trip {
+  padding: 30px 0px 30px 29px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+form .business-trip p {
+  font-size: 18px;
+}
+
+form .business-trip input {
+  width: 110px;
+  height: 28px;
+  display: inline-block;
+  padding-left: 8px;
+  font-size: 14px;
+  border: 1px solid #d2d2d2;
+  cursor: pointer;
+  margin-top: 32px;
+  background: transparent;
+}
+
+form .business-trip label {
+  position: absolute;
+  margin-top: 9px;
+  color: #898989;
+  font-size: 15px;
+}
+
+form .business-trip label:nth-of-type(1):after,
+form .business-trip label:nth-of-type(2):after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+  margin-top: 30px;
+  z-index: -1;
+  background: url('../img/date-icon.jpg') transparent no-repeat;
+}
+
+form .business-trip label:nth-of-type(2):after {
+  margin-left: -12px;
+  margin-top: 30px;
+}
+
+form .business-trip p:nth-of-type(2) {
+  display: inline-block;
+  color: #7a7a7a;
+  margin: 0 4px;
+}
+
+form .business-trip p:nth-of-type(3) {
+  display: inline-block;
+  margin-left: 5px;
+  color: #8b8b8b;
+  font-size: 14px;
+}
+
+form .business-trip button:first-of-type {
+  width: 158px;
+  height: 34px;
+  border: none;
+  background-color: #16447c;
+  margin-left: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+form .business-trip p:nth-of-type(4) {
+  white-space: pre-line;
+  font-size: 15px;
+  color: #f6ae36;
+  padding-top: 15px;
+  padding-left: 19px
+}
+
+form .business-trip p:nth-of-type(4):before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -22px;
+  margin-top: -3px;
+  background: url('../img/attention-icon.jpg') no-repeat;
+}
+
+form .business-trip p:nth-of-type(5) {
+  display: inline-block;
+  margin: 0 1.5px;
+}
+
+form .business-trip .select-wrapper label {
+  margin-top: -20px;
+}
+
+form .business-trip .select-wrapper {
+  width: 248px;
+  margin-top: 48px;
+  display: inline-block;
+}
+
+form .business-trip .select-wrapper label:after {
+  display: none;
+}
+
+form .business-trip .select-wrapper select {
+  width: 248px;
+}
+
+form .business-trip .select-wrapper:last-of-type {
+  width: 528px;
+  display: block;
+  margin-top: 32px;
+}
+
+form .business-trip .select-wrapper:last-of-type select {
+  width: 528px;
+}
+
+form .business-trip input#place,
+form .business-trip input#goal,
+form .business-trip input#base {
+  width: 648px;
+  display: block;
+  cursor: text;
+}
+
+form .business-trip textarea {
+  width: 655px;
+  height: 78px;
+  resize: none;
+  margin-top: 30px;
+  border: 1px solid #d2d2d2;
+}
+
+form .business-trip p:last-of-type {
+  padding-top: 15px;
+  font-size: 14px;
+  color: #8b8b8b;
+}
+
+form .business-trip button:last-of-type {
+  width: 179px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid #16447c;
+  color: #16447c;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* BLOCK-3 */
+
+form .block-3 {
+  padding: 15px 14px 16px 14px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+form .block-3 .tickets {
+  width: 100%;
+  height: 207px;
+  background-color: #f4f8fc;
+}
+
+form .block-3 .tickets p:first-of-type {
+  display: inline-block;
+}
+
+input[type="checkbox"]+span {
+  -webkit-appearance:none;
+  width:16px;
+  height:16px;
+  background-color: #16447c;
+  outline:none;
+  margin: 17px 9px 0 17px;
+  box-sizing:border-box;
+  display:inline-block;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked+span:before {
+  content:"";
+  display:block;
+  width:4px;
+  height:9px;
+  border:0 solid rgb(255, 255, 255);
+  border-width:0 2px 2px 0;
+  -webkit-transform:rotateZ(45deg);
+  margin: 1px 5px;
+  pointer-events:none;
+}
+
+.radio {
+    display: none;
+}
+
+.radio-custom {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #16447c;
+    border-radius: 3px;
+    margin-right: 5px;
+    position: relative;
+}
+
+.radio-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.radio:checked + .radio-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #16447c;
+    border-radius: 2px;
+}
+.radio-custom,
+.radio:checked + .radio-custom::before {
+    border-radius: 50%;
+}
+
+form .block-3 .tickets .radio-buttons {
+  margin-top: 24px;
+  margin-left: 17px;
+}
+
+form .block-3 .tickets .radio-buttons label {
+  margin-right: 45px;
+}
+
+form .block-3 .tickets p:last-of-type {
+  color: #8b8d90;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-left: 17px;
+}
+
+form .block-3 .tickets textarea {
+  width: 648px;
+  height: 78px;
+  border: 1px solid #d6d6d6;
+  color: #8b8d90;
+  font-size: 14px;
+  margin-left: 17px;
+  margin-top: 3px;
+  resize: none;
+}
+
+form .block-3 .hotel {
+  width: 100%;
+  height: 179px;
+  margin-bottom: 15px;
+  background-color: #f4f8fc;
+}
+
+form .block-3 .hotel p {
+  display: inline-block;
+}
+
+form .block-3 .hotel input[type="text"] {
+  width: 110px;
+  height: 28px;
+  display: inline-block;
+  padding-left: 8px;
+  font-size: 14px;
+  border: 1px solid #d2d2d2;
+  cursor: pointer;
+  margin-top: 35px;
+  background: #fff;
+}
+form .block-3 .hotel input[type="text"]:first-of-type {
+  margin-left: 17px;
+}
+form .block-3 .hotel label:nth-of-type(2) {
+  margin-left: 17px;
+}
+form .block-3 .hotel label:not(:first-child) {
+  position: absolute;
+  margin-top: 15px;
+  color: #898989;
+  font-size: 15px;
+}
+
+form .block-3 .hotel label:nth-of-type(2):after,
+form .block-3 .hotel label:nth-of-type(4):after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left: 26px;
+  margin-top: 27px;
+  background: url('../img/date-icon.jpg') transparent no-repeat;
+}
+
+form .block-3 .hotel input[type="text"]:nth-of-type(2),
+form .block-3 .hotel input[type="text"]:nth-of-type(4) {
+  width: 50px;
+}
+
+form .block-3 .hotel label:nth-of-type(4):after {
+  margin-left: 20px;
+}
+
+form .block-3 .hotel input[type="text"]:nth-of-type(2) {
+  margin-right: 10px;
+}
+
+form .block-3 .hotel  label:nth-of-type(4):before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 2px;
+  background-color: #747678;
+  margin-top: 35px;
+  margin-left: -10px;
+}
+
+form .block-3 .hotel .selectors .select-wrapper label {
+  margin-top: -20px;
+}
+
+form .block-3 .hotel .selectors .select-wrapper {
+  width: 248px;
+  margin-top: 32px;
+  position: relative;
+  background: #fff;
+  display: inline-block;
+}
+form .block-3 .hotel .selectors .select-wrapper:first-child {
+  margin-left: 17px;
+  margin-right: 8px;
+}
+form .block-3 .hotel .selectors .select-wrapper select {
+  width: 248px;
+}
+
+form .block-3 .hotel .selectors label {
+  position: absolute;
+  color: #898989;
+  font-size: 15px;
+}
+
+form .block-3 .hotel .selectors .select-arrow {
+  z-index: 1;
+}
+
+form .block-3 .transfer {
+  height: 188px;
+  margin-top: 15px;
+  padding-bottom: 14px;
+  background: #f4f8fc;
+}
+
+form .block-3 .transfer input[type="checkbox"] + span {
+  margin: 7px 0 0 15px;
+}
+
+form .block-3 .transfer p {
+  display: inline-block;
+}
+
+form .block-3 .transfer .border {
+  width: 100%;
+  margin-top: 17px;
+  border-bottom: 1px dashed #d0d4ea;
+}
+
+form .block-3 .transfer p:nth-of-type(2) {
+  padding-left: 33px;
+  padding-top: 15px;
+}
+
+form .block-3 .transfer p:nth-of-type(2):before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  margin-left: -19px;
+  margin-top: 1px;
+  background: url('../img/arrow-right.jpg') no-repeat;
+}
+
+form .block-3 .transfer label:last-of-type {
+  display: block;
+  margin-left: 17px;
+  margin-top: 15px;
+  color: #8b8d90;
+}
+
+form .block-3 .transfer textarea {
+  width: 398px;
+  height: 54px;
+  border: 1px solid #d2d2d2;
+  resize: none;
+  margin-top: 6px;
+  margin-left: 17px;
+}
+
+form .block-3 .transfer a {
+  position: relative;
+  bottom: 35px;
+  color: #3d6392;
+  font-size: 14px;
+  margin-left: 30px;
+}
+form .block-3 .transfer a:hover {
+  text-decoration: none;
+}
+form .block-3 .transfer a:before {
+   content: "";
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   margin-top: -3px;
+   margin-left: -15px;
+   background: url('../img/clip-icon.jpg') no-repeat;
+}
+
+form .block-3 .transfer a:first-of-type:after {
+   content: "Цена";
+   position: absolute;
+   margin-top: -29px;
+   margin-left: 23px;
+   color: #797b7d;
+   
+}
+form .block-3 .transfer a:last-of-type:before {
+  background: url('../img/plus-icon.jpg') no-repeat;
+  margin-top: 3px;
+  margin-left: -15px;
+}
+form .block-3 .transfer a:last-of-type {
+  margin-left: 50px;
+}
+form .block-3 .transfer input {
+  width: 78px;
+  height: 28px;
+  margin-left: 19px;
+  vertical-align: top;
+  border: 1px solid #d2d2d2;
+}
+
+form .organization {
+  padding: 27px 0 25px 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+form .organization p {
+  color: #9f9f9f;
+  display: inline-block;
+  padding-bottom: 18px;
+}
+
+form .organization p:first-of-type {
+  padding-right: 50px;
+}
+form .organization p:nth-of-type(2) {
+  padding-right: 65px;
+}
+
+form .organization p:nth-of-type(3) {
+  padding-right: 60px;
+}
+
+form .organization p:nth-of-type(4) {
+  padding-right: 78px;
+}
+
+form .calculations {
+  height: 225px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+form .calculations p:first-child {
+  padding: 30px 0 8px 30px;
+}
+form .calculations table {
+  width: 805px;
+  margin: 0 auto;
+}
+
+form .calculations table tr{
+  height: 47px;
+  line-height: 47px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+form .calculations table tr:first-child {
+  border-top: 1px solid #d2d2d2;
+}
+
+form .calculations table span {
+  color: #898989;
+  padding-left: 5px;
+}
+
+form .calculations table tr:first-child td:nth-child(2) span:last-child,
+form .calculations table tr:nth-child(2) td:nth-child(2) span:last-child {
+  padding-left: 15px;
+}
+
+
+form .calculations table tr td:first-child {
+  width: 140px;
+  padding-left: 20px;
+}
+
+form .calculations table tr td:last-child span {
+  padding-right: 17px;
+}
+
+form .calculations table tr:first-child td:nth-child(2),
+form .calculations table tr:nth-child(2) td:nth-child(2) {
+  width: 563px;
+}
+
+form .calculations table input:first-of-type {
+  width: 39px;
+  height: 28px;
+  font-size: 14px;
+  margin-left: -30px;
+  border: 1px solid #b2b2b2;
+  padding-left: 19px;
+}
+
+form .calculations table input:last-of-type {
+  width: 240px;
+  height: 28px;
+  border: 1px solid #b2b2b2;
+  padding-left: 8px;
+  margin-left: 15px;
+}
+
+form .calculations table p {
+  display: inline-block;
+  padding-left: 5px;
+  color: #1c4980;
+}
+
+form .calculations p.last {
+  float: right;
+  padding-top: 20px;
+  padding-right: 45px;
+}
+
+form .calculations p.last strong {
+  padding-left: 30px;
+  font-weight: 900;
+}
+
+form .calculations p.last span {
+  color: #898989;
+  padding-left: 5px;
+}
+
+footer {
+  padding: 29px;
+  background-color: #fcfbfd;
+}
+
+footer p {
+  display: inline-block;
+}
+
+footer p:first-child {
+  color: #3e6492;
+}
+
+footer p:nth-child(2) {
+  color: #919091;
+  padding-left: 5px;
+}
+
+footer p:nth-child(3) {
+  float: right;
+}
+
+footer p:nth-child(4) {
+  display: block;
+  padding-top: 12px;
+}
+
+footer .line {
+  width: 805px;
+  height: 1px;
+  margin: 25px auto;
+  background-color: #e2e1e3;
+}
+
+footer label {
+  display: block;
+  color: #969596;
+  padding-bottom: 5px;
+}
+
+footer textarea {
+  width: 618px;
+  height: 78px;
+  display: block;
+  resize: none;
+  border: 1px solid #d2d2d2;
+}
+
+
+footer button {
+  width: 158px;
+  height: 32px;
+  display: inline-block;
+  margin-top: 21px;
+  cursor: pointer;
+  margin-right: 350px;
+  border: 1px solid #16447c;
+  color: #16447c;
+  background: #fff;
+}
+
+footer a {
+  display: inline-block;
+  color: #3d6392;
+  font-size: 14px;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+footer > a:before {
+   content: "";
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   margin-top: -5px;
+   margin-left: -15px;
+   background: url('../img/clip-icon.jpg') no-repeat;
+}
+
+.submit {
+  background-color: #fcfbfd;
+  border-top: 1px solid #d2d2d2;
+  padding: 30px 0 30px 30px;
+}
+
+.submit input {
+  width: 163px;
+  height: 34px;
+  color: #fff;
+  margin-right: 40px;
+  background-color: #16447c;
+  border: none;
+}

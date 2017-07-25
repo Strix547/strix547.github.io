@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Создание заявки</title>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="bread-crumbs">
+			<a href="#">Сервис заявок</a> → <a href="#">Заявки на командировки</a> → Создание заявки
+		</div>
+		<form action="#">
+			<header>
+				<h1>Заявка № 543114</h1><a href="#">Копировать заявку из старых</a>
+				<div class="members">
+					<div class="member">
+						<p>Заявитель</p>
+						<p>Эксперт</p>
+						<p>Иванова Наталья
+						Владимировна</p>
+					</div>
+					<div class="member">
+						<p>Заявитель</p>
+						<p>Агент</p>
+						<p>Иванов
+						Георгий
+						Николаевич</p>
+					</div>
+					<div class="member">
+						<p>Руководитель</p>
+						<div class="select-wrapper">
+						    <div class="select-arrow"></div>
+						    <select id="director">
+						      <option value="1"></option>
+						      <option value="2"></option>
+						      <option value="3"></option>
+						    </select>
+					  </div>
+					</div>
+					<div class="member">
+						<p>Сотрудник ДКТИО</p>
+						<p>Начальник отдела</p>
+						<p>Иванов
+						Георгий
+						Николаевич</p>
+					</div>
+					<div class="member">
+						<p>Владелец</p>
+						<p>Директор</p>
+						<p>Иванов Михайлов
+						Краеведов</p>
+					</div>
+				</div>
+			</header>
+			<div class="pasports">
+				<div class="pasport">
+					<p>Паспорт</p>
+					<label for="series">Серия</label>
+					<input name="series" id="series" type="text" placeholder="1234" maxlength="4">
+					<label for="number">Номер</label>
+					<input name="number" id="number" type="text" placeholder="123456" maxlength="6">
+					<label for="data">Дата выдачи</label>
+					<input name="data" id="datepicker" type="text" placeholder="01.01.1990">
+					<label for="FIO">ФИО</label>
+					<input name="FIO" id="FIO" type="text" placeholder="Иванов Иван Иванович">
+					<label for="birthday">Дата рождения</label>
+					<input name="birthday" id="datepicker2" type="text" placeholder="01.01.1990">
+				</div>
+				<div class="pasport">
+					<p>Заграничный паспорт</p>
+					<label for="series">Серия</label>
+					<input name="series" id="series" type="text" maxlength="4">
+					<label for="number">Номер</label>
+					<input name="number" id="number" type="text" maxlength="6">
+					<label for="data">Дата выдачи</label>
+					<input name="data" id="datepicker" type="text">
+					<label for="FIO">ФИО (латиницей)</label>
+					<input name="FIO" id="FIO" type="text">
+					<p>Пример: Ivanov Ivan Ivanovic</p>
+				</div>
+				<div class="bottom">
+					<label for="position">Должность</label>
+					<div class="select-wrapper">
+						<div class="select-arrow"></div>
+						<select id="position">
+							<option value="analitic">Аналитик</option>
+							<option value="analitic">Аналитик</option>
+							<option value="analitic">Аналитик</option>
+						</select>
+					</div>
+					<br>
+					<label for="departament">Департамент</label>
+					<div class="select-wrapper">
+						<div class="select-arrow"></div>
+						<select id="departament">
+							<option value="departament">Департамент</option>
+							<option value="departament">Департамент</option>
+							<option value="departament">Департамент</option>
+						</select>
+					</div>
+					<label for="position">Подразделение</label>
+					<div class="select-wrapper">
+						<div class="select-arrow"></div>
+						<select id="podrazdelenie">
+							<option value="DZO">ДЗО</option>
+							<option value="DZO">ДЗО</option>
+							<option value="DZO">ДЗО</option>
+						</select>
+					</div>
+					<label for="tabNumber">Табельный номер</label>
+					<input type="text" placeholder="123456789">
+				</div>
+			</div>
+			<div class="business-trip">
+				<p>Командировка</p>
+				<label for="datepicker3">Дата начала</label>
+				<input type="text" id="datepicker3">
+				<p>-</p>
+				<label for="datepicker4">Дата завершения</label>
+				<input type="text" id="datepicker4">
+				<p>9 дней</p>
+				<button>Проверить даты</button>
+				<p>Командировка попадает на выходные дни.
+				Необходимо прикрепить сопроводительные документы</p>
+				<div class="select-wrapper">
+					<label for="town2">Город назначения</label>
+					<div class="select-arrow"></div>
+					<select id="town1">
+						<option value="1">Город</option>
+						<option value="2">Город</option>
+						<option value="3">Город</option>
+					</select>
+				</div>
+				<p>→</p>
+				<div class="select-wrapper">
+					<label for="town2">Город назначения</label>
+					<div class="select-arrow"></div>
+					<select id="town1">
+						<option value="1">Город</option>
+						<option value="2">Город</option>
+						<option value="3">Город</option>
+					</select>
+				</div>
+				<div class="select-wrapper">
+					<label for="organization">Организация</label>
+					<div class="select-arrow"></div>
+					<select id="organization">
+						<option value="1">Организация</option>
+						<option value="2">Организация</option>
+						<option value="3">Организация</option>
+					</select>
+				</div>
+				<label for="place">Место назначения</label>
+				<input name="place" id="place"type="text">
+				<label for="goal">Цель</label>
+				<input name="goal" id="goal" type="text">
+				<label for="base">Основание</label>
+				<textarea name="base" id="base"></textarea>
+				<p>Документы</p>
+				<button>Добавить документы</button>
+			</div>
+			<div class="block-3">
+				<div class="hotel">
+					<label><input type="checkbox" hidden checked><span></span></label>
+					<p>Гостиница</p>
+					<br>
+					<label for="datepicker3">Дата заезда</label>
+					<input type="text" id="datepicker5">
+					<label for="time">Время</label>
+					<input name="time1" id="time1" type="text" maxlength="5">
+					<label for="datepicker4">Дата выезда</label>
+					<input type="text" id="datepicker6">
+					<label for="time">Время</label>
+					<input name="time2" id="time2" type="text" maxlength="5">
+					<div class="selectors">
+						<div class="select-wrapper">
+							<label for="hotel">Предпочитаемая гостиница</label>
+							<div class="select-arrow"></div>
+							<select id="hotel">
+								<option value="1">Гостиница</option>
+								<option value="2">Гостиница</option>
+								<option value="3">Гостиница</option>
+							</select>
+						</div>
+						<div class="select-wrapper">
+							<label for="category">Категория номера</label>
+							<div class="select-arrow"></div>
+							<select id="category">
+								<option value="1">Эконом</option>
+								<option value="2">Эконом</option>
+								<option value="3">Эконом</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="tickets">
+					<label><input type="checkbox" hidden checked><span></span></label>
+					<p>Билеты</p>
+					<div class="radio-buttons">
+						<label>
+						    <input class="radio" type="radio" name="radio">
+						    <span class="radio-custom"></span>
+						    <span class="label">Авиа</span>
+						</label>
+						<label>
+						    <input class="radio" type="radio" name="radio">
+						    <span class="radio-custom"></span>
+						    <span class="label">ЖД</span>
+						</label>
+						<label>
+						    <input class="radio" type="radio" name="radio">
+						    <span class="radio-custom"></span>
+						    <span class="label">Не важно</span>
+						</label>
+					</div>
+					<p>Пожелания к билетам</p>
+					<textarea name="pozhelania" id="pozhelania"></textarea>
+				</div>
+				<div class="transfer">
+					<label><input type="checkbox" hidden checked><span></span></label>
+					<p>Трансфер</p>
+					<div class="border"></div>
+					<p>Пожелания по трансферу</p>
+					<div class="border"></div>
+					<label for="time">Направление, время подачи</label>
+					<textarea name="time" id="time"></textarea>
+					<a href="#">Прикрепить файл</a>
+					<input type="text" name="cost" id="cost">
+					<a href="#">Добавить ссылку</a>
+				</div>
+			</div>
+			<div class="organization">
+				<p>За счет средств</p><span>ООО «CompanyName»</span><br>
+				<p>Организация</p><span>ООО «CompanyName»</span><br>
+				<p>Руководитель</p><span>Сидоров Иван Алексеевич</span><br>
+				<p>Должность</p><span>Должность</span>
+			</div>
+			<div class="calculations">
+				<p>Расчёты</p>
+				<table>
+					<tr>
+						<td>Суточные</td>
+						<td>500 <span>руб</span><span>x 7 дней</span></td>
+						<td>3500 <span>руб</span></td>
+					</tr>
+					<tr>
+						<td>Суточные</td>
+						<td>500 <span>руб</span><span>x 2 дней</span></td>
+						<td>1000 <span>руб</span></td>
+					</tr>
+					<tr>
+						<td>Доп. расходы</td>
+						<td>
+							<input placeholder="3650" type="text"><span>руб</span>
+							<input placeholder="Деловая встреча" type="text">
+							<p>+ Еще доп. расход</p>
+						</td>
+						<td>3650 <span>руб</span></td>
+					</tr>
+				</table>
+				<p class="last">Итого:  <strong>8 160</strong><span>руб</span></p>
+			</div>
+			<footer>
+				<p>Иванов Евгений Леонидович</p><p>08.04.2017 18:15</p><p>Обработана</p>
+				<p>Варианты билетов предоставил</p>
+				<div class="line"></div>
+				<label for="comment">Комментарий</label>
+				<textarea name="comment" id="comment"></textarea>
+				<button>Комментировать</button><a href="#">Прикрепить файл</a>
+			</footer>
+			<div class="submit">
+				<input type="submit" value="На согласование"><a href="#">На доработку</a>
+			</div>
+		</form>
+	</div>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#datepicker, #datepicker2, #datepicker3, #datepicker4, #datepicker5, #datepicker6" ).datepicker();
+  } );
+ </script>
+</body>
+</html>
