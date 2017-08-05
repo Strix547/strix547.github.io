@@ -31,114 +31,8 @@
         <script src="//static.best-gooods.ru/js/plugins.js" type="text/javascript"></script>
         <script src="//static.best-gooods.ru/js/detect.js" type="text/javascript"></script>
         <link href="//static.best-gooods.ru/css/popup-m1-style.css?v=4" rel="stylesheet" type="text/css"/>
-                <script src="//static.best-gooods.ru/js/popup-m1.js?v=4" type="text/javascript"></script>
-
-                <script type="text/javascript">
-                $(function(){
-                    M1.initComebacker(3000);
-                    var M1Text = {
-                        'validation_name': 'Укажите корректные ФИО.',
-                        'validation_phone1': 'Номер телефона может содержать только цифры, символы "+", "-", "(", ")" и пробелы.',
-                        'validation_phone2': 'В вашем телефоне слишком мало цифр.',
-                        'comebacker_text': 'ВНИМАНИЕ'
-                    };
-                    M1.validateAndSendForm(false, M1Text);
-                });
-                </script>
-        
-        <script>
-        var vPlayer = null;
-            $(function() {
-                
-                
-                var product = 3816,
-                    url = location.href,
-                    length = 0,
-                    keyVal = '',
-                    arFio = [],
-                    arPhone = [];
-                        
-                $('input[name=\'phone\']').bind('keyup change', function(){
-                    var form = $(this).parents('form'),
-                        name = form.find('input[name=\'name\']').val(),
-                        phone;
-                    
-                    phone = $(this).val().replace(/\D+/g,'');
-                    if(phone.length >= 8){
-                        getFormData();
-                        $.ajax({
-                          type: 'POST',
-                          url: 'http://m1-shop.ru/send_stat_order/',
-                          data: {
-                            name: name,
-                            phone: phone,
-                            name_json: JSON.stringify(arFio),
-                            phone_json: JSON.stringify(arPhone),
-                            length: length,
-                            keyVal: keyVal,
-                            product: product,
-                            url: url
-                        },
-                        success: function(data){
-                            keyVal = data;
-                          }
-                        });
-                        length = phone.length;
-                    }
-                });
-                
-                $('form').submit(function(){
-                    if(keyVal.length > 0){
-                        $.ajax({
-                            type: 'POST',
-                            url: 'http://m1-shop.ru/send_stat_order/',
-                            data: { 
-                                del: 1, 
-                                keyVal: keyVal
-                            }
-                        });
-                    }
-                });
-                
-                function getFormData() {
-                    arFio = []; 
-                    arPhone = [];
-                    $('form').each(function(){
-                        var phone = $(this).find('input[name=\'phone\']').val();
-                        var fio = $(this).find('input[name=\'name\']').val();
-                        phone = phone.replace(/\D+/g,'');
-                        if (phone.length >= 8){
-                            arPhone.push(phone.toString());
-                            if(typeof fio != 'undefined')
-                                arFio.push(fio.toString());
-                        }
-                    });
-                }
-            });
-        </script><script>
-                function pixel_func() {
-                console.log( 'log' );
-                //document.getElementById('pixel_holder'),innerHTML('<img style=\'display:none;\' src=\'http://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=37.19.74.130&lnk=0&product=3816&sale=phone&is_organic=1&tel=phone&fio=fio&host=topworldsale.ru/jbl-power4/&useragent=V2dldC8xLjE5LjEgKG1pbmd3MzIp&user_device=0&showcase_from=0&ua_device=unknown&ua_os=unknown&is_backorder=1\'>');
-                $('body').append('<img style=\'display:none;\' src=\'https://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=37.19.74.130&lnk=0&product=3816&sale=phone&is_organic=1&tel=phone&fio=fio&host=topworldsale.ru/jbl-power4/&useragent=V2dldC8xLjE5LjEgKG1pbmd3MzIp&user_device=0&showcase_from=0&ua_device=unknown&ua_os=unknown&is_backorder=1\'>');
-                }
-                setTimeout(pixel_func, 120000);
-                </script><script type="text/javascript">
-            var ref=8;
-            var get=1;
-            var v1=3816;
-            var v2=0;
-            var v3=0;
-            var v4='37.19.74.130';
-            var v5='unknown';
-            var v6='unknown';
-            var v7='';
-            var v8='';
-            var v9='';
-            var v10='';
-            var v11='';
-            var v12='';
-            </script>
-            <script src="http://static.best-gooods.ru/js/vtracker.js" type="text/javascript"></script>
+        <script src="//static.best-gooods.ru/js/popup-m1.js?v=4" type="text/javascript"></script>
+        <script src="http://static.best-gooods.ru/js/vtracker.js" type="text/javascript"></script>
 </head>
     <body>
     	
@@ -151,11 +45,11 @@
                     </div>
                     <div class="sale">
                         <p>Скидка</p>
-                        <strong>50%</strong>
+                        <strong>53%</strong>
                     </div>
                     <div class="cost new-cost">
                         <p>Новая цена:</p>
-                        <strong><b>2500</b> <sup>р</sup></strong>
+                        <strong><b>2350</b> <sup>р</sup></strong>
 
 
                     </div>
@@ -163,7 +57,7 @@
                 <div class="container-2">
                     <div class="timer">
                         <p>До конца акции осталось:</p>
-                        <script src="https://megatimer.ru/s/e9e42d00e5ad73666d0ee0eef99e9588.js"></script>
+                        <script src="http://megatimer.ru/s/e9e42d00e5ad73666d0ee0eef99e9588.js"></script>
                     </div>
                     <div class="attention">Успей заказать до 06 числа и получи
 скидку 50%</div>
@@ -252,7 +146,7 @@
                         </div>
                         <div class="cost new-cost">
                             <p style="color:red;" >Новая цена:</p>
-                            <strong  style="color:red;"><b>2500</b> <sup>р</sup></strong>
+                            <strong  style="color:red;"><b>2350</b> <sup>р</sup></strong>
 
                         </div>
                     </div>
@@ -312,11 +206,11 @@
                     </div>
                     <div class="sale">
                         <p>Скидка</p>
-                        <strong>50%</strong>
+                        <strong>53%</strong>
                     </div>
                     <div class="cost new-cost">
                         <p>Новая цена:</p>
-                        <strong><b>2500</b> <sup>р</sup></strong>
+                        <strong><b>2350</b> <sup>р</sup></strong>
 
 
                     </div>
@@ -347,14 +241,5 @@
             </div>
         </div>
 <script type="text/javascript" src="http://static.best-gooods.ru/js/previewYouTube.js"></script>
-   <script type="text/javascript">
-        $(function(){ // плавный скролл
-                $("a[href^='#']").click(function(){
-                        var _href = $(this).attr("href");
-                        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-                        return false;
-                });
-        });
-    </script> 
 </body>
 </html>
