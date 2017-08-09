@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "RobotoLight";
+	src: url("../fonts/Roboto/Roboto-Light.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "FiraRegular";
+	src: url("../fonts/Fira_Sans/FiraSans-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "FiraBold";
+	src: url("../fonts/Fira_Sans/FiraSans-Bold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
