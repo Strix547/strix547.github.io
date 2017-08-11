@@ -1,0 +1,13 @@
+@font-face {
+	font-family: "Defaults";
+	src: url("fonts/Defaults.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "fontawesome-webfont";
+	src: url("fonts/fontawesome-webfont.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
