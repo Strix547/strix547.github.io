@@ -6543,3 +6543,9 @@ legend {
 #table thead {
     height: 32px;
 }
+
+@media (min-width: 1230px) {
+    table.scroll tbody td, table.scroll thead th {
+        width: 20%;
+    }
+}
