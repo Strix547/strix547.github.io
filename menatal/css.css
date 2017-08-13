@@ -6544,7 +6544,7 @@ legend {
     height: 32px;
 }
 
-@media (min-width: 1230px) {
+@media (max-width: 1230px) {
     table.scroll tbody td, table.scroll thead th {
         width: 20%;
     }
