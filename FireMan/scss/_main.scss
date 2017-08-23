@@ -168,16 +168,15 @@ header {
 			}
 		}
 		.second-level {
+			display: inline-flex;
 			height: 65px;
-			padding: 0 45px;
 			background-color: #e5e8e8;
 			li {
-				display: inline-block;
-				margin-left: -4px;
 				&:first-child a {
+					padding-left: 93px;
 					&::before {
 						@include sprite(0,-48px);
-						margin-left: -51px;
+						margin-left: -48px;
 					}
 				}
 				&:nth-child(2) a {
@@ -218,7 +217,8 @@ header {
 					}
 				}
 				&:nth-child(8) a {
-					padding-right: 0;
+					padding-right: 45px;
+					padding-left: 61px;
 					&::before {
 						@include sprite(-492px,-48px);
 						margin-left: -38px;
@@ -229,7 +229,7 @@ header {
 					display: block;
 					height: 47px;
 					background-color: #e5e8e8;
-					padding: 18px 20px 0 52px;
+					padding: 18px 20px 0 50px;
 					color: #acafb2;
 					text-decoration: none;
 					text-transform: uppercase;
@@ -250,6 +250,7 @@ header {
 
 #content {
 	width: 1260px;
+	height: 3000px;
 	margin: 0 auto;
 	position: relative;
 	background-color: #fafafa;
@@ -261,11 +262,13 @@ header {
 		border: none;
 	}
 	.block-1 {
-		border: 1px solid #c8cdd1;
+		border-bottom: none;
 		border-left: none;
+		border-top: 1px solid #c8cdd1;
 		.left-menu {
 			width: 135px;
-			display: inline-block;
+			float: left;
+			border-bottom: 1px solid #c8cdd1;
 			li:last-child a {
 				border-bottom: none;
 			}
@@ -278,7 +281,7 @@ header {
 				line-height: 20px;
 			}
 			li:last-child a {
-				height: 143px;
+				height: 144px;	
 			}
 			a {
 				display: block;
@@ -310,9 +313,9 @@ header {
 		}
 		.most-popular {
 			width: 630px;
-			display: inline-block;
-			vertical-align: top;
-			padding: 20px 17px 10px 30px;
+			float: left;
+			padding: 21px 25px 11px 30px;
+			border-bottom: 1px solid #c8cdd1;
 			.news {
 				padding-bottom: 17px;
 				border-bottom: 1px solid #e0e0e0;
@@ -322,6 +325,7 @@ header {
 					display: inline-block;
 					font-size: 17px;
 					padding-bottom: 20px;
+					line-height: 19px;
 					color: #336699;
 				}
 				.social {
@@ -367,11 +371,23 @@ header {
 					margin-top: -7px;
 				}
 			}
+			a:last-of-type {
+				display: inline-block;
+				font-family: "PTSansRegular";
+				font-size: 15px;
+				color: #313945;
+				float: right;
+				margin-top: 33px;
+				&:hover {
+					text-decoration: none;
+				}
+			}
 		}
 		aside {
-			display: inline-block;
-			vertical-align: top;
-			border-left: 1px solid #c8cdd1;
+			float: right;
+			padding-bottom: 133px;
+			border: 1px solid #c8cdd1;
+			border-top: none;
 			h3 {
 				padding-top: 7px;
 			}
@@ -441,7 +457,7 @@ header {
 				width: 270px;
 				box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
 				background-color: #ffeddd;
-				margin: 14px 22px 8px 22px;
+				margin: 14px auto 8px auto;
 				padding: 0 15px 38px 19px;
 				.event {
 					margin-left: 17px;
@@ -480,7 +496,7 @@ header {
 			.subscribe {
 				width: 274px;
 				height: 134px;
-				margin: 34px 0 0 23px;
+				margin: 34px auto 0 auto;
 				padding: 30px 14px 25px 15px;
 				background-color: #dfebf3;
 				img {
@@ -523,6 +539,587 @@ header {
 					}
 				}
 			}
+			.banners {
+				width: 303px;
+				border: 1px dashed #404040;
+				margin: 50px auto 0 auto;
+				padding-bottom: 28px;
+				.networks {
+					width: 272px;
+					height: 212px;
+					background-color: #e6ebee;
+					margin: 18px auto 0 auto;
+					text-align: center;
+					p:first-child {
+						font-family: "AgpalatianRoman";
+						font-size: 16.25px;
+						color: #000000;
+						padding-top: 31px;
+						padding-bottom: 16px;
+					}
+					p:nth-child(2),
+					p:nth-child(4) {
+						font-family: "PTSansRegular";
+						font-size: 11.75px;
+						color: #a9b2be;
+					}
+					p:nth-child(4) {
+						margin-top: 20px;
+					}
+					.social {
+						margin-top: 30px;
+						margin-left: 12px;
+						li {
+							display: inline-block;
+							margin-right: 9px;
+							margin-left: -4px;
+							&:last-child {
+								margin-right: 0;
+							}
+							&:nth-child(2) a {
+								@include sprite(-42px,-167px);
+							}
+							&:nth-child(3) a {
+								@include sprite(-85px,-167px);
+							}
+							&:nth-child(4) a {
+								@include sprite(-129px,-167px);
+							}
+							&:nth-child(5) a {
+								@include sprite(-172px,-167px);
+							}
+							&:nth-child(6) a {
+								@include sprite(-215px,-167px);
+							}
+							a {
+								display: block;
+								width: 33px;
+								height: 33px;
+								border-radius: 50%;
+								@include sprite(0,-167px);
+							}
+						}
+					}
+				}
+				.networks > a {
+					font-family: "PTSansRegular";
+					color: #57a2c9;
+					font-size: 11.75px;
+					text-decoration: none;
+				}
+
+				.banner {
+					width: 275px;
+					height: 320px;
+					margin: 25px auto 0 auto;
+					background-color: gray;
+					&:last-child {
+						margin-top: 34px;
+					}
+				}
+			}
+		}	
+	}
+	.block-2 {
+		float: left;
+		padding-bottom: 17px;
+		border-bottom: 1px solid #c8cdd1;
+		.calendar {
+			width: 768px;
+			height: 278px;
+			padding: 27px 15px 30px 17px;
+			margin-top: 21px;
+			position: relative;
+			background-color: #fff5ed;
+			.event {
+				width: 353px;
+				margin-top: 27px;
+				float: left;
+				margin-right: 30px;
+				&:nth-child(2),
+				&:last-child {
+					margin-right: 0;
+				}
+				.date {
+					font-size: 15px;
+					color: #000000;
+				}
+				img {
+					width: 135px;
+					height: 56px;
+					margin-top: 9px;
+					display: inline-block;
+					margin-right: 18px;
+				}
+				p {
+					font-family: "PTSansRegular";
+					color: #0063c0;
+					line-height: 20px;
+				}
+				a:last-child {
+					font-family: "PTSansRegular";
+					color: #000000;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.calendar > a {
+			position: absolute;
+			right: 15px;
+			top: 27px;
+			font-family: "PTSansRegular";
+			font-size: 15px;
+			color: #313945;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		.ask-question {
+			padding: 0 17px;
+			padding-bottom: 17px;
+			margin-right: 17px;
+			margin-top: 17px;
+			background-color: #c0e1ff;
+			p:first-child {
+				font-family: "PTSansRegular";
+				font-size: 15px;
+				padding-top: 19px;
+				color: #313945;
+			}
+			hr {
+				margin-top: 12px;
+				background-color: #fff;
+			}
+			input[type="email"] {
+				width: 599px;
+				padding-left: 17px;
+				height: 44px;
+				line-height: 44px;
+				margin-top: 9px;
+				border: none;
+			}
+			input[type="submit"] {
+				width: 150px;
+				height: 44px;
+				line-height: 44px;
+				font-size: 12px;
+				border: none;
+				color: #fff;
+				background-color: #336699;
+				text-transform: uppercase;
+				cursor: pointer;
+			}
+			p:last-child {
+				font-family: "PTSansRegular";
+				font-size: 12px;
+				color: #336699;
+				padding-top: 12px;
+			}
+		}
+		.qa {
+			width: 768px;
+			height: 271px;
+			margin-right: 17px;
+			padding: 21px 19px 28px 16px;
+			background-color: #e1f0ff;
+			h3 {
+				float: left;
+				display: inline-block;
+			}
+			
+			.slider {
+				clear: both;
+				width: 320px;
+				padding-left: 70px;
+				margin-top: 30px;
+				position: relative;
+				float: left;
+				.slick-prev,
+				.slick-next {
+					width: 18px;
+					height: 31px;
+					content: '';
+					@include sprite(0,-240px);
+					border: none;
+					background-color: transparent;
+					font-size: 0;
+					position: absolute;
+					cursor: pointer;
+					top: 38%;
+				}
+				.slick-prev {
+					left: 0;
+					&:hover {
+						@include sprite(-120px,-239px);
+					}
+				}
+				.slick-next {
+					right: 0;
+					@include sprite(-47px,-240px);
+					&:hover {
+						@include sprite(-168px,-240px);
+					}
+				}
+				.item {
+					p:first-child {
+						font-size: 15px;
+						color: #336699;
+						padding-bottom: 12px;
+					}
+					p:nth-child(3) {
+						font-family: "PTSansRegular";
+						color: #000;
+						padding-top: 17px;
+					}
+					p:nth-child(4) {
+						font-family: "PTSansRegular";
+						font-size: 10px;
+						color: #000;
+						padding-top: 11px;
+					}
+					img {
+						width: 200px;
+						height: 130px;
+					}
+				}
+			}
+			.right {
+				float: right;
+				h3 {
+					padding-top: 30px;
+					padding-bottom: 32px;
+				}
+				.question {
+					clear: both;
+					width: 385px;
+					margin-top: 30px;
+					a {
+						font-size: 18px;
+						padding-left: 30px;
+						color: #336699;
+						text-decoration: underline;
+						&:hover {
+							text-decoration: none;
+						}
+						&::before {
+							content: '';
+							position: absolute;
+							width: 19px;
+							height: 12px;
+							@include sprite(-2px,-316px);
+							margin-left: -30px;
+							margin-top: 3px;
+						}
+					}
+					p {
+						font-family: "PTSansRegular";
+						font-size: 13px;
+						color: #000000;
+						padding-top: 10px;
+					}
+				}
+			}
+		}
+		.qa > a {
+			float: right;
+			display: block;
+			width: 181px;
+			height: 30px;
+			line-height: 30px;
+			background-color: #336699;
+			text-transform: uppercase;
+			font-size: 13px;
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+	}
+	.block-3 {
+		position: relative;
+		z-index: 1;
+		.left {
+			width: 500px;
+			float: left;
+			margin-top: 22px;
+			padding-right: 17px;
+			padding-bottom: 26px;
+			border-right: 1px solid #c8cdd1;
+			border-bottom: 1px solid #c8cdd1;
+			.main-new {
+				width: 500px;
+				height: 300px;
+				position: relative;
+				background: url('../img/img1.jpg') no-repeat;
+				a:nth-child(5) {
+					float: right;
+					margin-right: 18px;
+					width: 181px;
+					height: 30px;
+					line-height: 30px;
+					background-color: #5fa9eb;
+					text-transform: uppercase;
+					font-size: 13px;
+					color: #fff;
+					text-align: center;
+					text-decoration: none;
+					border-radius: 5px;
+					position: relative;
+					bottom: 15px;
+					&:hover {
+						background-color: #418cce;
+					}
+				}
+				.bottom {
+					width: 100%;
+					height: 80px;
+					position: absolute;
+					bottom: 0;
+					z-index: 1;
+					h4 {
+						font-size: 17px;
+						color: #fff;
+						line-height: 24px;
+						padding-top: 4px;
+						padding-left: 18px;
+						padding-right: 90px;
+					}
+					span {
+						font-family: "PTSansRegular";
+						font-size: 10px;
+						color: #fff;
+						margin-right: 33px;
+						position: relative;
+						top: 3px;
+						&:nth-child(2) {
+							margin-left: 38px;
+						}
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+					span::before {
+						content: '';
+						position: absolute;
+						width: 12px;
+						height: 12px;
+						margin-left: -21px;
+					}
+					.date::before {
+						margin-top: 3px;
+						@include sprite(0,-120px);
+					}
+					.views::before {
+						margin-top: 5px;
+						@include sprite(-29px,-120px);
+					}
+					.comments::before {
+						margin-top: 4px;
+						@include sprite(-58px,-120px);
+					}
+					.background {
+						width: 100%;
+						height: 80px;
+						padding: 0;
+						position: absolute;
+						bottom: 0;
+						opacity: 0.65;
+						z-index: -1;
+						background-color: #336699;
+					}
+				}
+			}
+			.news {
+				.new {
+					margin-top: 30px;
+					&:last-of-type {
+						margin-bottom: 26px;
+					}
+					.right {
+						width: 38px;
+						float: right;
+						span {
+							display: block;
+							font-family: "PTSansRegular";
+							font-size: 10px;
+							color: #000;
+							margin-bottom: 12px;
+						}
+						span::before {
+							content: '';
+							position: absolute;
+							width: 12px;
+							height: 12px;
+							margin-left: -21px;
+						}
+						.date::before {
+							margin-top: 1px;
+							@include sprite(0,-120px);
+						}
+						.views::before {
+							margin-top: 3px;
+							@include sprite(-29px,-120px);
+						}
+						.comments::before {
+							margin-top: 2px;
+							@include sprite(-58px,-120px);
+						}
+					}
+					.img {
+						display: inline-block;
+						img {
+							width: 100px;
+							height: 70px;
+							margin-right: 25px;
+						}
+					}
+					a {
+						vertical-align: top;
+						display: inline-block;
+						width: 290px;
+						font-size: 18px;
+						text-decoration: none;
+						line-height: 24px;
+						color: #336699;
+					}
+				}
+			}
+			.news > a {
+				font-family: "PTSansRegular";
+				font-size: 15px;
+				color: #313945;
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.block-3 > .right {
+		float: right;
+		position: relative;
+		margin-top: 22px;
+		padding-left: 17px;
+		padding-bottom: 17px;
+		z-index: 2;
+		border-bottom: 1px solid #c8cdd1;	
+		.last-articles {
+			width: 570px;
+			height: 625px;
+			padding-left: 35px;
+			padding-top: 30px;
+			padding-right: 30px;
+			background-color: #fff1f1;
+			box-shadow: 0 15px 40px 0 rgba(255,144,144,0.56);
+			h3 {
+				display: inline-block;
+			}
+			.article {
+				margin-top: 55px;
+				&:first-of-type {
+					margin-top: 25px;
+				}
+				a {
+					width: 300px;
+					font-size: 18px;
+					vertical-align: top;
+					display: inline-block;
+					margin-bottom: 10px;
+					color: #336699;
+					line-height: 24px;
+					text-decoration: none;
+					&:hover {
+						color: #8cb2d8;
+					}
+				}
+				.img {
+					img {
+						width: 230px;
+						height: 120px;
+						margin-right: 31px;
+					}
+				}
+				.right {
+					span {
+						font-family: "PTSansRegular";
+						font-size: 10px;
+						color: #000;
+						margin-right: 35px;
+						&:first-of-type {
+							margin-left: 21px;
+						}
+					}
+					span::before {
+						content: '';
+						position: absolute;
+						width: 12px;
+						height: 12px;
+						margin-left: -21px;
+					}
+					.date::before {
+						margin-top: 4px;
+						@include sprite(0,-120px);
+					}
+					.views::before {
+						margin-top: 6px;
+						@include sprite(-29px,-120px);
+					}
+					.comments::before {
+						margin-top: 5px;
+						@include sprite(-58px,-120px);
+					}
+					p {
+						font-family: "PTSansRegular";
+						font-size: 12px;
+						color: #000;
+						width: 300px;
+						margin-top: 12px;
+						line-height: 18px;
+						display: inline-block;
+						vertical-align: top;
+					}
+				}
+			}
+		}
+		
+		.last-articles > a:first-of-type {
+			font-family: "PTSansRegular";
+			font-size: 15px;
+			padding-top: 3px;
+			text-decoration: none;
+			float: right;
+			color: #878b91;
+			&:hover {
+				color: #313945;
+				text-decoration: underline;
+			}
+		}
+		.last-articles > a:last-of-type {
+			float: right;
+			display: block;
+			margin-top: 54px;
+			bottom: 0;
+			width: 171px;
+			height: 30px;
+			line-height: 30px;
+			background-color: #4f84b8;
+			text-transform: uppercase;
+			font-size: 13px;
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 5px;
+			&:hover {
+				background-color: #336699;
+			}
+		}
+		.fire {
+			position: absolute;
+			z-index: -1;
+			top: -22%;
+			left: -6%;
 		}
 	}
 }
