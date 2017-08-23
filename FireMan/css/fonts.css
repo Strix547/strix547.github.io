@@ -24,6 +24,12 @@
 	font-style: normal;
 	font-weight: normal;
 }
+@font-face {
+	font-family: "MuseoSansCyrl300";
+	src: url("../fonts/MuseoSansCyrl300.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
 
 @font-face {
 	font-family: "AgpalatianRoman";
