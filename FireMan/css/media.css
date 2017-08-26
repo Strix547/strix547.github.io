@@ -57,6 +57,15 @@
 		float: none;
 		display: inline-block;
 	}
+	#content .block-1 aside span {
+        font-size: 11px;
+        position: static; }
+     #content .block-1 aside .discussing .day::before {
+              margin-top: 0px;
+          }
+	#content .block-1 aside .day::before {
+		left: 35px;
+	}
 	#content .block-1 .most-popular {
 		float: none;
 		display: inline-block;
@@ -298,10 +307,7 @@
 		max-width: 90%;
 	    margin-left: 0;
 	}
-
-
 }
-
 
 @media screen and (max-width: 709px) {
 	header {

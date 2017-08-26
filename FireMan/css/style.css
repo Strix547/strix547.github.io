@@ -423,7 +423,8 @@ header {
       #content .block-1 aside h3 {
         padding-top: 7px; }
       #content .block-1 aside span {
-        font-size: 11px; }
+        font-size: 11px;
+        position: relative; }
         #content .block-1 aside span:first-of-type {
           margin-right: 36px;
           margin-left: 21px; }
@@ -432,7 +433,7 @@ header {
         position: absolute;
         width: 22px;
         height: 22px;
-        left: 35px;
+        left: -22px;
         margin-top: 2px;
         background-image: url(../img/sprite.png);
         background-position: 0 -120px;
@@ -1417,9 +1418,7 @@ footer {
     margin: 18px 10px 0;
     margin-top: 18px;
     height: 21px;
-    background: url(../img/sprite-social-logo.png);
-    background-position-x: 0%;
-    background-position-y: 0%; }
+    background: url(../img/sprite-social-logo.png); }
   footer .social-block-bottom .gaijin .logo {
     background-position: -1px -44px;
     margin-top: 10px;
