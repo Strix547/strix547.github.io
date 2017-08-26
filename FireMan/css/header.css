@@ -44,7 +44,6 @@ table {
 body {
   font-family: "PTSansBold";
   font-size: 14px;
-  box-sizing: padding-box;
   background: url("../img/background.png") no-repeat 50% 0 #d1d1d1; }
 
 h3 {
@@ -199,12 +198,28 @@ header {
         header nav .first-level li a:hover {
           color: #78b9f4; }
     header nav .second-level {
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
       height: 65px;
       background-color: #e5e8e8; }
+      header nav .second-level li:first-child {
+        width: 16%; }
+      header nav .second-level li:nth-child(2) {
+        width: 11%; }
+      header nav .second-level li:nth-child(3) {
+        width: 11%; }
+      header nav .second-level li:nth-child(4) {
+        width: 11%; }
+      header nav .second-level li:nth-child(5) {
+        width: 12%; }
+      header nav .second-level li:nth-child(6) {
+        width: 10%; }
+      header nav .second-level li:nth-child(7) {
+        width: 15%; }
+      header nav .second-level li:nth-child(8) {
+        width: 14.5%; }
       header nav .second-level li:first-child a {
         padding-left: 93px; }
         header nav .second-level li:first-child a::before {
@@ -245,7 +260,7 @@ header {
           background-repeat: no-repeat;
           margin-left: -42px; }
       header nav .second-level li:nth-child(8) a {
-        padding-right: 45px;
+        padding-right: 35px;
         padding-left: 61px; }
         header nav .second-level li:nth-child(8) a::before {
           background-image: url(../img/sprite.png);
@@ -257,6 +272,7 @@ header {
         height: 47px;
         background-color: #e5e8e8;
         padding: 18px 20px 0 50px;
+        padding-top: 18px;
         color: #acafb2;
         text-decoration: none;
         text-transform: uppercase; }

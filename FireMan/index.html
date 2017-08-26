@@ -2,17 +2,44 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FireMan</title>
-	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link href="css/slick.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/pushy.css">
 </head>
 <body>
 	<header>
 		<div id="wrapper">
 			<div class="top">
+				<nav class="pushy pushy-left">
+			    <div class="pushy-content">
+			        <ul>
+			            <!-- Submenu -->
+			            <li class="pushy-link"><a href="#">Главное</a></li>
+			            <li class="pushy-link"><a href="#">Россия</a></li>
+			            <li class="pushy-link"><a href="#">Мир</a></li>
+			            <li class="pushy-link"><a href="#">Бывший</a></li>
+			            <li class="pushy-link"><a href="#">Финансы</a></li>
+			            <li class="pushy-link"><a href="#">Бизнес</a></li>
+			            <li class="pushy-link"><a href="#">Силовые структуры</a></li>
+			            <li class="pushy-link"><a href="#">Наука</a></li>
+			            <li class="pushy-link"><a href="#">Техника</a></li>
+			            <li class="pushy-link"><a href="#">Культура</a></li>
+			            <li class="pushy-link"><a href="#">Спорт</a></li>
+			            <li class="pushy-link"><a href="#">Авто</a></li>
+			            <li class="pushy-link"><a href="#">Интернет и СМИ</a></li>
+			            <li class="pushy-link"><a href="#">Ценности</a></li>
+			            <li class="pushy-link"><a href="#">Путешествия</a></li>
+						<li class="pushy-link"><a href="#">Из жизни</a></li>
+						<li class="pushy-link"><a href="#">Интернет</a></li>
+			        </ul>
+			    </div>
+			</nav>
+			<button class="menu-btn">☰</button>
+			<div class="site-overlay"></div>
 				<div class="logo">
 					<a href="#"><img src="img/logo.png" alt="FireMan"></a>
 				</div>
@@ -479,6 +506,51 @@
 			<li><a href="#">Полезные ссылки</a></li>
 			<li><a href="#">Наша команда</a></li>
 		</ul>
+		<div class="social-block-bottom">
+
+			<a class="social-block-item gaijin" href="#">
+		        <span class="logo"></span>
+		        <span class="text">
+		            <span class="header">Присоединяйтесь</span><br>
+		            Более 15 000 000 игроков
+		        </span>
+		    </a>
+
+			<a class="social-block-item vk" href="#">
+		            <span class="logo"></span>
+
+		            <span class="text">
+		            <span class="header">Вконтакте</span><br>
+		            418 275 подписчиков
+		        </span>
+		    </a>
+		    
+		    <a class="social-block-item fb" href="#">
+		        <span class="logo"></span>
+
+		        <span class="text">
+		            <span class="header">Facebook</span><br>
+		            549 140 в сообществе
+		        </span>
+		    </a>
+
+		    <a class="social-block-item yt" href="#">
+		        <span class="logo"></span>
+
+		        <span class="text">
+		            <span class="header">Youtube</span><br>
+		            309 750 в сообществе
+		        </span>
+		    </a>
+		    <a class="social-block-item odn" href="#">
+		        <span class="logo"></span>
+
+		        <span class="text">
+		            <span class="header">Одноклассники</span><br>
+		            309 750 в сообществе
+		        </span>
+		    </a>
+		</div>
 		<div class="bottom">
 			<div class="left">
 				<p>Copyright © 2016 -<br>Клуб пожарных и спасателей</p>
@@ -507,6 +579,7 @@
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/pushy.min.js"></script>
 	<script>
 		$('.single-item').slick();
 	</script>

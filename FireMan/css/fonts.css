@@ -32,6 +32,13 @@
 }
 
 @font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/Roboto-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
 	font-family: "AgpalatianRoman";
 	src: url("../fonts/AgpalatianRoman.ttf");
 	font-style: normal;
