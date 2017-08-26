@@ -441,7 +441,7 @@
 	
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
 	header .top .menu-btn {
 		left: 10px;
 	}
