@@ -1,46 +1,55 @@
 @font-face {
-	font-family: "PTSansRegular";
-	src: url("../fonts/PTSansRegular.ttf");
-	font-style: normal;
+	font-family: 'AgpalatianRoman';
+	src: url('../fonts/AgpalatianRoman.eot');
+	src: local('☺'), url('../fonts/AgpalatianRoman.woff') format('woff'), url('fonts/AgpalatianRoman.ttf') format('truetype'), url('fonts/AgpalatianRoman.svg') format('svg');
 	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: "PTSansBold";
-	src: url("../fonts/PTSansBold.ttf");
-	font-style: normal;
+	font-family: 'MuseoSansCyrl300';
+	src: url('../fonts/MuseoSansCyrl300.eot');
+	src: local('☺'), url('../fonts/MuseoSansCyrl300.woff') format('woff'), url('fonts/MuseoSansCyrl300.ttf') format('truetype'), url('fonts/MuseoSansCyrl300.svg') format('svg');
 	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: "MuseoSansCyrl700";
-	src: url("../fonts/MuseoSansCyrl700.ttf");
-	font-style: normal;
+	font-family: 'MuseoSansCyrl500';
+	src: url('../fonts/MuseoSansCyrl500.eot');
+	src: local('☺'), url('../fonts/MuseoSansCyrl500.woff') format('woff'), url('fonts/MuseoSansCyrl500.ttf') format('truetype'), url('fonts/MuseoSansCyrl500.svg') format('svg');
 	font-weight: normal;
-}
-@font-face {
-	font-family: "MuseoSansCyrl500";
-	src: url("../fonts/MuseoSansCyrl500.ttf");
 	font-style: normal;
-	font-weight: normal;
-}
-@font-face {
-	font-family: "MuseoSansCyrl300";
-	src: url("../fonts/MuseoSansCyrl300.ttf");
-	font-style: normal;
-	font-weight: normal;
 }
 
 @font-face {
-	font-family: "RobotoRegular";
-	src: url("../fonts/Roboto-Regular.ttf");
-	font-style: normal;
+	font-family: 'MuseoSansCyrl700';
+	src: url('../fonts/MuseoSansCyrl700.eot');
+	src: local('☺'), url('../fonts/MuseoSansCyrl700.woff') format('woff'), url('fonts/MuseoSansCyrl700.ttf') format('truetype'), url('fonts/MuseoSansCyrl700.svg') format('svg');
 	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: "AgpalatianRoman";
-	src: url("../fonts/AgpalatianRoman.ttf");
-	font-style: normal;
+	font-family: 'PTSansBold';
+	src: url('../fonts/PTSansBold.eot');
+	src: local('☺'), url('../fonts/PTSansBold.woff') format('woff'), url('fonts/PTSansBold.ttf') format('truetype'), url('fonts/PTSansBold.svg') format('svg');
 	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTSansRegular';
+	src: url('../fonts/PTSansRegular.eot');
+	src: local('☺'), url('../fonts/PTSansRegular.woff') format('woff'), url('fonts/PTSansRegular.ttf') format('truetype'), url('fonts/PTSansRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RobotoRegular';
+	src: url('../fonts/Roboto-Regular.eot');
+	src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'), url('fonts/Roboto-Regular.ttf') format('truetype'), url('fonts/Roboto-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
