@@ -37,6 +37,12 @@ q:before, q:after {
   content: '';
   content: none; }
 
+:focus  {
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -56,7 +62,7 @@ h3 {
   display: none;
 }
 
-#wrapper {
+.wrapper {
   padding: 0 45px;
   margin: 0 auto;
   position: relative;
@@ -625,6 +631,7 @@ header {
         #content .block-1 .most-popular .news img {
           width: 135px;
           height: 79px;
+          float: left;
           display: inline-block;
           margin-right: 11px; }
         #content .block-1 .most-popular .news p {
@@ -643,6 +650,7 @@ header {
           text-decoration: none; }
     #content .block-1 aside {
       float: right;
+      width: 348px;
       padding-bottom: 129px;
       border: 1px solid #c8cdd1;
       border-top: none; }
@@ -755,6 +763,7 @@ header {
         #content .block-1 aside .subscribe img {
           width: 70px;
           height: 59px;
+          float: left;
           margin-right: 23px;
           display: inline-block; }
         #content .block-1 aside .subscribe p {
@@ -887,6 +896,7 @@ header {
           width: 135px;
           height: 56px;
           margin-top: 9px;
+          float: left;
           display: inline-block;
           margin-right: 18px; }
         #content .block-2 .calendar .event p {
@@ -958,6 +968,9 @@ header {
       #content .block-2 .qa h3 {
         float: left;
         display: inline-block; }
+      .slick-slide:focus {
+        border: none;
+      }
       #content .block-2 .qa .slider {
         clear: both;
         width: 320px;
@@ -1202,6 +1215,7 @@ header {
           text-decoration: none; }
   #content .block-3 > .right {
     float: right;
+    width: 635px;
     position: relative;
     margin-top: 22px;
     padding-left: 17px;
@@ -1237,6 +1251,7 @@ header {
         #content .block-3 > .right .last-articles .article .img img {
           width: 230px;
           height: 120px;
+          float: left;
           margin-right: 31px; }
         #content .block-3 > .right .last-articles .article .right span {
           font-family: "PTSansRegular";
@@ -1693,7 +1708,7 @@ footer .social-block-bottom .insta .logo {
   height: 22px;
   margin-top: 11px;
   background: url(../img/sprite.png);
-  background-position: -26px -453px;
+  background-position: -26px -455px;
   background-repeat: no-repeat;
 }
 footer .social-block-bottom .social-block-item .text {
@@ -1751,7 +1766,7 @@ footer .bottom {
       height: 24px;
       margin-right: 4px;
       background-image: url(../img/sprite.png);
-      background-position: 0 -618px;
+      background-position: 0 -619px;
       background-repeat: no-repeat; }
     footer .bottom .social a:nth-child(2) {
       display: inline-block;
@@ -1759,7 +1774,7 @@ footer .bottom {
       height: 24px;
       margin-right: 4px;
       background-image: url(../img/sprite.png);
-      background-position: -28px -618px;
+      background-position: -28px -619px;
       background-repeat: no-repeat; }
     footer .bottom .social a:nth-child(3) {
       display: inline-block;
@@ -1767,7 +1782,7 @@ footer .bottom {
       height: 24px;
       margin-right: 4px;
       background-image: url(../img/sprite.png);
-      background-position: -100px -618px;
+      background-position: -100px -619px;
       background-repeat: no-repeat; }
     footer .bottom .social a:nth-child(4) {
       display: inline-block;
@@ -1775,7 +1790,7 @@ footer .bottom {
       height: 24px;
       margin-right: 4px;
       background-image: url(../img/sprite.png);
-      background-position: -165px -618px;
+      background-position: -165px -619px;
       background-repeat: no-repeat; }
     footer .bottom .social a:nth-child(5) {
       display: inline-block;
@@ -1783,7 +1798,7 @@ footer .bottom {
       height: 24px;
       margin-right: 4px;
       background-image: url(../img/sprite.png);
-      background-position: -230px -618px;
+      background-position: -230px -619px;
       background-repeat: no-repeat; }
 footer .bottom > p {
   padding-top: 35px;

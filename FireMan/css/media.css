@@ -2,7 +2,7 @@
 	#content {
 		width: 100%;
 	}
-	#content #wrapper {
+	#content .wrapper {
 		padding: 0;
 	}
 	header {
@@ -242,7 +242,7 @@
 }
 
 @media screen and (max-width: 920px) {
-	#content #wrapper {
+	#content .wrapper {
 		padding: 0;
 	}
 	footer .social-block-bottom {
@@ -455,7 +455,7 @@
 	#content .block-3 {
 		position: static;
 	}
-	#content #wrapper {
+	#content .wrapper {
     	padding-top: 600px;
 	}
 	#content .block-3 .left .news > a {
@@ -692,7 +692,7 @@
 	#content .block-3 .left .news .new {
 	    height: 93px;
 	}
-	#content #wrapper {
+	#content .wrapper {
 	    padding-top: 648px;
 	}
 	#content .block-2 .qa > a {

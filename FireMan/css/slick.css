@@ -18,6 +18,12 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+:focus {
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+}
+
 .slick-list
 {
     position: relative;
@@ -80,6 +86,7 @@
     height: 100%;
     min-height: 1px;
 }
+
 [dir='rtl'] .slick-slide
 {
     float: right;
@@ -115,3 +122,4 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
