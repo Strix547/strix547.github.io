@@ -141,9 +141,6 @@
 	#content .bottom-menu li {
 	    padding-top: 0;
 	}
-	footer .social-block-bottom {
-	    display: none;
-	}
 	footer .bottom .social {
 	    display: block;
 	    margin-top: 20px;
@@ -238,11 +235,24 @@
   	}
 }
 
+@media screen and (max-width: 1050px) {
+	footer .social-block-bottom {
+	    font-size: 12px;
+	}
+}
+
 @media screen and (max-width: 920px) {
 	#content #wrapper {
 		padding: 0;
 	}
+	footer .social-block-bottom {
+	    font-size: 11px;
+	}
+	footer .social-block-bottom .social-block-item .logo {
+	    margin: 12px 5px 0;
+	}
 }
+
 
 @media screen and (max-width: 820px) {
 	#content .block-1 .left-menu {
@@ -328,6 +338,14 @@
 	#content .block-1 .most-popular {
 		max-width: 90%;
 	    margin-left: 0;
+	}
+	footer .social-block-bottom .social-block-item .text {
+	    display: none;
+	}
+	footer .social-block-bottom .social-block-item .logo {
+	    margin: 0 auto;
+	    float: none;
+	    margin-top: 16px;
 	}
 }
 
@@ -495,7 +513,11 @@
 	footer .menu li {
 		margin-right: 20px;
 	}
-	#content .block-2 .ask-question input[type="email"]::placeholder {
+	#content .block-2 .ask-question input[type="email"]::-webkit-input-placeholder {
+	    font-size: 11px;
+	}
+	#content .block-2 .ask-question input[type="email"]:-moz-placeholder,
+	#content .block-2 .ask-question input[type="email"]::-moz-placeholder {
 	    font-size: 11px;
 	}
 	#content .bottom-menu li:nth-child(4) a::before {
@@ -506,7 +528,11 @@
 	}
 }
 @media screen and (max-width: 480px) {
-	#content .block-2 .ask-question input[type="email"]::placeholder {
+	#content .block-2 .ask-question input[type="email"]::-webkit-input-placeholder {
+	    font-size: 10px;
+	}
+	#content .block-2 .ask-question input[type="email"]:-moz-placeholder,
+	#content .block-2 .ask-question input[type="email"]::-moz-placeholder {
 	    font-size: 10px;
 	}
 	#content .block-3 .left {

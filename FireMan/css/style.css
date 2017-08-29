@@ -333,7 +333,7 @@ header {
           position: fixed;
           background-color: #d4e9fc;
           right: -20px;
-          webkit-transform: translate3d(160px, 0, 0);
+          -webkit-transform: translate3d(160px, 0, 0);
           -ms-transform: translate3d(160px, 0, 0);
           transform: translate3d(160px, 0, 0);
           transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
@@ -351,7 +351,7 @@ header {
           animation: fade 500ms;
         }
         .pushy-content2.active {
-          webkit-transform: translate3d(-20px, 0, 0);
+          -webkit-transform: translate3d(-20px, 0, 0);
           -ms-transform: translate3d(-20px, 0, 0);
           transform: translate3d(-20px, 0, 0);
         }
@@ -471,7 +471,7 @@ header {
           background-position: 0 -365px;
           background-repeat: no-repeat; }
           .pushy-content2 {
-          width: 180px;
+          width: auto;
           height: 100%;
           overflow: auto;
           top: 0;
@@ -479,7 +479,7 @@ header {
           position: fixed;
           background-color: #d4e9fc;
           right: -20px;
-          webkit-transform: translate3d(160px, 0, 0);
+          -webkit-transform: translate3d(160px, 0, 0);
           -ms-transform: translate3d(160px, 0, 0);
           transform: translate3d(160px, 0, 0);
           transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
@@ -1669,7 +1669,7 @@ footer .social-block-bottom {
   font-family: "RobotoRegular"; 
 }
 footer .social-block-bottom .insta {
-  background-color: #37474f; 
+  background-color: #5541d6; 
 }
 footer .social-block-bottom .social-block-item {
   width: 20%;
@@ -1688,9 +1688,13 @@ footer .social-block-bottom .social-block-item .logo {
   height: 21px;
   background: url(../img/sprite-social-logo.png); 
 }
-footer .social-block-bottom .insta img {
-  float: left;
-  margin: 10px 10px 0 10px; 
+footer .social-block-bottom .insta .logo {
+  width: 22px;
+  height: 22px;
+  margin-top: 11px;
+  background: url(../img/sprite.png);
+  background-position: -26px -453px;
+  background-repeat: no-repeat;
 }
 footer .social-block-bottom .social-block-item .text {
   float: left;
