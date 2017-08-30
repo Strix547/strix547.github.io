@@ -37,6 +37,31 @@ q:before, q:after {
   content: '';
   content: none; }
 
+    .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    }
+     
+    .clearfix {
+    display: inline-block;
+    }
+     
+    * html .clearfix { zoom: 1; } /* IE6 */
+    *+html .clearfix { zoom: 1; } /* IE7 */
+     
+    html[xmlns] .clearfix {
+    display: block;
+    }
+     
+    * html .clearfix {
+    height: 1%;
+    }
+
+
 :focus  {
     outline-style: none;
     outline-width: 0px !important;
@@ -649,11 +674,11 @@ header {
         #content .block-1 .most-popular a:last-of-type:hover {
           text-decoration: none; }
     #content .block-1 aside {
-      float: right;
-      width: 348px;
-      padding-bottom: 129px;
-      border: 1px solid #c8cdd1;
-      border-top: none; }
+      position: absolute;
+      top: 0;
+      right: 45px;
+      padding-bottom: 136px;
+      border: 1px solid #c8cdd1; }
       #content .block-1 aside h3 {
         padding-top: 7px; }
       #content .block-1 aside .discussing span {
@@ -1069,6 +1094,7 @@ header {
       border-radius: 5px; }
   #content .block-3 {
     position: relative;
+    width: 100%;
     z-index: 1;
     margin-bottom: 42px; }
     #content .block-3 .left {
@@ -1215,11 +1241,10 @@ header {
           text-decoration: none; }
   #content .block-3 > .right {
     float: right;
-    width: 635px;
     position: relative;
     margin-top: 22px;
     padding-left: 17px;
-    padding-bottom: 13px;
+    padding-bottom: 14px;
     z-index: 2;
     border-bottom: 1px solid #c8cdd1; }
     #content .block-3 > .right .last-articles {

@@ -1,4 +1,7 @@
 @media screen and (max-width: 1260px) {
+	.clearfix {
+		display: block;
+	}
 	#content {
 		width: 100%;
 	}
@@ -47,6 +50,7 @@
 	   	border-top: 1px solid #c8cdd1;
 	}
 	#content .block-1 aside {
+		right: 0;
 	    float: none;
 	    width: 820px;
 	    border: none;
