@@ -115,7 +115,8 @@
 	#content .block-2 .qa {
 	    margin: 0 auto;
 	}
-	#content .block-2 {
+	#content .block-2,
+	#content .block-3 {
 	    border-bottom: none;
 	}
 	#content .block-3 .left {
@@ -129,6 +130,7 @@
 	   float: none;
 	}
 	#content .block-3 > .right {
+	   width: auto;
 	   float: none;
 	   margin: 0 auto;
 	   border-bottom: none;

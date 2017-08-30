@@ -72,7 +72,6 @@ body {
   font-family: "PTSansBold";
   font-size: 14px;
   overflow-x: hidden;
-  transform: scale(N%);
   background: url("../img/background.png") no-repeat 50% 0 #d1d1d1; }
 
 h3 {
