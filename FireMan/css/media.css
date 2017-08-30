@@ -437,6 +437,7 @@
 	}
 	#content .block-3 .left .news .new a {
 	    padding-left: 16px;
+	    padding-top: 5px;
 	}
 	#content .block-3 .left .news .new {
 	    height: 78px;
@@ -455,8 +456,14 @@
 	#content .block-3 .left {
 		position: absolute;
 		top: 0;
-		left: 50%;
-		margin-left: -250px;
+		width: 100%;
+	}
+	#content .block-3 .left .main-new a:nth-child(5) {
+	    margin-right: 15px;
+	    width: 168px;
+	    height: 28px;
+	    line-height: 28px;
+	    bottom: 3px;
 	}
 	#content .block-3 {
 		position: static;
@@ -540,10 +547,6 @@
 	#content .block-2 .ask-question input[type="email"]:-moz-placeholder,
 	#content .block-2 .ask-question input[type="email"]::-moz-placeholder {
 	    font-size: 10px;
-	}
-	#content .block-3 .left {
-	    width: 465px;
-	    margin-left: -232px;
 	}
 	#content .block-3 .left .main-new {
 	    width: auto;
@@ -665,7 +668,6 @@
 	}
 	#content .block-3 .left {
 	    width: 100%;
-	    margin-left: -180px;
 	}
 	#content .block-3 .left .news .new a {
 	    width: 280px;
@@ -683,9 +685,6 @@
 }
 
 @media screen and (max-width: 320px) {
-	#content .block-3 .left {
-	    margin-left: -160px;
-	}
 	#content .block-3 .left .main-new .bottom {
 	    height: 148px;
 	}

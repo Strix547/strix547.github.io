@@ -1093,7 +1093,7 @@ header {
     width: 100%;
     z-index: 1;
     border-bottom: 1px solid #c8cdd1;
-    margin-bottom: 42px; }
+    margin-bottom: 20px; }
     #content .block-3 .left {
       width: 500px;
       float: left;
@@ -1346,7 +1346,6 @@ header {
   #content .bottom-menu {
     clear: both; }
     #content .bottom-menu li {
-      padding-top: 42px;
       display: inline-block;
       margin-left: -4px; }
       #content .bottom-menu li:first-child {
