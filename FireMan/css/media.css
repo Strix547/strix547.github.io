@@ -65,11 +65,6 @@
 	#content .block-1 aside span {
         font-size: 11px;
         position: static; }
-    #content .block-1 aside .day::before,
-    #content .block-1 aside .developments .time::before,
-    #content .block-1 aside .discussing .day::before {
-           top: auto;
-    }
 	#content .block-1 aside .day::before {
 		left: 35px;
 	}
@@ -373,6 +368,9 @@
 
 
 @media screen and (max-width: 642px) {
+	#content .block-3 .left .main-new {
+	    margin: 0 auto;
+	}
 	header .top .menu-btn2 {
 		display: block;
 	}
@@ -437,7 +435,7 @@
 	}
 	#content .block-3 .left .news .new a {
 	    padding-left: 16px;
-	    padding-top: 5px;
+	    padding-top: 1px;
 	}
 	#content .block-3 .left .news .new {
 	    height: 78px;

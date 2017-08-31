@@ -350,21 +350,6 @@ header {
           position: absolute;
           width: 30px;
           height: 30px; }
-
-         .pushy-content2 {
-          width: 180px;
-          height: 100%;
-          overflow: auto;
-          top: 0;
-          z-index: 10000;
-          position: fixed;
-          background-color: #d4e9fc;
-          right: -20px;
-          -webkit-transform: translate3d(160px, 0, 0);
-          -ms-transform: translate3d(160px, 0, 0);
-          transform: translate3d(160px, 0, 0);
-          transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
-        }
         .site-overlay.active {
           display: block !important;
           position: fixed;
@@ -506,9 +491,9 @@ header {
           position: fixed;
           background-color: #d4e9fc;
           right: -20px;
-          -webkit-transform: translate3d(160px, 0, 0);
-          -ms-transform: translate3d(160px, 0, 0);
-          transform: translate3d(160px, 0, 0);
+          -webkit-transform: translate3d(170px, 0, 0);
+          -ms-transform: translate3d(170px, 0, 0);
+          transform: translate3d(170px, 0, 0);
           transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
         }
         .pushy.active {
@@ -679,7 +664,7 @@ header {
         padding-top: 7px; }
       #content .block-1 aside .discussing span {
         display: inline-block;
-        margin-top: 4px;
+        margin-top: 6px;
     }
       #content .block-1 aside span {
         font-size: 11px;
@@ -687,32 +672,27 @@ header {
         #content .block-1 aside span:first-of-type {
           margin-right: 36px;
           margin-left: 21px; }
-        #content .block-1 aside .discussing .day::before {
-          top: 0px; }
       #content .block-1 aside .day::before {
         content: '';
         position: absolute;
         width: 22px;
         height: 22px;
         left: -22px;
-        margin-top: 0px;
-        top: 1px;
         background-image: url(../img/sprite.png);
         background-position: 0 -120px;
         background-repeat: no-repeat; }
-      #content .block-1 aside .developments .time::before {
-          top: 2px;
-      }
       #content .block-1 aside .time::before {
         content: '';
         position: absolute;
         width: 22px;
         height: 22px;
         margin-left: -29px;
-        margin-top: 0px;
         background-image: url(../img/sprite.png);
         background-position: -78px -120px;
         background-repeat: no-repeat; }
+      #content .block-1 aside .discussing span::before {
+        margin-top: -3px;
+      }
       #content .block-1 aside .developments {
         width: 270px;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
@@ -1415,7 +1395,7 @@ header {
           background-position: 0 -365px;
           background-repeat: no-repeat; }
   #content .blocks {
-    margin-top: 47px;
+    margin-top: 20px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1685,7 +1665,7 @@ footer .menu li a:hover {
 }
 
 footer .menu li .block {
-  width: 1131px;
+  width: 1111px;
   left: 45px;
   top: 33px;
   position: absolute;
