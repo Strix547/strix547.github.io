@@ -1,0 +1,22 @@
+.form-control-static {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+h3.form-section {
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+
+label.control-label {
+	color: #949494;
+}
+
+.btn-primary {
+	width: 154px;
+	height: 30px;
+	float: right;
+	margin-top: -5px;
+	line-height: 30px;
+	padding: 0 !important;
+}

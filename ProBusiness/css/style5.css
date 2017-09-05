@@ -1,0 +1,149 @@
+.page-header-top li:nth-child(2) a {
+	border-left: none;
+}
+
+.page-container p.font-dark-grey {
+	font-size: 18px;
+	color: #747474;
+}
+
+.page-container .input-large {
+	width: 374px;
+	float: right;
+}
+
+.form-body .top-line {
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 15px;
+}
+
+.form-body .top-line .btn-link {
+	color: #505050;
+	font-size: 12px;
+}
+
+.form-body .top-line .grey-mint {
+	width: 114px;
+	height: 29px;
+	padding-top: 0;
+	line-height: 0;
+	padding-bottom: 0;
+	background-color: #555557;
+}
+.form-body .top-line .btn-success {
+	width: 139px;
+	height: 29px;
+	font-size: 12px;
+	line-height: 29px;
+	padding-top: 0;
+	padding-left: 15px;
+	padding-bottom: 0;
+	float: right;
+	background-color: #4db3a4;
+}
+.table td {
+    font-size: 13px;
+}
+
+.table thead tr th {
+    font-size: 11px;
+    color: #7f7f7f;
+    font-weight: 400;
+}
+
+table.dataTable thead th {
+    border-bottom: none;
+}
+
+.portlet.light {
+    padding: 12px 12px 15px 12px;
+    background-color: #fff;
+}
+
+.table-scrollable {
+    border: none;
+}
+
+.table > tbody > tr > td {
+	border-top: 0;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #f4f6f7;
+}
+
+.label-success {
+    background-color: #4db3a4;
+}
+
+.label-warning {
+    background-color: #eba700;
+}
+
+.label-danger {
+    background-color: #f06262;
+}
+
+.label-default {
+    background-color: #9f9f9f;
+}
+
+.btn.green:focus:not(.btn-outline), .btn.green.focus:not(.btn-outline) {
+    color: #282626;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn.green:not(.btn-outline) {
+    color: #282626;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn.green:hover:not(.btn-outline) {
+    color: #282626;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn.green:hover:not(.btn-outline) {
+    color: #282626;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn.green:active:not(.btn-outline) {
+    color: #282626;
+    background-color: transparent;
+    border-color: transparent;
+}
+.dropdown-menu {
+    border-bottom: 1px solid #e0dede;
+}
+
+.input-medium {
+	width: 261px !important;
+	border-radius: 0;
+}
+.form-inline .form-control {
+	margin-top: 10px;
+    vertical-align: top;
+}
+.pagination {
+    margin-left: 270px;
+    border-radius: 0;
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.pagination > li > a, .pagination > li > span {
+	font-size: 13px;
+	color: #555557;
+}

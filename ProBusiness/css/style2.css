@@ -1,0 +1,50 @@
+.page-wrapper .page-wrapper-middle {
+	background-color: #f4f4f4;
+}
+.page-header-top-menu li:nth-child(2) a  {
+	border-left: none;
+}
+
+.row:first-child .portlet {
+	margin-bottom: 0;
+}
+
+.top-line {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.top-line .btn-circle.grey-mint {
+	width: 106px;
+	height: 29px;
+	line-height: 29px;
+	padding-top: 0;
+	background-color: #555557;
+}
+
+.top-line .btn-circle.btn-link {
+	color: #555557;
+}
+
+.form-body input {
+	height: 44px;
+}
+
+.margin-top-5 {
+	margin-top: 5px;
+}
+
+.form-group.date.date-picker {
+	margin-top: 4px;
+}
+
+.date-in-input {
+	position: absolute;
+	top: 6px;
+	left: 0;
+	margin-left: 160px;
+}
+
+.bottom-add-application {
+	background-color: #bfcad1;
+}

@@ -1,0 +1,107 @@
+.page-wrapper .page-wrapper-middle {
+	background-color: #f4f4f4;
+}
+.bg-turquoise {
+	background-color: #4db3a4;
+}
+.font-turquoise {
+	color: #4db3a4;
+}
+.font-dark-grey {
+	color: #8b8b8b;
+}
+.page-header-top .btn {
+	width: 149px;
+	height: 29px;
+	line-height: 29px;
+	padding-top: 0;
+	padding-bottom: 0;
+	border: none;
+	margin-top: 25px;
+	margin-left: 175px;
+}
+.page-header-top .top-menu {
+	float: right;
+}
+.bg-orange {
+	background-color: #eba700;
+}
+
+.font-black {
+	color: #555557;
+}
+
+.font-orange {
+	color: #eba700;
+}
+
+.mt-element-step .step-thin .mt-step-content {
+    margin-top: 0;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.step-thin .mt-step-col {
+	width: 258px;
+}
+.mt-element-step .step-thin .mt-step-number {
+    font-size: 18px;
+    width: 41px;
+    height: 41px;
+    padding: 0;
+    line-height: 40px;
+    padding-left: 16px;
+}
+
+.step-thin .mt-step-col:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.step-thin .mt-step-col:nth-child(3) {
+	margin-right: 3px;
+}
+.step-thin .mt-step-col:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+h2 {
+	margin-bottom: 0;
+}
+
+.page-content .container .btn {
+	padding-top: 0;
+	padding-bottom: 22px;
+	padding-left: 0;
+}
+
+.dropzone-file-area {
+    border: 1px dashed #3d3d3d;
+}
+
+.bottom-add-application .btn {
+	padding: 0 !important;
+}
+
+#my-dropzone .btn {
+	width: 137px;
+	height: 33px;
+	line-height: 33px;
+	border: none;
+	padding: 0;
+	color: #ffffff;
+	background-color: #bfcad1;
+	cursor: pointer;
+}
+
+h4 {
+	color: #000;
+}
+
+.mt-content-body ul {
+	padding-left: 13px;
+}
+
+.list li {
+	margin-top: 22px;
+}
