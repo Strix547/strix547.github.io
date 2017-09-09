@@ -1,0 +1,32 @@
+@media screen and (max-width: 1400px) {
+	#sample_4_paginate {
+		float: right;
+	}
+	.pagination {
+	    margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	#sample_4_paginate {
+		float: none;
+	}
+}
+@media screen and (max-width: 530px) {
+	.mt-content-body {
+		margin-top: 80px;
+	}
+	.page-container .input-large {
+	    width: 374px;
+	    float: left;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.form-body .top-line .btn-success {
+	    float: left;
+	}
+	.form-body .top-line {
+	    padding-bottom: 45px;
+	}
+}

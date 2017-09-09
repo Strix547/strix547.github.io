@@ -69,12 +69,14 @@ h2 {
 	margin-bottom: 0;
 }
 
-.page-content .container .btn {
-	padding-top: 0;
-	padding-bottom: 22px;
-	padding-left: 0;
+a.link {
+	display: block;
+	margin-bottom: 22px;
+	color: #000;
 }
-
+a.link:hover {
+	text-decoration: underline;
+}
 .dropzone-file-area {
     border: 1px dashed #3d3d3d;
 }

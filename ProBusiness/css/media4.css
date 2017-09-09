@@ -1,0 +1,12 @@
+@media screen and (max-width: 860px) {
+	a.link {
+		display: block;
+		margin-bottom: 20px;
+	}
+	.btn-primary {
+		float: left;
+	}
+	.portlet.light {
+	    margin-top: 40px;
+	}
+}

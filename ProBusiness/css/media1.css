@@ -1,0 +1,76 @@
+@media screen and (max-width: 1058px) {
+	.page-header .page-header-top .menu-toggler {
+	    display: none;
+	}
+	.page-header .page-header-top .page-logo {
+	    float: none;
+	    text-align: center;
+	    display: block;
+	    width: 100%;
+	    height: 75px;
+	}
+	.page-header-top-menu {
+	    float: left;
+	    margin-bottom: 0;
+	    padding-left: 0;
+	}
+	.page-header-top-menu li a {
+	    border-left: none;
+	}
+}
+@media screen and (max-width: 860px) {
+	.input-xxlarge {
+		width: 70% !important;
+	}
+}
+
+@media screen and (max-width: 821px) {
+	.page-header-top-menu {
+	    float: none;
+	    text-align: center;
+	}
+	.page-header {
+	    height: 200px;
+	}
+	.page-header-top-menu li.active a {
+	    background-color: #fff;
+	}
+	.page-header .page-header-top .top-menu {
+		display: block;
+		float: none;
+	    margin: 0 auto;
+	    text-align: center;
+	}
+	.pull-right {
+		float: none !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.row:nth-child(4) .form-body > a:last-child {
+	    margin-left: 0;
+	}
+	.page-header-top-menu li a {
+	    padding: 0 15px;
+	}
+}
+
+@media screen and (max-width: 466px) {
+	.page-header {
+	    height: 285px;
+	}
+	.input-xlarge {
+	    width: 90% !important;
+	}
+	.bottom-add-application .btn-success {
+	    width: 226px;
+	    height: 48px;
+	    line-height: 48px;
+	}
+}
+@media screen and (max-width: 374px) {
+	.mt-radio > .mt-radio {
+	    margin-left: -20px;
+	    margin-top: 10px;
+	}
+}

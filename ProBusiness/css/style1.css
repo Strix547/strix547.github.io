@@ -1,9 +1,19 @@
 body {
 	font-family: "RobotoRegular";
 }
-.container {
-	width: 1398px;
+.page-container {
+    clear: both;
+    padding: 0 20px;
 }
+.page-header {
+    height: 75px;
+    padding: 0 20px;
+}
+.container {
+    width: auto;
+    max-width: 1398px;
+}
+
 a:hover {
     color: #000;
 }
