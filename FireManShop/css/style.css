@@ -1171,7 +1171,11 @@ header .menu-btn span {
   margin-top: 30px;
   border: 1px solid #eeeeee;
   float: right;
+  cursor: pointer;
   position: relative;
+}
+#content .recomended:hover .name {
+  text-decoration: underline;
 }
 #content .recomended .share {
   width: 32px;
@@ -1198,12 +1202,13 @@ header .menu-btn span {
 #content .recomended img {
   display: block;
   margin: 0 auto;
-  margin-top: 68px;
+  margin-top: 60px;
 }
 #content .recomended .name {
   font-weight: 600;
   font-size: 16px;
   text-align: center;
+  line-height: 17px;
   color: #333333;
 }
 #content .recomended .cost {
@@ -1229,7 +1234,11 @@ header .menu-btn span {
   padding-bottom: 20px;
   float: left;
   margin-right: 30px;
+  cursor: pointer;
   border: 1px solid #eee;
+}
+#content .fire-ex .fire-ex-item:hover .name {
+  text-decoration: underline;
 }
 #content .fire-ex .fire-ex-item:last-child {
   margin-right: 0;
@@ -1495,6 +1504,7 @@ header .menu-btn span {
   font-family: "PTSansRegular";
   font-size: 25px;
   color: #fff;
+  font-weight: 400;
   padding-top: 34px;
   padding-left: 30px;
   padding-bottom: 0;
