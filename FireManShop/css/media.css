@@ -2,6 +2,12 @@
 	.wrapper {
 		padding: 0 20px;
 	}
+	#content .blocks {
+	    justify-content: space-around;
+	}
+	#content .blocks .block {
+	    margin-right: 0;
+	}
 	header .top input[type="search"] {
       width: 35%;
   	}
@@ -259,6 +265,9 @@
 	}
 	footer .menu li a {
 	    font-size: 14px;
+	}
+	#content .select-block .selector-city .select-city {
+	    border-right: none;
 	}
 }
 @media screen and (max-width: 660px) {

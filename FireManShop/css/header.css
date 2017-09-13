@@ -51,7 +51,6 @@ h3 {
 #mobile {
   display: none;
 }
-
 .wrapper {
   padding: 0 45px;
   margin: 0 auto;
@@ -61,7 +60,7 @@ h3 {
 
 header {
   max-width: 1260px;
-  height: 150px;
+  height: 110px;
   margin: 0 auto;
   position: relative;
   padding-bottom: 17px;
@@ -105,7 +104,9 @@ header {
     header .top .logo {
       display: inline-block;
       position: relative;
-      top: 12px; }
+      top: 14px; }
+      header .top .logo img {
+      width: 245px; }
     header .top input[type="search"] {
       width: 427px;
       height: 38px;
@@ -194,7 +195,7 @@ header {
     header .top .advertising {
       width: 92px;
       top: 32px;
-      right: 56px;
+      right: 62px;
       background-color: #339edd; }
       header .top .advertising::before {
         left: -1px; }
@@ -209,7 +210,7 @@ header {
         background-color: #fafafa; }
     header .top .bookmarks {
       width: 107px;
-      right: 0px;
+      right: 6px;
       background-color: #ff9203; }
   header nav {
     width: 100%; }

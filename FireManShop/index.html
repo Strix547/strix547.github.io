@@ -114,36 +114,36 @@
 			</div>
 			<div class="sort-cost clearfix">
                     <div class="market-filter-price">
-                        <input class="market-filter-checkbox market-filter-checkbox-all" checked="checked" type="checkbox">
+                        <input class="market-filter-checkbox market-filter-checkbox-all" id="market-filter-checkbox-price-all" checked="checked" type="checkbox">
                         <label for="market-filter-checkbox-price-all">Все цены</label>
                     </div>
                     <div class="market-filter-price">
-                        <input class="market-filter-checkbox market-filter-checkbox-price js_filter" type="checkbox">
+                        <input class="market-filter-checkbox market-filter-checkbox-price js_filter" type="checkbox" id="market-filter-checkbox-price-0">
                         <label for="market-filter-checkbox-price-0">
                                 До 2000 Р</label>
                     </div>
                     <div class="market-filter-price">
-                        <input class="market-filter-checkbox market-filter-checkbox-price js_filter" type="checkbox">
+                        <input class="market-filter-checkbox market-filter-checkbox-price js_filter" type="checkbox" id="market-filter-checkbox-price-1">
                         <label for="market-filter-checkbox-price-1">
                                 2 000 - 3 000 Р</label>
                     </div>
                     <div class="market-filter-price">
-                        <input class="market-filter-checkbox market-filter-checkbox-price js_filter" type="checkbox">
+                        <input class="market-filter-checkbox market-filter-checkbox-price js_filter" type="checkbox" id="market-filter-checkbox-price-2">
                         <label for="market-filter-checkbox-price-2">
                                 3 000 - 5 000 Р</label>
                     </div>
                     <div class="market-filter-price">
-                        <input class="market-filter-checkbox market-filter-checkbox-price js_filter" type="checkbox">
+                        <input class="market-filter-checkbox market-filter-checkbox-price js_filter" type="checkbox" id="market-filter-checkbox-price-3">
                         <label for="market-filter-checkbox-price-3">
                                 До 2000 Р                            </label>
                     </div>
                     <div class="market-filter-price">
-                        <input class="market-filter-checkbox market-filter-checkbox-price js_filter" type="checkbox">
+                        <input class="market-filter-checkbox market-filter-checkbox-price js_filter" type="checkbox" id="market-filter-checkbox-price-4">
                         <label for="market-filter-checkbox-price-4">
                                 2 000 - 3 000 Р                            </label>
                     </div>
                     <div class="market-filter-price">
-                        <input class="market-filter-checkbox market-filter-checkbox-price js_filter" type="checkbox">
+                        <input class="market-filter-checkbox market-filter-checkbox-price js_filter" type="checkbox" id="market-filter-checkbox-price-5">
                         <label for="market-filter-checkbox-price-5">
                                 3 000 - 5 000 Р</label>
                     </div>    
@@ -318,7 +318,29 @@
 			</div>
 			<h2>Магазины в <span>Москве</span></h2>
 			<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAYpBTx_hm9cgDeYnak8xGZR8bP9r6vKZA"></script>
-			<div style='overflow:hidden;height:300px;width:100%;'><div id='gmap_canvas' style='height:300px;width: 100%;padding-right: 45;'></div><div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div><div><small><a href="https://ph.paylesser.com/takatack-voucher">takatack smart</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(55.755826,37.617299900000035),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(55.755826,37.617299900000035)});infowindow = new google.maps.InfoWindow({content:'<strong>Название</strong><br>Moscow, Russia<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+			<div style='overflow:hidden;height:300px;width:100%;'>
+				<div id='gmap_canvas' style='height:300px;width: 100%;'></div>
+				<div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div>
+				<div><small><a href="https://ph.paylesser.com/takatack-voucher">takatack smart</a></small></div>
+			</div>
+			<script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(55.755826,37.617299900000035),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(55.755826,37.617299900000035)});infowindow = new google.maps.InfoWindow({content:'<strong>Название</strong><br>Moscow, Russia<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+			<div class="blocks">	
+				<div class="block block2">
+					<h2>Каталог организаций</h2>
+					<p>Полный список организаций</p>
+					<a href="#">Перейти в каталог</a>
+				</div>
+				<div class="block block1">
+					<h2>Консультация</h2>
+					<p>Помощь и консультация по любым вопросам</p>
+					<a href="#">Начать онлайн чат</a>
+				</div>
+				<div class="block block9">
+					<h2>Подписаться</h2>
+					<p>Подпишитесь на нашу рассылку, чтобы<br>быть в курсе банковских новостей</p>
+					<input type="email" placeholder="Ваш E-mail"><input value="Подписаться" type="submit">
+				</div>
+			</div>
 		</div>
 	</div>
 	<footer>

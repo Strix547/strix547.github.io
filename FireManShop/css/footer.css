@@ -124,7 +124,7 @@ footer .social-block-bottom .social-block-item {
 footer .social-block-bottom .social-block-item .logo {
   display: block;
   float: left;
-  margin: 18px 10px 0;
+  margin: 18px 10px 0 40px;
   margin-top: 18px;
   height: 21px;
   background: url(../img/sprite-social-logo.png); 
@@ -132,7 +132,7 @@ footer .social-block-bottom .social-block-item .logo {
 footer .social-block-bottom .insta .logo {
   width: 22px;
   height: 22px;
-  margin-top: 11px;
+  margin-top: 14px;
   background: url(../img/sprite.png);
   background-position: -26px -455px;
   background-repeat: no-repeat;
@@ -142,7 +142,7 @@ footer .social-block-bottom .social-block-item .text {
   display: inline-block;
   line-height: 1;
   color: #fff;
-  padding: 10px 5px 0 0; 
+  padding: 14px 5px 0 0; 
 }
 footer .social-block-bottom .social-block-item .header {
   text-transform: uppercase; 
@@ -152,14 +152,14 @@ footer .social-block-bottom .vk {
 }
 footer .social-block-bottom .vk .logo {
   background-position: -1px -78px;
-  margin-top: 12px;
+  margin-top: 15px;
   width: 17px; 
 }
 footer .social-block-bottom .fb {
   background-color: #34579b; }
 footer .social-block-bottom .fb .logo {
   background-position: -19px -78px;
-  margin-top: 12px;
+  margin-top: 15px;
   width: 11px; }
 footer .social-block-bottom .yt .logo {
   background-position: -1px 0;
@@ -169,7 +169,7 @@ footer .social-block-bottom .yt {
   background-color: #b41e1e; }
 footer .social-block-bottom .odn .logo {
   background: url(../img/odn.jpg) 5px no-repeat;
-  margin-top: 15px;
+  margin-top: 14px;
   width: 20px; }
 footer .social-block-bottom .odn {
   background-color: #ff8109; }
