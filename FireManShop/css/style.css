@@ -798,8 +798,50 @@ header .menu-btn span {
   background-position: 0 0;
   background-repeat: no-repeat;
 }
+#content .left-menu li:first-child .submenu {
+  top: 0;
+}
+#content .left-menu li:first-child .submenu li:nth-child(1) a::before {
+  background-position: 0 0;
+}
+#content .left-menu li:first-child .submenu li:nth-child(1) a:hover::before {
+  background-position: 0 -39px;
+}
+#content .left-menu li:first-child .submenu li:nth-child(2) a::before {
+  margin-top: -3px;
+  background-position: 0 0;
+}
+#content .left-menu li:first-child .submenu li:nth-child(2) a:hover::before {
+  background-position: 0 -39px;
+}
+#content .left-menu li:first-child .submenu li:nth-child(3) a::before {
+  background-position: 0 0;
+}
+#content .left-menu li:first-child .submenu li:nth-child(3) a:hover::before {
+  background-position: 0 -39px;
+}
+#content .left-menu li:first-child .submenu li a {
+  border-top: 0;
+}
+#content .left-menu li:first-child:hover > .submenu {
+  z-index: 1000;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
 #content .left-menu li:first-child a::before {
   margin-top: -3px;
+}
+#content .left-menu li:nth-child(1) a::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/sprite2.png);
+  background-position: -30px -85px;
+  background-repeat: no-repeat;
+  margin-top: 3px;
+  right: 0px;
 }
 #content .left-menu li:first-child a:hover::before {
   margin-top: -3px;
@@ -1004,7 +1046,7 @@ header .menu-btn span {
   margin-top: 3px;
   right: 0px;
 }
-#content .left-menu li:nth-child(17):hover .submenu {
+#content .left-menu li:nth-child(17):hover > .submenu {
   z-index: 1;
   opacity: 1;
   -webkit-transition: 0.3s;
