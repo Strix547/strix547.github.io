@@ -11,7 +11,9 @@
 	header .top input[type="search"] {
       width: 35%;
   	}
-
+	footer .social-block-bottom .social-block-item .logo {
+	    margin: 18px 10px 0 20px;
+	}
 	footer .bottom .social {
 	    display: block;
 	    margin-top: 20px;
@@ -312,6 +314,9 @@
 	#content .select-block .selector-city .select-city {
 	    width: 100%;
 	}
+	#content .select-block .selector-city .selector-not-have-address {
+	    top: 25px;
+	}
 }
 @media screen and (max-width: 540px) {
 	footer .menu {
@@ -355,17 +360,28 @@
 	   	text-align: center;
 	   	padding-left: 0;
 	}
-	#content .top-line .other-projects {
-		width: 101.5%;
+	header .menu-btn {
+	    top: 43px;
+	}
+	#content .top-line .other-projects-sub {
+		width: 100%;
 		text-align: center;
 	    padding-left: 0;
-	    margin-left: -5px;
 	}
-	#content .top-line .other-projects::after {
+	#content .top-line .other-projects-sub::after {
 		margin-left: 10px;
+	}
+	#content .top-line .projects .other-projects {
+		width: 324px;
+		margin-left: 0;
+		padding-left: 0;
 	}
 	#content .select-block h3 {
 	    padding-top: 10px;
+	}
+	#content .blocks .block:nth-child(3) input[type="email"] {
+	    width: 155px;
+	    padding-left: 10px;
 	}
 }
 @media screen and (max-width: 320px) {

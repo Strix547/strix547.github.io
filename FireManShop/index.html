@@ -77,7 +77,15 @@
 				<div class="left">
 					<p>Интернет-магазин</p>
 				</div>
-				<a class="other-projects" href="#">Другие проекты</a>	
+				<div class="other-projects-sub" href="#">
+					Другие проекты
+					<div class="projects">
+						<a class="other-projects" href="#">Другой проект</a>
+						<a class="other-projects" href="#">Другой проект</a>
+						<a class="other-projects" href="#">Другой проект</a>
+					</div>
+				</div>
+				
 				<div class="right">
 					<div class="left-side">
 						<p>+7 (800) 000 00 00</p>
@@ -203,6 +211,13 @@
 			</div>
 			<div class="recomended">
 				<a href="#" class="share"></a>
+			    <div class="share-social">
+			        <a href="#" class="social-amp social-colored-fb"></a>
+				    <a href="#" class="social-amp social-colored-vk"></a>
+				    <a href="#" class="social-amp social-colored-ok"></a>
+				    <a href="#" class="social-amp social-colored-in"></a>
+				    <a href="#" class="social-amp social-colored-tw"></a>
+				</div>
 				<div class="header">Рекомендуем</div>
 				<img src="img/fire-extinguisher2.jpg" alt="Огнетушитель углекислотный">
 				<p class="name">Огнетушитель
@@ -461,6 +476,14 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script>
+		$(".share").click(function(e){
+		   	e.preventDefault();
+		  	$(".share-social").toggleClass("active");
+		});
+		$(".other-projects-sub").click(function(e){
+		   	e.preventDefault();
+		  	$(".projects").toggleClass("active");
+		});
 		$('.owl-carousel').owlCarousel({
 		    loop:true,
 		    margin:10,
