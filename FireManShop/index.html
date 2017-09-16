@@ -16,39 +16,45 @@
 		<div class="wrapper">
 			<div class="top">
 				<nav class="pushy pushy-left">
-				    <div class="pushy-content">
-				        <ul class="left-menu">
-				            <li><a href="#">Пожарные двери EI60</a></li>
-							<li><a href="#">Пожарные шкафы</a></li>
-							<li><a href="#">Огнетушители</a></li>
-							<li><a href="#">Щиты и стенды
-							пожарные</a></li>
-							<li><a href="#">Ящики для песка</a></li>
-							<li><a href="#">Рукава пожарные</a></li>
-							<li><a href="#">Головки пожарные</a></li>
-							<li><a href="#">Стволы пожарные</a></li>
-							<li><a href="#">Водопенное
-							оборудование</a></li>
-							<li><a href="#">Клапаны пожарные</a></li>
-							<li><a href="#">Гидранты</a></li>
-							<li><a href="#">Подставки под
-							гидрант</a></li>
-							<li><a href="#">Средства
-							индивидуальной
-							защиты</a></li>
-							<li><a href="#">Пожарный инвентарь</a></li>
-							<li><a href="#">Лестницы пожарные</a></li>
-							<li><a href="#">Планы и знаки
-							пожарной
-							безопасности</a></li>
-							<li><a href="#">Огнезащитная краска</a></li>
-							<li><a href="#">Муфты
-							противопожарные</a></li>
-							<li><a href="#">Парковочные барьеры</a></li>
-							<li><a href="#">Шкаф
-							внутриквартирный</a></li>
-				        </ul>
-				    </div>   
+				       <ul class="left-menu">
+				           <li>
+					           	<a href="#" class="submenu">Пожарные двери EI60</a>
+					           	<div class="second-menu">
+					           		<a href="#" class="close">Назад</a>
+					           		<a href="#">Предел IE 30</a>
+					           		<a href="#">Предел IE 60</a>
+					           		<a href="#">Предел IE 120</a>
+					           	</div>
+				           </li>
+						<li><a href="#">Пожарные шкафы</a></li>
+						<li><a href="#">Огнетушители</a></li>
+						<li><a href="#">Щиты и стенды
+						пожарные</a></li>
+						<li><a href="#">Ящики для песка</a></li>
+						<li><a href="#">Рукава пожарные</a></li>
+						<li><a href="#">Головки пожарные</a></li>
+						<li><a href="#">Стволы пожарные</a></li>
+						<li><a href="#">Водопенное
+						оборудование</a></li>
+						<li><a href="#">Клапаны пожарные</a></li>
+						<li><a href="#">Гидранты</a></li>
+						<li><a href="#">Подставки под
+						гидрант</a></li>
+						<li><a href="#">Средства
+						индивидуальной
+						защиты</a></li>
+						<li><a href="#">Пожарный инвентарь</a></li>
+						<li><a href="#">Лестницы пожарные</a></li>
+						<li><a href="#">Планы и знаки
+						пожарной
+						безопасности</a></li>
+						<li><a href="#">Огнезащитная краска</a></li>
+						<li><a href="#">Муфты
+						противопожарные</a></li>
+						<li><a href="#">Парковочные барьеры</a></li>
+						<li><a href="#">Шкаф
+						внутриквартирный</a></li>
+				       </ul>
 				</nav>
 				<div class="logo">
 					<a href="#"><img src="img/logo.png" alt="FireMan"></a>
@@ -464,6 +470,14 @@
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
+	$(".submenu").click(function(e) {
+	  e.preventDefault();
+	  $(".second-menu").addClass('active');
+	});
+	$(".close").click(function(e) {
+	  e.preventDefault();
+	  $(".second-menu").removeClass('active');
+	});
 	$(".menu-btn").click(function(e) {
 	  e.preventDefault();
 	  $(".pushy,.site-overlay").addClass('active');

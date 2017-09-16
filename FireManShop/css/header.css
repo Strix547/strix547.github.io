@@ -104,7 +104,7 @@ header {
     header .top .logo {
       display: inline-block;
       position: relative;
-      top: 14px; }
+      top: 20px; }
       header .top .logo img {
       width: 222px; }
     header .top input[type="search"] {
@@ -214,109 +214,3 @@ header {
       background-color: #ff9203; }
   header nav {
     width: 100%; }
-    header nav .first-level {
-      height: 45px;
-      line-height: 45px;
-      padding: 0 45px;
-      background-color: #d4e9fc;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      header nav .first-level li a {
-        font-size: 15px;
-        color: #3072ad;
-        text-decoration: none;
-        text-transform: uppercase; }
-        header nav .first-level li a:hover {
-          color: #78b9f4; }
-    header nav .second-level {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      height: 65px;
-      background-color: #e5e8e8; }
-      header nav .second-level li:first-child {
-        width: 16%; }
-      header nav .second-level li:nth-child(2) {
-        width: 11%; }
-      header nav .second-level li:nth-child(3) {
-        width: 11%; }
-      header nav .second-level li:nth-child(4) {
-        width: 11%; }
-      header nav .second-level li:nth-child(5) {
-        width: 12%; }
-      header nav .second-level li:nth-child(6) {
-        width: 10%; }
-      header nav .second-level li:nth-child(7) {
-        width: 15%; }
-      header nav .second-level li:nth-child(8) {
-        width: 14.5%; }
-      header nav .second-level li:first-child a {
-        padding-left: 93px; }
-        header nav .second-level li:first-child a::before {
-          background-image: url(../img/sprite.png);
-          background-position: 0 -48px;
-          background-repeat: no-repeat;
-          margin-left: -48px; }
-      header nav .second-level li:nth-child(2) a::before {
-        background-image: url(../img/sprite.png);
-        background-position: -64px -48px;
-        background-repeat: no-repeat;
-        margin-left: -41px; }
-      header nav .second-level li:nth-child(3) a::before {
-        background-image: url(../img/sprite.png);
-        background-position: -140px -48px;
-        background-repeat: no-repeat;
-        margin-left: -41px; }
-      header nav .second-level li:nth-child(4) a::before {
-        background-image: url(../img/sprite.png);
-        background-position: -217px -48px;
-        background-repeat: no-repeat;
-        margin-left: -41px; }
-      header nav .second-level li:nth-child(5) a::before {
-        background-image: url(../img/sprite.png);
-        background-position: -285px -47px;
-        background-repeat: no-repeat;
-        margin-left: -41px; }
-      header nav .second-level li:nth-child(6) a::before {
-        background-image: url(../img/sprite.png);
-        background-position: -356px -48px;
-        background-repeat: no-repeat;
-        margin-left: -41px; }
-      header nav .second-level li:nth-child(7) a {
-        padding-left: 53px; }
-        header nav .second-level li:nth-child(7) a::before {
-          background-image: url(../img/sprite.png);
-          background-position: -421px -47px;
-          background-repeat: no-repeat;
-          margin-left: -42px; }
-      header nav .second-level li:nth-child(8) a {
-        padding-right: 35px;
-        padding-left: 61px; }
-        header nav .second-level li:nth-child(8) a::before {
-          background-image: url(../img/sprite.png);
-          background-position: -492px -48px;
-          background-repeat: no-repeat;
-          margin-left: -38px; }
-      header nav .second-level li a {
-        display: block;
-        height: 47px;
-        background-color: #e5e8e8;
-        padding: 18px 20px 0 50px;
-        padding-top: 18px;
-        color: #acafb2;
-        text-decoration: none;
-        text-transform: uppercase; }
-        header nav .second-level li a:hover {
-          background-color: #c5d5e6; }
-        header nav .second-level li a::before {
-          content: '';
-          position: absolute;
-          width: 30px;
-          height: 30px; }

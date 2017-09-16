@@ -152,11 +152,64 @@ header .left-menu li a::before {
 header .left-menu li:first-child a::before {
   margin-top: -3px;
 }
+header .left-menu li .second-menu {
+  position: fixed;
+  margin-top: 10px;
+  z-index: 100;
+  background: #f2f2f2;
+  -webkit-transform: translate3d(220px, 0, 0);
+  -ms-transform: translate3d(220px, 0, 0);
+  transform: translate3d(220px, 0, 0);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+          transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  top: 0;
+  height: 100%;
+}
+header .left-menu li .second-menu a:first-child::after {
+  display: none;
+}
+header .left-menu li .second-menu a:first-child::before {
+  background-position: -30px -85px;
+  margin-top: -17px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-left: -24px;
+}
+header .left-menu li .second-menu a:first-child:hover::before {
+  background-position: -30px -85px;
+  margin-top: -17px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-left: -24px;
+}
+header .left-menu li .second-menu a::after {
+  display: none;
+}
+header .left-menu li .second-menu.active {
+  -webkit-transform: translate3d(0px, 0, 0);
+  -ms-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+          transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
 header .left-menu li:first-child a:hover::before {
   margin-top: -3px;
   background-image: url(../img/sprite2.png);
   background-position: 0 -39px;
   background-repeat: no-repeat;
+}
+header .left-menu li:nth-child(1) a::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/sprite2.png);
+  background-position: -30px -85px;
+  background-repeat: no-repeat;
+  margin-top: 3px;
+  right: 5px;
 }
 header .left-menu li:nth-child(2) a::before {
   background-image: url(../img/sprite2.png);
@@ -1226,6 +1279,9 @@ header .menu-btn span {
   text-decoration: none;
   border: 0;
   margin-right: 6px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 #content .recomended .social-colored-fb {
   background-position: 0 0;

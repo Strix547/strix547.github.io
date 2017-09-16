@@ -372,7 +372,7 @@
 		margin-left: 10px;
 	}
 	#content .top-line .projects .other-projects {
-		width: 324px;
+		width: 320px;
 		margin-left: 0;
 		padding-left: 0;
 	}
@@ -385,6 +385,11 @@
 	}
 }
 @media screen and (max-width: 320px) {
+	#content .top-line .projects .other-projects {
+		width: 280px;
+		margin-left: 0;
+		padding-left: 0;
+	}
 	header .menu-btn {
 		left: 0px;
 	}
