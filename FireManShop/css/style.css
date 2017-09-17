@@ -1314,8 +1314,7 @@ header .menu-btn span {
 #content .recomended .social-colored-vk {
   display: inline-block;
   background: url(../img/social-color.png) no-repeat;
-  background-position-x: 0%;
-  background-position-y: 0%;
+  background-position: 0 0;
   width: 24px;
   height: 23px;
   text-decoration: none;
