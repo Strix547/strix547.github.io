@@ -56,10 +56,14 @@
 	    margin-top: 10px;
 	}
 }
-
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 487px) {
 	.page-header {
-	    height: 340px;
+	    height: 250px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.page-header {
+	    height: 344px;
 	}
 	.page-header-top .btn {
 		display: block;
