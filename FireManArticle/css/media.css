@@ -6,7 +6,7 @@
 		width: 100%;
 	}
 	#content .wrapper {
-		padding: 0;
+		padding: 0 10px;
 	}
 	header {
 		padding-bottom: 85px;
@@ -39,99 +39,6 @@
 
     #content .block-1 {
 	    border: none;
-	    text-align: center;
-	}
-	#content .block-1 .left-menu {
-	    float: none;
-	    display: inline-block;
-	   	position: relative;
-	   	bottom: 25px;
-	   	text-align: left;
-	   	border-top: 1px solid #c8cdd1;
-	}
-	#content .block-1 aside {
-		right: 0;
-	    float: none;
-	    width: 820px;
-	    border: none;
-	    margin: 0 auto;
-	    text-align: left;
-	    position: relative;
-	}
-	#content .block-1 .left {
-		float: none;
-		display: inline-block;
-	}
-	#content .block-1 aside span {
-        font-size: 11px;
-        position: static; }
-	#content .block-1 aside .day::before {
-		left: 35px;
-	}
-	#content .block-1 .most-popular {
-		float: none;
-		display: inline-block;
-		text-align: left;
-		border-top: 1px solid #c8cdd1;
-		border-right: 1px solid #c8cdd1;
-		margin-left: -4px;
-	}
-	#content .block-1 aside .developments {
-	    text-align: left;
-	    margin: 0;
-	    margin-bottom: 20px;
-	}
-	#content .block-1 aside .discussing {
-	    margin: 0;
-	    margin-bottom: 20px;
-	    text-align: left;
-	}
-	#content .block-1 aside .subscribe {
-		margin: 0;
-		width: 275px;
-	}
-	#content .block-1 aside .banners {
-	   margin: 0;
-       position: absolute;
-       right: 0;
-       top: 0;
-	}
-	#content .block-2 {
-		float: none;
-		margin: 0 auto;
-	}
-	#content .block-2 .calendar {
-	    margin: 21px auto 0 auto;
-	}
-	#content .block-2 .ask-question {
-		width: 769px;
-	    margin: 17px auto 0 auto;
-	}
-	#content .block-2 .qa {
-	    margin: 0 auto;
-	}
-	#content .block-2,
-	#content .block-3 {
-	    border-bottom: none;
-	}
-	#content .block-3 .left {
-	    border: none;
-	    float: none;
-	    margin: 25px auto;
-	    padding: 50px;
-	}
-	#content .block-3 > .right .last-articles {
-	   margin: 0 auto;
-	   float: none;
-	}
-	#content .block-3 > .right {
-	   width: auto;
-	   float: none;
-	   margin: 0 auto;
-	   border-bottom: none;
-	}
-	#content .block-3 > .right .fire {
-	   display: none;
 	}
 	#content .blocks {
 	    justify-content: space-between;
@@ -176,6 +83,98 @@
 	    font-size: 13px;
 	    color: #000;
 	    line-height: 24px;
+	}
+	#content .block-1 article {
+	    width: 775px;
+	}
+}
+@media screen and (max-width: 1199px) {
+	#content .block-1 {
+		text-align: center;
+		clear: both;
+	}
+	#content hr {
+		display: none;
+	}
+	#content .block-1 .left-menu li:last-child {
+		margin-top: 167px;
+	}
+	#content .block-1 .left-menu {
+	   	text-align: left;
+	   	float: none;
+	   	display: inline-block;
+	   	vertical-align: top;
+	}
+	#content .block-1 .breadcrumbs {
+		text-align: left;
+		display: inline-block;
+		float: none;
+		position: absolute;
+	}
+	#content .block-1 article {
+		display: inline-block;
+		border-top: none;
+		float: none;
+		padding-top: 30px;
+	}
+	#content .block-1 article .header {
+	    text-align: left;
+	}
+	#content .block-1 aside {
+		float: none;
+		border-top: none;
+		width: 775px;
+		padding-left: 0;
+		margin: 0 auto;
+		text-align: left;
+		position: relative;
+		left: 80px;
+	}
+	#content .block-1 aside .popular-post .tabs {
+		display: inline-block;
+		width: 240px;
+	}
+	#content .block-1 aside .popular-post .tabs .tabs-item.active {
+		padding-bottom: 20px;
+	}
+	#content .block-1 aside .popular-post .tabs .tabs-item {
+		width: calc(50% - 21.5px);
+		padding-bottom: 19px;
+		font-size: 12px;
+	}
+	#content .block-1 aside .popular-post .tabs-box {
+		margin-top: -2px;
+	}
+
+	#content .block-1 aside .networks {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 50px;
+		margin-right: 80px;
+	}
+	#content .block-1 aside .content-box {
+		float: right;
+	}
+	#content .block-1 aside .popular-post {
+		width: 240px;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 80px;
+	}
+	#content .block-1 aside .theme-day-box {
+		width: 240px;
+		display: inline-block;
+		float: right;
+	}
+	#content .block-1 aside .subscribe {
+		position: absolute;
+		right: 0;
+		bottom: 130px;
+	}
+	.content-box {
+		width: 240px;
+		display: inline-block;
+		vertical-align: top;
 	}
 }
 @media screen and (max-width: 1169px) {

@@ -309,14 +309,13 @@ h3 {
   text-decoration: underline;
 }
 #content .block-1 article .content .social .social-likes--horizontal {
-  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: 40px;
   line-height: 35px;
-  width: calc(100%-32px);
+  width: calc(100% - 32px);
   margin: 0 15px;
   border-top: 1px solid #dde5e7;
   border-bottom: 1px solid #dde5e7;
@@ -373,7 +372,7 @@ h3 {
   font-family: "PTSansRegular";
   display: block;
   text-align: center;
-  margin: 10px 0;
+  margin: 15px 0;
   text-decoration: none;
   color: #222222;
   font-size: 20px;
@@ -455,6 +454,36 @@ h3 {
   border-top: none;
   background-color: #fff;
 }
+#content .block-1 aside .popular-post .tabs-box .time {
+  margin-right: 20px;
+}
+#content .block-1 aside .popular-post .tabs-box span {
+  font-size: 12px;
+  position: relative;
+}
+#content .block-1 aside .popular-post .tabs-box span:nth-of-type(2) {
+  margin-right: 35px;
+}
+#content .block-1 aside .popular-post .tabs-box span::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-top: -20px;
+  margin-left: -15px;
+}
+#content .block-1 aside .popular-post .tabs-box .views::before {
+  margin-top: 2px;
+  background-image: url(../img/sprite.png);
+  background-position: -29px -120px;
+  background-repeat: no-repeat;
+}
+#content .block-1 aside .popular-post .tabs-box .comments::before {
+  margin-top: 1px;
+  background-image: url(../img/sprite.png);
+  background-position: -58px -120px;
+  background-repeat: no-repeat;
+}
 #content .block-1 aside .popular-post .tabs-box .tabs-content {
   display: none;
 }
@@ -468,7 +497,6 @@ h3 {
   display: inline-block;
   color: #369;
   font-size: 12px;
-  word-wrap: wrap;
   text-decoration: none;
 }
 #content .block-1 aside .popular-post .tabs-box li a:hover {
@@ -522,6 +550,36 @@ h3 {
   line-height: 1.166666666666667em;
   color: #95a5a6;
 }
+#content .block-1 aside .theme-day .theme-text .info span {
+  font-size: 12px;
+  position: relative;
+}
+#content .block-1 aside .theme-day .theme-text .info span:nth-of-type(2) {
+  margin-right: 20px;
+}
+#content .block-1 aside .theme-day .theme-text .info span:nth-of-type(3) {
+  margin-right: 30px;
+}
+#content .block-1 aside .theme-day .theme-text .info span::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-top: -20px;
+  margin-left: -15px;
+}
+#content .block-1 aside .theme-day .theme-text .info .views::before {
+  margin-top: 2px;
+  background-image: url(../img/sprite.png);
+  background-position: -29px -120px;
+  background-repeat: no-repeat;
+}
+#content .block-1 aside .theme-day .theme-text .info .comments::before {
+  margin-top: 1px;
+  background-image: url(../img/sprite.png);
+  background-position: -58px -120px;
+  background-repeat: no-repeat;
+}
 #content .block-1 aside .theme-day .theme-text .info .icon {
   color: #95a5a6;
   position: relative;
@@ -561,7 +619,7 @@ h3 {
 }
 #content .block-1 aside .networks p:first-child {
   font-family: "AgpalatianRoman";
-  font-size: 14.25px;
+  font-size: 15.25px;
   color: #000000;
   padding-top: 18px;
   padding-bottom: 16px;
@@ -569,14 +627,14 @@ h3 {
 #content .block-1 aside .networks p:nth-child(2),
 #content .block-1 aside .networks p:nth-child(4) {
   font-family: "PTSansRegular";
-  font-size: 10.75px;
+  font-size: 15.75px;
   color: #a9b2be;
 }
 #content .block-1 aside .networks p:nth-child(4) {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 #content .block-1 aside .networks .social {
-  margin-top: 30px;
+  margin-top: 7px;
   margin-left: 6px;
 }
 #content .block-1 aside .networks .social li {
@@ -622,15 +680,17 @@ h3 {
   background-repeat: no-repeat;
 }
 #content .block-1 aside .networks > a {
+  display: block;
   font-family: "PTSansRegular";
   color: #57a2c9;
-  font-size: 11.75px;
+  font-size: 13.75px;
+  margin-top: 10px;
   text-decoration: none;
 }
 #content .block-1 aside .subscribe {
   width: 220px;
   height: 134px;
-  margin: 15px auto 0 auto;
+  margin: 16px auto 0 auto;
   padding: 10px 10px 10px 10px;
   background-color: #dfebf3;
 }
@@ -711,6 +771,7 @@ h3 {
   font-size: 16px;
   font-weight: normal;
   line-height: 1;
+  margin-top: 7.5px;
   text-align: center;
   color: transparent;
   background-color: inherit;
@@ -728,15 +789,27 @@ h3 {
 #content .block-1 aside .subscribe .quick-subscribe__terms-checkbox .pseudo-link:hover, #content .block-1 aside .subscribe .quick-subscribe__terms-checkbox .dotted-link:hover {
   border-bottom-color: rgba(51, 102, 153, 0.3);
 }
-#content .addvertising {
+#content .add {
+  clear: both;
+}
+#content .add h2 {
+  display: block;
+  font-family: "PTSansRegular";
+  font-size: 16px;
+  color: #222;
+  margin: 10px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#content .add .addvertising {
   width: 100%;
   font-family: "PTSansRegular";
   box-sizing: border-box;
   padding: 14px 36px 20px 22px;
-  clear: both;
   background-color: #fef4eb;
 }
-#content .addvertising .orange {
+#content .add .addvertising .orange {
   width: 60px;
   height: 15px;
   background-color: #f78c44;
@@ -744,16 +817,16 @@ h3 {
   display: inline-block;
   border-radius: 20px;
 }
-#content .addvertising a {
+#content .add .addvertising a {
   float: right;
   text-decoration: none;
   padding-right: 7px;
   color: #089aff;
 }
-#content .addvertising a:hover {
+#content .add .addvertising a:hover {
   text-decoration: underline;
 }
-#content .addvertising a::after {
+#content .add .addvertising a::after {
   content: '';
   position: absolute;
   width: 16px;
@@ -762,37 +835,39 @@ h3 {
   margin-left: 7px;
   background: url("../img/info.png");
 }
-#content .addvertising span {
+#content .add .addvertising span {
   font-size: 12px;
+  position: relative;
+  bottom: 3px;
 }
-#content .addvertising span:first-of-type {
+#content .add .addvertising span:first-of-type {
   margin-right: 35px;
 }
-#content .addvertising span::before {
+#content .add .addvertising span::before {
   content: '';
   position: absolute;
   width: 12px;
   height: 12px;
   margin-left: -21px;
 }
-#content .addvertising .views::before {
-  margin-top: 6px;
+#content .add .addvertising .views::before {
+  margin-top: 7px;
   background-image: url(../img/sprite.png);
   background-position: -29px -120px;
   background-repeat: no-repeat;
 }
-#content .addvertising .comments::before {
+#content .add .addvertising .comments::before {
   margin-top: 5px;
   background-image: url(../img/sprite.png);
   background-position: -58px -120px;
   background-repeat: no-repeat;
 }
-#content .addvertising h5 {
-  font-size: 20px;
-  padding: 5px 0;
-}
-#content .addvertising p {
+#content .add .addvertising p {
   width: 71%;
+  padding-top: 10px;
+}
+#content .read-more {
+  margin-top: 17px;
 }
 #content .read-more .head {
   display: block;
@@ -890,27 +965,18 @@ h3 {
   font-family: "PTSansRegular";
 }
 #content .comments .buy-access {
-  width: 524px;
+  width: 450px;
   z-index: 1;
   position: absolute;
   right: 1px;
   top: -40px;
   padding: 10px;
-  background: #fff;
-}
-#content .comments .buy-access .icon {
-  width: 98px;
-  height: 48px;
-  float: left;
-  margin-right: 10px;
-  background-image: url("../img/icon_sprite.png");
-  background-position: -210px 0;
 }
 #content .comments .buy-access a {
   display: inline-block;
   margin-top: 10px;
   font-family: "RobotoRegular";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
   text-decoration: none;
 }
@@ -923,7 +989,7 @@ h3 {
 }
 #content .comments .buy-access p {
   font-family: "RobotoRegular";
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 300;
 }
 #content .comments .buy-access .buy {
@@ -1052,6 +1118,34 @@ h3 {
 }
 #content .comments a:hover {
   text-decoration: underline;
+}
+#content .comments form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 94px;
+  padding-left: 17px;
+  resize: none;
+  padding-top: 18px;
+  font-family: "PTSansRegular";
+  font-size: 16px;
+  margin-top: 15px;
+  border: 1px solid #848d93;
+}
+#content .comments form input {
+  width: 250px;
+  height: 32px;
+  display: block;
+  margin-top: 15px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "PTSansRegular";
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: #336699;
 }
 #content .donation {
   display: inline-block;
