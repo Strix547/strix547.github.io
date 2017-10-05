@@ -170,13 +170,15 @@ h3 {
 				border: 1px solid #c8cdd1;
 				border-bottom: none;
 				font-family: Arial;
+				line-height: 160%;
 				.text {
 					height: 1369px;
 					overflow-y: scroll;
-					padding: 0 15px 15px 15px;
+					font-size: 16px;
+					padding: 0 15px 5px 15px;
 				}
 				p {
-				    margin-bottom: 15px;
+					margin-bottom: 5px;
 				    text-indent: 20px;
 				}
 				strong {
@@ -304,7 +306,9 @@ h3 {
 			}
 		}
 		aside {
-			float: right;
+			position: absolute;
+			right: 0;
+			top: 34px;
 			padding: 5px 0 15px 10px;
 			border-top: none;
 			border-top: 1px solid #c8cdd1;
@@ -668,7 +672,7 @@ h3 {
 					    padding-left: 30px;
 					    cursor: pointer;
 					   	color: rgba(34,34,34,0.6);
-					   	font-size: 14px;
+					   	font-size: 13px;
 					}
 				    input.modern-checkbox[type="checkbox"] + .checkbox-label::before {
 					    display: inline-block;
