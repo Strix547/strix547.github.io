@@ -177,6 +177,9 @@ h3 {
 					font-size: 16px;
 					padding: 0 15px 5px 15px;
 				}
+				.text::-webkit-scrollbar { width: 0; }
+				.text { -ms-overflow-style: none; }
+				.text { overflow: -moz-scrollbars-none; }
 				p {
 					margin-bottom: 5px;
 				    text-indent: 20px;
@@ -211,7 +214,7 @@ h3 {
 						border-radius: 4px;
 						text-decoration: none;
 						color: #fff;
-						background: linear-gradient(to bottom, #ff820e 0%,#d04e0a 100%);
+						background-color: #336999;
 						box-shadow: 1px 1px 3px 0px #A59B9B;
 						&::before {
 							content: '';
@@ -245,7 +248,7 @@ h3 {
 							    background: url("../img/printer.png") no-repeat 0 19px;
 							    padding-left: 25px;
 							    cursor: pointer;
-							    color: #ef5000;
+							    color: #336999;
 								text-decoration: none;
 								&:hover {
 									text-decoration: underline;
@@ -350,6 +353,9 @@ h3 {
 					}
 				}
 			}
+			.content::-webkit-scrollbar { width: 0; }
+			.content { -ms-overflow-style: none; }
+			.content { overflow: -moz-scrollbars-none; }
 			.popular-post {
 				.tabs {
 				    background: #f5f5f5;
@@ -588,8 +594,18 @@ h3 {
 						&:nth-child(5) a {
 							@include sprite(-173px,-170px);
 						}
+						&:nth-child(6) {
+							width: 30px;
+							height: 30px;
+						}
 						&:nth-child(6) a {
-							@include sprite(-216px,-170px);
+							position: absolute;
+							background: #07c;
+							line-height: 27px;
+							text-decoration: none;
+							color: rgb(255,169,48);
+							font-family: "PTSansRegular";
+							font-weight: 600;
 						}
 						a {
 							display: block;
@@ -909,8 +925,7 @@ h3 {
 		    .buy {
 		    	font-family: "RobotoRegular";
 		    	display: block;
-		    	border: 1px solid #1479c9;
-				background: #178ae4;
+				background: #336999;
 				color: #fff;
 				box-shadow: 0 2px rgba(0,0,0,0.04);
 				padding: 7px 10px;
@@ -1052,7 +1067,6 @@ h3 {
 				height: 32px;
 				display: block;
 				margin-top: 15px;
-				line-height: 32px;
 				text-decoration: none;
 				text-align: center;
 				font-family: "PTSansRegular";
@@ -1061,6 +1075,7 @@ h3 {
 				color: #fff;
 				cursor: pointer;
 				border-radius: 25px;
+				padding-bottom: 2px;
 				background-color: #336699;
 			}
 		}
