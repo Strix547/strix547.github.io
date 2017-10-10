@@ -1244,11 +1244,11 @@ h3 {
   background-color: #10304b;
 }
 #content .blocks .block1 {
-  background: url("../img/block-bg1.jpg") 100% no-repeat;
+  background: url("../img/block-bg1.png") #448ccb no-repeat;
 }
 #content .blocks .block3 {
-  background: url("../img/block-bg2.jpg") 100% no-repeat;
+  background: url("../img/block-bg2.png") #448ccb no-repeat;
 }
 #content .blocks .block8 {
-  background: url("../img/block-bg3.jpg") 100% no-repeat;
+  background: url("../img/block-bg3.png") #448ccb no-repeat;
 }
