@@ -24,23 +24,22 @@ h3 {
 	position: relative;
 	background: #fafafa;
 	hr {
-		width: 100%;
+		float: left;
 		height: 2px;
-		margin-top: 0;
-		background-color: #707070;
+		margin-left: 10px;
+		margin-top: 10px;
+		background-color: #0280c5;
 		border: none;
+		width: calc(100% - 145px);
+		&:first-of-type {
+			margin-top: 1px;
+		}
 	}
 	.block-1 {
 		border-bottom: none;
 		border-left: none;
 		position: relative;
 		padding-top: 7px;
-		hr {
-			float: left;
-			margin-left: 10px;
-			margin-top: 10px;
-			width: calc(100% - 145px);
-		}
 		.left-menu {
 			width: 135px;
 			float: left;
@@ -98,11 +97,25 @@ h3 {
 			padding-left: 59px;
 			a {
 				display: inline-block;
+				position: relative;
 				font-family: "PTSansRegular";
 				font-size: 16px;
 				color: #52b0e6;
 				text-decoration: none;
-				margin-right: 18.7px;
+				padding: 0 9.45px;
+				&:hover {
+					color: #d04e0a;
+					&::before {
+						content: '';
+						position: absolute;
+						width: 30px;
+						margin-top: 26px;
+						left: 50%;
+						margin-left: -15px;
+						height: 2px;
+						background-color: #d04e0a;
+					}
+				}
 				&:last-child {
 					margin-right: 0;
 				}
@@ -152,7 +165,6 @@ h3 {
 				}
 				.date_n_time_published {
 				    float: right;
-				    margin-right: 15px;
 				    margin-top: 8px;
 				    position: relative;
 					.date {
@@ -209,13 +221,14 @@ h3 {
 				    font-style: italic;
 				}
 				.bottom-add {
-					max-width: calc(100% - 30px);
+					width: calc(100% - 30px);
 					min-height: 100px;
 					padding: 0 15px;
 				}
 				.block-bottom {
 					padding: 0 15px;
 					display: flex;
+					justify-content: space-between;
 					flex-wrap: wrap;
 					.title {
 						font-family: "PTSansRegular";
@@ -224,7 +237,6 @@ h3 {
 					    margin: 10px auto 20px auto;
 					    padding: 15px 25px 15px 25px;
 					    border: 1px solid #e2e4e3;
-					    border-right: none;
 					    text-decoration: none;
 					    color: rgb(34, 34, 34);
 					    font-size: 20px;
@@ -272,6 +284,7 @@ h3 {
 						}
 						.tabs-box {
 							width: 208px;
+							height: 324px;
 							font-family: "PTSansRegular";
 						    padding: 10px 15px 9px 15px; 
 						    border: 1px solid #bdc3c7;
@@ -345,7 +358,6 @@ h3 {
 					.theme-day-box {
 						.theme-day {
 							width: 240px;
-							margin: 0 9px;
 							font-family: "PTSansRegular";
 							background-color: #ecf0f1;
 							.img {
@@ -426,7 +438,6 @@ h3 {
 						width: 240px;
 						height: 185px;
 						background-color: #e6ebee;
-						margin-left: 10px;
 						text-align: center;
 						p {
 							margin-bottom: 0;
@@ -501,7 +512,6 @@ h3 {
 					.subscribe {
 						width: 220px;
 						height: 134px;
-						margin-left: 10px;
 						margin-top: 61px;
 						padding: 10px 10px 10px 10px;
 						background-color: #dfebf3;

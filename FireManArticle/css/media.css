@@ -77,7 +77,9 @@
 	   	justify-content: space-between;
 	}
 	#content .block-1 article .content .block-bottom .title {
-	   	border: none;
+	   	border-left: none;
+	   	border-right: none;
+	   	border-bottom: none;
 	   	margin-bottom: 10px;
 	   	padding-bottom: 0px;
 	}
@@ -120,12 +122,6 @@
 	#content .block-1 article .content .block-bottom .theme-day-box .theme-day {
 	    margin: 0 auto;
 	}
-	#content .block-1 .search {
-	    display: none;
-	}
-	#content .block-1 hr:last-of-type {
-	    display: none;
-	}
 }
 @media screen and (max-width: 1180px) {
 	#content .now-main {
@@ -159,6 +155,28 @@
 	    margin-top: 25px;
 	}
 }
+@media screen and (max-width: 1151px) {
+	#content .block-1 .search {
+		display: block;
+		width: 462px;
+		position: absolute;
+		left: 50%;
+		margin-left: -231px;
+		text-align: center;
+		padding-left: 73px;
+	}
+	#content .block-1 .search a:nth-child(-n+14) {
+		margin-bottom: 24px;
+	}
+	#content .block-1 hr:first-of-type {
+		position: absolute;
+		margin-left: 145px;
+		margin-top: 26px;
+	}
+	#content .block-1 hr:last-of-type {
+		margin-top: 66px;
+	}
+}
 @media screen and (max-width: 1100px) {
 	header .top .right {
       margin-left: 0;
@@ -181,16 +199,14 @@
 	}
 	#content .block-1 .breadcrumbs {
 	   	width: 100%;
+	   	margin-top: 10px;
+	   	padding-left: 0;
 	}
 	header .top .menu-btn {
 		display: block;
 	}
 	header .top {
 		padding-left: 30px;
-	}
-	#content .block-1 .breadcrumbs {
-	    float: none;
-	    padding-left: 0;
 	}
 	#content .block-1 article {
 	    width: 100%;
@@ -201,6 +217,21 @@
 	#content .add .addvertising p {
 	    width: 100%;
 	    padding-top: 10px;
+	}
+	#content .block-1 .search {
+		padding-left: 0;
+	}
+	#content .block-1 hr {
+		width: 100%;
+	}
+	#content .block-1 hr:first-of-type {
+		margin-left: 0;
+	}
+	#content .block-1 hr:last-of-type {
+		margin-left: 0;
+	}
+	#content .block-1 article {
+	    margin-top: 120px;
 	}
 }
 @media screen and (max-width: 920px) {
@@ -268,7 +299,6 @@
 	}
 	#content .block-1 article {
 		width: auto;
-		border-top: none;
 		border-bottom: none;
 	}
 	#content .block-1 article .content .text {
@@ -277,7 +307,9 @@
 	    overflow-y: auto;
 	}
 	#content .block-1 article .content {
-	    border: none;
+	    border-left: none;
+	    border-right: none;
+	    border-bottom: none;
 	}
 	#content .block-1 article .add {
 	    max-width: 100%;
@@ -304,6 +336,12 @@
 	}
 }
 @media screen and (max-width: 720px) {
+	#content .block-1 article {
+	    margin-top: 130px;
+	}
+	#content .block-1 article .header {
+	    padding-bottom: 40px;
+	}
 	#content .block-1 article .header h1 {
 	    width: 100%;
 	}
@@ -318,6 +356,9 @@
 	#content .block-1 article .header .date_n_time_published {
 	    float: left;
 	    margin: 10px 0 20px;
+	}
+	#content .block-1 .breadcrumbs .postname {
+	    padding-bottom: 10px;
 	}
 }
 @media screen and (max-width: 709px) {
@@ -449,6 +490,31 @@
 	header .top .menu-btn2 {
 	    right: 5px;
 	}
+	#content .block-1 .search {
+		width: 300px;
+		position: static;
+		margin: 10px auto 0 auto;
+		float: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	#content .block-1 .search a:nth-child(-n+14) {
+	    margin-bottom: 15px;
+	}
+	#content .block-1 article {
+		margin-top: 0px;
+	}
+	#content .block-1 .search a {
+		margin-bottom: 15px;
+		display: block;
+	}
+	#content .block-1 .breadcrumbs {
+		float: none;
+	}
+	#content .block-1 hr {
+		display: none;
+	}
 }
 @media screen and (max-width: 470px) {
 	#content .donation {
@@ -461,6 +527,12 @@
 	    width: 100%;
 	}
 }
+@media screen and (max-width: 420px) {
+	#content .block-1 article {
+	    margin-top: 30px;
+	}
+}
+
 @media screen and (max-width: 400px) {
 	header .top .menu-btn {
 		left: 10px;
@@ -481,6 +553,9 @@
 }
 
 @media screen and (max-width: 320px) {
+	#content .block-1 .search {
+		width: 290px;
+	}
 	#content .add .addvertising {
 	    padding: 14px 20px 20px 15px;
 	}
