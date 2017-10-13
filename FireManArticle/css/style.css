@@ -361,6 +361,7 @@ h3 {
 #content .block-1 article .content .block-bottom .popular-post .tabs-box {
   width: 208px;
   height: 324px;
+  overflow-y: scroll;
   font-family: "PTSansRegular";
   padding: 10px 15px 9px 15px;
   border: 1px solid #bdc3c7;
