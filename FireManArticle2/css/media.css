@@ -9,7 +9,7 @@
 		padding: 0 10px;
 	}
 	header {
-		padding-bottom: 85px;
+		padding-bottom: 63px;
 		overflow-y: hidden;
 	}
 	header .top input[type="search"] {
@@ -149,9 +149,6 @@
 	}
 }
 @media screen and (max-width: 953px) {
-	#content .block-1 hr {
-		display: none;
-	}
 	#content .block-1 .breadcrumbs {
 	    float: none;
 	}
@@ -172,6 +169,12 @@
 	}
 	header .top {
 		padding-left: 30px;
+	}
+	#content .block-1 article .content .content-box {
+		display: block;
+	}
+	#content .block-1 aside .content-box {
+		display: none;
 	}
 	#content .block-1 article {
 	    width: 100%;
@@ -363,9 +366,6 @@
 	    display: block;
 	    margin: 30px auto 0 auto;
 	}
-	header {
-	    height: 450px;
-	}
 	header .top {
 	    height: 235px;
 	}
@@ -381,7 +381,7 @@
 	    text-align: center;
 	}
 	header {
-		height: 135px;
+		height: 150px;
 	}
 	header nav .first-level {
 	    display: none;
@@ -486,9 +486,6 @@
 	}
 	#content .block-1 .breadcrumbs {
 		float: none;
-	}
-	#content .block-1 hr {
-		display: none;
 	}
 	#content .block-1 article .content .bottom-block {
 	    height: 80px;

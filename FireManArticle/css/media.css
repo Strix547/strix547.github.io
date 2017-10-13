@@ -77,9 +77,7 @@
 	   	justify-content: space-between;
 	}
 	#content .block-1 article .content .block-bottom .title {
-	   	border-left: none;
-	   	border-right: none;
-	   	border-bottom: none;
+	   	border: none;
 	   	margin-bottom: 10px;
 	   	padding-bottom: 0px;
 	}

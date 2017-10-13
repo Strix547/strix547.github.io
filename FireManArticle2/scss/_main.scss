@@ -24,17 +24,18 @@ h3 {
 	position: relative;
 	background: #fafafa;
 	hr {
-		float: left;
+		float: right;
 		height: 2px;
 		border: none;
+		margin-top: 0;
 		background-color: #707070;
-		width: 100%;
+		width: calc(100% - 145px);
 	}
 	.block-1 {
 		border-bottom: none;
 		border-left: none;
 		position: relative;
-		padding-top: 7px;
+		padding-top: 25px;
 		.left-menu {
 			width: 135px;
 			float: left;
@@ -164,6 +165,51 @@ h3 {
 				padding-bottom: 10px;
 				font-family: Arial;
 				line-height: 160%;
+				.title {
+					font-family: "PTSansRegular";
+					display: block;
+					text-align: center;
+					margin: 10px auto 10px auto;
+					text-decoration: none;
+					color: rgb(34, 34, 34);
+					font-size: 20px;
+					letter-spacing: 1px;
+					&:hover {
+						color: #626a77;
+					}
+				}
+				.content-box {
+					display: none;
+					.content {
+						width: 236px;
+						height: 176px;
+						margin: 0 auto;
+						border: 2px solid #e5e5e5;
+						overflow-y: scroll;
+						ol {
+							padding-left: 15px;
+							span {
+								display: inline-block;
+							}
+							li {
+								a {
+									display: inline-block;
+									font-family: "PTSansRegular";
+									font-size: 18px;
+									padding: 5px 0 5px 5px;
+									color: #000;
+									text-decoration: none;
+									&:hover {
+										text-decoration: underline;
+									}
+								}
+							}
+						}
+					}
+				}
+				.content::-webkit-scrollbar { width: 0; }
+				.content { -ms-overflow-style: none; }
+				.content { overflow: -moz-scrollbars-none; }
 				.text {
 					height: 1281px;
 					overflow-y: scroll;
@@ -312,7 +358,7 @@ h3 {
 			height: 1727px;
 			padding-left: 15px;
 			border-top: 1px solid #c8cdd1;
-			margin-top: 43px;
+			margin-top: 36px;
 			position: absolute;
 			right: 0;
 			.title {
@@ -330,7 +376,7 @@ h3 {
 			}
 			.add-block {
 				width: 240px;
-				margin-top: 17px;
+				margin-top: 11px;
 			}
 			.popular-post {
 				width: 240px;
@@ -370,6 +416,7 @@ h3 {
 				.tabs-box {
 					width: 208px;
 					height: 263px;
+					overflow-y: scroll;
 					font-family: "PTSansRegular";
 				    padding: 10px 15px 9px 15px; 
 				    border: 1px solid #bdc3c7;
@@ -411,12 +458,12 @@ h3 {
 					  		display: block;
 					  	}
 					  	li {
-					  		margin-bottom: 8.12px;
+					  		margin-bottom: 9.12px;
 					  		a {
 					  			display: inline-block;
 					  			color: #369;
 					  			line-height: 16px;
-					  			font-size: 12px;
+					  			font-size: 16px;
 					  			text-decoration: none;
 					  			&:hover {
 					  				text-decoration: underline;
@@ -439,7 +486,11 @@ h3 {
 					    }
 					}
 				}
+				.tabs-box::-webkit-scrollbar { width: 0; }
+				.tabs-box { -ms-overflow-style: none; }
+				.tabs-box { overflow: -moz-scrollbars-none; }
 			}
+
 			.content {
 				width: 236px;
 				height: 176px;
@@ -481,7 +532,7 @@ h3 {
 					.theme-text {
 						padding: 10px 10px 11px 10px;
 						.link {
-							font-size: 14px;
+							font-size: 18px;
 							line-height: 14px;
 							text-decoration: none;
 							color: #369;
@@ -548,7 +599,7 @@ h3 {
 			.networks {
 				width: 240px;
 				height: 152px;
-				margin-top: 5px;
+				margin-top: 12px;
 				background-color: #e6ebee;
 				text-align: center;
 				p {
@@ -624,7 +675,7 @@ h3 {
 			.subscribe {
 				width: 220px;
 				height: 134px;
-				margin-top: 17px;
+				margin-top: 12px;
 				padding: 10px 10px 10px 10px;
 				background-color: #dfebf3;
 				img {

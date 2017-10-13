@@ -32,14 +32,14 @@ h3 {
 		border: none;
 		width: calc(100% - 145px);
 		&:first-of-type {
-			margin-top: 1px;
+			margin-top: 0px;
 		}
 	}
 	.block-1 {
 		border-bottom: none;
 		border-left: none;
 		position: relative;
-		padding-top: 7px;
+		padding-top: 8px;
 		.left-menu {
 			width: 135px;
 			float: left;
@@ -121,7 +121,6 @@ h3 {
 				}
 			}
 		}
-
 		.breadcrumbs {
 			font-family: Arial;
 			width: calc(100% - 145px);
@@ -184,6 +183,7 @@ h3 {
 					}
 				}
 			}
+			
 			.add {
 				display: block;
 				margin: 15px auto 30px auto;
@@ -326,12 +326,12 @@ h3 {
 					    		display: block;
 					    	}
 					    	li {
-					    		margin-bottom: 8.12px;
+					    		margin-bottom: 9.12px;
 					    		a {
 					    			display: inline-block;
 					    			color: #369;
-					    			line-height: 13px;
-					    			font-size: 12px;
+					    			line-height: 14px;
+					    			font-size: 16px;
 					    			text-decoration: none;
 					    			&:hover {
 					    				text-decoration: underline;
@@ -354,6 +354,9 @@ h3 {
 							    }
 							}
 						}
+						.tabs-box::-webkit-scrollbar { width: 0; }
+						.tabs-box { -ms-overflow-style: none; }
+						.tabs-box { overflow: -moz-scrollbars-none; }
 					}
 					.theme-day-box {
 						.theme-day {
@@ -367,7 +370,7 @@ h3 {
 							.theme-text {
 								padding: 10px 10px 11px 10px;
 								.link {
-									font-size: 14px;
+									font-size: 18px;
 									line-height: 14px;
 									text-decoration: none;
 									color: #369;

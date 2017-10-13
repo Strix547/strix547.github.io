@@ -75,17 +75,18 @@ h3 {
   background: #fafafa;
 }
 #content hr {
-  float: left;
+  float: right;
   height: 2px;
   border: none;
+  margin-top: 0;
   background-color: #707070;
-  width: 100%;
+  width: calc(100% - 145px);
 }
 #content .block-1 {
   border-bottom: none;
   border-left: none;
   position: relative;
-  padding-top: 7px;
+  padding-top: 25px;
 }
 #content .block-1 .left-menu {
   width: 135px;
@@ -219,6 +220,55 @@ h3 {
   padding-bottom: 10px;
   font-family: Arial;
   line-height: 160%;
+}
+#content .block-1 article .content .title {
+  font-family: "PTSansRegular";
+  display: block;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  text-decoration: none;
+  color: #222222;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+#content .block-1 article .content .title:hover {
+  color: #626a77;
+}
+#content .block-1 article .content .content-box {
+  display: none;
+}
+#content .block-1 article .content .content-box .content {
+  width: 236px;
+  height: 176px;
+  margin: 0 auto;
+  border: 2px solid #e5e5e5;
+  overflow-y: scroll;
+}
+#content .block-1 article .content .content-box .content ol {
+  padding-left: 15px;
+}
+#content .block-1 article .content .content-box .content ol span {
+  display: inline-block;
+}
+#content .block-1 article .content .content-box .content ol li a {
+  display: inline-block;
+  font-family: "PTSansRegular";
+  font-size: 18px;
+  padding: 5px 0 5px 5px;
+  color: #000;
+  text-decoration: none;
+}
+#content .block-1 article .content .content-box .content ol li a:hover {
+  text-decoration: underline;
+}
+#content .block-1 article .content .content::-webkit-scrollbar {
+  width: 0;
+}
+#content .block-1 article .content .content {
+  -ms-overflow-style: none;
+}
+#content .block-1 article .content .content {
+  overflow: -moz-scrollbars-none;
 }
 #content .block-1 article .content .text {
   height: 1281px;
@@ -378,7 +428,7 @@ h3 {
   height: 1727px;
   padding-left: 15px;
   border-top: 1px solid #c8cdd1;
-  margin-top: 43px;
+  margin-top: 36px;
   position: absolute;
   right: 0;
 }
@@ -397,7 +447,7 @@ h3 {
 }
 #content .block-1 aside .add-block {
   width: 240px;
-  margin-top: 17px;
+  margin-top: 11px;
 }
 #content .block-1 aside .popular-post {
   width: 240px;
@@ -444,6 +494,7 @@ h3 {
 #content .block-1 aside .popular-post .tabs-box {
   width: 208px;
   height: 263px;
+  overflow-y: scroll;
   font-family: "PTSansRegular";
   padding: 10px 15px 9px 15px;
   border: 1px solid #bdc3c7;
@@ -490,13 +541,13 @@ h3 {
   display: block;
 }
 #content .block-1 aside .popular-post .tabs-box li {
-  margin-bottom: 8.12px;
+  margin-bottom: 9.12px;
 }
 #content .block-1 aside .popular-post .tabs-box li a {
   display: inline-block;
   color: #369;
   line-height: 16px;
-  font-size: 12px;
+  font-size: 16px;
   text-decoration: none;
 }
 #content .block-1 aside .popular-post .tabs-box li a:hover {
@@ -516,6 +567,15 @@ h3 {
   margin-right: 4px;
   position: relative;
   top: 3px;
+}
+#content .block-1 aside .popular-post .tabs-box::-webkit-scrollbar {
+  width: 0;
+}
+#content .block-1 aside .popular-post .tabs-box {
+  -ms-overflow-style: none;
+}
+#content .block-1 aside .popular-post .tabs-box {
+  overflow: -moz-scrollbars-none;
 }
 #content .block-1 aside .content {
   width: 236px;
@@ -565,7 +625,7 @@ h3 {
   padding: 10px 10px 11px 10px;
 }
 #content .block-1 aside .theme-day-box .theme-day .theme-text .link {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 14px;
   text-decoration: none;
   color: #369;
@@ -633,7 +693,7 @@ h3 {
 #content .block-1 aside .networks {
   width: 240px;
   height: 152px;
-  margin-top: 5px;
+  margin-top: 12px;
   background-color: #e6ebee;
   text-align: center;
 }
@@ -719,7 +779,7 @@ h3 {
 #content .block-1 aside .subscribe {
   width: 220px;
   height: 134px;
-  margin-top: 17px;
+  margin-top: 12px;
   padding: 10px 10px 10px 10px;
   background-color: #dfebf3;
 }
