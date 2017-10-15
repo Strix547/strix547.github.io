@@ -644,11 +644,11 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: calc(100% - 342px);
-      padding: 10px 5px 10px 5px;
+      width: calc(100% - 343px);
+      padding: 10px 5px 10px 10px;
       background-color: #f1f1f1;
       border-radius: 5px;
-    }
+  }
     #content .block-1 .most-popular .main-new .right .new .image {
       float: left;
       margin-right: 5px;
@@ -1459,6 +1459,7 @@ header {
           width: 226px;
           height: 120px;
           float: left;
+          margin-top: 6px;
           margin-right: 31px; }
         #content .block-3 > .right .last-articles .article .right span {
           font-family: "PTSansRegular";

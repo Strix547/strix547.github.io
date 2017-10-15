@@ -427,6 +427,10 @@
 	#content .block-3 > .right {
 	    padding: 0;
 	}
+	#content .block-3 .title {
+		margin: 0 10px;
+		border-bottom: 2px solid gray;
+	}
 	header .top .menu-btn2 {
 		display: block;
 	}
@@ -625,13 +629,9 @@
 	    width: 140px;
 	    height: 90px;
 	}
-	#content .block-3 > .right .last-articles .article a {
-	    font-size: 16px;
-	    margin-bottom: 0px;
-	    line-height: 15px;
-	}
 	#content .block-3 > .right .last-articles .article .right p {
-	    line-height: 13px;
+	    display: block;
+	    width: 100%;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -656,21 +656,22 @@
 	}
 }
 @media screen and (max-width: 479px) {
-	#content .block-3 > .right .last-articles > a:first-of-type {
-	    text-align: left;
-	}
-	#content .block-3 > .right .last-articles .article .img {
-    	display: none;
-	}
 	#content .block-3 > .right .last-articles .article {
 	    margin-top: 25px;
 	}
+	#content .block-3 > .right .last-articles .article .img img {
+	    width: 110px;
+	    height: 60px;
+	}
 	#content .block-3 > .right .last-articles .article a {
 	    font-size: 17px;
-	    margin-bottom: 15px;
+	    display: block;
+	    width: 100%;
 	}
 	#content .block-3 > .right .last-articles .article .right p {
 	    line-height: 19px;
+	    margin-top: 5px;
+	    display: inline-block;
 	}
 	#content .block-3 > .right .last-articles {
 	    padding-left: 20px;
@@ -695,6 +696,10 @@
 	    width: 107px;
 	    margin-right: 10px;
 	}
+	#content .block-3 > .right .last-articles .article a {
+	    font-size: 15px;
+	    line-height: 17px;
+	}
 	#content .block-2 .calendar .event {
 	    width: 305px;
 	}
@@ -717,6 +722,12 @@
 	}
 	#content .block-3 .left .main-new .bottom span:last-of-type {
 	    margin-bottom: 0;
+	}
+	#content .block-3 > .right .last-articles .article .img img {
+	    margin-top: 3px;	
+	}
+	#content .block-3 > .right .last-articles .article .img img {
+	    height: 63px;
 	}
 	#content .block-3 .left .main-new .bottom {
 	    height: 118px;
