@@ -563,7 +563,7 @@ header {
         padding-top: 21px;
         line-height: 20px; }
       #content .block-1 .left-menu li:last-child a {
-        height: 141px; }
+        height: 148px; }
       #content .block-1 .left-menu a {
         display: block;
         height: 60px;
@@ -593,19 +593,25 @@ header {
     #content .block-1 .most-popular {
       width: 645px;
       float: left;
+      position: relative;
+      z-index: 3;
       padding: 21px 20px 11px 20px;
       border-bottom: 1px solid #c8cdd1; }
     #content .block-1 .most-popular .main-new {
-      margin: 20px 0 15px 0;
+      margin: 32px 0 28px 0;
       width: 100%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       font-family: "PTSansRegular";
-    }
-    #content .block-1 .most-popular .main-new .right .new {
-      margin-bottom: 15px;
     }
     #content .block-1 .most-popular .main-new .left {
       width: 318px;
-      display: inline-block;
+      margin-right: 10px;
     }
   
     #content .block-1 .most-popular .main-new .left .img {
@@ -630,22 +636,26 @@ header {
       background-color: rgba(14,104,185,0.75);
     }
     #content .block-1 .most-popular .main-new .right {
-      vertical-align: top;
-      display: inline-block;
-      height: 261px;
-      width: calc(100% - 337px);
-      padding: 20px 5px 10px 10px;
+      height: 272px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: calc(100% - 342px);
+      padding: 10px 5px 10px 5px;
       background-color: #f1f1f1;
       border-radius: 5px;
     }
     #content .block-1 .most-popular .main-new .right .new .image {
       float: left;
-      margin-right: 10px;
+      margin-right: 5px;
     }
     #content .block-1 .most-popular .main-new .right .new .image img {
-      width: 55px;
-      height: 42px;
-      display: inline-block;
+      width: 56px;
+      height: 56px;
       border-radius: 4px;
     }
 
@@ -664,7 +674,7 @@ header {
     #content .block-1 .most-popular .main-new .right .new a {
       text-decoration: none;
       font-size: 12px;
-      color: #0e7bc1;
+      color: #336699;
     }
     #content .block-1 .most-popular .main-new .right .new a:hover {
       color: #000;
@@ -727,7 +737,8 @@ header {
         font-size: 15px;
         color: #313945;
         float: right;
-        margin-top: 33px; }
+        margin-top: 21px;
+        margin-bottom: 12px; }
         #content .block-1 .most-popular a:last-of-type:hover {
           text-decoration: none; }
     #content .block-1 aside {
@@ -735,7 +746,7 @@ header {
       top: 0;
       z-index: 3;
       right: 45px;
-      padding-bottom: 10px;
+      padding-bottom: 20px;
       border: 1px solid #c8cdd1; }
       #content .block-1 aside h3 {
         padding-top: 7px; }
@@ -832,50 +843,120 @@ header {
           #content .block-1 aside .discussing .event p:nth-child(2) {
             display: inline-block;
             font-size: 10px; }
-      #content .block-1 aside .subscribe {
-        width: 274px;
-        height: 134px;
-        margin: 15px auto 0 auto;
-        padding: 30px 14px 25px 15px;
-        background-color: #dfebf3; }
-        #content .block-1 aside .subscribe img {
-          width: 70px;
-          height: 59px;
-          float: left;
-          margin-right: 23px;
-          display: inline-block; }
-        #content .block-1 aside .subscribe p {
-          font-family: "MuseoSansCyrl700";
-          font-size: 17px;
-          color: #0577c6;
-          margin-bottom: 33px;
-          line-height: 20px; }
-        #content .block-1 aside .subscribe input[type="email"] {
-          width: 148px;
-          height: 42px;
-          display: inline-block;
-          padding-left: 17px;
-          border: none; }
-          #content .block-1 aside .subscribe input[type="email"]:-moz-placeholder, #content .block-1 aside .subscribe input[type="email"]::-moz-placeholder {
-            color: #000;
-            opacity: 1; }
-          #content .block-1 aside .subscribe input[type="email"]::-webkit-input-placeholder {
-            color: #000; }
-        #content .block-1 aside .subscribe input[type="submit"] {
-          width: 108px;
-          height: 44px;
-          font-family: "PTSansBold";
-          line-height: 44px;
-          position: absolute;
-          text-transform: uppercase;
-          color: #fff;
-          border: none;
-          cursor: pointer;
-          float: right;
-          font-size: 12px;
-          background-color: #2b9dec; }
-          #content .block-1 aside .subscribe input[type="submit"]:hover {
-            background-color: #1089de; }
+#content .block-1 aside .subscribe {
+  width: 263px;
+  height: 134px;
+  margin: 27px auto 0 auto;
+  padding: 20px;
+  background-color: #dfebf3;
+}
+#content .block-1 aside .subscribe img {
+  width: 57px;
+  height: 46px;
+  margin-right: 14px;
+  float: left;
+  margin-top: 4px;
+}
+#content .block-1 aside .subscribe p {
+  font-family: "MuseoSansCyrl700";
+  font-size: 17px;
+  color: #0577c6;
+  margin-bottom: 10px;
+  line-height: 18px;
+  text-indent: 0;
+}
+#content .block-1 aside .subscribe input[type="email"] {
+  width: 156px;
+  height: 35px;
+  display: inline-block;
+  padding-left: 17px;
+  border: none;
+}
+#content .block-1 aside .subscribe input[type="email"]:-moz-placeholder, #content .block-1 aside .subscribe input[type="email"]::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+}
+#content .block-1 aside .subscribe input[type="email"]::-webkit-input-placeholder {
+  color: #000;
+}
+#content .block-1 aside .subscribe input[type="submit"] {
+  width: 88px;
+  height: 37px;
+  font-family: "PTSansBold";
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  font-size: 11px;
+  background-color: #2b9dec;
+}
+#content .block-1 aside .subscribe input[type="submit"]:hover {
+  background-color: #1089de;
+}
+#content .block-1 aside .subscribe .quick-subscribe__terms-checkbox {
+  font-size: 14px;
+  line-height: 1.285714285714286em;
+  font-family: "PTSansRegular";
+  margin-top: 5px;
+}
+#content .block-1 aside .subscribe .quick-subscribe__terms-checkbox input.modern-checkbox[type="checkbox"] + .checkbox-label--checked::before, #content .block-1 aside .subscribe .quick-subscribe__terms-checkbox input.modern-checkbox[type="checkbox"]:checked + .checkbox-label::before {
+  background-color: #34495e;
+  color: #1abc9c;
+}
+#content .block-1 aside .subscribe .quick-subscribe__terms-checkbox input.modern-checkbox[type="checkbox"] {
+  display: none;
+}
+#content .block-1 aside .subscribe .quick-subscribe__terms-checkbox input.modern-checkbox[type="checkbox"] + .checkbox-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  color: rgba(34, 34, 34, 0.6);
+  font-size: 15px;
+}
+#content .block-1 aside .subscribe .quick-subscribe__terms-checkbox input.modern-checkbox[type="checkbox"] + .checkbox-label::before {
+  display: inline-block;
+  content: '\2714';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'font-icon-bank' !important;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  margin-top: 7.5px;
+  text-align: center;
+  color: transparent;
+  background-color: inherit;
+  border: 2px solid #34495e;
+  vertical-align: top;
+  -webkit-transition: color .1s ease,border-color .1s ease;
+  transition: color .1s ease,border-color .1s ease;
+}
+#content .block-1 aside .subscribe .quick-subscribe__terms-checkbox .pseudo-link {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  border-bottom: 1px dashed transparent;
+  color: #369;
+}
+#content .block-1 aside .subscribe .quick-subscribe__terms-checkbox .pseudo-link:hover, #content .block-1 aside .subscribe .quick-subscribe__terms-checkbox .dotted-link:hover {
+  border-bottom-color: rgba(51, 102, 153, 0.3);
+}
+#content .block-1 aside .subscribe span:last-of-type {
+  margin: 0;
+}
+#content .block-1 article .content > .social {
+  width: calc(100% - 32px);
+  padding: 10px 0;
+  margin: 10px auto;
+  border-top: 1px solid #c8cdd1;
+  border-bottom: 1px solid #c8cdd1;
+}
           #content .block-1 aside .banners {
         width: 303px;
         border: 1px dashed #404040;
@@ -896,19 +977,22 @@ header {
           #content .block-1 aside .banners .networks p:nth-child(2),
           #content .block-1 aside .banners .networks p:nth-child(4) {
             font-family: "PTSansRegular";
-            font-size: 11.75px;
+            font-size: 17.75px;
             color: #a9b2be; }
-          #content .block-1 aside .banners .networks p:nth-child(4) {
-            margin-top: 20px; }
           #content .block-1 aside .banners .networks .social {
-            margin-top: 30px;
+            margin-top: 15px;
             margin-left: 12px; }
             #content .block-1 aside .banners .networks .social li {
               display: inline-block;
+              position: relative;
               margin-right: 9px;
               margin-left: -4px; }
               #content .block-1 aside .banners .networks .social li:last-child {
                 margin-right: 0; }
+            #content .block-1 aside .banners .networks .social li:nth-child(1) a {
+                background-image: url(../img/sprite.png);
+                background-position: 0 -167px;
+                background-repeat: no-repeat; }
               #content .block-1 aside .banners .networks .social li:nth-child(2) a {
                 background-image: url(../img/sprite.png);
                 background-position: -42px -167px;
@@ -925,22 +1009,31 @@ header {
                 background-image: url(../img/sprite.png);
                 background-position: -172px -167px;
                 background-repeat: no-repeat; }
-              #content .block-1 aside .banners .networks .social li:nth-child(6) a {
-                background-image: url(../img/sprite.png);
-                background-position: -215px -167px;
-                background-repeat: no-repeat; }
+              #content .block-1 aside .networks .social li:nth-child(6) {
+                width: 33px;
+                height: 33px;
+                vertical-align: middle;
+              }
+              #content .block-1 aside .networks .social li:nth-child(6) a {
+                background: #07c;
+                line-height: 27px;
+                margin-top: -12px;
+                text-decoration: none;
+                color: #ffa930;
+                font-family: "PTSansRegular";
+                font-weight: 600;
+              }
               #content .block-1 aside .banners .networks .social li a {
                 display: block;
                 width: 33px;
                 height: 33px;
-                border-radius: 50%;
-                background-image: url(../img/sprite.png);
-                background-position: 0 -167px;
-                background-repeat: no-repeat; }
+                border-radius: 50%; }
         #content .block-1 aside .banners .networks > a {
           font-family: "PTSansRegular";
           color: #57a2c9;
-          font-size: 11.75px;
+          display: block;
+          font-size: 15.75px;
+          margin-top: 15px;
           text-decoration: none; }
         #content .block-1 aside .banners .banner {
           width: 275px;
@@ -1012,7 +1105,7 @@ header {
       top: 0;
       box-sizing: border-box;
       height: 100%;
-      padding: 10px 20px 0 20px;
+      padding: 28px 20px 0 20px;
       border-left: 1px solid #c8cdd1;
     }
     #content .block-2 .banners {
@@ -1811,7 +1904,7 @@ footer .social-block-bottom .social-block-item {
 footer .social-block-bottom .social-block-item .logo {
   display: block;
   float: left;
-  margin: 18px 10px 0;
+  margin: 18px 10px 0 40px;
   margin-top: 18px;
   height: 21px;
   background: url(../img/sprite-social-logo.png); 
@@ -1819,7 +1912,7 @@ footer .social-block-bottom .social-block-item .logo {
 footer .social-block-bottom .insta .logo {
   width: 22px;
   height: 22px;
-  margin-top: 11px;
+  margin-top: 14px;
   background: url(../img/sprite.png);
   background-position: -26px -455px;
   background-repeat: no-repeat;
@@ -1829,7 +1922,7 @@ footer .social-block-bottom .social-block-item .text {
   display: inline-block;
   line-height: 1;
   color: #fff;
-  padding: 10px 5px 0 0; 
+  padding: 14px 5px 0 0; 
 }
 footer .social-block-bottom .social-block-item .header {
   text-transform: uppercase; 
@@ -1839,14 +1932,14 @@ footer .social-block-bottom .vk {
 }
 footer .social-block-bottom .vk .logo {
   background-position: -1px -78px;
-  margin-top: 12px;
+  margin-top: 15px;
   width: 17px; 
 }
 footer .social-block-bottom .fb {
   background-color: #34579b; }
 footer .social-block-bottom .fb .logo {
   background-position: -19px -78px;
-  margin-top: 12px;
+  margin-top: 15px;
   width: 11px; }
 footer .social-block-bottom .yt .logo {
   background-position: -1px 0;
@@ -1856,7 +1949,7 @@ footer .social-block-bottom .yt {
   background-color: #b41e1e; }
 footer .social-block-bottom .odn .logo {
   background: url(../img/odn.jpg) 5px no-repeat;
-  margin-top: 15px;
+  margin-top: 14px;
   width: 20px; }
 footer .social-block-bottom .odn {
   background-color: #ff8109; }
