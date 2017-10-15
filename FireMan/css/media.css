@@ -45,16 +45,19 @@
 	    float: none;
 	    display: inline-block;
 	   	position: relative;
-	   	bottom: 25px;
+	   	bottom: 4px;
 	   	text-align: left;
 	   	border-top: 1px solid #c8cdd1;
+	}
+	#content .block-1 .left-menu li:last-of-type a {
+	    height: 125px;
 	}
 	#content .block-1 aside {
 		right: 0;
 	    float: none;
 	    width: 820px;
 	    border: none;
-	    margin: 0 auto;
+	    margin: 15px auto 0 auto;
 	    text-align: left;
 	    position: relative;
 	}
@@ -85,10 +88,14 @@
 	    margin: 0;
 	    margin-bottom: 20px;
 	    text-align: left;
+	    display: inline-block;
 	}
 	#content .block-1 aside .subscribe {
 		margin: 0;
 		width: 275px;
+		display: inline-block;
+		vertical-align: top;
+		float: right;
 	}
 	#content .block-1 aside .banners {
 	   margin: 0;
@@ -113,12 +120,18 @@
 	#content .block-2,
 	#content .block-3 {
 	    border-bottom: none;
+	    border: none;
+	}
+	#content .block-3 .title {
+	    border-bottom: none;
 	}
 	#content .block-3 .left {
 	    border: none;
 	    float: none;
-	    margin: 25px auto;
+	    margin: 0 auto 25px auto;
 	    padding: 50px;
+	    padding-top: 0;
+	    border: none;
 	}
 	#content .block-3 > .right .last-articles {
 	   margin: 0 auto;
@@ -129,6 +142,22 @@
 	   float: none;
 	   margin: 0 auto;
 	   border-bottom: none;
+	   border: none;
+	}
+	#content .block-2 aside {
+		position: static;
+		max-width: 840px;
+		margin: 0 auto;
+		border-left: none;
+	}
+	#content .block-2 aside .banners  {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
 	}
 	#content .block-3 > .right .fire {
 	   display: none;
@@ -370,6 +399,12 @@
 @media screen and (max-width: 642px) {
 	#content .block-3 .left .main-new {
 	    margin: 0 auto;
+	}
+	#content .block-1 aside .subscribe {
+		float: none;
+	}
+	#content .block-3 > .right {
+	    padding: 0;
 	}
 	header .top .menu-btn2 {
 		display: block;
