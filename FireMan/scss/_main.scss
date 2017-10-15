@@ -1,7 +1,6 @@
 body {
 	font-family: "PTSansBold";
 	font-size: 14px;
-	box-sizing: padding-box;
 	background: url('../img/background.png') no-repeat 50% 0 #d1d1d1;
 }
 
@@ -168,10 +167,34 @@ header {
 			}
 		}
 		.second-level {
-			display: inline-flex;
+			display: flex;
 			height: 65px;
 			background-color: #e5e8e8;
 			li {
+				&:first-child {
+					width: 16%;
+				}
+				&:nth-child(2) {
+					width: 11%;
+				}
+				&:nth-child(3) {
+					width: 11%;
+				}
+				&:nth-child(4) {
+					width: 11%;
+				}
+				&:nth-child(5) {
+					width: 12%;
+				}
+				&:nth-child(6) {
+					width: 10%;
+				}
+				&:nth-child(7) {
+					width: 15%;
+				}
+				&:nth-child(8) {
+					width: 14.5%;
+				}
 				&:first-child a {
 					padding-left: 93px;
 					&::before {
@@ -217,7 +240,7 @@ header {
 					}
 				}
 				&:nth-child(8) a {
-					padding-right: 45px;
+					padding-right: 35px;
 					padding-left: 61px;
 					&::before {
 						@include sprite(-492px,-48px);
@@ -230,6 +253,7 @@ header {
 					height: 47px;
 					background-color: #e5e8e8;
 					padding: 18px 20px 0 50px;
+					padding-top: 18px;
 					color: #acafb2;
 					text-decoration: none;
 					text-transform: uppercase;
@@ -1124,10 +1148,15 @@ header {
 	}
 	.bottom-menu {
 		clear: both;
+		position: relative;
+		z-index: 1;
 		li {
 			padding-top: 42px;
 			display: inline-block;
 			margin-left: -4px;
+			&:first-child {
+				margin-left: 0px;
+			}
 			&:nth-child(1) a::before {
 				@include sprite(0,-365px);
 				margin-left: -48px;
@@ -1167,7 +1196,7 @@ header {
 				position: relative;
 				font-family: "PTSansRegular";
 				font-size: 15px;
-				width: 144.7px;
+				width: 144.1px;
 				height: 85px;
 				padding-right: 24px;
 				text-align: right;
@@ -1490,6 +1519,81 @@ footer {
 			}
 		}
 	}
+	.social-block-bottom {
+	    width: 100%;
+	    height: 58px;
+	    font-family: "RobotoRegular";
+	}
+	.social-block-bottom .gaijin {
+	    background-color: #37474f;
+	}
+	.social-block-bottom .social-block-item {
+	    width: 20%;
+	    height: 58px;
+	    display: inline-block;
+	    float: left;
+	    text-decoration: none;
+	    margin: 0;
+	    padding: 0;
+	}
+	.social-block-bottom .social-block-item .logo {
+	    display: block;
+	    float: left;
+	    margin: 18px 10px 0;
+        margin-top: 18px;
+	    height: 21px;
+	    background: url(../img/sprite-social-logo.png);
+	    background-position-x: 0%;
+        background-position-y: 0%;
+	}
+	.social-block-bottom .gaijin .logo {
+	    background-position: -1px -44px;
+	    margin-top: 10px;
+	    width: 24px;
+	    height: 33px;
+	}
+	.social-block-bottom .social-block-item .text {
+	    float: left;
+	    display: inline-block;
+	    line-height: 1;
+	    color: #fff;
+	    padding: 10px 5px 0 0;
+	}
+	.social-block-bottom .social-block-item .header {
+	    text-transform: uppercase;
+	}
+	.social-block-bottom .vk {
+	    background-color: #587ca3;
+	}
+	.social-block-bottom .vk .logo {
+	    background-position: -1px -78px;
+	    margin-top: 12px;
+	    width: 17px;
+	}
+	.social-block-bottom .fb {
+	    background-color: #34579b;
+	}
+	.social-block-bottom .fb .logo {
+	    background-position: -19px -78px;
+	    margin-top: 12px;
+	    width: 11px;
+	}
+	.social-block-bottom .yt .logo {
+	    background-position: -1px 0;
+	    margin-top: 15px;
+	    width: 30px;
+	}
+	.social-block-bottom .yt {
+	    background-color: #b41e1e;
+	}
+	.social-block-bottom .odn .logo {
+	    background: url(../img/odn.jpg) 5px no-repeat;
+	    margin-top: 15px;
+	    width: 20px;
+	}
+	.social-block-bottom .odn {
+	    background-color: rgb(255,129,9);
+	}
 	.bottom {
 		width: 1170px;
 		padding: 0 45px;
@@ -1569,5 +1673,5 @@ footer {
 					color: #144570;
 				}
 			}
-		}
+	}
 }
