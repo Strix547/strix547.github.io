@@ -1392,10 +1392,9 @@ header {
         #content .block-3 .left .news .new .img {
           display: inline-block; }
           #content .block-3 .left .news .new .img img {
-            width: 100px;
+            width: 114px;
             height: 70px;
-            margin-right: 25px;
-            margin-left: 19px; }
+            margin-right: 25px; }
         #content .block-3 .left .news .new a {
           vertical-align: top;
           display: inline-block;

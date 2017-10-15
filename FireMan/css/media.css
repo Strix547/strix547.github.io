@@ -656,6 +656,9 @@
 	}
 }
 @media screen and (max-width: 479px) {
+	#content .block-3 > .right .last-articles > a:first-of-type {
+	    text-align: left;
+	}
 	#content .block-3 > .right .last-articles .article .img {
     	display: none;
 	}
