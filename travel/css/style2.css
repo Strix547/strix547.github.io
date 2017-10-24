@@ -50,8 +50,7 @@ table {
 
 body {
   font-family: "PNRegular";
-  background: url("../img/about-background.png") no-repeat;
-  background-position: bottom;
+  background: url("../img/direction-background.png");
 }
 
 .wrapper {
@@ -153,4 +152,80 @@ header .menu .menu-btn .line .inner {
 .content {
   text-align: center;
   padding-bottom: 30px;
+}
+.content .directions {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 120px;
+}
+.content .directions .dir {
+  width: 313px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 302px 25px 29px 25px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 36px 16px 2px rgba(0, 0, 0, 0.29);
+}
+.content .directions .dir p:first-child {
+  font-size: 16px;
+  padding-bottom: 14px;
+  color: #fff;
+  font-style: italic;
+}
+.content .directions .dir h3 {
+  font-family: "PNSemiBold";
+  font-size: 26px;
+  padding-bottom: 61px;
+  color: #fff;
+}
+.content .directions .dir p:nth-child(3) {
+  font-family: "PNSemiBold";
+  font-size: 18px;
+  color: #3c3f42;
+  line-height: 30px;
+  word-spacing: 10;
+  padding-bottom: 40px;
+  margin-bottom: auto;
+}
+.content .directions .dir a {
+  display: block;
+  width: 302px;
+  height: 54px;
+  line-height: 54px;
+  margin: 0 auto;
+  font-family: "PNBold";
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background: -webkit-linear-gradient(left, #eb640c, #ef9d3f);
+  background: linear-gradient(to right, #eb640c, #ef9d3f);
+  border-radius: 23px;
+}
+.content .directions .ft {
+  margin-right: 92px;
+  background: url("../img/img1.jpg") no-repeat, url("../img/direction-bg1.png") 0 280px no-repeat;
+  background-color: #fff;
+}
+.content .directions .zc {
+  background: url("../img/img2.jpg") no-repeat, url("../img/direction-bg2.png") 0 280px no-repeat;
+  background-color: #fff;
+}
+.content .directions .zc a {
+  background: -webkit-linear-gradient(left, #7ac012, #9bd03f);
+  background: linear-gradient(to right, #7ac012, #9bd03f);
 }

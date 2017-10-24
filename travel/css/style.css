@@ -62,6 +62,7 @@ body {
 header {
   margin-top: 37px;
   width: 100%;
+  height: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -96,6 +97,7 @@ header .menu {
 }
 header .menu .menu-btn-label {
   padding-right: 18px;
+  vertical-align: top;
 }
 header .menu .menu-btn-label a {
   font-family: "PNSemiBold";
@@ -103,7 +105,6 @@ header .menu .menu-btn-label a {
   text-decoration: none;
   text-transform: uppercase;
   color: #353d43;
-  padding-right: 18px;
 }
 header .menu .menu-btn {
   z-index: 3;
