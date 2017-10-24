@@ -1,0 +1,90 @@
+body {
+	font-family: "PNRegular";
+	background: url("../img/about-background.png") no-repeat;
+	background-position: bottom;
+}
+
+.wrapper {
+	max-width: 1540px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+header {
+	margin-top: 37px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	color: #353d43;
+	h2 {
+		font-family: "PNBold";
+		font-size: 32px;
+		padding-left: 97px;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 75px;
+			height: 9px;
+			left: 0;
+			top: 50%;
+			margin-top: -4.5px;
+			background: url("../img/line-before.png");
+		}
+	}
+	.menu {
+		display: inline-flex;
+		.menu-btn-label {
+			padding-right: 18px;
+		}
+		.menu-btn-label a {
+			font-family: "PNSemiBold";
+			font-size: 16px;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #353d43;
+			padding-right: 18px;
+		}
+		.menu-btn {
+		    z-index: 3;
+		    width: 25px;
+		    cursor: pointer;
+		    -webkit-transform: translateX(0) translateZ(0);
+		    transform: translateX(0) translateZ(0);
+		    -webkit-transition: -webkit-transform .5s;
+		    transition: -webkit-transform .5s;
+		    transition: transform .5s;
+		    transition: transform .5s,-webkit-transform .5s;
+		    pointer-events: visiblePainted;
+		    .line {
+			    position: relative;
+			    overflow: hidden;
+			    height: 1px;
+			    margin-bottom: 7px;
+			    transform-origin: 100% 50%;
+			    transform: scaleX(1);
+			    transition: none;
+			    &:last-child {
+			    	margin-bottom: 0;
+			    	transform: scaleX(0.7);
+			    }
+			    .inner {
+				    content: "";
+				    display: block;
+				    position: absolute;
+				    left: 0;
+				    top: 0;
+				    width: 100%;
+				    height: 100%;
+				    background-color: #353d43;
+				}
+			}
+		}
+	}
+}
+
+.content {
+	text-align: center;
+	padding-bottom: 30px;
+	
+}

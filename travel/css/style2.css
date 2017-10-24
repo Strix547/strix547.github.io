@@ -1,0 +1,156 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "PNRegular";
+  background: url("../img/about-background.png") no-repeat;
+  background-position: bottom;
+}
+
+.wrapper {
+  max-width: 1540px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 37px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #353d43;
+}
+header h2 {
+  font-family: "PNBold";
+  font-size: 32px;
+  padding-left: 97px;
+  position: relative;
+}
+header h2::before {
+  content: '';
+  position: absolute;
+  width: 75px;
+  height: 9px;
+  left: 0;
+  top: 50%;
+  margin-top: -4.5px;
+  background: url("../img/line-before.png");
+}
+header .menu {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+header .menu .menu-btn-label {
+  padding-right: 18px;
+}
+header .menu .menu-btn-label a {
+  font-family: "PNSemiBold";
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #353d43;
+  padding-right: 18px;
+}
+header .menu .menu-btn {
+  z-index: 3;
+  width: 25px;
+  cursor: pointer;
+  -webkit-transform: translateX(0) translateZ(0);
+  transform: translateX(0) translateZ(0);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  -webkit-transition: -webkit-transform .5s,-webkit-transform .5s;
+          transition: transform .5s,-webkit-transform .5s;
+  pointer-events: visiblePainted;
+}
+header .menu .menu-btn .line {
+  position: relative;
+  overflow: hidden;
+  height: 1px;
+  margin-bottom: 7px;
+  -webkit-transform-origin: 100% 50%;
+      -ms-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: none;
+          transition: none;
+}
+header .menu .menu-btn .line:last-child {
+  margin-bottom: 0;
+  -webkit-transform: scaleX(0.7);
+      -ms-transform: scaleX(0.7);
+          transform: scaleX(0.7);
+}
+header .menu .menu-btn .line .inner {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #353d43;
+}
+
+.content {
+  text-align: center;
+  padding-bottom: 30px;
+}
