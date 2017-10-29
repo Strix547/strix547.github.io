@@ -1,7 +1,6 @@
 body {
 	font-family: "PNSemiBold";
 	font-size: 26px;
-	word-spacing: 10;
 	background: url("../img/about-background.png") no-repeat 0 100% #fff;
 }
 
@@ -65,6 +64,7 @@ header {
 	}
 	.menu {
 		display: inline-flex;
+		margin: auto 0;
 		.menu-btn-label {
 			padding-right: 18px;
 			vertical-align: top;
@@ -119,11 +119,11 @@ header {
 		box-shadow: 0 36px 16px 2px rgba(0,0,0,.29);
 	}
 	p {
-		white-space: pre-line;
 		line-height: 50px;
 	}
 	.travel {
 		margin-top: 115px;
+		padding-left: 15px;
 		display: flex;
 		.left {
 			margin: auto;
@@ -149,8 +149,9 @@ header {
 				}
 			}
 		}
-		img {
-			
+		p {
+			white-space: pre-line;
+			padding-right: 30px;
 		}
 	}
 	.why-us {
@@ -158,14 +159,15 @@ header {
 		margin-bottom: 100px;
 		display: flex;
 		img {
-			margin-right: 70px;
+			height: auto;
+			margin-right: 20px;
 		}
 		.right {
-			margin-top: 70px;
+			margin: 70px auto 0 auto;
 			ol {
 				margin-top: 75px;
 				li {
-					white-space: pre-line;
+					display: flex;
 					margin-bottom: 65px;
 					&:last-child {
 						margin-bottom: 0;
@@ -184,6 +186,7 @@ header {
 					p {
 						display: inline-block;
 						line-height: normal;
+						white-space: pre-line;
 						vertical-align: middle;
 						&::before {
 							content: '';
@@ -241,11 +244,15 @@ header {
 	}
 	.zest {
 		margin-top: 106px;
+		padding-left: 15px;
 		display: flex;
 		.left {
 			margin: auto;
+			p {
+				max-width: 634px;
+				padding-right: 30px;
+			}
 		}
-		
 		a {
 			display: block;
 			text-decoration: none;
@@ -279,6 +286,9 @@ header {
 			top: 332px;
 			z-index: -1;
 		}
+		p {
+			max-width: 870px;
+		}
 	}
 	.reliable {
 		padding-bottom: 130px;
@@ -290,10 +300,10 @@ header {
 		}
 		ol {
 			display: flex;
-			margin: auto;
 			flex-wrap: wrap;
 			li {
 				width: 50%;
+				display: flex;
 				margin-bottom: 70px;
 				&:last-child {
 					margin-bottom: 0;
@@ -301,6 +311,7 @@ header {
 				span {
 					width: 58px;
 					height: 58px;
+					margin-top: 16px;
 					line-height: 58px;
 					text-align: center;
 					background: linear-gradient(to right, #eb640c, #ef9d3f);
@@ -308,15 +319,10 @@ header {
 					color: #fff;
 					font-family: "PNBold";
 					font-size: 32px;
-					vertical-align: top;
 					margin-right: 25px;
-					display: inline-block;
 				}
 				p {
-					display: inline-block;
-					vertical-align: top;
 					white-space: pre-line;
-					text-align: left;
 				}
 			}
 		}
@@ -325,4 +331,55 @@ header {
 
 .content > h3 {
 	margin-left: 200px;
+}
+
+@media screen and (max-width: 1600px) {
+	.content .why-us img {
+		max-width: 700px;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.content .travel p {
+		white-space: normal;
+		max-width: 675px;
+	}
+	.content .why-us .right ol li p {
+	    white-space: normal;
+	}
+	.content > h3 {
+		margin-left: 100px;
+	}
+	.content .kinotravel {
+		padding-bottom: 615px;
+	}
+	.content .kinotravel img:last-of-type {
+	    top: 404px;
+	   	right: 50%;
+	   	margin-right: -578px;
+	}
+	.content .reliable {
+	    padding-bottom: 130px;
+	    padding-left: 0;
+	}
+	.content .reliable ol {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 30px;
+	}
+	.content .reliable ol li {
+		width: 100%;
+		display: flex;
+	}
+	.content .reliable ol li span {
+		flex: none;
+		margin: auto 25px auto 0;
+	}
+	.content .reliable h2 {
+		text-align: center;
+	}
+	.content .reliable ol li p {
+		white-space: normal;
+		display: inline-block;
+	}
 }

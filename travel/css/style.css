@@ -57,10 +57,29 @@ body {
   max-width: 1540px;
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
+}
+
+.borders {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.borders .border {
+  width: 1px;
+  height: 100%;
+  background-color: rgba(189, 187, 181, 0.22);
 }
 
 header {
-  margin-top: 37px;
+  padding-top: 37px;
   width: 100%;
   height: 32px;
   display: -webkit-box;
@@ -94,6 +113,7 @@ header .menu {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin: auto 0;
 }
 header .menu .menu-btn-label {
   padding-right: 18px;
@@ -102,6 +122,8 @@ header .menu .menu-btn-label {
 header .menu .menu-btn-label a {
   font-family: "PNSemiBold";
   font-size: 16px;
+  position: relative;
+  z-index: 1;
   text-decoration: none;
   text-transform: uppercase;
   color: #353d43;
@@ -187,13 +209,19 @@ header .menu .menu-btn .line .inner {
   color: #fff;
   font-style: italic;
 }
+.content .directions .dir .icon {
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  right: 28px;
+}
 .content .directions .dir h3 {
   font-family: "PNSemiBold";
   font-size: 26px;
   padding-bottom: 61px;
   color: #fff;
 }
-.content .directions .dir p:nth-child(3) {
+.content .directions .dir p:nth-child(4) {
   font-family: "PNSemiBold";
   font-size: 18px;
   color: #3c3f42;
@@ -222,11 +250,45 @@ header .menu .menu-btn .line .inner {
   background: url("../img/img1.jpg") no-repeat, url("../img/direction-bg1.png") 0 280px no-repeat;
   background-color: #fff;
 }
+.content .directions .ft .icon {
+  background: url("../img/sprite.png") 0 0 no-repeat;
+}
 .content .directions .zc {
+  padding-left: 13px;
+  width: 325px;
   background: url("../img/img2.jpg") no-repeat, url("../img/direction-bg2.png") 0 280px no-repeat;
   background-color: #fff;
+}
+.content .directions .zc .icon {
+  background: url("../img/sprite.png") -120px 0 no-repeat;
 }
 .content .directions .zc a {
   background: -webkit-linear-gradient(left, #7ac012, #9bd03f);
   background: linear-gradient(to right, #7ac012, #9bd03f);
+}
+
+@media screen and (max-width: 836px) {
+  .content .directions {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .content .directions .dir {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 755px) {
+  body {
+    background: #fff;
+  }
+
+  .content .directions .dir.ft {
+    margin-bottom: 50px;
+  }
+
+  .content .directions .dir {
+    margin: 0 auto;
+  }
 }
