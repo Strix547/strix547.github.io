@@ -1,4 +1,5 @@
 body {
+	overflow-x: hidden;
 	font-family: "PNRegular";
 	background: url("../img/direction-background.png");
 }
@@ -126,6 +127,7 @@ header {
 				position: absolute;
 				width: 73px;
 				height: 73px;
+				top: 295px;
 				right: 28px;
 			}
 			h3 {
@@ -202,5 +204,53 @@ header {
 	}
 	.content .directions .dir {
 		margin: 0 auto;
+	}
+	.content .directions {
+		margin-top: 60px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	header {
+		padding-top: 0;
+		height: 100px;
+		justify-content: flex-start;
+		flex-direction: column-reverse;
+	}
+	header .menu {
+		margin-left: auto;
+	}
+	header h2 {
+		padding-left: 0;
+		text-align: center;
+	}
+	header h2::before {
+		display: none;
+	}
+	.content .directions {
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	header {
+		box-sizing: border-box;
+		padding: 0 15px;
+	}
+	.wrapper {
+		max-width: 100%;
+		padding: 0;
+	}
+	.content .directions .dir {
+		box-sizing: border-box;
+		width: 100%;
+		background-size: 100% 253px , auto auto;
+	}
+	.content .directions .dir a {
+		width: 100%;
+	}
+	.content .directions .dir .icon {
+		top: 300px;
+		right: 15px;
 	}
 }

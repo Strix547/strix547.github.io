@@ -1,7 +1,10 @@
 body {
 	font-family: "PNSemiBold";
-	font-size: 26px;
-	background: url("../img/about-background.png") no-repeat 0 100% #fff;
+	background: #fff;
+	color: #353d43;
+	position: relative;
+	overflow-x: hidden;
+	padding-bottom: 50px;
 }
 
 h2 {
@@ -37,6 +40,7 @@ h3 {
 	max-width: 1540px;
 	padding: 0 15px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .borders {
@@ -57,7 +61,6 @@ header {
 	width: 100%;
 	height: 32px;
 	display: flex;
-	position: relative;
 	z-index: 1;
 	justify-content: space-between;
 	color: #353d43;
@@ -90,6 +93,8 @@ header {
 			text-decoration: none;
 			text-transform: uppercase;
 			color: #353d43;
+			z-index: 1;
+			position: relative;
 		}
 		.menu-btn {
 		    z-index: 3;
@@ -132,271 +137,407 @@ header {
 .content {
 	position: relative;
 	z-index: 1;
-	img {
-		box-shadow: 0 36px 16px 2px rgba(0,0,0,.29);
-	}
-	p {
-		line-height: 50px;
-	}
-	.travel {
-		margin-top: 115px;
-		padding-left: 15px;
+	margin-top: 55px;
+	.main {
+		width: 100%;
+		height: 666px;
 		display: flex;
-		.left {
-			margin: auto;
-		}
+		position: relative;
+		z-index: 1;
+		background: url("../img/img9.jpg") 50% 50% no-repeat;
 		h1 {
-			font-size: 75px;
-			padding-bottom: 49px;
-			color: #353d43;
+			padding-top: 175px;
+			font-size: 48px;
+			font-family: "PNRegular";
+			line-height: 60px;
+			color: #fff;
+			text-align: center;
+			margin: 0 auto;
+			white-space: pre-line;
 			span {
+				font-family: "PNSemiBold";
+				font-size: 75px;
+				line-height: 101px;
 				position: relative;
 				padding-bottom: 10px;
 				background: linear-gradient(to right, #eb640c, #ef9d3f);
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
-				&::before {
-					content: '';
-					position: absolute;
-					bottom: 0;
-					width: 182px;
-					height: 6px;
-					background: linear-gradient(to right, #eb640c, #ef9d3f);
-					border-radius: 3px;
+			}
+		}
+	}
+	.why-autumn {
+		width: 100%;
+		box-sizing: border-box;
+		height: 640px;
+		padding-top: 100px;
+		background: url("../img/greece-background.png") 50% 100% no-repeat;
+		padding-left: 20%;
+		p {
+			font-size: 22px;
+			line-height: 50px;
+			white-space: pre-line;
+		}
+	}
+	.why-greece {
+		margin-top: 100px;
+		display: flex;
+		img {
+			box-shadow: 0 22px 16px 5px rgba(0,0,0,.13);
+		}
+		.right {
+			margin: auto 0 auto 85px;
+			p {
+				font-size: 22px;
+				line-height: 50px;
+				white-space: pre-line;
+			}
+		}
+	}
+	.info {
+		max-width: 1018px;
+		padding: 0 75px 10px 75px;
+		margin: 56px auto 0;
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		box-shadow: 0 0 16px 5px rgba(0,0,0,.08);
+		font-family: "PNRegular";
+		font-size: 20px;
+		h5 {
+			font-family: "PNSemiBold";
+			font-size: 22px;
+		}
+		hr {
+			width: 100%;
+			height: 1px;
+			background-color: #353d43;
+			border: none;
+			&:first-of-type {
+				background-color: #aaaaaa;
+			}
+		}
+		.header {
+			display: flex;
+			padding-top: 32px;
+			justify-content: space-between;
+			font-family: "PNBold";
+			span {
+				font-family: "PNRegularItalic";
+				font-size: 22px;
+				padding-right: 34px;
+			}
+			.date {
+				flex-grow: 1;
+				border-right: 1px solid #aaaaaa;
+			}
+			.age {
+				flex-grow: 2;
+				text-align: center;
+				border-right: 1px solid #aaaaaa;
+			}
+			.cost {
+				flex-grow: 1;
+				text-align: right;
+			}
+		}
+		.included {
+			ul {
+				margin-top: 40px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				li {
+					width: calc(100% / 3);
+					margin-bottom: 36px;
+					display: flex;
+					&:last-child {
+						margin-right: auto;
+					}
+					.circle {
+						width: 12px;
+						height: 12px;
+						border-radius: 50%;
+						margin-right: 18px;
+						margin-top: 7px;
+						background: linear-gradient(to right, #eb640c, #ef9d3f);
+					}
+					p {
+						line-height: 26px;
+					}
+				}
+			}
+		}
+		.more {
+			ul {
+				margin-top: 40px;
+				display: flex;
+				justify-content: space-between;
+				li {
+					display: flex;
+					.circle {
+						width: 12px;
+						height: 12px;
+						border-radius: 50%;
+						margin-right: 18px;
+						margin-top: 4px;
+						background: linear-gradient(to right, #eb640c, #ef9d3f);
+					}
 				}
 			}
 		}
 		p {
 			white-space: pre-line;
-			padding-right: 30px;
 		}
-	}
-	.why-us {
-		margin-top: 110px;
-		margin-bottom: 100px;
-		display: flex;
-		img {
-			height: auto;
-			margin-right: 20px;
-		}
-		.right {
-			margin: 70px auto 0 auto;
-			ol {
-				margin-top: 75px;
+		.live {
+			ul {
+				display: flex;
+				.left {
+					margin-right: 60px;
+				}
 				li {
-					display: flex;
-					margin-bottom: 65px;
+					margin-bottom: 22px;
 					&:last-child {
 						margin-bottom: 0;
 					}
-					span {
-						font-size: 32px;
-						padding-right: 65px;
-						vertical-align: top;
-						background: linear-gradient(to right, #eb640c, #ef9d3f);
-						-webkit-background-clip: text;
-						-webkit-text-fill-color: transparent;
-					}
-					&:first-child span {
-						padding-right: 72px;
-					}
-					p {
-						display: inline-block;
-						line-height: normal;
-						white-space: pre-line;
-						vertical-align: middle;
-						&::before {
-							content: '';
-							position: absolute;
-							width: 35px;
-							height: 1px;
-							background-color: #353d43;
-							margin-left: -55px;
-							margin-top: 15px;
-						}
-					}
+				}
+				h5 {
+					padding-bottom: 10px;
+				}
+				p {
+					line-height: 40px;
 				}
 			}
 		}
-	}
-	.swiper-container {
-		height: 425px;
-		margin-top: 77px;
-		.swiper-slide {
-			background-size: cover !important;
-		}
-		.swiper-button-prev, .swiper-button-next {
-		    position: absolute;
-		    top: 50%;
-		    width: 53px;
-		    height: 53px;
-		    margin-top: -26.5px;
-		    z-index: 10;
-		    background: #fff;
-		    cursor: pointer;
-		    -moz-background-size: 27px 44px;
-		    -webkit-background-size: 27px 44px;
-		    background-size: 27px 44px;
-		    background-position: center;
-		    background-repeat: no-repeat;
-		}
-		.swiper-button-prev {
-		    background: #fff;
-		    left: 0;
-		}
-		.swiper-button-next {
-		    background: #fff;
-		    right: 0;
-		}
-		svg {
-			display: block;
-			width: 11px;
-			height: 20px;
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			margin-left: -5.5px;
-			margin-top: -10px;
-		}
-	}
-	.zest {
-		margin-top: 106px;
-		padding-left: 15px;
-		display: flex;
-		.left {
-			margin: auto;
-			p {
-				max-width: 634px;
-				padding-right: 30px;
+		.docs {
+			h5 {
+				padding-bottom: 20px;
 			}
+			ol {
+				display: flex;
+				flex-flow: row wrap;
+				.left {
+					margin-right: 61px;
+				}
+				li {
+					margin-bottom: 28px;
+					a {
+						color: #ec791f;
+					}
+					p {
+						line-height: 30px;
+					}
+				}
+			}	
 		}
-		a {
+		.docs > a {
 			display: block;
-			text-decoration: none;
+			width: 265px;
+			height: 56px;
+			line-height: 56px;
 			font-family: "PNBold";
 			font-size: 22px;
 			color: #fff;
-			width: 256px;
-			height: 56px;
+			text-decoration: none;
 			text-align: center;
-			line-height: 56px;
-			background: linear-gradient(to right, #eb640c, #ef9d3f);
+			background: linear-gradient(to right,#eb640c,#ef9d3f);
 			border-radius: 23px;
-			margin-top: 29px;
 		}
 	}
-	.kinotravel {
-		margin-top: 105px;
-		display: flex;
-		position: relative;
-		padding-bottom: 436px;
-		h2 {
-			padding-top: 54px;
-			margin-bottom: 9px;
-		}
-		img:first-of-type {
-			margin-right: 50px;
-		}
-		img:last-of-type {
-			position: absolute;
-			right: 0;
-			top: 332px;
-			z-index: -1;
-		}
-		p {
-			max-width: 870px;
-		}
+	.info > div {
+		padding: 25px 0;
 	}
-	.reliable {
-		padding-bottom: 130px;
-		padding-left: 300px;
-		h2 {
-			margin-top: 150px;
-			
-			padding-bottom: 75px;
-		}
-		ol {
-			display: flex;
-			flex-wrap: wrap;
-			li {
-				width: 50%;
-				display: flex;
-				margin-bottom: 70px;
+}
+
+.content > p {
+	font-size: 22px;
+	line-height: 50px;
+	text-align: center;
+	white-space: pre-line;
+	padding-top: 80px;
+	span {
+		background: linear-gradient(to right, #eb640c, #ef9d3f);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.content > a {
+	display: block;
+	width: 265px;
+	height: 56px;
+	line-height: 56px;
+	margin: 36px auto 0;
+	font-family: "PNBold";
+	font-size: 22px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	background: linear-gradient(to right,#eb640c,#ef9d3f);
+	border-radius: 23px;
+}
+
+@media screen and (max-width: 1630px) {
+	.content .why-greece {
+	    display: flex;
+	    text-align: center;
+	    flex-direction: column-reverse;
+	    .right {
+	    	margin-left: 0;
+	    	padding: 0 15px;
+	    	p {
+		    	white-space: normal;
+		    }
+	    }
+	    img {
+	    	max-width: 80%;
+	    	margin: 30px auto 0;
+	    }
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.content .why-autumn {
+	    padding-left: 0;
+	    text-align: center;
+	    p {
+	    	white-space: normal;
+	    }
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	body {
+		padding-bottom: 0;
+	}
+	.content .info {
+		padding: 0 15px;
+	}
+}
+
+@media screen and (max-width: 830px) {
+	.content .info {
+		.header {
+			flex-direction: column;
+			text-align: center;
+			div {
+				margin-bottom: 15px;
 				&:last-child {
 					margin-bottom: 0;
 				}
-				span {
-					width: 58px;
-					height: 58px;
-					margin-top: 16px;
-					line-height: 58px;
-					text-align: center;
-					background: linear-gradient(to right, #eb640c, #ef9d3f);
-					border-radius: 50%;
-					color: #fff;
-					font-family: "PNBold";
-					font-size: 32px;
-					margin-right: 25px;
-				}
-				p {
-					white-space: pre-line;
+			}
+			.date,
+			.age {
+				border-right: none;
+			}
+			.cost {
+				text-align: center;
+			}
+		}
+		.included {
+			ul {
+				li {
+					width: 50%;
 				}
 			}
 		}
 	}
 }
 
-.content > h3 {
-	margin-left: 200px;
-}
-
-@media screen and (max-width: 1600px) {
-	.content .why-us img {
-		max-width: 700px;
+@media screen and (max-width: 697px) {
+	.content .main h1 {
+	    padding-top: 55px;
+	}
+	.content .info {
+		.more {
+			ul {
+				flex-direction: column;
+				li {
+					margin-bottom: 15px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+	.content .info .live ul {
+	    flex-direction: column;
+	}
+	.content .info .live ul .left {
+	    margin-right: 0;
+	    margin-bottom: 20px;
+	}
+	.content .info .docs > a {
+	    margin: 0 auto;
 	}
 }
 
-@media screen and (max-width: 1400px) {
-	.content .travel p {
+@media screen and (max-width: 650px) {
+	.content .info {
+		.included {
+			ul {
+				li {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 529px) {
+	.content .main h1 {
+	    padding-top: 55px;
+	    span {
+	    	line-height: 70px;
+	    }
+	}
+	.content .why-autumn {
+		height: 788px;
+	}
+	.content .why-greece {
+	    img {
+	    	max-width: 95%;
+	    	margin: 20px auto 0;
+	    }
+	}
+	.content .why-greece .right p {
+	    text-align: justify;
+	}
+	.content > p {
+		padding: 80px 15px 0;
+		text-align: justify;
 		white-space: normal;
-		max-width: 675px;
 	}
-	.content .why-us .right ol li p {
-	    white-space: normal;
+}
+
+@media screen and (max-width: 450px) {
+	header {
+		padding-top: 0;
+		height: 100px;
+		justify-content: flex-start;
+		flex-direction: column-reverse;
 	}
-	.content > h3 {
-		margin-left: 100px;
+	header .menu {
+		margin-left: auto;
 	}
-	.content .kinotravel {
-		padding-bottom: 615px;
-	}
-	.content .kinotravel img:last-of-type {
-	    top: 404px;
-	   	right: 50%;
-	   	margin-right: -578px;
-	}
-	.content .reliable {
-	    padding-bottom: 130px;
-	    padding-left: 0;
-	}
-	.content .reliable ol {
-		display: flex;
-		flex-wrap: wrap;
-		padding: 0 30px;
-	}
-	.content .reliable ol li {
-		width: 100%;
-		display: flex;
-	}
-	.content .reliable ol li span {
-		flex: none;
-		margin: auto 25px auto 0;
-	}
-	.content .reliable h2 {
+	header h3 {
+		padding-left: 0;
 		text-align: center;
 	}
-	.content .reliable ol li p {
-		white-space: normal;
-		display: inline-block;
+	header h3::before {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.content .main h1 {
+	    font-size: 40px;
+	    line-height: 45px;
+	    padding-top: 90px;
+	    span {
+	    	font-size: 62px;
+	    	line-height: 62px;
+	    }
 	}
 }

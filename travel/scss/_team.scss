@@ -2,6 +2,7 @@ body {
 	font-family: "PNSemiBold";
 	background: #fff;
 	position: relative;
+	overflow-x: hidden;
 }
 
 h2 {
@@ -336,5 +337,96 @@ header {
 	    background-color: #fff;
 	    text-align: center;
 	    box-shadow: 0 22px 16px 5px rgba(0, 0, 0, 0.13);
+	}
+}
+
+@media screen and (max-width: 1164px) {
+	.content .why {
+	    width: 100%;
+	    margin: 70px auto 0 auto;
+	}
+	.content .why p {
+	    white-space: normal;
+	}
+}
+
+@media screen and (max-width: 823px) {
+	.content .main .right h1 {
+	    text-align: center;
+	}
+	.content .main .right h1 span {
+	   	display: block;
+	}
+	.content .main .right h1 span::before {
+	   	display: none;
+	}
+}
+
+@media screen and (max-width: 742px) {
+	.team .member {
+	    width: 100%;
+	}
+	.content .main .right p:last-of-type {
+	    white-space: normal;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.content .main a {
+	    width: 90%;
+	    height: auto;
+	}
+	.content .main a img {
+	    width: 100%;
+	    height: 100%;
+	}
+	.content .main .right h1 {
+	    font-size: 60px;
+	    padding-bottom: 30px;
+	}
+	.content .why p {
+	    font-size: 20px;
+	}
+	.content .main .right p:first-of-type {
+	    font-size: 28px;
+	}
+	.content .main .right p:last-of-type {
+	    font-size: 23px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	header {
+		padding-top: 0;
+		height: 100px;
+		justify-content: flex-start;
+		flex-direction: column-reverse;
+	}
+	header .menu {
+		margin-left: auto;
+	}
+	header h3 {
+		padding-left: 0;
+		text-align: center;
+	}
+	header h3::before {
+		display: none;
+	}
+	.content .main a .play {
+	    top: 10px;
+	    right: 20px;
+	    line-height: 20px;
+	    font-size: 14px;
+	}
+	.content .main a .play::after {
+	    display: none;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.team .member .desc p:nth-child(4) {
+	    white-space: normal;
+	   	padding-left: 10px;
+	   	padding-right: 10px;
 	}
 }
