@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -176,7 +175,7 @@ header {
           display: block;
           padding-bottom: 31px;
           padding-left: 0; }
-    #preview .content .sign-in {
+    #preview .content .sign-up {
       margin: 30px auto 0; }
 
 #how-it-work {
@@ -250,7 +249,7 @@ header {
         font-size: 200px;
         color: #ebebeb; }
 
-section.sign-in {
+section.sign-up {
   height: 125px;
   line-height: 125px;
   background-color: #f4f4f4;
@@ -261,11 +260,11 @@ section.sign-in {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-  section.sign-in p {
+  section.sign-up p {
     font-size: 24px;
     color: #000;
     margin-left: auto; }
-  section.sign-in .sign-in {
+  section.sign-up .sign-up {
     margin: auto auto auto 63px; }
 
 #why-us {
@@ -524,18 +523,12 @@ footer {
   background: #fff;
   position: fixed;
   top: 45%;
-  /* o╤В╤Б╤В╤Г╨┐a╨╡╨╝ ╤Б╨▓╨╡╤А╤Е╤Г 45%, o╤Б╤Вa╨╗╤М╨╜╤Л╨╡ 5% ╨┐o╨┤╨▓╨╕╨╜╨╡╤В ╤Б╨║╤А╨╕╨┐╤В */
   left: 50%;
-  /* ╨┐o╨╗o╨▓╨╕╨╜a ╤Н╨║╤Аa╨╜a ╤Б╨╗╨╡╨▓a */
-  margin-top: -206.5px;
-  margin-left: -177.5px;
-  /* ╤В╤Г╤В ╨▓╤Б╤П ╨╝a╨│╨╕╤П ╤Ж╨╡╨╜╤В╤Аo╨▓╨║╨╕ css, o╤В╤Б╤В╤Г╨┐a╨╡╨╝ ╨▓╨╗╨╡╨▓o ╨╕ ╨▓╨▓╨╡╤А╤Е ╨╝╨╕╨╜╤Г╤Б ╨┐o╨╗o╨▓╨╕╨╜╤Г ╤И╨╕╤А╨╕╨╜╤Л ╨╕ ╨▓╤Л╤Бo╤В╤Л ╤Бoo╤В╨▓╨╡╤В╤Б╤В╨▓╨╡╨╜╨╜o =) */
+  margin-top: -143px;
+  margin-left: -170.5px;
   display: none;
-  /* ╨▓ o╨▒╤Л╤З╨╜o╨╝ ╤Бo╤Б╤Вo╤П╨╜╨╕╨╕ o╨║╨╜a ╨╜╨╡ ╨┤o╨╗╨╢╨╜o ╨▒╤Л╤В╤М */
   opacity: 0;
-  /* ╨┐o╨╗╨╜o╤Б╤В╤М╤О ╨┐╤Аo╨╖╤Аa╤З╨╜o ╨┤╨╗╤П a╨╜╨╕╨╝╨╕╤Аo╨▓a╨╜╨╕╤П */
   z-index: 5;
-  /* o╨║╨╜o ╨┤o╨╗╨╢╨╜o ╨▒╤Л╤В╤М ╨╜a╨╕╨▒o╨╗╨╡╨╡ ╨▒o╨╗╤М╤И╨╡╨╝ ╤Б╨╗o╨╡ */
   padding: 40px 36px 29px; }
   #authorization h3 {
     color: #000000;
@@ -569,7 +562,11 @@ footer {
     padding-left: 0;
     border-radius: 2px;
     margin-top: 24px;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+            transition: 0.3s; }
+    #authorization input[type="submit"]:hover {
+      border-radius: 30px; }
   #authorization a {
     font-size: 14px;
     color: #0070c9;
@@ -584,6 +581,159 @@ footer {
     #authorization a:hover {
       text-decoration: none; }
 
+#registration {
+  width: 341px;
+  height: 414px;
+  background: #fff;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -207px;
+  margin-left: -170.5px;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  padding: 40px 36px 29px;
+  font-size: 14px; }
+  #registration h3 {
+    color: #000000;
+    font-family: OSLight;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase; }
+  #registration input {
+    display: block;
+    width: 320px;
+    height: 40px;
+    padding-left: 16px;
+    border-radius: 2px;
+    border: 1px solid #ededed;
+    color: #999999;
+    font-size: 14px; }
+  #registration input[type="email"] {
+    margin-top: 28px; }
+  #registration input[type="password"] {
+    margin: 22px 0; }
+  #registration input[type="submit"] {
+    display: block;
+    width: 100%;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    background-color: #0070c9;
+    font-family: OSLight;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 0;
+    border-radius: 2px;
+    margin-top: 30px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+            transition: 0.3s; }
+    #registration input[type="submit"]:hover {
+      border-radius: 30px; }
+  #registration a {
+    font-size: 14px;
+    color: #0070c9; }
+    #registration a:hover {
+      text-decoration: none; }
+  #registration .radio-buttons {
+    margin-top: 45px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  #registration .checkbox-button {
+    margin-top: 5px; }
+  #registration .checkbox,
+  #registration .radio {
+    display: none; }
+  #registration .radio-custom {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    position: relative;
+    margin-right: 10px; }
+  #registration .checkbox-custom {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ededed;
+    border-radius: 1px;
+    position: relative;
+    margin-right: 14px; }
+  #registration .checkbox-custom,
+  #registration .radio-custom,
+  #registration .label {
+    display: inline-block;
+    vertical-align: middle; }
+  #registration .radio:checked + .radio-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin-top: -3px;
+    margin-left: -3px;
+    background-color: #333; }
+  #registration .checkbox:checked + .checkbox-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 21px;
+    height: 16px;
+    left: 0;
+    bottom: 1px;
+    background: url("../img/mark.png") no-repeat; }
+  #registration .radio-custom,
+  #registration .radio:checked + .radio-custom::before {
+    border-radius: 50%; }
+
+#rules {
+  width: 734px;
+  height: 410px;
+  background: #fff;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -205px;
+  margin-left: -367px;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  padding: 47px 0 32px 0; }
+  #rules h3 {
+    color: #000000;
+    font-family: OSLight;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase; }
+  #rules hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    margin-top: 34px;
+    background-color: #eaeaea; }
+  #rules .text {
+    height: 318px;
+    overflow-y: scroll;
+    padding-left: 50px;
+    margin-top: 30px;
+    margin-right: 33px; }
+    #rules .text p {
+      font-size: 14px;
+      line-height: 22px;
+      padding-bottom: 30px; }
+      #rules .text p:last-of-type {
+        padding-bottom: 0; }
+
 .modal_close {
   position: absolute;
   top: -33px;
@@ -595,9 +745,9 @@ footer {
   z-index: 3;
   position: fixed;
   background-color: #000;
-  opacity: 0.8;
-  -moz-opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter: alpha(opacity=5);
   width: 100%;
   height: 100%;
   top: 0;
@@ -703,17 +853,17 @@ footer {
       margin-top: 40px;
       margin-left: 0; } }
 @media screen and (max-width: 918px) {
-  section.sign-in {
+  section.sign-up {
     -webkit-flex-flow: wrap column;
         -ms-flex-flow: wrap column;
             flex-flow: wrap column;
     height: auto;
     padding: 30px 0; }
-    section.sign-in p {
+    section.sign-up p {
       margin-left: 0;
       text-align: center;
       line-height: 26px; }
-    section.sign-in .sign-in {
+    section.sign-up .sign-up {
       margin: 20px auto 0; } }
 @media screen and (max-width: 850px) {
   #why-us .advantages {
