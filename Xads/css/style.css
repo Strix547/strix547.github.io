@@ -525,7 +525,7 @@ footer {
   top: 45%;
   left: 50%;
   margin-top: -143px;
-  margin-left: -170.5px;
+  margin-left: -206.5px;
   display: none;
   opacity: 0;
   z-index: 5;
@@ -589,7 +589,7 @@ footer {
   top: 45%;
   left: 50%;
   margin-top: -207px;
-  margin-left: -170.5px;
+  margin-left: -206.5px;
   display: none;
   opacity: 0;
   z-index: 5;
@@ -873,7 +873,11 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column; }
     #why-us .advantages .adv-item {
-      margin: 0 auto; } }
+      margin: 0 auto; }
+
+  #rules {
+    width: 470px;
+    margin-left: -235px; } }
 @media screen and (max-width: 720px) {
   footer .footer-menu {
     width: 100%;
@@ -885,6 +889,12 @@ footer {
       margin-right: 0;
       margin-bottom: 40px;
       text-align: center; } }
+@media screen and (max-width: 570px) {
+  #rules {
+    width: 300px;
+    margin-left: -150px; }
+    #rules .text {
+      height: 285px; } }
 @media screen and (max-width: 500px) {
   #preview .content h1 {
     -webkit-box-orient: vertical;
@@ -905,7 +915,34 @@ footer {
       max-width: 100%;
       height: auto; }
     #how-it-work .items li .img:before {
-      display: none; } }
+      display: none; }
+
+  #authorization {
+    width: 270px;
+    padding: 20px 15px 20px;
+    margin-left: -150px;
+    margin-top: -133px; }
+    #authorization h3 {
+      font-size: 25px; }
+    #authorization input {
+      width: 247px; }
+
+  #registration {
+    width: 270px;
+    padding: 20px 15px 20px;
+    margin-left: -150px;
+    margin-top: -227px; }
+    #registration h3 {
+      font-size: 25px; }
+    #registration input {
+      width: 247px; }
+
+  .modal_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: block; } }
 @media screen and (max-width: 410px) {
   h2 {
     font-size: 41px; }
