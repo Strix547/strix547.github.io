@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gravitaciya</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo"><a href="http://3grav.ru" target="_blank"><img src="img/logo.png" alt="Gravit CIYA Маркетинговое агенство"></a></div>
+            <div class="tel"><a href="tel:89853322950">8 (985) 332-29-50</a></div>
+        </header>
+        <div class="main">
+            <h1>Создание, ведение и аналитика</h1>
+            <h3>Рекламной компании в <span class="yellow"><span class="red">Я</span>ндекс директ</span> от профессионалов</h3>
+            <span class="bold">за 12 000<span>р</span> в месяц</span>
+            <form action="send.php" method="post">
+                <p>Оставьте заявку сейчас
+                и получите бонус <span class="red">12 000Р</span>
+                на баланс в <span class="red">Я</span>ндекс директ</p>
+                <input type="text" name="name" id="name" placeholder="Введите Ваше имя" required="required">
+                <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" required="required">
+                <input type="submit" value="Получить бонус">
+                <div class="arrow-right"></div>
+            </form>
+            <div class="advantages">
+                <ul>
+                    <li>
+                        <div class="icon-body"><div class="icon"></div></div>
+                        <p>Работаем по договору</p>
+                        <a href="Договор.docx" target="_blank">(ознакомиться с договором)</a>
+                    </li>
+                    <li>
+                        <div class="icon-body"><div class="icon"></div></div>
+                        <p>Принимаем оплату
+                        на расчетный счет</p>
+                    </li>
+                    <li>
+                        <div class="icon-body"><div class="icon"></div></div>
+                        <p>9 штатных
+                        сертифицированных
+                        <span class="red">Я</span>ндексом специалистов</p>
+                    </li>
+                    <li>
+                        <div class="icon-body"><div class="icon"></div></div>
+                        <p>Опыт работы
+                        с 2009 года</p>
+                    </li>
+                    <li>
+                        <div class="icon-body"><div class="icon"></div></div>
+                        <p>Более 230 успешно
+                        реализованных проектов
+                        в 189 городах России</p>
+                    </li>
+                    <li>
+                        <div class="icon-body"><div class="icon"></div></div>
+                        <p>Сэкономили клиентам
+                        на рекламе более
+                        620 000 рублей</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="more">
+                <hr>
+                <h2>А еще мы делаем крутые <span class="yellow">лендинги</span></h2>
+                <a href="http://3grav.ru/#portfolio" target="_blank" class="play">Смотреть</a>
+                <p>Обратите внимание на одну из последних работ
+                    “Как мы увеличили прибыль клиента до <span class="red cost">1 475 000 руб.</span>”</p>
+                <a href="http://blog.3grav.ru/keis_na_million/" target="_blank" class="play">Смотреть</a>
+                <hr>
+            </div>
+        </div>
+        <footer>
+            <div class="column">
+                <p><span class="yellow">Телефон:</span></p> <a class="bold" href="tel:89853322950">89853322950</a>
+                <p><span class="yellow">Режим работы:</span> <span class="bold">с 9:00 до 21:00</span></p>
+                <p><span class="yellow">Принимаемые способы оплаты:</span></p>
+                <p><span class="upp">1) безналичный расчет:</span>
+                - выставление счета
+                - на банковскую карту
+                - на интернет кошельки (Яндекс, Webmoney, Paypall)
+                <span class="upp">2) наличный расчет</span></p>
+            </div>
+            <div class="column">
+                <p><span class="yellow upp bold">Адреса:</span></p>
+                <p class="upp">Г. КЕМЕРОВО УЛ.
+                    НИКОЛАЯ ОСТРОВСКОГО 16 ОФИС 214
+
+                    Г. САНКТ-ПЕТЕРБУРГ,
+                    МОСКОВСКИЙ ПР. 109 ОФИС 507</p>
+            </div>
+            <div class="column">
+                <p><span class="yellow">E-mail:</span> <a href="mailto:info@3grav.ru" class="upp">info@3grav.ru</a></p>
+                <p><span class="yellow">Реквизиты:</span>
+                    ОГРНИП – 316420500095800
+                    ИНН – 420529887436</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(".main form").submit(function() {
+                var form_data = $(this).serialize();
+                $.ajax({
+                    type: "POST",
+                    url: "send.php",
+                    data: form_data,
+                    success: function() {
+                        alert("Ваше сообщение отпрвлено!");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

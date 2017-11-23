@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "PNRegular";
+    src: url("../fonts/ProximaNovaRegular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PNBold";
+    src: url("../fonts/ProximaNovaBold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PNSemibold";
+    src: url("../fonts/ProximaNovaSemibold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PNExtraBold";
+    src: url("../fonts/ProximaNovaExtrabold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PNLight";
+    src: url("../fonts/ProximaNovaLight.otf");
+    font-style: normal;
+    font-weight: normal;
+}
