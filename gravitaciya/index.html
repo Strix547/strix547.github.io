@@ -20,7 +20,7 @@
             <h1>Создание, ведение и аналитика</h1>
             <h3>Рекламной компании в <span class="yellow"><span class="red">Я</span>ндекс директ</span> от профессионалов</h3>
             <span class="bold">за 12 000<span>р</span> в месяц</span>
-            <form action="send.php" method="post">
+            <form action="#" method="post">
                 <p>Оставьте заявку сейчас
                 и получите бонус <span class="red">12 000Р</span>
                 на баланс в <span class="red">Я</span>ндекс директ</p>
@@ -103,23 +103,5 @@
             </div>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function(){
-            $(".main form").submit(function() {
-                var form_data = $(this).serialize();
-                $.ajax({
-                    type: "POST",
-                    url: "send.php",
-                    data: form_data,
-                    success: function() {
-                        alert("Ваше сообщение отпрвлено!");
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
