@@ -358,3 +358,249 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 1170px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+  header .center {
+    flex-direction: column;
+    text-align: center;
+  }
+  header .center .left {
+    padding-left: 0;
+  }
+  header .top-line .left .logo {
+    padding-right: 0;
+  }
+  header .center .left h1 {
+    white-space: normal;
+  }
+  header .center .right ul {
+    margin-top: 30px;
+  }
+  header .center .right ul li.rect p {
+    position: relative;
+    display: inline-block;
+  }
+  header .center .right {
+    padding-right: 0;
+  }
+  header .top-line {
+    flex-direction: column;
+    text-align: center;
+    .left {
+      .logo {
+        width: 100%;
+      }
+      p {
+        text-align: center;
+        padding-top: 20px;
+      }
+    }
+    .address {
+      line-height: 50px;
+    }
+  }
+  header .top-line .right .start-training {
+    display: none;
+  }
+  header .top-line .right .tel {
+    line-height: 50px;
+  }
+  .block-form .left {
+    text-align: center;
+  }
+  .block-form .left h2 {
+    padding-left: 0;
+    padding-top: 150px;
+  }
+  .block-form .left p {
+    padding-left: 0;
+    &::after {
+      display: none;
+    }
+  }
+  .block-form .wrapper {
+    flex-direction: column;
+  }
+  .block-form form {
+    margin-top: 0;
+    background: none;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  footer {
+    .top-line {
+      flex-direction: column;
+      text-align: center;
+      .left p {
+        text-align: center;
+        padding-top: 10px;
+      }
+      .right .start-training {
+        margin: 15px auto 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .collection .life .images {
+    flex-wrap: wrap;
+    .img {
+      width: calc(100% / 3);
+      margin-bottom: 20px;
+      text-align: center;
+      a {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .collection {
+    background: none;
+  }
+  .collection h2 {
+    padding-left: 0;
+    text-align: center;
+  }
+  .collection ul {
+    padding-left: 0;
+    text-align: center;
+  }
+  .collection ul li.rect p {
+    display: inline-block;
+  }
+  .collection h2::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .collection .life .images {
+    .img {
+      width: calc(100% / 2);
+    }
+  }
+  header .center .left h1 {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 598px) {
+  header .wrapper > a {
+    width: 70%;
+    font-size: 16px;
+    padding: 10px 20px;
+    line-height: 30px;
+    margin: 70px auto 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  header .center .left p {
+    white-space: normal;
+  }
+  .collection h2 {
+    font-size: 40px;
+    white-space: normal;
+    line-height: 52px;
+  }
+  .collection h3::before,.collection h3::after {
+    display: none;
+  }
+  .block-form .left img {
+    max-width: 100%;
+    height:auto;
+  }
+  .block-form .left h2 {
+    padding-top: 100px;
+    font-size: 43px;
+    white-space: normal;
+  }
+  .block-form .left p {
+    line-height: 40px;
+    white-space: normal;
+  }
+}
+@media screen and (max-width: 480px) {
+    .collection h2 {
+      font-size: 33px;
+    }
+}
+@media screen and (max-width: 460px) {
+  header .center .right ul li.rect {
+    text-align: left;
+  }
+  .collection ul li.rect {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 420px) {
+  .collection .life .images {
+    .img {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 386px) {
+  .collection h2 {
+    font-size: 26px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 360px) {
+  header .top-line .left .logo img {
+    max-width: 100%;
+    height:auto;
+  }
+  footer .top-line .left .logo img {
+    max-width: 100%;
+    height:auto;
+  }
+  header .center .left p {
+    font-size: 24px;
+  }
+  header .top-line .address {
+    font-size: 16px;
+  }
+  header .top-line .left p {
+    font-size: 16px;
+  }
+  header .top-line .right .tel {
+    font-size: 28px;
+  }
+  header .center .left > span:last-of-type {
+    font-size: 18px;
+  }
+  footer .center .left p {
+    font-size: 24px;
+  }
+  footer .top-line .address {
+    font-size: 16px;
+  }
+  footer .top-line .left p {
+    font-size: 16px;
+  }
+  footer .top-line .right .tel {
+    font-size: 28px;
+  }
+  footer .center .left > span:last-of-type {
+    font-size: 18px;
+  }
+  .block-form .left h2 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+@media screen and (max-width: 326px) {
+  body {
+    overflow-x: hidden;
+  }
+  header .wrapper > a {
+    padding: 15px 20px;
+    line-height: 21px;
+  }
+}
