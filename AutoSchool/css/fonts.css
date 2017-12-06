@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "GPRegular";
+    src: url("../fonts/GothaProReg.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GPLight";
+    src: url("../fonts/GothaProLig.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GPBlack";
+    src: url("../fonts/GothaProBla.otf");
+    font-style: normal;
+    font-weight: normal;
+}
