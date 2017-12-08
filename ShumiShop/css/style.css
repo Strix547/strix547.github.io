@@ -990,6 +990,7 @@ section.help form input[type="submit"] {
   margin: 0 auto;
   border-radius: 25px;
   font-size: 18.59px;
+  cursor: pointer;
 }
 
 section.form {
@@ -1059,6 +1060,7 @@ section.form form input[type="submit"] {
   margin: 45px auto 0;
   border: none;
   font-size: 18px;
+  cursor: pointer;
 }
 
 footer {
