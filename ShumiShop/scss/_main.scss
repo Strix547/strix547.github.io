@@ -13,16 +13,13 @@ body {
   display: block;
   width: 190px;
   text-align: center;
-  text-decoration: underline;
   height: 38px;
   line-height: 38px;
+  text-decoration: none;
   font-size: 14px;
   color: #000;
   border-radius: 30px;
   background: linear-gradient(#ffc424 60%,#c72425);
-  &:hover {
-    text-decoration: none;
-  }
 }
 
 h3 {
