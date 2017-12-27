@@ -75,8 +75,9 @@ h3 {
 
 header {
   padding-top: 27px;
-  padding-bottom: 163px;
-  background: url("../img/fireman.png") 61.8% 100% no-repeat, url("../img/header-bg.jpg") 50% 0 no-repeat;
+  padding-bottom: 100px;
+  background: url("../img/header-bg.jpg") 50% 0 no-repeat;
+  background-size: cover;
 }
 header .top-line {
   display: -webkit-box;
@@ -90,6 +91,32 @@ header .top-line {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+header .top-line .logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .top-line .logo p {
+  padding-left: 50px;
+  line-height: 20px;
+  font-family: MSC300;
+  font-size: 14px;
+  white-space: pre-line;
+}
+header .top-line .logo p::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 55px;
+  margin-left: -22px;
+  margin-top: -7.5px;
+  background-color: #fff;
 }
 header .top-line .tel a:first-child {
   display: block;
@@ -109,9 +136,10 @@ header .top-line .tel a:first-child::before {
   background-repeat: no-repeat;
 }
 header .top-line .tel a:last-child {
+  text-align: center;
   display: block;
   font-family: MSC300;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
   font-size: 11.94px;
   margin-top: 5px;
   color: #ff703e;
@@ -131,43 +159,36 @@ header .center {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 133px;
+  padding-top: 100px;
   position: relative;
 }
 header .center .left h1 {
   font-family: MSC900;
-  font-size: 50px;
+  font-size: 65px;
   line-height: 72px;
-  letter-spacing: 1.12px;
   white-space: pre-line;
   text-transform: uppercase;
 }
 header .center .left h3 {
   padding-top: 10px;
+  line-height: 48px;
+  font-family: MSC500;
+  font-size: 36px;
 }
 header .center .left p {
-  font-family: MSC700;
-  padding-top: 60px;
-  padding-left: 102px;
-  line-height: 30px;
+  font-family: MSC300;
+  font-size: 20px;
+  line-height: 36px;
   white-space: pre-line;
-  text-transform: uppercase;
+  padding-top: 56px;
 }
-header .center .left p::before {
-  position: absolute;
-  content: '';
-  width: 73px;
-  height: 73px;
-  left: 0;
-  margin-top: -8px;
-  background-image: url(../img/sprite.png);
-  background-position: 0 -57px;
-  background-repeat: no-repeat;
+header .center .left p span {
+  font-family: MSC900;
 }
 header .center .right form {
   position: relative;
-  width: 298px;
-  height: 296px;
+  width: 318px;
+  padding: 25px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -186,13 +207,34 @@ header .center .right form {
   border: 1px solid #e8e8e8;
   background-color: #ffffff;
 }
-header .center .right form p {
-  font-family: MSC700;
+header .center .right form p:first-of-type {
+  font-family: MSC900;
   color: #010101;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 30px;
   white-space: pre-line;
-  padding-top: 30px;
+}
+header .center .right form p:last-of-type {
+  position: relative;
+  color: #4e4e4e;
+  font-family: MSC300;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 60px;
+  white-space: pre-line;
+  text-align: left;
+  padding-top: 37px;
+}
+header .center .right form p:last-of-type::before {
+  position: absolute;
+  content: '';
+  width: 73px;
+  height: 73px;
+  left: 0;
+  margin-left: -30px;
+  background-image: url(../img/sprite.png);
+  background-position: 0 -57px;
+  background-repeat: no-repeat;
 }
 header .center .right form label {
   position: absolute;
@@ -201,7 +243,7 @@ header .center .right form label {
 header .center .right form label:first-of-type {
   width: 17px;
   height: 22px;
-  top: 110px;
+  top: 117px;
   background-image: url(../img/sprite.png);
   background-position: -49px 0;
   background-repeat: no-repeat;
@@ -209,13 +251,13 @@ header .center .right form label:first-of-type {
 header .center .right form label:last-of-type {
   width: 22px;
   height: 22px;
-  top: 171px;
+  top: 178px;
   background-image: url(../img/sprite.png);
   background-position: -82px 0;
   background-repeat: no-repeat;
 }
 header .center .right form input[type="tel"], header .center .right form input[type="text"] {
-  width: 230px;
+  width: calc(100% - 13px);
   height: 39px;
   border-radius: 4px;
   border: 1px solid #b4b4b4;
@@ -233,7 +275,7 @@ header .center .right form input[type="tel"] {
   margin-top: 18px;
 }
 header .center .right form input[type="submit"] {
-  width: 244px;
+  width: 100%;
   height: 46px;
   margin-top: 22px;
   border-radius: 4px;
@@ -257,6 +299,7 @@ header .center .right form input[type="submit"]:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   background-color: #db6a43;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -269,19 +312,19 @@ header .center .right form input[type="submit"]:hover {
 }
 .orange-block p {
   font-size: 20.9px;
-  padding-left: 300px;
   text-align: justify;
+  padding-left: 300px;
   line-height: 36px;
   font-family: MSC300;
 }
 .orange-block p::before {
   content: 'тАЬ';
   position: absolute;
-  width: 201px;
-  height: 183px;
+  width: 138px;
+  height: 126px;
   background: url("../img/quotes.png");
-  left: 0;
-  top: -70px;
+  left: 28px;
+  top: -57px;
 }
 .orange-block p span {
   font-family: MSC900;
@@ -292,21 +335,21 @@ header .center .right form input[type="submit"]:hover {
   padding-bottom: 85px;
 }
 .block-form .content {
-  padding-left: 300px;
+  padding-left: 270px;
 }
 .block-form h2 {
   text-align: left;
   font-size: 50px;
   text-transform: none;
-  word-spacing: -5px;
+  word-spacing: -6px;
 }
 .block-form h2 span {
   font-size: 20px;
+  word-spacing: normal;
 }
 .block-form p {
   font-size: 18px;
   padding-top: 5px;
-  padding-left: 0;
 }
 .block-form form {
   display: -webkit-box;
@@ -347,7 +390,7 @@ header .center .right form input[type="submit"]:hover {
   margin-top: -11px;
 }
 .block-form form .input-block input[type="tel"], .block-form form .input-block input[type="text"] {
-  width: 252px;
+  width: 249px;
   height: 37px;
   border-radius: 4px;
   border: 1px solid #b4b4b4;
@@ -359,7 +402,7 @@ header .center .right form input[type="submit"]:hover {
   font-family: MSC300;
 }
 .block-form form input[type="submit"] {
-  width: 274px;
+  width: 284px;
   height: 41px;
   line-height: 41px;
   text-align: center;
@@ -372,6 +415,34 @@ header .center .right form input[type="submit"]:hover {
   outline: 0;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.optimize {
+  padding-bottom: 54px;
+}
+.optimize form {
+  padding-left: 300px;
+}
+
+.cost {
+  padding-bottom: 70px;
+}
+.cost h2 {
+  padding-left: 300px;
+  text-align: left;
+}
+.cost p {
+  padding-top: 16px;
+}
+
+.stu .content {
+  width: 900px;
+}
+.stu form input[type="submit"] {
+  width: 312px;
+}
+.stu p {
+  padding-left: 0;
 }
 
 #develop {
@@ -401,9 +472,6 @@ header .center .right form input[type="submit"]:hover {
   position: relative;
   margin-bottom: 32px;
 }
-#develop .images .img:nth-child(4) p {
-  top: 118px;
-}
 #develop .images p {
   width: 100%;
   height: 100%;
@@ -418,6 +486,7 @@ header .center .right form input[type="submit"]:hover {
 
 #cases {
   background: url("../img/cases-bg.jpg") 50% 0 no-repeat;
+  background-size: cover;
   padding-bottom: 60px;
 }
 #cases h2 {
@@ -452,41 +521,46 @@ header .center .right form input[type="submit"]:hover {
   position: relative;
 }
 #cases .items .item:nth-child(1) p::before {
-  width: 72px;
-  background-image: url(../img/sprite.png);
-  background-position: -1px -184px;
-  background-repeat: no-repeat;
-}
-#cases .items .item:nth-child(2) p::before {
   background-image: url(../img/sprite.png);
   background-position: -155px -184px;
   background-repeat: no-repeat;
 }
+#cases .items .item:nth-child(2) p::before {
+  background-image: url(../img/sprite.png);
+  background-position: -607px -184px;
+  background-repeat: no-repeat;
+}
 #cases .items .item:nth-child(3) p::before {
-  width: 77px;
   background-image: url(../img/sprite.png);
   background-position: -311px -184px;
   background-repeat: no-repeat;
 }
 #cases .items .item:nth-child(4) p::before {
   background-image: url(../img/sprite.png);
-  background-position: -461px -184px;
+  background-position: -155px -323px;
   background-repeat: no-repeat;
 }
 #cases .items .item:nth-child(5) p::before {
+  width: 87px;
   background-image: url(../img/sprite.png);
-  background-position: -607px -184px;
+  background-position: -898px -184px;
   background-repeat: no-repeat;
 }
 #cases .items .item:nth-child(6) p::before {
   background-image: url(../img/sprite.png);
-  background-position: -755px -184px;
+  background-position: -461px -184px;
   background-repeat: no-repeat;
 }
 #cases .items .item:nth-child(7) p::before {
-  width: 87px;
   background-image: url(../img/sprite.png);
-  background-position: -898px -184px;
+  background-position: -755px -184px;
+  background-repeat: no-repeat;
+  width: 77px;
+}
+#cases .items .item:nth-child(8) p::before {
+  width: 72px;
+  background-image: url(../img/sprite.png);
+  background-position: -1px -184px;
   background-repeat: no-repeat;
 }
 #cases .items .item:nth-child(2n) {
@@ -509,6 +583,7 @@ header .center .right form input[type="submit"]:hover {
 }
 #cases .items .item p span {
   font-family: MSC900;
+  color: #ff8960;
 }
 
 #problems {
@@ -568,6 +643,7 @@ header .center .right form input[type="submit"]:hover {
 
 #about {
   background: url("../img/about-bg.jpg") 50% 0 no-repeat;
+  background-size: cover;
   padding-top: 102px;
   padding-bottom: 106px;
 }
@@ -603,13 +679,13 @@ header .center .right form input[type="submit"]:hover {
 }
 
 #why {
-  background: url("../img/why-bg.jpg") 50% 100% #dee6f2 no-repeat;
+  background-color: #f3f4f7;
   padding-left: 100px;
-  padding-bottom: 71px;
+  padding-bottom: 31px;
 }
 #why h2 {
   padding-top: 72px;
-  text-align: left;
+  text-align: center;
   color: #494949;
 }
 #why .items {
@@ -620,50 +696,18 @@ header .center .right form input[type="submit"]:hover {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 48px;
+  margin-top: 120px;
 }
 #why .items .item {
-  margin-bottom: 58px;
-}
-#why .items .item:nth-child(1) p::before {
-  width: 80px;
-  height: 79px;
-  background-image: url(../img/sprite.png);
-  background-position: -2px -338px;
-  background-repeat: no-repeat;
-}
-#why .items .item:nth-child(2) p::before {
-  width: 79px;
-  height: 79px;
-  background-image: url(../img/sprite.png);
-  background-position: -155px -338px;
-  background-repeat: no-repeat;
-}
-#why .items .item:nth-child(3) p::before {
-  width: 70px;
-  height: 79px;
-  background-image: url(../img/sprite.png);
-  background-position: -311px -338px;
-  background-repeat: no-repeat;
-}
-#why .items .item:nth-child(4) p::before {
-  width: 80px;
-  height: 63px;
-  background-image: url(../img/sprite.png);
-  background-position: -461px -338px;
-  background-repeat: no-repeat;
+  width: 50%;
+  margin-bottom: 116px;
 }
 #why .items .item:last-child {
   margin-bottom: 0;
 }
 #why .items .item p {
   position: relative;
-  padding-left: 170px;
+  padding-left: 108px;
   white-space: pre-line;
   font-family: MSC300;
   line-height: 36px;
@@ -673,7 +717,13 @@ header .center .right form input[type="submit"]:hover {
   content: "";
   position: absolute;
   left: 0;
-  top: 11px;
+  top: 50%;
+  width: 80px;
+  margin-top: -39.5px;
+  height: 79px;
+  background-image: url(../img/sprite.png);
+  background-position: -2px -324px;
+  background-repeat: no-repeat;
 }
 #why .items .item span {
   font-family: MSC900;
@@ -722,6 +772,9 @@ header .center .right form input[type="submit"]:hover {
   line-height: 36px;
   font-size: 24px;
   padding-top: 5px;
+}
+#scheme .items .item p span {
+  font-family: MSC700;
 }
 #scheme .items .item:nth-child(1) h5::before {
   content: '1';
@@ -786,9 +839,9 @@ header .center .right form input[type="submit"]:hover {
 #certificates .owl-carousel .owl-nav .owl-next {
   position: absolute;
   top: 50%;
-  margin-top: -24px;
   width: 46px;
   height: 46px;
+  margin-top: -46px;
   line-height: 46px;
   text-align: center;
   border-radius: 50%;
