@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "BA";
+    src: url("../fonts/BookAntiqua.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "BAbold";
+    src: url("../fonts/BookAntiquaBold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "BAitalic";
+    src: url("../fonts/BookAntiquaItalic.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
