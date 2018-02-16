@@ -634,8 +634,8 @@ header .top-line .tel:hover {
     display: block;
   }
   header .top-line nav ul {
-    width: 160px;
-    height: 100%;
+    width: 140px;
+    height: auto;
     position: fixed;
     top: 0;
     left: -160px;
@@ -644,17 +644,18 @@ header .top-line .tel:hover {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 90px;
+    margin-top: 90px;
+    padding-top: 15px;
     visibility: hidden;
     -webkit-transition: 0.3s;
             transition: 0.3s;
     margin-right: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
   }
   header .top-line nav ul li {
     margin-right: 0;
     margin-bottom: 15px;
-    padding-left: 20px;
+    padding-left: 10px;
     text-align: left;
   }
   header .top-line nav ul li a {

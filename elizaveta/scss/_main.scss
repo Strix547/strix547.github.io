@@ -475,21 +475,22 @@ header {
       display: block;
     }
     nav ul {
-      width: 160px;
-      height: 100%;
+      width: 140px;
+      height: auto;
       position: fixed;
       top: 0;
       left: -160px;
       flex-direction: column;
-      padding-top: 90px;
+      margin-top: 90px;
+      padding-top: 15px;
       visibility: hidden;
       transition: 0.3s;
       margin-right: 0;
-      background: rgba(0,0,0,0.7);
+      background: rgba(0,0,0,0.5);
       li {
         margin-right: 0;
         margin-bottom: 15px;
-        padding-left: 20px;
+        padding-left: 10px;
         text-align: left;
         a {
           width: 100%;
