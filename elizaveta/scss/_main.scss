@@ -36,24 +36,36 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
+
+    .logo {
+      margin-right: 82px;
+    }
     .c-hamburger {
-      display: none;
+      display: block;
       position: absolute;
-      z-index: 10;
-      left: 15px;
+      left: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+      padding: 0;
       width: 24px;
       height: 24px;
-      top: 9px;
       font-size: 0;
+      text-indent: -9999px;
+      appearance: none;
+      box-shadow: none;
+      border-radius: none;
+      border: none;
+      cursor: pointer;
+      background: none;
       transition: background 0.3s;
     }
+
     .c-hamburger:focus {
       outline: none;
     }
     .c-hamburger span {
       display: block;
       height: 4px;
-      margin-top: 10px;
       background: white;
     }
 
@@ -69,12 +81,13 @@ header {
     }
 
     .c-hamburger span::before {
-      top: 0
+      top: 0;
     }
 
     .c-hamburger span::after {
       bottom: 0;
     }
+
     .c-hamburger--htx span {
       transition: background 0s 0.3s;
     }
@@ -96,7 +109,6 @@ header {
     /* состояние active при открытом меню  */
     .c-hamburger--htx.is-active {
       position: fixed;
-      top: 41px;
     }
     .c-hamburger--htx.is-active span {
       background: none;
@@ -115,9 +127,6 @@ header {
     .c-hamburger--htx.is-active span::before,
     .c-hamburger--htx.is-active span::after {
       transition-delay: 0s, 0.3s;
-    }
-    .logo {
-      margin-right: 82px;
     }
     nav {
       display: flex;
@@ -474,14 +483,21 @@ header {
     .c-hamburger {
       display: block;
     }
+    //#overlay {
+    //  position: absolute;
+    //  width: 100%;
+    //  height: 100%;
+    //  z-index: 11;
+    //  background-color: red;
+    //  opacity: 0.2;
+    //}
     nav ul {
       width: 140px;
       height: auto;
       position: fixed;
-      top: 0;
+      top: 90px;
       left: -160px;
       flex-direction: column;
-      margin-top: 90px;
       padding-top: 15px;
       visibility: hidden;
       transition: 0.3s;
@@ -520,7 +536,15 @@ header {
 @media screen and (max-width: 1237px) {
   #inst .photo {
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    &:after {
+      content: '';
+      width: 219px;
+      height: 219px;
+    }
   }
   #inst .photo img {
     width: 219px;
@@ -669,6 +693,29 @@ header {
       &:last-of-type {
         padding-bottom: 20px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 686px) {
+  #inst .photo {
+    width: 485px;
+    margin: 53px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #inst .photo {
+    width: calc(100% - 30px);
+    margin: 53px 15px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  #inst .photo {
+    justify-content: center;
+    &:after {
+      display: none;
     }
   }
 }

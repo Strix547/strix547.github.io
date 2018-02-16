@@ -16,34 +16,25 @@ $(document).ready(function() {
     $("#phone").mask("+7 (999) 999 - 99 - 99");
 });
 
-(function() {
+(function () {
+    var toggle = document.querySelector('#pull');
 
-    "use strict";
-
-    var toggles = document.querySelectorAll(".c-hamburger");
-
-    for (var i = toggles.length - 1; i >= 0; i--) {
-        var toggle = toggles[i];
-        toggleHandler(toggle);
-    };
-
-    function toggleHandler(toggle) {
-        toggle.addEventListener( "click", function(e) {
-            e.preventDefault();
-            (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-        });
+    toggle.onclick = function () {
+        var menu = document.querySelector("#menu");
+        this.classList.toggle('is-active');
+        if (menu.classList.contains("open-menu")) {
+            $("#menu").removeClass("open-menu");
+        } else {
+            $("#menu").addClass("open-menu");
+        }
     }
-
 })();
 
-$("#pull").click(function() {
-    $("#menu").toggleClass("open-menu");
+$(document).click( function(event){
+    if( $(event.target).closest("#menu").length || $(event.target).closest("#pull").length )
+        return;
+    $("#menu").removeClass("open-menu");
+    $("#pull").removeClass("is-active");
+    event.stopPropagation();
 });
 
-$(document).mouseup(function(e) {
-    var $target = $(e.target);
-    if ($target.closest("#menu").length == 0) {
-        $("#menu").removeClass("open-menu");
-        $("#pull").removeClass("is-active");
-    }
-});
