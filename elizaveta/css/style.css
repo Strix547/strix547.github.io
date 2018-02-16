@@ -100,7 +100,7 @@ header .top-line .logo {
   margin-right: 82px;
 }
 header .top-line .c-hamburger {
-  display: block;
+  display: none;
   position: absolute;
   left: 10px;
   overflow: hidden;
