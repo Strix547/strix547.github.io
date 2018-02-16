@@ -12,10 +12,10 @@
 <body>
     <header>
         <div class="top-line">
-            <a href="#" id="pull"></a>
+            <a href="#" class="c-hamburger c-hamburger--htx" id="pull"><span></span></a>
             <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Елизавета Евсюкова"></a></div>
             <nav>
-                <ul>
+                <ul id="menu">
                     <li><a href="#">Главная</a></li>
                     <li><a href="#about-me">Обо мне</a></li>
                     <li><a href="#services">Услуги</a></li>
@@ -25,7 +25,7 @@
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
-            <a href="tel:89004384763" class="tel">8-900-4384-763</a>
+            <a href="tel:89004384763" class="tel">8-909-4384-763</a>
         </div>
         <h1>Главные слова о любви</h1>
     </header>
@@ -149,7 +149,7 @@
         <h2>Консультация</h2>
         <form action="#">
             <input type="text" name="name" placeholder="Ваше имя">
-            <input type="tel" name="tel" placeholder="Ваш номер телефона">
+            <input id="phone" type="tel" name="tel" placeholder="Ваш номер телефона">
             <input type="submit" value="Отправить">
         </form>
     </div>
@@ -172,6 +172,7 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="js/maskedinput.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

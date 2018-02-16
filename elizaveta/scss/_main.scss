@@ -4,6 +4,8 @@ body {
   color: #000000;
   font-size: 16px;
   height: 2000px;
+  overflow: visible !important;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -31,20 +33,91 @@ header {
   background-size: cover;
   padding-top: 32px;
   .top-line {
+    position: relative;
     display: flex;
     justify-content: center;
-    #pull {
-      position: relative;
-      z-index: 10;
+    .c-hamburger {
       display: none;
-      width: 30px;
-      height: 45px;
-      background: url("../img/nav-icon.png") 0 50% no-repeat;
+      position: absolute;
+      z-index: 10;
+      left: 15px;
+      width: 24px;
+      height: 24px;
+      top: 9px;
+      font-size: 0;
+      transition: background 0.3s;
+    }
+    .c-hamburger:focus {
+      outline: none;
+    }
+    .c-hamburger span {
+      display: block;
+      height: 4px;
+      margin-top: 10px;
+      background: white;
+    }
+
+    .c-hamburger span::before,
+    .c-hamburger span::after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #fff;
+      content: "";
+    }
+
+    .c-hamburger span::before {
+      top: 0
+    }
+
+    .c-hamburger span::after {
+      bottom: 0;
+    }
+    .c-hamburger--htx span {
+      transition: background 0s 0.3s;
+    }
+
+    .c-hamburger--htx span::before,
+    .c-hamburger--htx span::after {
+      transition-duration: 0.3s, 0.3s;
+      transition-delay: 0.3s, 0s;
+    }
+
+    .c-hamburger--htx span::before {
+      transition-property: top, transform;
+    }
+
+    .c-hamburger--htx span::after {
+      transition-property: bottom, transform;
+    }
+
+    /* состояние active при открытом меню  */
+    .c-hamburger--htx.is-active {
+      position: fixed;
+      top: 41px;
+    }
+    .c-hamburger--htx.is-active span {
+      background: none;
+    }
+
+    .c-hamburger--htx.is-active span::before {
+      top: 10px;
+      transform: rotate(45deg);
+    }
+
+    .c-hamburger--htx.is-active span::after {
+      bottom: 10px;
+      transform: rotate(-45deg);
+    }
+
+    .c-hamburger--htx.is-active span::before,
+    .c-hamburger--htx.is-active span::after {
+      transition-delay: 0s, 0.3s;
     }
     .logo {
       margin-right: 82px;
-      position: relative;
-      z-index: 1;
     }
     nav {
       display: flex;
@@ -69,8 +142,6 @@ header {
       }
     }
     .tel {
-      position: relative;
-      z-index: 1;
       width: 175px;
       height: 37px;
       line-height: 37px;
@@ -264,7 +335,7 @@ header {
       align-self: center;
       flex-direction: column;
       background-color: #fff;
-      max-width: 485px;
+      width: 485px;
       height: 385px;
       h2 {
         padding-top: 33px;
@@ -282,7 +353,7 @@ header {
 
 #consultation {
   width: 100%;
-  background: url("../img/cons-bg.jpg");
+  background: url("../img/cons-bg.jpg") 50% 0;
   background-size: cover;
   margin-top: 83px;
   padding-bottom: 143px;
@@ -398,32 +469,62 @@ header {
     .logo {
       margin-right: 0;
     }
-    #pull {
+    .c-hamburger {
       display: block;
-      position: absolute;
-      left: 20px;
     }
     nav ul {
-      display: none;
-      opacity: 0;
-      width: 100%;
+      width: 160px;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: -160px;
       flex-direction: column;
-      position: absolute;
       padding-top: 90px;
-      left: 0;
-      top: -100px;
-      background-color: #7d7986;
+      visibility: hidden;
+      transition: 0.3s;
+      margin-right: 0;
+      background: rgba(0,0,0,0.7);
       li {
         margin-right: 0;
         margin-bottom: 15px;
         padding-left: 20px;
-        text-align: center;
+        text-align: left;
         a {
           width: 100%;
-          color: #000;
+          color: #fff;
         }
       }
     }
+    ul.open-menu {
+      visibility: visible;
+      transition: 0.3s;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  header {
+    height: 1000px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  header {
+    height: 1200px;
+  }
+}
+@media screen and (max-width: 1237px) {
+  #inst .photo {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #inst .photo img {
+    width: 219px;
+    height: 219px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    display: block;
   }
 }
 
@@ -507,6 +608,7 @@ header {
     }
   }
   #reviews .person .left {
+    width: auto;
     height: auto;
   }
   #reviews .ekaterina {
@@ -515,20 +617,32 @@ header {
   #reviews .ekaterina p {
     padding-top: 25px;
   }
-  #inst .photo {
-    flex-wrap: wrap;
-    justify-content: space-around;
+}
+@media screen and (max-width: 873px) {
+  #portfolio .photo .first,
+  #portfolio .photo .second {
+    max-width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
   }
-  #inst .photo img {
+  #portfolio .photo .first .left,
+  #portfolio .photo .second .right{
     width: 219px;
     height: 219px;
-    margin-right: 0;
-    margin-bottom: 15px;
-    display: block;
-
+    display: flex;
+    margin: 0 auto;
+    img {
+      width: 219px;
+      height: 100%;
+    }
+  }
+  #portfolio .photo .first .left {
+    margin-bottom: 10px;
+  }
+  #portfolio .photo .second .right {
+    margin-top: 6px;
   }
 }
-
 @media screen and (max-width: 500px) {
   #services ul li {
     width: 100%;
