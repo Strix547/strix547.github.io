@@ -205,6 +205,7 @@ header .top-line nav ul li:last-child {
 header .top-line nav ul li a {
   font-size: 18px;
   color: #fff;
+  font-family: BA;
   text-decoration: none;
 }
 header .top-line nav ul li a:hover {
@@ -217,6 +218,7 @@ header .top-line .tel {
   border: 1px solid #fff;
   border-radius: 30px;
   color: #fff;
+  font-family: BA;
   text-align: center;
   text-decoration: none;
   -webkit-transition: 0.3s;
