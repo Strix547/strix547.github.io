@@ -110,7 +110,7 @@ header .fullscreen-bg__video {
 header .top-line {
   width: 100%;
   position: fixed;
-  z-index: 6;
+  z-index: 100;
   top: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1013,6 +1013,11 @@ header .top-line .tel:hover {
   #portfolio .photo .first .right a,
   #portfolio .photo .second .left a {
     margin-right: 0;
+  }
+
+  #portfolio .photo .first .left,
+  #portfolio .photo .second .right {
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 400px) {

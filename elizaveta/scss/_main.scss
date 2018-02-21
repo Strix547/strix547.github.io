@@ -59,7 +59,7 @@ header {
   .top-line {
     width: 100%;
     position: fixed;
-    z-index: 6;
+    z-index: 100;
     top: 0;
     display: flex;
     padding: 8px 0 5px 0;
@@ -799,6 +799,10 @@ header {
     a {
       margin-right: 0;
     }
+  }
+  #portfolio .photo .first .left,
+  #portfolio .photo .second .right{
+    padding: 0 20px;
   }
 }
 
