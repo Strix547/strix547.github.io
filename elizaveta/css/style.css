@@ -62,11 +62,13 @@ body {
 h1 {
   font-family: BAbold;
   font-size: 38.89px;
+  position: relative;
+  z-index: 5;
   letter-spacing: 1px;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 305px;
+  padding-top: 372px;
 }
 
 h2 {
@@ -79,21 +81,49 @@ h2 {
 
 header {
   width: 100%;
-  height: 747px;
-  background: url("../img/header-bg.jpg");
+  height: 720px;
+  position: relative;
   background-size: cover;
-  padding-top: 32px;
+}
+header .fullscreen-bg {
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+header .fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
 }
 header .top-line {
-  position: relative;
+  width: 100%;
+  position: fixed;
+  z-index: 6;
+  top: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding: 8px 0 5px 0;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center
+          justify-content: center;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: rgba(0, 0, 0, 0.3)
   /* ╤Б╨╛╤Б╤В╨╛╤П╨╜╨╕╨╡ active ╨┐╤А╨╕ ╨╛╤В╨║╤А╤Л╤В╨╛╨╝ ╨╝╨╡╨╜╤О  */
 }
 header .top-line .logo {
@@ -102,9 +132,9 @@ header .top-line .logo {
 header .top-line .c-hamburger {
   display: none;
   position: absolute;
-  left: 10px;
+  left: 21px;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 8px;
   padding: 0;
   width: 24px;
   height: 24px;
@@ -377,6 +407,15 @@ header .top-line .tel:hover {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+#portfolio .photo img:hover {
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 #portfolio .photo .first {
   display: -webkit-box;
@@ -556,12 +595,15 @@ header .top-line .tel:hover {
 
 #contacts {
   max-width: 1002px;
-  height: 337px;
+  height: 322px;
+  padding-bottom: 15px;
   margin: -52px auto 0;
-  padding-top: 53px;
   text-align: center;
   background-color: #fff;
   font-family: Calibri;
+}
+#contacts h2 {
+  padding-top: 53px;
 }
 #contacts p {
   padding-top: 30px;
@@ -619,19 +661,33 @@ header .top-line .tel:hover {
   margin-top: 53px;
 }
 #inst .photo img {
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+#inst .photo img:hover {
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+#inst .photo a {
   margin-right: 33px;
 }
-#inst .photo img:last-of-type {
+#inst .photo a:last-of-type {
   margin-right: 0;
 }
 
 @media screen and (max-width: 1280px) {
   header .top-line {
-    padding: 0 15px 0 85px;
+    padding-left: 70px;
+    padding-right: 20px;
+    width: calc(100% - 90px);
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    border-radius: 0;
   }
   header .top-line .logo {
     margin-right: 0;
@@ -643,7 +699,7 @@ header .top-line .tel:hover {
     width: 140px;
     height: auto;
     position: fixed;
-    top: 90px;
+    top: 56px;
     left: -160px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -655,7 +711,7 @@ header .top-line .tel:hover {
     -webkit-transition: 0.3s;
             transition: 0.3s;
     margin-right: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
   }
   header .top-line nav ul li {
     margin-right: 0;
@@ -689,79 +745,70 @@ header .top-line .tel:hover {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     text-align: center;
     margin-left: 15px;
     margin-right: 15px;
   }
-  #inst .photo:after {
-    content: '';
-    width: 219px;
-    height: 219px;
-  }
 
-  #inst .photo img {
+  #inst .photo a {
     width: 219px;
     height: 219px;
     margin-right: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: block;
   }
 }
 @media screen and (max-width: 1132px) {
-  #portfolio .photo .first {
+  #portfolio .photo .first,
+  #portfolio .photo .second {
+    max-width: 677px;
+    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 447px;
-    height: auto;
     margin: 0 auto;
   }
-  #portfolio .photo .first img {
-    max-width: 100%;
-    height: auto;
+
+  #portfolio .photo .first .right a,
+  #portfolio .photo .second .left a {
+    margin-right: 10px;
     margin-bottom: 10px;
   }
-
-  #portfolio .photo .first .left {
+  #portfolio .photo .first .right a:nth-child(3n),
+  #portfolio .photo .second .left a:nth-child(3n) {
     margin-right: 0;
   }
 
-  #portfolio .photo .first .right {
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-  }
-
+  #portfolio .photo .first .left,
   #portfolio .photo .second .right {
-    margin-left: 0;
-  }
-
-  #portfolio .photo .second {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    max-width: 447px;
-    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0 auto;
   }
-  #portfolio .photo .second img {
-    max-width: 100%;
-    height: auto;
+
+  #portfolio .photo .first .left {
     margin-bottom: 10px;
   }
-
-  #portfolio .photo .second .left {
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+}
+@media screen and (max-width: 1124px) {
+  #inst .photo {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #inst .photo a {
+    margin-right: 10px;
+  }
+  #inst .photo a:nth-child(4), #inst .photo a:nth-child(5) {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -840,40 +887,69 @@ header .top-line .tel:hover {
     padding-top: 25px;
   }
 }
-@media screen and (max-width: 873px) {
+@media (max-width: 991px) {
+  .fullscreen-bg {
+    background: url("../img/header-bg.jpg");
+    background-size: cover;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+@media screen and (max-width: 934px) {
+  #inst .photo {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #inst .photo a:nth-child(4) {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 716px) {
+  #inst .photo {
+    max-width: 458px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 690px) {
   #portfolio .photo .first,
   #portfolio .photo .second {
-    max-width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 447px;
+    height: auto;
     margin: 0 auto;
   }
-
-  #portfolio .photo .first .left,
-  #portfolio .photo .second .right {
-    width: 219px;
-    height: 219px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 auto;
-  }
-  #portfolio .photo .first .left img,
-  #portfolio .photo .second .right img {
-    width: 219px;
-    height: 100%;
+  #portfolio .photo .first img,
+  #portfolio .photo .second img {
+    max-width: 100%;
+    height: auto;
   }
 
-  #portfolio .photo .first .left {
-    margin-bottom: 10px;
+  #portfolio .photo .first .right a,
+  #portfolio .photo .second .left a {
+    margin-right: 9px;
+  }
+  #portfolio .photo .first .right a:nth-child(2n),
+  #portfolio .photo .second .left a:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 686px) {
+  #inst .photo {
+    width: 485px;
+    margin: 53px auto;
   }
 
-  #portfolio .photo .second .right {
-    margin-top: 6px;
+  #contacts {
+    height: auto;
   }
 }
 @media screen and (max-width: 500px) {
@@ -886,7 +962,9 @@ header .top-line .tel:hover {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
   }
   header .top-line .tel {
     display: none;
@@ -908,27 +986,33 @@ header .top-line .tel:hover {
     padding-bottom: 20px;
   }
 }
-@media screen and (max-width: 686px) {
-  #inst .photo {
-    width: 485px;
-    margin: 53px auto;
-  }
-}
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 486px) {
   #inst .photo {
     width: calc(100% - 30px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 53px 15px;
-  }
-}
-@media screen and (max-width: 468px) {
-  #inst .photo {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #inst .photo:after {
     display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  #portfolio .photo .first .right,
+  #portfolio .photo .second .left {
+    max-width: 219px;
+    margin: 0 auto;
+  }
+  #portfolio .photo .first .right a,
+  #portfolio .photo .second .left a {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 400px) {

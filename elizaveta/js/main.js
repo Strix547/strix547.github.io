@@ -1,4 +1,12 @@
 $(document).ready(function() {
+    $("a.group").fancybox({
+        'transitionIn'	:	'elastic',
+        'transitionOut'	:	'elastic',
+        'overlayShow' : true,
+        'overlayOpacity' : 0.5,
+        'speedIn'		:	600,
+        'speedOut'		:	200
+    });
     $("header .top-line").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
@@ -37,4 +45,5 @@ $(document).click( function(event){
     $("#pull").removeClass("is-active");
     event.stopPropagation();
 });
+
 

@@ -6,30 +6,39 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="img/jquery.fancybox-1.3.4.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Елизавета Евсюкова</title>
 </head>
 <body>
-    <header>
-        <div class="top-line">
-            <button id="pull" class="c-hamburger c-hamburger--htx">
-                <span>toggle menu</span>
-            </button>
-            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Елизавета Евсюкова"></a></div>
-            <nav>
-                <ul id="menu">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#about-me">Обо мне</a></li>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#portfolio">Портфолио</a></li>
-                    <li><a href="#reviews">Отзывы</a></li>
-                    <li><a href="#consultation">Консультация</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-            <a href="tel:89004384763" class="tel">8-909-4384-763</a>
+    <header id="main">
+        <div class="fullscreen-bg">
+            <div class="overlay">
+                <div class="top-line">
+                    <button id="pull" class="c-hamburger c-hamburger--htx">
+                        <span>toggle menu</span>
+                    </button>
+                    <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Елизавета Евсюкова"></a></div>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="#main">Главная</a></li>
+                            <li><a href="#about-me">Обо мне</a></li>
+                            <li><a href="#to-service">Услуги</a></li>
+                            <li><a href="#portfolio">Портфолио</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                            <li><a href="#consultation">Консультация</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <a href="tel:89004384763" class="tel">8-909-4384-763</a>
+                </div>
+                <h1>Главные слова о любви</h1>
+            </div>
+            <video loop muted autoplay class="fullscreen-bg__video">
+                <source src="video.mp4" type="video/mp4">
+            </video>
         </div>
-        <h1>Главные слова о любви</h1>
+
     </header>
     <div id="about-me">
         <div class="left">
@@ -52,6 +61,7 @@
             <img src="img/img1.jpg" alt="Елизавета Евсюкова">
         </div>
     </div>
+    <div id="to-service"></div>
     <div id="services">
         <h2>Что входит в стоимость услуг</h2>
         <ul>
@@ -82,27 +92,27 @@
         <h2>Портфолио</h2>
         <div class="photo">
             <div class="first">
-                <div class="left"><img src="img/port1.jpg" alt="Свадьба"></div>
+                <div class="left"><a class="group" rel="group" href="img/port1-b.jpg"><img src="img/port1.jpg" alt="Свадьба"></a></div>
                 <div class="right">
-                    <img src="img/port2.jpg" alt="Свадьба">
-                    <img src="img/port3.jpg" alt="Свадьба">
-                    <img src="img/port4.jpg" alt="Свадьба">
-                    <img src="img/port5.jpg" alt="Свадьба">
-                    <img src="img/port6.jpg" alt="Свадьба">
-                    <img src="img/port7.jpg" alt="Свадьба">
+                    <a class="group" rel="group" href="img/port2-b.jpg"><img src="img/port2.jpg" alt="Свадьба"></a>
+                    <a class="group" rel="group" href="img/port3-b.jpg"><img src="img/port3.jpg" alt="Свадьба"></a>
+                    <a class="group" rel="group" href="img/port4-b.jpg"><img src="img/port4.jpg" alt="Свадьба"></a>
+                    <a class="group" rel="group" href="img/port5-b.jpg"><img src="img/port5.jpg" alt="Свадьба"></a>
+                    <a class="group" rel="group" href="img/port6-b.jpg"><img src="img/port6.jpg" alt="Свадьба"></a>
+                    <a class="group" rel="group" href="img/port7-b.jpg"><img src="img/port7.jpg" alt="Свадьба"></a>
                 </div>
             </div>
             <div class="second">
                 <div class="left">
-                    <img src="img/port8.jpg" alt="Свадьба">
-                    <img src="img/port9.jpg" alt="Свадьба">
-                    <img src="img/port10.jpg" alt="Свадьба">
-                    <img src="img/port11.jpg" alt="Свадьба">
-                    <img src="img/port12.jpg" alt="Свадьба">
-                    <img src="img/port13.jpg" alt="Свадьба">
+                    <a class="group" rel="group" href="img/port8-b.jpg"><img src="img/port8.jpg" alt="Свадьба"></a>
+                    <a class="group" rel="group" href="img/port9-b.jpg"><img src="img/port9.jpg" alt="Свадьба"></a>
+                    <a class="group" rel="group" href="img/port10-b.jpg"><img src="img/port10.jpg" alt="Свадьба"></a>
+                    <a class="group" rel="group" href="img/port11-b.jpg"><img src="img/port11.jpg" alt="Свадьба"></a>
+                    <a class="group" rel="group" href="img/port12-b.jpg"><img src="img/port12.jpg" alt="Свадьба"></a>
+                    <a class="group" rel="group" href="img/port13-b.jpg"><img src="img/port13.jpg" alt="Свадьба"></a>
                 </div>
                 <div class="right">
-                    <img src="img/port14.jpg" alt="Свадьба">
+                    <a class="group" rel="group" href="img/port14-b.jpg"><img src="img/port14.jpg" alt="Свадьба"></a>
                 </div>
             </div>
         </div>
@@ -166,14 +176,15 @@
     <div id="inst">
         <p>Instagram</p>
         <div class="photo">
-            <img src="img/inst1.jpg" alt="Свадьба">
-            <img src="img/inst2.jpg" alt="Свадьба">
-            <img src="img/inst3.jpg" alt="Свадьба">
-            <img src="img/inst4.jpg" alt="Свадьба">
-            <img src="img/inst5.jpg" alt="Свадьба">
+            <a class="group" rel="inst" href="img/inst1-b.jpg"><img src="img/inst1.jpg" alt="Свадьба"></a>
+            <a class="group" rel="inst" href="img/inst2-b.jpg"><img src="img/inst2.jpg" alt="Свадьба"></a>
+            <a class="group" rel="inst" href="img/inst3-b.jpg"><img src="img/inst3.jpg" alt="Свадьба"></a>
+            <a class="group" rel="inst" href="img/inst4-b.jpg"><img src="img/inst4.jpg" alt="Свадьба"></a>
+            <a class="group" rel="inst" href="img/inst5-b.jpg"><img src="img/inst5.jpg" alt="Свадьба"></a>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="js/jquery.fancybox-1.3.4.pack.js"></script>
     <script src="js/maskedinput.js"></script>
     <script src="js/main.js"></script>
 </body>
