@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "MP-Medium";
+    src: url("../fonts/MinionPro-Medium.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MP-Semibold";
+    src: url("../fonts/MinionPro-Semibold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SFUIT-Medium";
+    src: url("../fonts/SFUIText-Medium.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SFUIT-Regular";
+    src: url("../fonts/SFUIText-Regular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
