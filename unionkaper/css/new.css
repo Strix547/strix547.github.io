@@ -1,0 +1,53 @@
+body {
+
+}
+header {
+    height: 67.7176px;
+    position: relative;
+}
+
+.earn-control-manage {
+    margin-top: 43px;
+}
+
+.prev {
+    margin-top: 29px;
+    margin-bottom: 15px;
+    display: flex;
+    color: #000;
+}
+
+.prev .icon-arrow-left52::before {
+    content: "\e8b5";
+    line-height: 29px;
+}
+
+.prev p {
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+
+.prev:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.table-stock {
+    margin-top: 42px;
+}
+
+.table-stock, .table-stock th {
+    text-align: center;
+}
+
+.table-stock td {
+    border-right: 1px solid #ddd;
+}
+
+.table-stock tr td:last-child {
+    border-right: none;
+}
+
+.table-stock > tbody > tr > td {
+    height: 44px;
+}
