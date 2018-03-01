@@ -4,9 +4,8 @@ header {
 }
 
 p {
-    color: #000;
-    margin: 0;
     line-height: normal;
+    margin-bottom: 0;
 }
 
 .header h4 {
@@ -30,7 +29,7 @@ p {
 
 .prev .icon-arrow-left52::before {
     content: "\e8b5";
-    line-height: 29px;
+    line-height: 25px;
 }
 
 .prev p {
@@ -164,11 +163,6 @@ p {
     flex-direction: row;
 }
 
-.organization_info .nav.nav-tabs li {
-    display: flex;
-    align-items: center;
-}
-
 .organization_info .nav.nav-tabs li a {
     display: flex;
     align-items: center;
@@ -176,37 +170,13 @@ p {
     padding: 0 5px;
 }
 
-.organization_info p {
-    color: #000;
-    line-height: 15px;
-}
-
-.organization_info .btn-xs {
-    padding: 5px 20px;
-}
-
-.organization_info .product_more_info_tab a {
-    position: absolute;
-    bottom: 10px;
-}
-
-.organization_info .tab-pane {
-    height: 164px;
-    position: relative;
-}
-
 .downl-more {
     padding-bottom: 100px;
 }
 
-.org {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.org .block1 {
-    width: calc(100% / 3 - 20px);
-    padding-left: 0;
-    padding-right: 0;
+.org p {
+    color: #585858;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 26px;
 }
