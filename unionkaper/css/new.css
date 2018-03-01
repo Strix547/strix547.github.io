@@ -8,6 +8,10 @@ p {
     margin-bottom: 0;
 }
 
+.inner_typography {
+    padding-bottom: 0;
+}
+
 .header h4 {
     margin-bottom: 0;
 }
