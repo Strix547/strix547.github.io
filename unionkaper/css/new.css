@@ -1,11 +1,10 @@
 header {
-    height: 67.7176px;
     position: relative;
 }
 
-.navbar-fixed-top {
-    border-bottom: 1px solid #eee;
-}
+/*.navbar-fixed-top {*/
+    /*border-bottom: 1px solid #eee;*/
+/*}*/
 
 p {
     line-height: normal;
@@ -14,6 +13,7 @@ p {
 
 .inner_typography {
     padding-bottom: 0;
+    margin-top: 100px;
 }
 
 .header h4 {
@@ -105,6 +105,8 @@ p {
 }
 
 .product_extra_vote .nav-tabs > li a, .product_extra_vote .nav-tabs > li a:hover, .product_extra_vote .nav-tabs > li a:focus, .product_extra_vote .nav-tabs > li a:visited {
+    display: block;
+    margin: 0 auto;
     box-sizing: border-box;
     width: 418px;
     text-align: center;
@@ -211,3 +213,44 @@ p {
 .percent {
     font-weight: 900;
 }
+
+
+@media screen and (max-width: 1200px) {
+    .menuzord-menu.menuzord-right {
+        float: left;
+    }
+    .head-content {
+        margin-top: 130px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .menuzord-menu.mp_menu > li > a {
+        padding: 26px 6px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menuzord-responsive .menuzord-menu > li > a {
+        width: 100%;
+        padding: 12px 20px;
+        display: block;
+        border-bottom: solid 1px #f0f0f0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .product_extra_vote .nav-tabs > li a, .product_extra_vote .nav-tabs > li a:hover, .product_extra_vote .nav-tabs > li a:focus, .product_extra_vote .nav-tabs > li a:visited {
+        max-width: 418px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    .org .product_more_info_tab {
+        height: auto;
+    }
+}
+
+
+
