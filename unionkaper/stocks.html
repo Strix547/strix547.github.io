@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="UNIONKAPER.RU - Биржа продажи и покупки акций российских компаний">
     <meta name="keywords" content="Creative Digital Solutions">
-    <title>Текущая экономика</title>
+    <title>Акции</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="img/favicon_4.ico">
     <!-- GOOGLE FONT -->
@@ -37,7 +37,6 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap3.css" rel="stylesheet">
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/fonticon.css">
     <link rel="stylesheet" href="css/core.css">
     <link rel="stylesheet" href="css/style.css">
@@ -55,7 +54,6 @@
     <!--    <script src="--><!--/layout/dpg/html/revolution/js/jquery.themepunch.tools.min.js"></script>-->
     <script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics multifund.xyz-->
-    <title>Акции - История покупок</title>
 </head>
 <body>
 <header>
@@ -69,25 +67,25 @@
                         <a href="?authorisation=reg">Просмотр организаций</a>
                     <li>
                     <li>
-                        <a href="?authorisation=reg">Мои организации</a>
+                        <a href="my_organization.html">Мои организации</a>
                     <li>
                     <li>
-                        <a href="?authorisation=reg">Голосование</a>
+                        <a href="vote.html">Голосование</a>
                     <li>
                     <li>
-                        <a href="?authorisation=reg">Акции</a>
+                        <a href="stocks.html">Акции</a>
                     <li>
                     <li>
-                        <a href="?authorisation=reg">Дивиденды</a>
+                        <a href="#">Дивиденды</a>
                     <li>
                     <li>
-                        <a href="?authorisation=reg">Финансы</a>
+                        <a href="#">Финансы</a>
                     <li>
                     <li>
-                        <a href="?authorisation=reg">Настройки</a>
+                        <a href="#">Настройки</a>
                     <li>
                     <li>
-                        <a href="?authorisation=reg">Выход</a>
+                        <a href="#">Выход</a>
                     <li>
                     <li class="scrollable-fix"></li></ul>
                 <div class="right_mp_menu">
@@ -105,78 +103,133 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <a class="prev" href="#"><i class="icon-arrow-left52"></i><p>Вернуться на предыдущую страницу</p></a>
+                <div class="inner_typography">
+                    <div class="header earn-control-manage"><h3>Зарабатывайте на дивидендах и росте компаний<br>Контролируйте и управляйте</h3></div>
+                </div>
             </div>
         </div>
         <div class="row">
-           <div class="col-md-12">
-               <div class="economy-block">
-                   <div class="panel economy bg-teal-400">
-                       <div class="panel-body">
-                           <div class="heading-elements">
-                               <ul class="icons-list">
-                                   <li><a data-action="reload"></a></li>
-                               </ul>
-                           </div>
-
-                           <h3 class="no-margin">00.0</h3>
-                           Доход за текущий год
-                       </div>
-                   </div>
-                   <div class="panel economy bg-pink-400">
-                       <div class="panel-body">
-                           <div class="heading-elements">
-                               <ul class="icons-list">
-                                   <li><a data-action="reload"></a></li>
-                               </ul>
-                           </div>
-
-                           <h3 class="no-margin">00.0</h3>
-                           Расход за текущий год
-                       </div>
-                   </div>
-                   <div class="panel economy bg-blue-400">
-                       <div class="panel-body">
-                           <div class="heading-elements">
-                               <ul class="icons-list">
-                                   <li><a data-action="reload"></a></li>
-                               </ul>
-                           </div>
-
-                           <h3 class="no-margin">00.0</h3>
-                           Прибыль за текущий год
-                       </div>
-                   </div>
-                   <div class="panel economy bg-pink-400">
-                       <div class="panel-body">
-                           <div class="heading-elements">
-                               <ul class="icons-list">
-                                   <li><a data-action="reload"></a></li>
-                               </ul>
-                           </div>
-
-                           <h3 class="no-margin">00.0</h3>
-                           Доход за текущий месяц
-                       </div>
-                   </div>
-                   <div class="panel economy bg-teal-400">
-                       <div class="panel-body">
-                           <div class="heading-elements">
-                               <ul class="icons-list">
-                                   <li><a data-action="reload"></a></li>
-                               </ul>
-                           </div>
-
-                           <h3 class="no-margin">00.0</h3>
-                           Прибыль за текущий месяц
-                       </div>
-                   </div>
-               </div>
-           </div>
+            <div class="col-md-12">
+                <h3><b>Акции в Вашей собственности</b></h3>
+                <h4><b>Всего акций Вам принадлежит:</b> <span>123 600 шт</span></h4>
+                <h4><b>На общую сумму:</b> <span>3 234 246 рублей</span></h4>
+                <br>
+                <a class="btn hero_btn" href="?authorisation=auth">История изменений</a>
+            </div>
         </div>
+        <br>
         <div class="row">
             <div class="col-md-12">
-                <table></table>
+                <div class="table-responsive">
+                    <table class="table table-stock">
+                        <thead>
+                        <tr>
+                            <th><b>Организация</b></th>
+                            <th><b>Кол-во акций</b></th>
+                            <th><b>Сумма стоимости</b></th>
+                            <th><b>Стоимость акций</b></th>
+                            <th><b>Выставить на продажу</b></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Хлебзавод</td>
+                            <td>2000</td>
+                            <td>60 000 р.</td>
+                            <td>30 р.</td>
+                            <td><a href="#" class="text-green">Выставить на продажу</a></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <h3><b>Ваши акции выставленные на продажу</b></h3>
+                <br>
+                <h4><b>Выставлено акций на продажу:</b> <span>1000 шт</span></h4>
+                <h4><b>Сумма выставленных акций на продажу:</b> <span>30 000 рублей</span></h4>
+                <h4><b>Продано акций:</b> <span>1000 шт</span></h4>
+                <h4><b>Сумма проданных акций:</b> <span>27 000 рублей</span></h4>
+                <br>
+                <a class="btn hero_btn" href="?authorisation=auth">История изменений</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table table-stock">
+                        <thead>
+                        <tr>
+                            <th><b>Организация</b></th>
+                            <th><b>Кол-во акций</b></th>
+                            <th><b>Сумма стоимости</b></th>
+                            <th><b>Стоимость акций</b></th>
+                            <th><b>Комиссия</b></th>
+                            <th><b>Статус</b></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Хлебзавод</td>
+                            <td>2000</td>
+                            <td>60 000 р.</td>
+                            <td>30 р.</td>
+                            <td>5%</td>
+                            <td>На продаже - <a href="#" class="text-red">Отменить</a></td>
+                        </tr>
+                        <tr>
+                            <td>Хлебзавод</td>
+                            <td>2000</td>
+                            <td>60 000 р.</td>
+                            <td>30 р.</td>
+                            <td>5%</td>
+                            <td>На продаже - <a href="#" class="text-red">Отменить</a></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

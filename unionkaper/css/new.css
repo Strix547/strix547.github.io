@@ -1,14 +1,40 @@
-header {
-    position: relative;
+.hero_btn {
+    color: #000;
+    border-color: #1cbac8;
+    text-transform: none;
 }
 
-/*.navbar-fixed-top {*/
-    /*border-bottom: 1px solid #eee;*/
-/*}*/
+.text-green {
+    color: #8BC34A;
+}
+
+.text-red {
+    color: #F44336;
+}
+
+.text-red:hover {
+    color: #F44336;
+}
+
+.text-green:hover {
+    color: #8BC34A;
+}
+
+.navbar-fixed-top {
+    border-bottom: 1px solid #eee;
+}
+
+.nav_border::after {
+    display: none;
+}
 
 p {
     line-height: normal;
     margin-bottom: 0;
+}
+
+.menuzord-brand.left {
+    margin: 15px 0px 0 -8.5px;
 }
 
 .inner_typography {
