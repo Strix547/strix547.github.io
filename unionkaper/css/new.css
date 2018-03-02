@@ -293,6 +293,11 @@ p {
         border-bottom: solid 1px #f0f0f0;
     }
 }
+@media screen and (max-width: 612px) {
+    .org .product_more_info_tab a button {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 500px) {
     .product_extra_vote .nav-tabs > li a, .product_extra_vote .nav-tabs > li a:hover, .product_extra_vote .nav-tabs > li a:focus, .product_extra_vote .nav-tabs > li a:visited {
@@ -304,6 +309,9 @@ p {
 @media screen and (max-width: 396px) {
     .org .product_more_info_tab {
         height: auto;
+    }
+    .organization_info .nav.nav-tabs li a {
+        height: 40px;
     }
 }
 
