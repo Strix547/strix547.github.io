@@ -2,6 +2,31 @@
     color: #000;
     border-color: #1cbac8;
     text-transform: none;
+    box-shadow: none;
+}
+
+.hero_btn:visited {
+    color: #000;
+    background-color: #fff;
+    border-color: #1cbac8;
+    box-shadow: none;
+}
+
+.hero_btn:focus,
+.hero_btn:active {
+    color: #000;
+    border-color: #1cbac8;
+    background-color: #fff;
+    text-transform: none;
+    box-shadow: none;
+}
+
+.hero_btn:hover {
+    color: #fff;
+    border-color: #1cbac8;
+    background-color: #1cbac8;
+    text-transform: none;
+    box-shadow: none;
 }
 
 .menuzord ul a.active {
