@@ -4,6 +4,10 @@
     text-transform: none;
 }
 
+.menuzord ul a.active {
+    color: #1cbac8;
+}
+
 .text-green {
     color: #8BC34A;
 }
@@ -34,7 +38,7 @@ p {
 }
 
 .menuzord-brand.left {
-    margin: 15px 0px 0 -8.5px;
+    margin: 15px 0 0 -8.5px;
 }
 
 .inner_typography {
@@ -146,10 +150,6 @@ p {
 .product_extra_vote .nav-tabs {
     margin-bottom: 0;
 }
-
-/*.product_extra_vote .nav-tabs {*/
-    /*margin-bottom: 109px;*/
-/*}*/
 
 .product_extra_vote .tab-content > .active {
     border: none;
