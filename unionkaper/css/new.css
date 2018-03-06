@@ -269,6 +269,80 @@ p {
     font-weight: 900;
 }
 
+.product_quantity.left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.product_quantity.left .btn.hero_btn {
+    height: 43.15px;
+    line-height: 17px;
+}
+
+.product_quantity.left .sp_minus,
+.product_quantity.left .sp_minus:hover,
+.product_quantity.left .sp_minus:active,
+.product_quantity.left .sp_minus:focus,
+.product_quantity.left .sp_minus:visited {
+    left: 0;
+}
+
+.product_quantity.left .input-group .form-control {
+    height: 35px;
+}
+
+.product_quantity.left .sp_minus,
+.product_quantity.left .sp_minus:hover,
+.product_quantity.left .sp_minus:active,
+.product_quantity.left .sp_minus:focus,
+.product_quantity.left .sp_minus:visited,
+.product_quantity.left .sp_plus,
+.product_quantity.left .sp_plus:hover,
+.product_quantity.left .sp_plus:active,
+.product_quantity.left .sp_plus:focus,
+.product_quantity.left .sp_plus:visited,
+.product_quantity.left .input-group .form-control,
+.product_quantity.left .input-group .form-control:focus {
+    height: 35px;
+    padding: 9px 9px;
+}
+
+.product_quantity .input-group .form-control.long {
+    width: 191px;
+}
+
+.product_quantity.left .input-group {
+    margin: 0;
+    padding-left: 32px;
+    padding-right: 39px;
+}
+
+.desc-right {
+    color: #fff;
+}
+
+.header-desc .desc-right.less {
+    padding: 50px;
+}
+
+.desc-right.less .el p {
+    color: #fff;
+}
+
+.desc-right.less .el p span {
+    color: #fff;
+}
+
+.desc-right .hero_btn {
+    color: #fff;
+}
+
+.body1 .description li p {
+    line-height: 22px;
+}
+
 
 @media screen and (max-width: 1200px) {
     .menuzord-menu.menuzord-right {
