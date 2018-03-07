@@ -343,6 +343,18 @@ p {
     line-height: 22px;
 }
 
+.under-header.gray-block {
+    text-align: center;
+    padding: 90px 0;
+    margin-top: 35px;
+}
+.under-header.gray-block button {
+    margin: 0;
+}
+.under-header.gray-block button:first-child {
+    margin-right: 150px;
+}
+
 
 @media screen and (max-width: 1200px) {
     .menuzord-menu.menuzord-right {
