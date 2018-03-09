@@ -47,10 +47,38 @@
     <script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/js2/lte-ie7.js"></script>
     <![endif]-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/js2/jquery.min.js"></script>
-    <!--    <script src="--><!--/layout/dpg/html/revolution/js/jquery.themepunch.tools.min.js"></script>-->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
+    <script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/js2/jquery.min.js"></script>
     <script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics multifund.xyz-->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="http://freelancehr.ru/themes/grape/layout/material/assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="js/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="js/d3.min.js"></script>
+    <script type="text/javascript" src="js/d3_tooltip.js"></script>
+    <script type="text/javascript" src="js/switchery.min.js"></script>
+    <script type="text/javascript" src="http://freelancehr.ru/themes/grape/layout/material/assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script type="text/javascript" src="js/uniform.min.js"></script>
+    <script type="text/javascript" src="http://freelancehr.ru/themes/grape/layout/material/assets/js/plugins/pickers/anytime.min.js"></script>
+
+        <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic.js"></script>
+        <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic_bivariate.js"></script>
+        <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic_area.js"></script>
+        <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic_multi_series.js"></script>
+        <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic_stacked.js"></script>
+        <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic_stacked_nest.js"></script>
+        <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic_gradient.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script type="text/javascript" src="http://freelancehr.ru/themes/grape/layout/material/assets/js/plugins/ui/ripple.min.js"></script>
+
+
     <style>
         body {
             height: 2000px;
@@ -103,6 +131,7 @@
     </nav>
     <!-- END NAV BAR -->
 </header>
+<br>
 <br>
 <br>
 <br>
@@ -168,21 +197,29 @@
                     <h5><b>Всего проведено голосований:</b> <span>123</span></h5>
                     <h5><b>Голосований в которых Вы приняли участие:</b> <span>67</span></h5>
                     <br>
-                    <h4><b>Включить доверительное голосование</b> <label>
-                        <input class="switchery" style="display: none;" data-switchery="true" type="checkbox"><span
-                            class="switchery switchery-default"
-                            style="box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset; border-color: rgb(223, 223, 223); background-color: rgb(255, 255, 255); transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s;"><small
-                            style="left: 0px; transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span>
-                    </label></h4>
+
+                    <div class="header2">
+                        <h4><b>Включить доверительное голосование</b> </h4>
+                        <div class="checkbox checkbox-switchery switchery-sm">
+                                <input class="js-switch" checked="checked" data-switchery="true" type="checkbox">
+                        </div>
+                    </div>
+                    <br>
                     <p>Включая доверительное голосование Вы передаете право голосовать вместо себя управляющему данной
                         организации. Если вы хотите<br>принимать участие в голосование самостоятельно включать данную
                         функцию не нужно.</p>
                     <br>
-                    <br>
-                    <div>
-                        <div class="pull-left"><p>История изменения стоимости акций</p></div><div class="pull-right"><input class="form-control" value="4th of June" readonly="" id="anytime-month" type="text"></div>
+                    <div class="input-group pick-date">
+                        <div class="left">
+                            <p>История изменения стоимости акций</p>
+                        </div>
+                        <div class="right">
+                            <span class="input-group-addon"><i class="icon-calendar3"></i></span>
+                            <input class="form-control pick_date" id="anytime-month" value="Месяцы" readonly="" type="text">
+                            <b class="caret"></b>
+                        </div>
                     </div>
-
+                    <br>
                     <div class="chart-container">
                         <div class="chart" id="d3-line-basic">
                             <svg width="1170" height="395">
@@ -852,8 +889,6 @@
             src="https://unionkaper.ru/themes/invest/layout/dpg/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
 
     <script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/js2/script.js"></script>
-
-
     <script>
         $(document).ready(function () {
 
@@ -907,7 +942,7 @@
         <div><img src="https://mc.yandex.ru/watch/46860897" style="position:absolute; left:-9999px;" alt=""/></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-
+    <script src="js/pages/description.js"></script>
 </div>
 </body>
 </html>

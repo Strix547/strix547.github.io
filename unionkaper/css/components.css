@@ -17946,7 +17946,7 @@ thead .htCollapseButton:after {
   overflow-y: visible;
   max-width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1220px) {
   .chart-container {
     overflow-x: scroll;
     overflow-y: visible;
@@ -19227,22 +19227,15 @@ thead .htCollapseButton:after {
 .heading-elements {
   background-color: inherit;
   position: absolute;
-  top: 50%;
+  top: 10px;
   right: 20px;
   height: 38px;
-  margin-top: -19px;
 }
 @media (max-width: 768px) {
   .heading-elements:not(.not-collapsible) {
-    position: static;
     margin-top: 0;
     height: auto;
   }
-}
-.panel-body > .heading-elements {
-  top: 0;
-  margin-top: 16px;
-  z-index: 10;
 }
 @media (max-width: 768px) {
   .panel-body > .heading-elements-toggle {
@@ -19598,10 +19591,6 @@ thead .htCollapseButton:after {
   }
 }
 @media (max-width: 768px) {
-  .heading-elements:not(.not-collapsible),
-  .breadcrumb-elements:not(.not-collapsible) {
-    display: none;
-  }
   .heading-elements.visible-elements,
   .breadcrumb-elements.visible-elements {
     display: block;
