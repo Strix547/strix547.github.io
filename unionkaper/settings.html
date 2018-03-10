@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="UNIONKAPER.RU - Биржа продажи и покупки акций российских компаний">
     <meta name="keywords" content="Creative Digital Solutions">
-    <title>Дивиденды</title>
+    <title>Настройки</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="img/favicon_4.ico">
     <!-- GOOGLE FONT -->
@@ -38,6 +38,7 @@
     <link href="css/bootstrap3.css" rel="stylesheet">
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="css/fonticon.css">
+    <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/core.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/new.css">
@@ -50,16 +51,18 @@
     <script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/js2/lte-ie7.js"></script>
     <![endif]-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/js2/jquery.min.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
+    <script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/js2/jquery.min.js"></script>
     <!--    <script src="--><!--/layout/dpg/html/revolution/js/jquery.themepunch.tools.min.js"></script>-->
     <script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics multifund.xyz-->
 </head>
-    <style>
-        body {
-            height: 2000px;
-        }
-    </style>
+<style>
+    body {
+        height: 2000px;
+    }
+</style>
 <body>
 <header>
     <!-- START NAV MENU -->
@@ -67,7 +70,8 @@
         <div class="container">
             <div id="menuzord" class="menuzord red menuzord-responsive">
                 <a href="/" class="menuzord-brand">UNIONKAPER.RU</a>
-                <ul class="menuzord-menu mp_menu menuzord-right menuzord-indented scrollable" style="max-height: 400px;">
+                <ul class="menuzord-menu mp_menu menuzord-right menuzord-indented scrollable"
+                    style="max-height: 400px;">
                     <li>
                         <a href="?authorisation=reg">Просмотр организаций</a>
                     <li>
@@ -81,18 +85,19 @@
                         <a href="stock.html">Акции</a>
                     <li>
                     <li>
-                        <a class="active" href="dividends.html">Дивиденды</a>
+                        <a href="dividends.html">Дивиденды</a>
                     <li>
                     <li>
                         <a href="finance.html">Финансы</a>
                     <li>
                     <li>
-                        <a href="settings.html">Настройки</a>
+                        <a class="active" href="settings.html">Настройки</a>
                     <li>
                     <li>
                         <a href="#">Выход</a>
                     <li>
-                    <li class="scrollable-fix"></li></ul>
+                    <li class="scrollable-fix"></li>
+                </ul>
                 <div class="right_mp_menu">
                     <ul>
                         <li></li>
@@ -110,54 +115,38 @@
             <div class="col-md-12">
                 <div class="inner_typography">
                     <div class="head-content">
-                        <div class="header earn-control-manage"><h3>Зарабатывайте на дивидендах и росте компаний<br>Контролируйте и управляйте</h3></div>
+                        <div class="header earn-control-manage"><h3>Зарабатывайте на дивидендах и росте компаний<br>Контролируйте
+                            и управляйте</h3></div>
                     </div>
                 </div>
-                <br>
+                <form class="fields" action="#">
+                    <div class="field-group">
+                        <label class="col-lg-2 control-label"><b>Ваши ФИО</b></label>
+                        <div class="col-lg-10">
+                            <input class="field" type="text">
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label class="col-lg-2 control-label"><b>Ваш номер телефона</b></label>
+                        <div class="col-lg-10">
+                            <input class="field" type="text">
+                            <a class="btn btn-small hero_btn" href="#">Подтвердить</a>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label class="col-lg-2 control-label"><b>Ваш E-mail</b></label>
+                        <div class="col-lg-10">
+                            <input class="field" type="text">
+                            <a class="btn btn-small hero_btn" href="#">Подтвердить</a>
+                        </div>
+                    </div>
+                </form>
                 <div class="col-md-12">
-                    <h4><b>Ваш доход от дивидендов за весь период:</b> <span>2 234 234 рублей</span></h4>
-                    <h4><b>Выведено средств с кошелька:</b> <span>1 934 345 рублей</span></h4>
-                    <h4><b>Дивиденды в Вашем кошельке:</b> <span>1 934 345 рублей</span></h4>
-                    <br>
-                    <a class="btn hero_btn" href="finance.html">Вывод дивидендов</a>
-                    <br>
-                    <div class="table-responsive">
-                        <table class="table table-stock">
-                            <thead>
-                            <tr>
-                                <th><b>Организация</b></th>
-                                <th><b>Сумма начисления</b></th>
-                                <th><b>Примечание</b></th>
-                                <th><b>Дата начисления</b></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Хлебзавод</td>
-                                <td>2000</td>
-                                <td>Ежемесечная выплата дивидендов</td>
-                                <td>10.04.2018 14:23</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <p><b>Скан паспорта</b> (Для безопасности и идентификации Вас и Вашего аккаунта рекомендуем загрузить
+                        скан<br>паспорта страницы с фотографией. Это не обязательно)</p>
+                    <div class="uploader">
+                        <input class="file-styled" type="file">
+                        <span class="action btn hero_btn" style="-moz-user-select: none;">Загрузить</span>
                     </div>
                 </div>
             </div>
@@ -183,9 +172,12 @@
     <script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/js2/typed.js"></script>
     <script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/js2/portfolio.js"></script>
     <!-- REVOLUTION SLIDER SCRIPT FOR RUN ON LOCAL -->
-    <script type="text/javascript" src="https://unionkaper.ru/themes/invest/layout/dpg/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="https://unionkaper.ru/themes/invest/layout/dpg/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="https://unionkaper.ru/themes/invest/layout/dpg/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript"
+            src="https://unionkaper.ru/themes/invest/layout/dpg/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript"
+            src="https://unionkaper.ru/themes/invest/layout/dpg/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript"
+            src="https://unionkaper.ru/themes/invest/layout/dpg/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
 
     <script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/js2/script.js"></script>
 
@@ -194,11 +186,10 @@
         $(document).ready(function () {
 
 
-
             var video_width = $('body').width() - 60;
             var video_height = video_width / 100 * 60;
 
-            if(video_width > 500){
+            if (video_width > 500) {
                 video_width = 500;
                 video_height = 281;
             }
@@ -212,30 +203,37 @@
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
+            (w[c] = w[c] || []).push(function () {
                 try {
                     w.yaCounter46860897 = new Ya.Metrika({
-                        id:46860897,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true
+                        id: 46860897,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true
                     });
-                } catch(e) { }
+                } catch (e) {
+                }
             });
 
             var n = d.getElementsByTagName("script")[0],
                 s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
             s.type = "text/javascript";
             s.async = true;
             s.src = "https://mc.yandex.ru/metrika/watch.js";
 
             if (w.opera == "[object Opera]") {
                 d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
+            } else {
+                f();
+            }
         })(document, window, "yandex_metrika_callbacks");
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/46860897" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/46860897" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
     <!-- /Yandex.Metrika counter -->
 
 </div>
