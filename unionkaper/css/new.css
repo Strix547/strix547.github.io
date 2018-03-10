@@ -319,20 +319,19 @@ p {
     padding-right: 39px;
 }
 
-.desc-right {
-    color: #fff;
-}
 
 .header-desc .desc-right.less {
     padding: 50px;
 }
 
-.desc-right.less .el p {
-    color: #fff;
+
+.desc-right {
+    font-family: 'Segoe UI', sans-serif;
 }
 
-.desc-right.less .el p span {
-    color: #fff;
+.section-desc h5 {
+    font-size: 15px;
+    color: rgba(255,255,255,0.7);
 }
 
 .desc-right .hero_btn {
@@ -428,6 +427,9 @@ p {
     align-items: center;
 }
 
+.input-group .form-control.pick_date {
+    width: 175px;
+}
 .header2 {
     display: flex;
     flex-wrap: wrap;
@@ -438,20 +440,16 @@ p {
     margin-left: 10px;
 }
 
-.desc-right h4 {
-    color: #fff;
-}
-
-.desc-right p {
-    color: #fff;
-}
-
 .vote {
      display: flex;
     flex-direction: row;
 }
 .vote .left {
     width: 504px;
+}
+
+.vote .left p {
+    color: rgba(255,255,255,0.7);
 }
 
 .vote .right {
@@ -463,7 +461,7 @@ p {
 }
 
 .vote .right h5 {
-    padding-bottom: 10px;
+    padding-bottom: 9px;
 }
 
 .vote .right .choiceVote {
@@ -471,7 +469,7 @@ p {
     height: 26px;
     border-radius: 50%;
     border: 2px solid #1cbac8;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 }
 
 .vote .right .choiceVote:focus {
@@ -540,6 +538,10 @@ p {
 .delimeter h5 {
     font-size: 18px;
     margin: 0;
+}
+
+.body1 h4 {
+    color: #585858;
 }
 
 @media screen and (max-width: 1250px) {
