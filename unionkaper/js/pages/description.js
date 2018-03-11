@@ -4,7 +4,6 @@ $(function() {
     $(".pick_date").AnyTime_picker({ format: "%M" });
 
     var grayBlock = document.querySelector(".under-header.gray-block");
-    var closePopup = document.querySelector(".close");
 
     document.body.addEventListener("click", function (e) {
         var modals = document.querySelectorAll(".modal");
