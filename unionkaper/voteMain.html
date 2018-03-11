@@ -55,7 +55,7 @@
 
     <!-- Core JS files -->
     <script type="text/javascript"
-            src="http://freelancehr.ru/themes/grape/layout/material/assets/js/plugins/loaders/pace.min.js"></script>
+            src="https://freelancehr.ru/themes/grape/layout/material/assets/js/plugins/loaders/pace.min.js"></script>
     <script type="text/javascript" src="js/blockui.min.js"></script>
     <!-- /core JS files -->
 
@@ -64,23 +64,14 @@
     <script type="text/javascript" src="js/d3_tooltip.js"></script>
     <script type="text/javascript" src="js/switchery.min.js"></script>
     <script type="text/javascript"
-            src="http://freelancehr.ru/themes/grape/layout/material/assets/js/plugins/ui/moment/moment.min.js"></script>
+            src="https://freelancehr.ru/themes/grape/layout/material/assets/js/plugins/ui/moment/moment.min.js"></script>
     <script type="text/javascript" src="js/uniform.min.js"></script>
     <script type="text/javascript"
-            src="http://freelancehr.ru/themes/grape/layout/material/assets/js/plugins/pickers/anytime.min.js"></script>
-
-    <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic.js"></script>
-    <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic_bivariate.js"></script>
-    <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic_area.js"></script>
-    <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic_multi_series.js"></script>
-    <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic_stacked.js"></script>
-    <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic_stacked_nest.js"></script>
-    <script type="text/javascript" src="assets/js/charts/d3/lines/lines_basic_gradient.js"></script>
-
+            src="https://freelancehr.ru/themes/grape/layout/material/assets/js/plugins/pickers/anytime.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 
     <script type="text/javascript"
-            src="http://freelancehr.ru/themes/grape/layout/material/assets/js/plugins/ui/ripple.min.js"></script>
+            src="https://freelancehr.ru/themes/grape/layout/material/assets/js/plugins/ui/ripple.min.js"></script>
 
 
     <style>
@@ -170,32 +161,34 @@
                                 зданий</p>
                         </div>
                         <div class="vote">
-                            <div class="left">
-                                <h5><b>Результаты голосования</b></h5>
+                                <div class="top"><h5><b>Результаты голосования</b></h5><h5>Отдать голос</h5></div>
                                 <p>За 46%</p>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="64"
-                                         aria-valuemin="0" aria-valuemax="100" style="width: 64%;">
+                                <div class="bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="64"
+                                             aria-valuemin="0" aria-valuemax="100" style="width: 64%;">
+                                        </div>
                                     </div>
+                                    <button class="choiceVote"></button>
                                 </div>
                                 <p>Против 18%</p>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="64"
-                                         aria-valuemin="0" aria-valuemax="100" style="width: 64%;">
+                                <div class="bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="64"
+                                             aria-valuemin="0" aria-valuemax="100" style="width: 64%;">
+                                        </div>
                                     </div>
+                                    <button class="choiceVote"></button>
                                 </div>
                                 <p>Воздержусь 2%</p>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="64"
-                                         aria-valuemin="0" aria-valuemax="100" style="width: 64%;">
+                                <div class="bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="64"
+                                             aria-valuemin="0" aria-valuemax="100" style="width: 64%;">
+                                        </div>
                                     </div>
+                                    <button class="choiceVote"></button>
                                 </div>
-                            </div>
-                            <div class="right">
-                                <h5><b>Отдать голос</b></h5>
-                                <button class="choiceVote"></button>
-                                <button class="choiceVote"></button>
-                                <button class="choiceVote"></button>
                             </div>
                         </div>
                     </section>
@@ -307,60 +300,6 @@
             src="https://unionkaper.ru/themes/invest/layout/dpg/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
 
     <script src="https://unionkaper.ru/themes/invest/layout/dpg/assets/js2/script.js"></script>
-    <script>
-        $(document).ready(function () {
-
-
-            var video_width = $('body').width() - 60;
-            var video_height = video_width / 100 * 60;
-
-            if (video_width > 500) {
-                video_width = 500;
-                video_height = 281;
-            }
-
-            //$(".video_block").html('<iframe src="https://www.youtube.com/embed/8tGz1aBtscQ?ap=%2526fmt%3D18&disablekb=1&rel=0" height="'+video_height+'"  width="'+video_width+'"  allowfullscreen></iframe>');
-
-
-        });
-
-    </script>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function () {
-                try {
-                    w.yaCounter46860897 = new Ya.Metrika({
-                        id: 46860897,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true
-                    });
-                } catch (e) {
-                }
-            });
-
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () {
-                    n.parentNode.insertBefore(s, n);
-                };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else {
-                f();
-            }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/46860897" style="position:absolute; left:-9999px;" alt=""/></div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
-    <script src="js/pages/description.js"></script>
 </div>
 </body>
 </html>

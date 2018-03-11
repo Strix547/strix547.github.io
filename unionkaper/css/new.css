@@ -327,11 +327,22 @@ p {
 
 .desc-right {
     font-family: 'Segoe UI', sans-serif;
+    color: #fff;
 }
 
 .section-desc h5 {
-    font-size: 15px;
-    color: rgba(255,255,255,0.7);
+     font-size: 15px;
+     color: #fff;
+ }
+
+.header-desc .desc-right .el span {
+    color: #fff;
+}
+.header-desc .desc-right .el h4 {
+    color: #fff;
+}
+.header-desc .desc-right .el p {
+    color: #fff;
 }
 
 .desc-right .hero_btn {
@@ -428,7 +439,7 @@ p {
 }
 
 .input-group .form-control.pick_date {
-    width: 175px;
+    width: 70px;
 }
 .header2 {
     display: flex;
@@ -441,15 +452,15 @@ p {
 }
 
 .vote {
-     display: flex;
-    flex-direction: row;
-}
-.vote .left {
-    width: 504px;
+    width: 80%;
 }
 
-.vote .left p {
-    color: rgba(255,255,255,0.7);
+.section-desc .el p {
+    font-size: 16px;
+}
+
+.vote p {
+    color: #fff;
 }
 
 .vote .right {
@@ -464,21 +475,34 @@ p {
     padding-bottom: 9px;
 }
 
-.vote .right .choiceVote {
-    width: 26px;
+.vote .choiceVote {
+    min-width: 26px;
     height: 26px;
     border-radius: 50%;
+    margin-right: 27px;
     border: 2px solid #1cbac8;
-    margin-bottom: 24px;
 }
 
-.vote .right .choiceVote:focus {
+.vote .choiceVote:focus {
     background-color: #1cbac8;
 }
 
-.vote .right .choiceVote:last-child {
-    margin-bottom: 0;
+.vote .top {
+    display: flex;
+    justify-content: space-between;
 }
+
+.vote .bar {
+    display: flex;
+    align-items: center;
+}
+
+.vote .bar .progress {
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 100px;
+}
+
 
 .documentation {
     width: 100%;
@@ -542,10 +566,6 @@ p {
 
 .body1 h4 {
     color: #585858;
-}
-
-.fields {
-
 }
 
 .field-group {
@@ -627,6 +647,9 @@ p {
         height: 112px;
         margin-right: 0;
     }
+    .vote {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 764px) {
@@ -697,6 +720,15 @@ p {
         width: auto;
     }
 }
+
+
+
+@media screen and (max-width: 436px) {
+    .product_quantity.left .spinner {
+        margin-bottom: 10px;
+    }
+}
+
 
 @media screen and (max-width: 396px) {
     .org .product_more_info_tab {
