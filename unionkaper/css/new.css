@@ -515,7 +515,6 @@ p {
      flex-direction: row;
      flex-wrap: wrap;
     margin-top: 35px;
-    padding-left: 15px;
 }
 
 .documentation ul li {
@@ -698,7 +697,6 @@ p {
 @media screen and (max-width: 520px) {
     .documentation ul {
         flex-direction: column;
-        padding-left: 0;
     }
     .documentation ul li {
         margin-bottom: 15px;
