@@ -608,6 +608,22 @@ p {
     color: #fff;
 }
 
+.btn_st_four, .btn_st_four:visited {
+    padding: 11px 11px;
+    margin-right: 27px;
+    background: #fff;
+}
+
+.btn_st_four:active, .btn_st_four:focus {
+    padding: 11px 11px;
+    margin-right: 27px;
+    background: #1cbac8;
+}
+
+.btn-sm:not(.btn-rounded), .btn-group-sm > .btn:not(.btn-rounded), .btn-xs:not(.btn-rounded), .btn-group-xs > .btn:not(.btn-rounded) {
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 1250px) {
     .table-responsive.big-table {
         overflow-x: auto;
