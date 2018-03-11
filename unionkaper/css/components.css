@@ -1313,12 +1313,6 @@ body[class*=navbar-bottom] .footer:not(.navbar) {
   -o-transform: rotate(-180deg);
   transform: rotate(-180deg);
 }
-.spinner {
-  display: inline-block;
-  -webkit-animation: rotation 1s linear infinite;
-  -o-animation: rotation 1s linear infinite;
-  animation: rotation 1s linear infinite;
-}
 .spinner-reverse {
   display: inline-block;
   -webkit-animation: rotation_reverse 1s linear infinite;
