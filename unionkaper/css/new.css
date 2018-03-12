@@ -354,14 +354,16 @@ p {
 }
 
 .under-header.gray-block {
+    position: relative;
     text-align: center;
     padding: 69px 0 70px 0;
     margin-top: 35px;
 }
-.under-header.gray-block button {
+.under-header.gray-block .buy,
+.under-header.gray-block .sell {
     margin: 0;
 }
-.under-header.gray-block button:first-child {
+.under-header.gray-block .buy {
     margin-right: 150px;
 }
 
@@ -609,7 +611,7 @@ p {
 }
 
 .modal {
-    position: fixed;
+    position: absolute;
     display: none;
     width: 100%;
     height: 100%;
@@ -618,6 +620,17 @@ p {
 
 .modal ul {
     position: relative;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.7);
+    z-index: 9;
+    display: none;
 }
 
 .modal .close {
@@ -632,9 +645,8 @@ p {
 }
 
 .modal .under-header {
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 33%;
 }
 
 @media screen and (max-width: 1250px) {
@@ -730,7 +742,7 @@ p {
     .under-header.gray-block button {
         width: 65%;
     }
-    .under-header.gray-block button:first-child {
+    .under-header.gray-block .buy {
         margin-right: 0;
         margin-bottom: 20px;
     }

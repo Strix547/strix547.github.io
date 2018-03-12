@@ -7,9 +7,16 @@ $(function() {
 
     document.body.addEventListener("click", function (e) {
         var modals = document.querySelectorAll(".modal");
+        var overlay = document.querySelector("#overlay");
         if (e.target.classList.contains("close")) {
+            overlay.style.display = "none";
             for (var i = 0; i < modals.length; i++) {
                 modals[i].style.display = "none";
+            }
+        } else if (e.target.id === "overlay") {
+            overlay.style.display = "none";
+            for (var j = 0; j < modals.length; j++) {
+                modals[j].style.display = "none";
             }
         }
     });
@@ -17,11 +24,14 @@ $(function() {
     grayBlock.addEventListener("click", function(e) {
         var modalBuy = document.querySelector("#modal-buy");
         var modalSell = document.querySelector("#modal-sell");
-        if (e.target.classList.contains("buy")) {
+        var overlay = document.querySelector("#overlay");
+       if (e.target.classList.contains("buy")) {
             modalBuy.style.display = "block";
+            overlay.style.display = "block";
         }
         if (e.target.classList.contains("sell")) {
             modalSell.style.display = "block";
+            overlay.style.display = "block";
         }
     });
 });
