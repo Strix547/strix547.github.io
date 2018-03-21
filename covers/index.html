@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LikeАвто</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="top-line">
+                    <div class="logo"><a href="index.html"><img src="img/logo.png" alt="LikeАВТО"></a></div>
+                    <div class="call">
+                        <a href="#">8 800 123 45 67
+                            <span>заказать звонок</span></a>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="top-menu">
+                        <li><a href="#options">Заказать чехол</a></li>
+                        <li><a href="#installation">Установка</a></li>
+                        <li><a href="#colors-materials">Цвета и материалы</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#certificates">Сертификаты</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center">
+                    <div class="left">
+                        <h1>Чехлы из экокожи от
+                            производителея</h1>
+                        <h2 class="red">Скидка до 35% + подарок каждому</h2>
+                        <div class="images">
+                            <img src="img/img-before.png" alt="До">
+                            <img src="img/img-after.png" alt="После">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <form action="send1.php" method="post" enctype="application/x-www-form-urlendoded">
+                            <p>Получите
+                                скидку 30%</p>
+                            <p>до 23 февраля
+                                + подарок</p>
+                            <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                            <input type="submit" class="btn-blue" value="Заказать чехлы">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrow"></div>
+</header>
+<section id="options">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="darkblue">Подобрать чехол</h2>
+                <form action="#">
+                    <div class="top">
+                        <div class="left">
+                            <div id="covers">
+                                <div class="slides_container">
+                                    <img src="img/cover-big.png">
+                                    <img src="img/cover-big.png">
+                                    <img src="img/cover-big.png">
+                                    <img src="img/cover-big.png">
+                                </div>
+                                <ul class="pagination">
+                                    <li><a href="#"><img src="img/cover-pink-sm.jpg"></a></li>
+                                    <li><a href="#"><img src="img/cover-green-sm.jpg"></a></li>
+                                    <li><a href="#"><img src="img/cover-red-sm.jpg"></a></li>
+                                    <li><a href="#"><img src="img/cover-purple-sm.jpg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="selections">
+                                <div class="select-block">
+                                    <label>
+                                        <span class="header">
+                                            <span class="label">
+                                                Выбор материал:
+                                            </span>
+                                            <a href="#" class="info-icon">
+                                                <span class="info">Экокожа - новый вид искусственной кожи, который не вызывает аллергии, пропускает воздух, не имеет неприятного запаха кожзаменителя, устойчив к ультрафиолету и резким перепадам температур.
+                                                    Алькантара - искусственная замша, мягкая, приятная на ощупь, долговечная, устойчивая к внешним воздействиям.
+                                                    Жаккард - специальный износостойкий обивочный материал, обладает повышенной истираемостью, устойчив к ультрафиолету.</span>
+                                            </a>
+                                        </span>
+                                        <select name="material" class="material">
+                                            <option value="eko">Экокожа + Экокожа</option>
+                                            <option value="eko">Экокожа + Экокожа Ромб</option>
+                                            <option value="eko">Экокожа + Алькантара</option>
+                                            <option value="eko">Экокожа + Алькантара Ромб</option>
+                                            <option value="eko">Экокожа + Жаккард</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="select-block">
+                                    <label>
+                                        <span class="header">
+                                            <span class="label">
+                                                Доставка:
+                                            </span>
+                                        </span>
+                                        <select name="material" class="material">
+                                            <option value="eko">Самовывоз из бокса</option>
+                                            <option value="eko">Доставка</option>
+                                            <option value="eko">Доставка за Кад</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="select-block">
+                                    <label>
+                                        <span class="header">
+                                            <span class="label">
+                                                Выбор толщины:
+                                            </span>
+                                            <a href="#" class="info-icon">
+                                                <span class="info">Толщина материала Цикл истирания
+                                                                    Эконом - 0.8 мм Эконом - свыше 25000 раз
+                                                                    Стандарт – 1 мм Стандарт - свыше 35000 раз
+                                                                    Премиум – 1.2 мм Премиум - свыше 40 000 раз</span>
+                                            </a>
+                                        </span>
+                                        <select name="material" class="material">
+                                            <option value="eko">Эконом</option>
+                                            <option value="eko">Стандарт</option>
+                                            <option value="eko">Премиум</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="select-block">
+                                    <label>
+                                        <span class="header">
+                                            <span class="label">
+                                                Тип установки:
+                                            </span>
+                                        </span>
+                                        <select name="material" class="material">
+                                            <option value="eko">Без установки</option>
+                                            <option value="eko">Установка</option>
+                                            <option value="eko">Выездная установка</option>
+                                            <option value="eko">Установка с подшивкой передних</option>
+                                            <option value="eko">Установка с подшивкой всех</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="colors">
+                                <label>Вариант расцветки:</label>
+                                <div class="radio-buttons">
+                                    <label>
+                                        <img src="img/black-black.png" alt="Черный-Черный">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label"></span>
+                                    </label>
+                                    <label>
+                                        <img src="img/beige-beige.png" alt="Бежевый-Бежевый">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label"></span>
+                                    </label>
+                                    <label>
+                                        <img src="img/brown-brown.png" alt="Коричневый-Коричневый">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label"></span>
+                                    </label>
+                                    <label>
+                                        <img src="img/black-brown.png" alt="Черный-Коричневый">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label"></span>
+                                    </label>
+                                    <label>
+                                        <img src="img/black-red.png" alt="Черный-Красный">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label"></span>
+                                    </label>
+                                    <label>
+                                        <img src="img/black-beige.png" alt="Черный-Бежевый">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label"></span>
+                                    </label>
+                                    <label>
+                                        <img src="img/black-white.png" alt="Черный-Белый">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label"></span>
+                                    </label>
+                                    <label>
+                                        <img src="img/black-blue.png" alt="Черный-Синий">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label"></span>
+                                    </label>
+                                    <label>
+                                        <img src="img/white-white.png" alt="Белый-Белый">
+                                        <input class="radio" type="radio" name="radio-test">
+                                        <span class="radio-custom"></span>
+                                        <span class="label"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-blue">Смотреть еще...</a>
+                            <div class="more">
+                                <label>
+                                    <img src="img/pillows.jpg" alt="Подушки">
+                                    <input class="radio" type="radio" name="radio-test">
+                                    <span class="radio-custom"></span>
+                                    <span class="label">Подушки на подголовник </span><span class="price">800 руб</span>
+                                </label>
+                                <label>
+                                    <input class="radio" type="radio" name="radio-test">
+                                    <span class="radio-custom"></span>
+                                    <span class="label">Средства для ухода</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="total">
+                        <div class="left">
+                            <p>Итого: <span>10 000 Р</span></p>
+                        </div>
+                        <div class="center">
+                            <input type="submit" class="btn-blue" value="Оставить заявку">
+                            <p>Оплата при получении</p>
+                        </div>
+                        <div id="gift">
+                            <p>Вы получили
+                                <span>Подарок</span></p>
+                            <p>* уточняйте у менеджера при
+                                оформлении заказа</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="installation">
+    <h2 class="white">Профессиональная установка <span>за 60 минут</span>
+        у нас в боксе или на выезде возле дома, офиса</h2>
+    <form action="send1.php" method="post" enctype="application/x-www-form-urlendoded">
+        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+        <input type="submit" value="Заказать">
+    </form>
+    <div class="images">
+        <img src="img/img1.png" alt="Установка">
+        <img src="img/img2.png" alt="Установка">
+    </div>
+</section>
+<section id="colors-materials">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="black">Цвета и материалы на выбор</h2>
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tabs-1">Экокожа</li>
+                    <li class="tab-link" data-tab="tabs-2">Ромб</li>
+                    <li class="tab-link" data-tab="tabs-3">Жаккард</li>
+                </ul>
+                <div id="tabs-1" class="tab-content current">
+                    <div class="item">
+                        <img src="img/cover-pink-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-blue-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-green-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-red-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-pink-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-blue-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-green-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-red-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                </div>
+                <div id="tabs-2" class="tab-content">
+                    <div class="item">
+                        <img src="img/cover-pink-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-blue-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-green-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-red-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-pink-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-blue-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-green-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-red-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                </div>
+                <div id="tabs-3" class="tab-content">
+                    <div class="item">
+                        <img src="img/cover-pink-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-blue-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-green-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-red-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-pink-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-blue-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-green-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                    <div class="item">
+                        <img src="img/cover-red-md.png" alt="Розовый">
+                        <h4>Profi-Carcomfort</h4>
+                        <p class="info">11 предметов, размер M,
+                            антрацит</p>
+                        <p class="price">5 200 руб.</p>
+                        <a href="#" class="btn-blue">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="reviews">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="darkblue">Отзывы клиентов</h2>
+                <div class="reviews-slider1">
+                    <div class="item">
+                        <div class="left">
+                            <a href="#"><img src="img/video1.png" alt="Видео"></a>
+                        </div>
+                        <div class="right">
+                            <h4>Заголовок темы</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenea euismod bebendum laoreet.
+                                Proin gravida dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="left">
+                            <a href="#"><img src="img/video2.png" alt="Видео"></a>
+                        </div>
+                        <div class="right">
+                            <h4>Заголовок темы</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenea euismod bebendum laoreet.
+                                Proin gravida dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="left">
+                            <a href="#"><img src="img/video1.png" alt="Видео"></a>
+                        </div>
+                        <div class="right">
+                            <h4>Заголовок темы</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenea euismod bebendum laoreet.
+                                Proin gravida dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="left">
+                            <a href="#"><img src="img/video2.png" alt="Видео"></a>
+                        </div>
+                        <div class="right">
+                            <h4>Заголовок темы</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenea euismod bebendum laoreet.
+                                Proin gravida dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="left">
+                            <a href="#"><img src="img/video1.png" alt="Видео"></a>
+                        </div>
+                        <div class="right">
+                            <h4>Заголовок темы</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenea euismod bebendum laoreet.
+                                Proin gravida dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="left">
+                            <a href="#"><img src="img/video2.png" alt="Видео"></a>
+                        </div>
+                        <div class="right">
+                            <h4>Заголовок темы</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenea euismod bebendum laoreet.
+                                Proin gravida dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-slider2">
+                    <img src="img/dialog.jpg" alt="Диалог">
+                    <img src="img/dialog.jpg" alt="Диалог">
+                    <img src="img/dialog.jpg" alt="Диалог">
+                    <img src="img/dialog.jpg" alt="Диалог">
+                    <img src="img/dialog.jpg" alt="Диалог">
+                    <img src="img/dialog.jpg" alt="Диалог">
+                    <img src="img/dialog.jpg" alt="Диалог">
+                    <img src="img/dialog.jpg" alt="Диалог">
+                    <img src="img/dialog.jpg" alt="Диалог">
+                    <img src="img/dialog.jpg" alt="Диалог">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="production">
+    <h2 class="white">Собственное производство</h2>
+    <p>В наличии более 10000 наименований авточехлов</p>
+    <div class="images">
+        <img src="img/img1.jpg" alt="Картинка">
+        <img src="img/img2.jpg" alt="Картинка">
+        <img src="img/img3.jpg" alt="Картинка">
+        <img src="img/img4.jpg" alt="Картинка">
+        <img src="img/img5.jpg" alt="Картинка">
+        <img src="img/img1.jpg" alt="Картинка">
+        <img src="img/img2.jpg" alt="Картинка">
+    </div>
+</section>
+<section id="certificates">
+    <h2 class="darkblue">Сертификаты</h2>
+    <p>Наш товар сертифицирован</p>
+    <div class="certificates">
+        <div class="certificate"><img src="img/certificate.jpg" alt="Сертификат"></div>
+        <div class="certificate"><img src="img/certificate.jpg" alt="Сертификат"></div>
+        <div class="certificate"><img src="img/certificate.jpg" alt="Сертификат"></div>
+    </div>
+</section>
+<section id="consultation">
+    <h2 class="white">Заказать консультацию</h2>
+    <form action="send1.php" method="post" enctype="application/x-www-form-urlendoded">
+        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+        <input type="submit" value="Заказать">
+    </form>
+</section>
+<section id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d840.9307918069308!2d30.34633572283577!3d59.91419040196213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696304da07b2c33%3A0xcbf2ffe640855b74!2z0JvQuNCz0L7QstGB0LrQuNC5INC_0YAuLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsw!5e0!3m2!1sru!2sru!4v1521514835636" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+<footer id="contacts">
+    <div class="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top-line">
+                        <div class="left">
+                            <a href="index.html"><img src="img/logo.png" alt="LikeАвто"></a>
+                            <p>Авточехлы из экокожи</p>
+                            <p>Политика конфиденциальности</p>
+                        </div>
+                        <div class="center">
+                            <a href="#" class="ytb" target="_blank"></a>
+                            <a href="#" class="fb" target="_blank"></a>
+                            <a href="#" class="vk" target="_blank"></a>
+                            <a href="#" class="inst" target="_blank"></a>
+                        </div>
+                        <div class="right">
+                            <p>Лиговский пр., Санкт-Петербург,
+                            Россия</p>
+                            <a href="tel:88001234567">8 800 123 45 67</a>
+                            <a href="mailto:sale@likeauto.ru">sale@likeauto.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bottom-line">
+                        <div class="left">© 2018. «LikeАвто»</div>
+                        <div class="right">Разработка, поддержка и продвижение сайтов <a href="http://silverduck.net/ru/" target="_blank">Silver Duck</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/slides.min.jquery.js"></script>
+<script src="js/maskedinput.js"></script>
+<script>
+    $(window).load(function () {
+        $('.material').selectmenu();
+    });
+
+    $('.tab-content.current').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1366,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+    });
+
+    $('.reviews-slider1').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: false,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+    });
+
+    $('.reviews-slider2').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1366,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+    });
+
+    $('ul.tabs li').click(function () {
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#" + tab_id).addClass('current').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 1366,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+        });
+    });
+
+    $('input[type="tel"]').mask("+7 (999) 999 - 99 - 99");
+    $(function () {
+        $('#covers').slides({
+            effect: 'slide, fade',
+            crossfade: true,
+            slideSpeed: 200,
+            fadeSpeed: 500,
+            generatePagination: false
+        });
+    });
+
+    $("header .top-menu").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 750);
+    });
+    $(function() {
+        $('form').submit(function(e) {
+            var $form = $(this);
+            $.ajax({
+                type: $form.attr('method'),
+                url: $form.attr('action'),
+                data: $form.serialize()
+            }).done(function() {
+                window.location.href = "send1.php";
+            }).fail(function() {
+                alert("Ваше сообщение не было отправлено");
+            });
+            e.preventDefault();
+        });
+    });
+</script>
+<script>
+
+</script>
+</body>
+</html>
