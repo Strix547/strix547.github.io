@@ -6,14 +6,6 @@
 }
 
 @font-face {
-    font-family: "MPItalic";
-    src: url("../fonts/MyriadPro-Italic.ttf");
-    font-style: normal;
-    font-weight: normal;
-}
-
-
-@font-face {
     font-family: "MPBold";
     src: url("../fonts/MyriadPro-Bold.ttf");
     font-style: normal;
@@ -21,22 +13,42 @@
 }
 
 @font-face {
-    font-family: "MPBoldExt";
-    src: url("../fonts/MyriadPro-BoldSemiExt.otf");
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'MPItalic';
+    src: url('../fonts/MyriadProItalic.eot');
+    src: url('../fonts/MyriadProItalic.eot') format('embedded-opentype'),
+    url('../fonts/MyriadProItalic.woff2') format('woff2'),
+    url('../fonts/MyriadProItalic.woff') format('woff'),
+    url('../fonts/MyriadProItalic.ttf') format('truetype'),
+    url('../fonts/MyriadProItalic.svg#MyriadProItalic') format('svg');
 }
 
 @font-face {
-    font-family: "Courbd";
-    src: url("../fonts/courbd.ttf");
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'MPBoldExt';
+    src: url('../fonts/MyriadProBoldSemiExt.eot');
+    src: url('../fonts/MyriadProBoldSemiExt.eot') format('embedded-opentype'),
+    url('../fonts/MyriadProBoldSemiExt.woff2') format('woff2'),
+    url('../fonts/MyriadProBoldSemiExt.woff') format('woff'),
+    url('../fonts/MyriadProBoldSemiExt.ttf') format('truetype'),
+    url('../fonts/MyriadProBoldSemiExt.svg#MyriadProBoldSemiExt') format('svg');
 }
 
 @font-face {
-    font-family: "PantonBlack";
-    src: url("../fonts/Panton-Black.otf");
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'PantonBlack';
+    src: url('../fonts/PantonBlack.eot');
+    src: url('../fonts/PantonBlack.eot') format('embedded-opentype'),
+    url('../fonts/PantonBlack.woff2') format('woff2'),
+    url('../fonts/PantonBlack.woff') format('woff'),
+    url('../fonts/PantonBlack.ttf') format('truetype'),
+    url('../fonts/PantonBlack.svg#PantonBlack') format('svg');
 }
+
+@font-face {
+    font-family: 'Courbd';
+    src: url('../fonts/CourierNewPS-BoldMT.woff2') format('woff2'),
+    url('../fonts/CourierNewPS-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
