@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Кэшбэк сервис</title>
+</head>
+<body>
+<header>
+    <div class="top">
+        <div class="wrapper">
+            <div class="top-line">
+                <div class="logo">
+                    <a href="./"><span>Кэшбэк сервис</span>
+                        мы возвращаем вам деньги!</a>
+                </div>
+                <form action="#" class="search-block">
+                    <input type="search" placeholder="Найти...">
+                    <div class="sections">
+                        Все разделы
+                        <ul class="menu">
+                            <li><a href="./">Продукты питания</a></li>
+                            <li><a href="./">Книги</a></li>
+                            <li><a href="./">Электроника</a></li>
+                            <li><a href="./">Бытовая техника</a></li>
+                            <li><a href="./">Дом и сад</a></li>
+                            <li><a href="./">Ремонт и строительство</a></li>
+                            <li><a href="./">Детям и мамам</a></li>
+                            <li><a href="./">Творчество и хобби</a></li>
+                            <li><a href="./">Красота и здоровье</a></li>
+                            <li><a href="./">Аптека</a></li>
+                            <li><a href="./">Спорт и отдых</a></li>
+                            <li><a href="./">Одежда, обувь, аксессуары</a></li>
+                            <li><a href="./">Зоотовары</a></li>
+                            <li><a href="./">Авто и мототовары</a></li>
+                            <li><a href="./">Канцелярские товары</a></li>
+                            <li><a href="./">Игры и софт</a></li>
+                            <li><a href="./">DVD и Blu-ray</a></li>
+                            <li><a href="./">Музыка</a></li>
+                            <li><a href="./">Антиквариат, винтаж, искусство</a></li>
+                            <li><a href="./">Авиа и ж/д билеты</a></li>
+                            <li><a href="./">Подарочные сертификаты</a></li>
+                            <li><a href="./">Товары для взрослых</a></li>
+                        </ul>
+                    </div>
+                    <div class="submit"></div>
+                </form>
+                <div class="right">
+                    <a href="#">Мои покупки</a>
+                    <a href="#">Все магазины</a>
+                    <a href="#">Избранное</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="wrapper">
+            <div class="bottom-line">
+                <div class="all">
+                    <a href="#" id="all-sections">Все разделы</a>
+                    <ul class="menu">
+                        <li><a href="./">Продукты питания</a></li>
+                        <li><a href="./">Книги</a></li>
+                        <li><a href="./">Электроника</a></li>
+                        <li><a href="./">Бытовая техника</a></li>
+                        <li><a href="./">Дом и сад</a></li>
+                        <li><a href="./">Ремонт и строительство</a></li>
+                        <li><a href="./">Детям и мамам</a></li>
+                        <li><a href="./">Творчество и хобби</a></li>
+                        <li><a href="./">Красота и здоровье</a></li>
+                        <li><a href="./">Аптека</a></li>
+                        <li><a href="./">Спорт и отдых</a></li>
+                        <li><a href="./">Одежда, обувь, аксессуары</a></li>
+                        <li><a href="./">Зоотовары</a></li>
+                        <li><a href="./">Авто и мототовары</a></li>
+                        <li><a href="./">Канцелярские товары</a></li>
+                        <li><a href="./">Игры и софт</a></li>
+                        <li><a href="./">DVD и Blu-ray</a></li>
+                        <li><a href="./">Музыка</a></li>
+                        <li><a href="./">Антиквариат, винтаж, искусство</a></li>
+                        <li><a href="./">Авиа и ж/д билеты</a></li>
+                        <li><a href="./">Подарочные сертификаты</a></li>
+                        <li><a href="./">Товары для взрослых</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul class="top-menu">
+                        <li><a href="#">Продукты питания</a></li>
+                        <li><a href="#">Книги</a></li>
+                        <li><a href="#">Электроника</a></li>
+                        <li><a href="#">Бытовая техника</a></li>
+                        <li><a href="#">Дом и сад</a></li>
+                        <li><a href="#">Детям и мамам</a></li>
+                        <li><a href="#">Красота и здоровье</a></li>
+                        <li><a href="#">Спорт и отдых</a></li>
+                        <li><a href="#">Одежда и обувь</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="banners">
+    <a href="./" class="banner1">
+            <span class="inner">
+                <span>Возвращайте деньги
+                за покупки!</span>
+                <span>Мы возвращаем Вам до 40% денег
+                потраченных в интернет-магазинах</span>
+                <span>На банковскую карту
+                или на счет телефона</span>
+                <span class="link-btn">Как это работает?</span>
+            </span>
+    </a>
+    <div class="right">
+        <a href="./" class="banner2">
+                <span class="inner">
+                    <span>Самые выгодные
+                    магазины</span>
+                    <span>Здесь максимальный кэшбэк!</span>
+                    <span>Фантастическая
+                    экономия при покупке <span>%</span></span>
+                    <span>К списку магазинов</span>
+                </span>
+        </a>
+        <a href="./" class="banner3">
+            <span>Зарабатывайте с нами</span>
+            <span>Приглашайте друзей и получайте
+                комиссию с их покупок</span>
+            <span>Партнерская
+                программа №1
+                в рунете</span>
+            <span>Узнать как заработать</span>
+        </a>
+    </div>
+</section>
+<section id="how-to-buy">
+    <h2>Как покупать с кэшбэком?</h2>
+    <ul class="steps">
+        <li>
+            <div class="icon"><span class="num">1</span><span></span></div>
+            <p class="bold">Выберите магазин</p>
+            <p>Переходите в один из
+                более чем 1000 магащинов</p>
+        </li>
+        <li>
+            <div class="icon"><span class="num">2</span><span></span></div>
+            <p class="bold">Сделайте покупку</p>
+            <p>Покупайте товары и услуги,
+                как обычно</p>
+        </li>
+        <li>
+            <div class="icon"><span class="num">3</span><span></span></div>
+            <p class="bold">Получите кэшбэк</p>
+            <p>Получайте часть
+                потраченных денег обратно</p>
+        </li>
+    </ul>
+</section>
+<section id="with-cashback">
+    <h2>Магазины с кэшбэком</h2>
+    <div class="blocks">
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block yellow mvideo">
+                <span class="top">топ</span>
+                <span class="favorite red"></span>
+                <img src="img/mvideo.png" alt="М.видео">
+                <span class="shop">М.видео</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block lamoda">
+                <span class="top">топ</span>
+                <span class="favorite"></span>
+                <img src="img/lamoda.jpg" alt="М.видео">
+                <span class="shop">Lamoda</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block yellow svyznoy">
+                <span class="top">топ</span>
+                <span class="favorite"></span>
+                <img src="img/svyznoy.jpg" alt="Связной">
+                <span class="shop">Связной</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block megafon">
+                <span class="top">топ</span>
+                <span class="favorite"></span>
+                <img src="img/megafon.jpg" alt="Мегафон">
+                <span class="shop">Мегафон</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block yellow megafon">
+                <span class="favorite"></span>
+                <img src="img/megafon.jpg" alt="Мегафон">
+                <span class="shop">Мегафон</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block ali">
+                <span class="favorite"></span>
+                <img src="img/ali.jpg" alt="AliExpress">
+                <span class="shop">AliExpress</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block yellow ebay">
+                <span class="favorite"></span>
+                <img src="img/ebay.png" alt="ebay">
+                <span class="shop">ebay</span>
+                <span class="percent">5%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block ozon">
+                <span class="favorite"></span>
+                <img src="img/ozon.jpg" alt="ozon">
+                <span class="shop">Ozon</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block mediamarket">
+                <span class="favorite"></span>
+                <img src="img/mediaMarket.jpg" alt="mediamarket">
+                <span class="shop">Media Market</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block mediamarket">
+                <span class="favorite"></span>
+                <img src="img/mediaMarket.jpg" alt="mediamarket">
+                <span class="shop">Media Market</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block ott">
+                <span class="favorite"></span>
+                <img src="img/123.jpg" alt="123.ru">
+                <span class="shop">123.ru</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block sitilink">
+                <span class="favorite"></span>
+                <img src="img/sitilink.jpg" alt="Ситилинк">
+                <span class="shop">Ситилинк</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block sitilink">
+                <span class="favorite"></span>
+                <img src="img/booking.png" alt="Booking.com">
+                <span class="shop">Booking.com</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block player">
+                <span class="favorite"></span>
+                <img src="img/player.png" alt="Плеер.ру">
+                <span class="shop">Плеер.ру</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+        <div class="link">
+            <a href="./" class="favorite"></a>
+            <a href="./" class="block player">
+                <span class="favorite"></span>
+                <img src="img/player.png" alt="Плеер.ру">
+                <span class="shop">Плеер.ру</span>
+                <span class="percent">3%</span>
+                <span class="cashback">кэшбэк</span>
+            </a>
+        </div>
+    </div>
+    <a href="#" class="all-shops">Все магазины с кэшбэком</a>
+</section>
+<section id="withdrawal">
+    <h3>Мы уже выплатили более 150 000 рублей кэшбэка</h3>
+    <p>Вывести полученный кэшбэк можно любым удобным способом:
+        на банковскую карту, счет мобильного телефона или электронные кошельки</p>
+    <ul class="way">
+        <li><img src="img/visa.jpg" alt="виза"></li>
+        <li><img src="img/mastercard.jpg" alt="мастеркарт"></li>
+        <li><img src="img/mir.jpg" alt="мир"></li>
+        <li><img src="img/sim.jpg" alt="симка"></li>
+        <li><img src="img/yandexmoney.jpg" alt="яндекс деньги"></li>
+        <li><img src="img/qiwi.jpg" alt="Киви"></li>
+        <li><img src="img/paypal.jpg" alt="paypal"></li>
+        <li><img src="img/webmoney.jpg" alt="Вебмани"></li>
+    </ul>
+</section>
+<div id="gift">
+    <div class="left">
+        <h3>Зарегистрируйтесь и получите Premium-аккаунт в подарок!</h3>
+        <p>Получайте удовольствие от покупок с кэшбэком!</p>
+    </div>
+    <a href="#" id="register">Регистрация</a>
+</div>
+<section id="all-shops">
+    <h2>Все магазины с кэшбэком</h2>
+    <div class="wrapper">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#">Продукты питания</a></li>
+                    <li><a href="#">Книги</a></li>
+                    <li><a href="#">Электроника</a></li>
+                    <li><a href="#">Бытовая техника</a></li>
+                    <li><a href="#">Дом и сад</a></li>
+                    <li><a href="#">Ремонт и строительство</a></li>
+                    <li><a href="#">Детям и мамам</a></li>
+                    <li><a href="#">Творчество и хобби</a></li>
+                    <li><a href="#">Красота и здоровье</a></li>
+                    <li><a href="#">Аптека</a></li>
+                    <li><a href="#">Спорт и отдых</a></li>
+                    <li><a href="#">Одежда, обувь, аксессуары</a></li>
+                    <li><a href="#">Зоотовары</a></li>
+                    <li><a href="#">Авто и мототовары</a></li>
+                    <li><a href="#">Канцелярские товары</a></li>
+                    <li><a href="#">Игры и софт</a></li>
+                    <li><a href="#">DVD и Blu-ray</a></li>
+                    <li><a href="#">Музыка</a></li>
+                    <li><a href="#">Антиквариат, винтаж, искусство</a></li>
+                    <li><a href="#">Авиа и ж/д билеты</a></li>
+                    <li><a href="#">Подарочные сертификаты</a></li>
+                    <li><a href="#">Товары для взрослых</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="right">
+            <div class="blocks">
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block yellow mvideo">
+                        <span class="top">топ</span>
+                        <span class="favorite"></span>
+                        <img src="img/mvideo.png" alt="М.видео">
+                        <span class="shop">М.видео</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block lamoda">
+                        <span class="top">топ</span>
+                        <span class="favorite"></span>
+                        <img src="img/lamoda.jpg" alt="М.видео">
+                        <span class="shop">Lamoda</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block svyznoy">
+                        <span class="top">топ</span>
+                        <span class="favorite yellow"></span>
+                        <img src="img/svyznoy.jpg" alt="Связной">
+                        <span class="shop">Связной</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block megafon">
+                        <span class="favorite"></span>
+                        <img src="img/megafon.jpg" alt="Мегафон">
+                        <span class="shop">Мегафон</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block ali">
+                        <span class="favorite"></span>
+                        <img src="img/ali.jpg" alt="AliExpress">
+                        <span class="shop">AliExpress</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block ebay">
+                        <span class="favorite yellow"></span>
+                        <img src="img/ebay.png" alt="ebay">
+                        <span class="shop">ebay</span>
+                        <span class="percent">5%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block ozon">
+                        <span class="favorite"></span>
+                        <img src="img/ozon.jpg" alt="ozon">
+                        <span class="shop">Ozon</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block mediamarket">
+                        <span class="favorite"></span>
+                        <img src="img/mediaMarket.jpg" alt="mediamarket">
+                        <span class="shop">Media Market</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block ott">
+                        <span class="favorite"></span>
+                        <img src="img/123.jpg" alt="123.ru">
+                        <span class="shop">123.ru</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block sitilink">
+                        <span class="favorite"></span>
+                        <img src="img/sitilink.jpg" alt="Ситилинк">
+                        <span class="shop">Ситилинк</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block sitilink">
+                        <span class="favorite"></span>
+                        <img src="img/booking.png" alt="Booking.com">
+                        <span class="shop">Booking.com</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block player">
+                        <span class="favorite"></span>
+                        <img src="img/player.png" alt="Плеер.ру">
+                        <span class="shop">Плеер.ру</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block mvideo">
+                        <span class="favorite"></span>
+                        <img src="img/mvideo.png" alt="М.видео">
+                        <span class="shop">М.видео</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block lamoda">
+                        <span class="favorite"></span>
+                        <img src="img/lamoda.jpg" alt="М.видео">
+                        <span class="shop">Lamoda</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block svyznoy">
+                        <span class="favorite yellow"></span>
+                        <img src="img/svyznoy.jpg" alt="Связной">
+                        <span class="shop">Связной</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block megafon">
+                        <span class="favorite"></span>
+                        <img src="img/megafon.jpg" alt="Мегафон">
+                        <span class="shop">Мегафон</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block ali">
+                        <span class="favorite"></span>
+                        <img src="img/ali.jpg" alt="AliExpress">
+                        <span class="shop">AliExpress</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block ebay">
+                        <span class="favorite yellow"></span>
+                        <img src="img/ebay.png" alt="ebay">
+                        <span class="shop">ebay</span>
+                        <span class="percent">5%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block ozon">
+                        <span class="favorite"></span>
+                        <img src="img/ozon.jpg" alt="ozon">
+                        <span class="shop">Ozon</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block mediamarket">
+                        <span class="favorite"></span>
+                        <img src="img/mediaMarket.jpg" alt="mediamarket">
+                        <span class="shop">Media Market</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block ott">
+                        <span class="favorite"></span>
+                        <img src="img/123.jpg" alt="123.ru">
+                        <span class="shop">123.ru</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block sitilink">
+                        <span class="favorite"></span>
+                        <img src="img/sitilink.jpg" alt="Ситилинк">
+                        <span class="shop">Ситилинк</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block sitilink">
+                        <span class="favorite"></span>
+                        <img src="img/booking.png" alt="Booking.com">
+                        <span class="shop">Booking.com</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="./" class="favorite"></a>
+                    <a href="./" class="block player">
+                        <span class="favorite"></span>
+                        <img src="img/player.png" alt="Плеер.ру">
+                        <span class="shop">Плеер.ру</span>
+                        <span class="percent">3%</span>
+                        <span class="cashback">кэшбэк</span>
+                    </a>
+                </div>
+            </div>
+            <div class="pagination">
+                <a class="left"></a>
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>...</li>
+                    <li><a href="#">15</a></li>
+                </ul>
+                <a class="right"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="wrapper">
+        <div class="top">
+            <div class="section">
+                <p>Кэшбэк сервис</p>
+                <a href="#">Все магазины</a>
+                <a href="#">Отзывы о нас</a>
+            </div>
+            <div class="section">
+                <p>Узнайте больше</p>
+                <a href="#">Как работает кэшбэк</a>
+                <a href="#">Правила покупок с кэшбэком</a>
+            </div>
+            <div class="section">
+                <p>Сотрудничество</p>
+                <a href="#">Партнерская программа</a>
+                <a href="#">Добавить магазин</a>
+            </div>
+            <div class="section">
+                <p>Помощь</p>
+                <a href="#">Обращение в службу помощи</a>
+                <a href="#">Вопросы и ответы</a>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="bottom">
+            <div class="top-line">
+                <div class="left">
+                    <a href="#" class="vk"></a>
+                    <a href="#" class="odn"></a>
+                    <a href="#" class="fb"></a>
+                    <a href="#" class="tw"></a>
+                    <a href="#" class="yt"></a>
+                </div>
+                <div class="right">
+                    <div class="visa"></div>
+                    <div class="mastercard"></div>
+                    <div class="mir"></div>
+                    <div class="qiwi"></div>
+                    <div class="yandex-money"></div>
+                    <div class="webmoney"></div>
+                    <div class="paypal"></div>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <div class="left">@2017-2018 Кэшбэк сервис CbService.club</div>
+                <div class="right">
+                    <a href="#">Клиентское соглашение</a>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="modal1" class="modal">
+    <div class="close"></div>
+    <h3>Регистрация</h3>
+    <form action="#">
+        <input type="email" placeholder="Ваш e-mail" required>
+        <input type="password" placeholder="Пароль" required>
+        <p>Я принимаю условия</p> <a href="#">клиентского соглашения</a><br>
+        <p>и</p> <a href="#">политики конфиденциальности</a>
+        <input type="submit" value="Регистрация">
+        <div class="border"></div>
+        <div class="social">
+            <p>Или с помощью соцсетей:</p>
+            <a href="#" class="vk"></a>
+            <a href="#" class="fb"></a>
+            <a href="#" class="g+"></a>
+        </div>
+        <div class="border"></div>
+        <a href="#" id="sign-in">Войти</a><p>, если есть аккаунт</p>
+    </form>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="close"></div>
+    <h3>Вход</h3>
+    <form action="#">
+        <input type="email" placeholder="Ваш e-mail" required>
+        <input type="password" placeholder="Пароль" required>
+        <a href="#" id="lostPassword">Забыли пароль?</a>
+        <input type="submit" value="Войти">
+        <div class="border"></div>
+        <p>Или с помощью соцсетей:</p>
+        <div class="social">
+            <a href="#" class="vk"></a>
+            <a href="#" class="g+"></a>
+            <a href="#" class="fb"></a>
+            <a href="#" class="mail"></a>
+            <a href="#" class="yandex"></a>
+            <a href="#" class="odn"></a>
+        </div>
+        <div class="border"></div>
+        <a href="#" id="register2">Зарегистрируйтесь,</a><p> если Вы новый пользователь</p>
+    </form>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="close"></div>
+    <h3>Восстановление
+    пароля</h3>
+    <form action="#">
+        <input type="email" placeholder="Ваш e-mail" required>
+        <input type="submit" value="Восстановить">
+        <div class="border"></div>
+        <a href="#" id="sign-in2">Войти</a><p> в Кэшбэк сервис</p><br>
+        <a href="#" id="register3">Регистрация</a><p>в Кэшбэк сервисе</p>
+    </form>
+</div>
+<div id="overlay"></div>
+<script src="js/jquery-1.4.4.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

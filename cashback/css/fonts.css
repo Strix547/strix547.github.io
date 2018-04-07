@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "MPRegular";
+    src: url("../fonts/MyriadPro-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MPItalic";
+    src: url("../fonts/MyriadPro-Italic.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: "MPBold";
+    src: url("../fonts/MyriadPro-Bold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MPBoldExt";
+    src: url("../fonts/MyriadPro-BoldSemiExt.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Courbd";
+    src: url("../fonts/courbd.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PantonBlack";
+    src: url("../fonts/Panton-Black.otf");
+    font-style: normal;
+    font-weight: normal;
+}
