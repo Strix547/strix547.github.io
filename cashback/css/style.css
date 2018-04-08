@@ -2079,6 +2079,18 @@ footer .bottom .bottom-line .right a:hover {
   #all-shops .wrapper .blocks .block {
     margin: 0 10px 32px;
   }
+
+  footer .top {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  footer .top .section {
+    width: auto;
+  }
+  footer .top .section:first-child {
+    width: auto;
+  }
 }
 @media screen and (max-width: 1290px) {
   #banners {
@@ -2256,27 +2268,6 @@ footer .bottom .bottom-line .right a:hover {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-@media screen and (max-width: 900px) {
-  footer .top {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  footer .top .section {
-    width: 50%;
-    margin-bottom: 20px;
-  }
-  footer .top .section:nth-child(3), footer .top .section:nth-child(4) {
-    margin-bottom: 0;
-  }
-  footer .top .section:first-child {
-    width: 50%;
   }
 }
 @media screen and (max-width: 870px) {
@@ -2463,57 +2454,22 @@ footer .bottom .bottom-line .right a:hover {
     margin-top: 15px;
   }
 }
-@media screen and (max-width: 460px) {
-  footer .top .section {
-    width: 100%;
-    margin-bottom: 20px;
+@media screen and (max-width: 830px) {
+  footer .top {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     text-align: center;
   }
-  footer .top .section:nth-child(3), footer .top .section:nth-child(4) {
+  footer .top .section {
+    width: 50%;
     margin-bottom: 20px;
   }
   footer .top .section:first-child {
-    width: 100%;
+    width: 50%;
   }
-
-  footer .bottom .top-line .right {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  footer .bottom .top-line .right .visa,
-  footer .bottom .top-line .right .mastercard,
-  footer .bottom .top-line .right .mir,
-  footer .bottom .top-line .right .qiwi,
-  footer .bottom .top-line .right .yandex-money,
-  footer .bottom .top-line .right .webmoney,
-  footer .bottom .top-line .right .paypal {
-    margin: 0 auto 15px auto;
-  }
-  footer .bottom .top-line .right .yandex-money {
-    margin-top: -10px;
-  }
-  footer .bottom .top-line .right .paypal {
+  footer .top .section:nth-child(3), footer .top .section:nth-child(4) {
     margin-bottom: 0;
-  }
-
-  footer .bottom .bottom-line .right {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  footer .bottom .bottom-line .right a:first-child {
-    margin-bottom: 15px;
-    margin-right: 0;
-  }
-
-  footer .bottom .top-line .left a {
-    margin-right: 16px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -2555,6 +2511,44 @@ footer .bottom .bottom-line .right a:hover {
   #banners .banner3 span:nth-child(4) {
     position: static;
     margin: 0 auto;
+  }
+
+  footer .top {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    text-align: center;
+  }
+  footer .top .section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer .top .section:first-child {
+    width: 100%;
+  }
+  footer .top .section:nth-child(3), footer .top .section:nth-child(4) {
+    margin-bottom: 20px;
+  }
+  footer .top .section:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  footer .bottom .bottom-line .right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 15px;
+  }
+
+  footer .bottom .bottom-line .right a {
+    text-align: center;
+  }
+
+  footer .bottom .bottom-line .right a:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 434px) {
