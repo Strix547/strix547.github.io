@@ -175,11 +175,25 @@ h2::before {
   color: #000000;
 }
 
-.block img {
-  display: block;
+.block .img {
   width: 170px;
   height: 90px;
   margin: 46px auto 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.block .img img {
+  max-width: 100%;
 }
 
 header {
@@ -207,6 +221,7 @@ header .top .top-line {
           align-items: center;
 }
 header .top .top-line .logo {
+  width: 218.717px;
   min-width: 218.717px;
   padding-left: 43px;
 }
@@ -2094,6 +2109,7 @@ footer .bottom .bottom-line .right a:hover {
 }
 @media screen and (max-width: 1290px) {
   #banners {
+    margin-top: 35px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -2105,19 +2121,43 @@ footer .bottom .bottom-line .right a:hover {
             justify-content: center;
     padding: 0 10px;
   }
-  #banners .banner1,
-  #banners .banner2,
+  #banners .right {
+    width: 840px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #banners .banner2 {
+    width: 405px;
+  }
+  #banners .banner2 .inner {
+    padding-left: 169px;
+  }
+  #banners .banner2 .inner span:nth-child(4) {
+    left: 7px;
+  }
   #banners .banner3 {
+    width: 390px;
+    padding-left: 15px;
+    margin-top: 0;
+  }
+  #banners .banner1 {
     margin: 0 auto 20px auto;
   }
 }
 @media screen and (max-width: 1200px) {
   header .top .top-line .search-block {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   header .top .top-line .right {
-    margin-left: 20px;
+    margin-left: 15px;
   }
 
   header .bottom .bottom-line .top-menu li:last-child {
@@ -2289,6 +2329,26 @@ footer .bottom .bottom-line .right a:hover {
   }
   #banners .banner1 .inner span:nth-child(4) {
     margin-left: 32px;
+  }
+}
+@media screen and (max-width: 860px) {
+  #banners .right {
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #banners .right .banner3 {
+    margin: 0 auto;
+  }
+  #banners .right .banner2 {
+    margin: 0 auto 20px;
   }
 }
 @media screen and (max-width: 830px) {
