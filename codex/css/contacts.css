@@ -1,0 +1,134 @@
+#services .wrapper > p {
+    padding-top: 29px;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+#services .wrapper > img {
+    margin-top: 62px;
+    max-width: 100%;
+    height: auto;
+}
+
+#services .contacts {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#services .contacts .left {
+      margin-right: 175px;
+}
+
+#services .contacts .left p {
+    position: relative;
+    padding-left: 60px;
+    padding-top: 33px;
+    font-size: 18px;
+    color: #3a3a3a;
+}
+
+#services .contacts .left p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background: url("../img/sprite.png");
+}
+
+#services .contacts .left p:nth-of-type(1)::before {
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    background-position: 0 -257px;
+}
+
+#services .contacts .left p:nth-of-type(2)::before {
+    width: 35px;
+    height: 23px;
+    background-position: -44px -257px;
+}
+
+#services .contacts .left p:nth-of-type(3)::before {
+    width: 29px;
+    height: 35px;
+    margin-top: -7px;
+    background-position: -91px -257px;
+}
+
+#services .contacts .left p:first-of-type {
+    white-space: pre-line;
+    line-height: 24px;
+}
+
+#services .contacts .left p:last-child {
+    padding-top: 48px;
+}
+
+#services .contacts .right form {
+    display: flex;
+    flex-direction: column;
+}
+
+#services .contacts .right input {
+    width: 456px;
+    height: 37px;
+    line-height: 37px;
+    border: 1px solid #b7b7b7;
+    padding-left: 12px;
+    font-family: OS;
+    font-size: 14px;
+    margin-top: 19px;
+}
+
+#services .contacts .right input:first-of-type {
+    margin-top: 35px;
+}
+
+#services .contacts .right input[type="submit"] {
+    font-family: OS;
+    width: 130px;
+    height: 43px;
+    line-height: 43px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #48265b;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+
+#services .contacts h3 {
+    font-family: OSBold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #48265b;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #services .contacts {
+        display: block;
+    }
+
+    #services .contacts .left {
+        max-width: 323px;
+        margin: 0 auto 35px auto;
+    }
+
+    #services .contacts .right {
+        text-align: center;
+    }
+
+    #services .contacts .right form {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    #services .contacts .right input {
+        width: calc(100% - 12px);
+    }
+}

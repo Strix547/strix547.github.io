@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'OS';
+    src: url('../fonts/open-sans.eot');
+    src: url('../fonts/open-sans.eot') format('embedded-opentype'),
+    url('../fonts/open-sans.woff2') format('woff2'),
+    url('../fonts/open-sans.woff') format('woff'),
+    url('../fonts/open-sans.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OSBold';
+    src: url('../fonts/open-sans-bold.eot');
+    src: url('../fonts/open-sans-bold.eot') format('embedded-opentype'),
+    url('../fonts/open-sans-bold.woff2') format('woff2'),
+    url('../fonts/open-sans-bold.woff') format('woff'),
+    url('../fonts/open-sans-bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OSSemiBold';
+    src: url('../fonts/open-sans-semibold.eot');
+    src: url('../fonts/open-sans-semibold.eot') format('embedded-opentype'),
+    url('../fonts/open-sans-semibold.woff2') format('woff2'),
+    url('../fonts/open-sans-semibold.woff') format('woff'),
+    url('../fonts/open-sans-semibold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RWBold';
+    src: url('../fonts/raleway-bold.eot');
+    src: url('../fonts/raleway-bold.eot') format('embedded-opentype'),
+    url('../fonts/raleway-bold.woff2') format('woff2'),
+    url('../fonts/raleway-bold.woff') format('woff'),
+    url('../fonts/raleway-bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RWSemibold';
+    src: url('../fonts/raleway-semibold.eot');
+    src: url('../fonts/raleway-semibold.eot') format('embedded-opentype'),
+    url('../fonts/raleway-semibold.woff2') format('woff2'),
+    url('../fonts/raleway-semibold.woff') format('woff'),
+    url('../fonts/raleway-semibold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RWMedium';
+    src: url('../fonts/raleway-medium.eot');
+    src: url('../fonts/raleway-medium.eot') format('embedded-opentype'),
+    url('../fonts/raleway-medium.woff2') format('woff2'),
+    url('../fonts/raleway-medium.woff') format('woff'),
+    url('../fonts/raleway-medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RWExtrabold';
+    src: url('../fonts/raleway-extrabold.eot');
+    src: url('../fonts/raleway-extrabold.eot') format('embedded-opentype'),
+    url('../fonts/raleway-extrabold.woff2') format('woff2'),
+    url('../fonts/raleway-extrabold.woff') format('woff'),
+    url('../fonts/raleway-extrabold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PNRegular';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff'),
+    url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PNExtrabold';
+    src: url('../fonts/ProximaNova-Extrabld.eot');
+    src: url('../fonts/ProximaNova-Extrabld.eot') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Extrabld.woff') format('woff'),
+    url('../fonts/ProximaNova-Extrabld.ttf') format('truetype');
+}
