@@ -9,7 +9,7 @@ $(document).ready(function() {
         var form = document.querySelector("#contacts form");
         var info = document.querySelector("#contacts .info");
         var overlay = document.querySelector("#contacts .overlay");
-        var map = document.querySelector("#contacts .map");
+        var map = document.querySelector("#contacts #map");
         if (!$(this).data('status')) {
             $(this).html('Развернуть');
             $(this).data('status', true);
@@ -23,20 +23,33 @@ $(document).ready(function() {
         form.classList.toggle("hidden");
         overlay.classList.toggle("hidden");
     });
-    $("header .burger").on("click", function (evt) {
-        var nav = document.querySelector("header .top-line nav");
-        var telephones = document.querySelector("header .top-line .telephones");
-        if (nav.style.display === "block") {
-            nav.style.display = "none";
-        } else {
-            nav.style.display = "block";
-        }
-        if (telephones.style.display === "flex") {
-            telephones.style.display = "none";
-        } else {
-            telephones.style.display = "flex";
-        }
+    $('.openModal').click( function(event){
+        event.preventDefault();
+        $('#overlay').fadeIn(400,
+            function(){
+                $('#modal')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'}, 200);
+            });
     });
+
+    $('#overlay').click( function(){
+        $('#modal')
+            .animate({opacity: 0, top: '45%'}, 200,
+                function(){
+                    $(this).css('display', 'none');
+                    $('#overlay').fadeOut(400);
+                }
+            );
+    });
+    $("header .burger").toggle(function() {
+            $("header .top-line nav, header .top-line .telephones").fadeIn();
+            return false;
+        },
+        function() {
+            $("header .top-line nav, header .top-line .telephones").fadeOut();
+            return false;
+        });
     $('.members').owlCarousel({
         loop: true,
         nav: true,

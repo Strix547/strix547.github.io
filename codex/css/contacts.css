@@ -4,10 +4,8 @@
     line-height: 23px;
 }
 
-#services .wrapper > img {
+#services .wrapper #map1 {
     margin-top: 62px;
-    max-width: 100%;
-    height: auto;
 }
 
 #services .contacts {
@@ -115,15 +113,7 @@
 
     #services .contacts .left {
         max-width: 323px;
-        margin: 0 auto 35px auto;
-    }
-
-    #services .contacts .right {
-        text-align: center;
-    }
-
-    #services .contacts .right form {
-        align-items: center;
+        margin-bottom: 35px;
     }
 }
 

@@ -202,6 +202,7 @@ header .center h1 {
   color: #48255b;
   text-transform: uppercase;
   padding-top: 11px;
+  line-height: 46px;
 }
 header .center h1 span {
   font-family: RWExtrabold;
@@ -262,7 +263,7 @@ header .center .btn::before {
 }
 header .director-block {
   position: absolute;
-  right: 674px;
+  right: 596px;
   bottom: 89px;
 }
 header .director-block .director {
@@ -285,7 +286,7 @@ header .arrow-down {
   position: absolute;
   z-index: 2;
   left: 50%;
-  bottom: 3px;
+  bottom: 0;
   margin-left: -48.5px;
   width: 0;
   height: 0;
@@ -309,7 +310,7 @@ header .arrow-down::before {
 header > img {
   position: absolute;
   bottom: 0;
-  right: 70px;
+  right: 0;
 }
 
 #about {
@@ -335,10 +336,11 @@ header > img {
   white-space: pre-line;
   font-size: 16px;
   color: #000;
-  padding-top: 29px;
+  padding-top: 23px;
+  line-height: 23px;
 }
 #about p:first-of-type {
-  padding-top: 38px;
+  padding-top: 34px;
 }
 #about p:last-child {
   font-family: OSSemiBold;
@@ -758,7 +760,7 @@ header > img {
 
 #team {
   padding-bottom: 71px;
-  background-color: #067f00;
+  background: url("../img/bg-left.png") 25px 50% no-repeat, url("../img/bg-right.png") 98.5% 50% no-repeat #067f00;
 }
 #team h2 {
   color: #fff;
@@ -918,7 +920,7 @@ header > img {
   height: 781px;
   position: relative;
 }
-#contacts .map {
+#contacts #map {
   position: relative;
 }
 #contacts .visible {
@@ -1137,6 +1139,100 @@ footer .wrapper {
           align-items: center;
 }
 
+#modal {
+  position: fixed;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  text-align: center;
+  width: 298px;
+  height: 296px;
+  left: 50%;
+  top: 45%;
+  margin-top: -148px;
+  margin-left: -149px;
+  border: 1px solid #e7e7e7;
+  background-color: #f9f9f9;
+}
+#modal h3 {
+  font-family: OSBold;
+  font-size: 24px;
+  padding-top: 17px;
+  color: #361a55;
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+#modal input {
+  display: block;
+  width: 230px;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 17px;
+  border: 1px solid #dfe1e5;
+  outline: none;
+  margin: 11px auto 0;
+  font-size: 12.93px;
+  color: #7b7b7b;
+}
+#modal input:first-of-type {
+  margin: 17px auto 0;
+}
+#modal input[type="submit"] {
+  width: 179px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-family: OSSemiBold;
+  font-size: 16.55px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  margin: 23px auto 0;
+  background-color: #067f00;
+  border: none;
+}
+#modal p {
+  padding-top: 16px;
+}
+#modal p::before {
+  content: '';
+  position: absolute;
+  width: 11px;
+  height: 15px;
+  left: 27px;
+  margin-top: 4px;
+  background: url("../img/lock.png");
+}
+#modal p, #modal a {
+  font-family: OS;
+  font-size: 11px;
+  color: #000;
+  text-align: left;
+  padding-left: 45px;
+}
+#modal a {
+  display: block;
+  margin-top: 2px;
+}
+#modal a:hover {
+  text-decoration: none;
+}
+
+#overlay {
+  z-index: 3;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter: alpha(opacity=5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+
 @media screen and (max-width: 1290px) {
   #about p {
     white-space: normal;
@@ -1155,6 +1251,10 @@ footer .wrapper {
   }
 }
 @media screen and (max-width: 1180px) {
+  header {
+    height: 606px;
+  }
+
   header .top-line nav {
     margin: 0 auto;
   }
@@ -1170,16 +1270,7 @@ footer .wrapper {
   }
 
   header .director-block {
-    position: static;
-    margin-top: 40px;
-    text-align: center;
-  }
-  header .director-block .director {
-    width: 389px;
-    text-align: center;
-    padding-right: 0;
-    margin: 0 auto;
-    background-size: 100% 100%;
+    display: none;
   }
 
   header > img {
@@ -1221,10 +1312,27 @@ footer .wrapper {
     padding-bottom: 20px;
   }
   #statistics .stats li {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 1044px) {
+  #about {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  #about h3 {
+    padding-top: 50px;
+  }
+  #about img {
+    margin: 20px auto 0;
+  }
+
   #last-news .block-news ul {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
@@ -1288,7 +1396,11 @@ footer .wrapper {
     display: none;
   }
   header .top-line .telephones a {
+    display: block;
     text-align: center;
+  }
+  header .top-line .telephones a:last-child {
+    margin-top: 10px;
   }
   header .top-line nav {
     display: none;
@@ -1372,23 +1484,6 @@ footer .wrapper {
   }
 }
 @media screen and (max-width: 1000px) {
-  #about {
-    height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: column-reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    padding-bottom: 15px;
-    text-align: center;
-  }
-  #about h3 {
-    padding-top: 50px;
-  }
-  #about img {
-    margin: 20px auto 0;
-  }
-
   #clients ul li {
     width: calc(100% / 3);
   }
@@ -1438,10 +1533,14 @@ footer .wrapper {
             justify-content: space-around;
   }
   #statistics .stats li {
-    margin-bottom: 30px;
+    margin-bottom: 45px;
   }
 }
 @media screen and (max-width: 802px) {
+  #team {
+    background: #067f00;
+  }
+
   #feature {
     height: auto;
     padding: 15px 0;
@@ -1472,6 +1571,7 @@ footer .wrapper {
   }
   #last-news .block-news ul li {
     width: auto;
+    max-width: 332px;
   }
   #last-news .block-news ul li:last-child {
     margin-right: 0;

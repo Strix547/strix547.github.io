@@ -33,7 +33,7 @@
                     <li><a href="#">Услуги</a></li>
                     <li><a href="#">О нас</a></li>
                     <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Получить консультацию</a></li>
+                    <li><a class="openModal" href="#">Получить консультацию</a></li>
                 </ul>
             </nav>
             <div class="telephones">
@@ -46,7 +46,7 @@
             <h1>Юридическая компания <span>“КОДЕКС”</span></h1>
             <p>г. Тюмень, ул. Дзержинского, 15</p>
             <p>Решение любых правововых вопросов</p>
-            <a href="#" class="btn">Получить консультацию</a>
+            <a href="#" class="openModal btn">Получить консультацию</a>
         </div>
         <div class="director-block">
             <div class="director">
@@ -54,7 +54,7 @@
                 <p>Кушнарёва Марина Владимировна</p>
             </div>
         </div>
-        <a href="#about" class="arrow-down"></a>
+        <a href="#services" class="arrow-down"></a>
     </div>
     <img src="img/woman.png" alt="Кушнарёва Марина Владимировна">
 </header>
@@ -62,7 +62,7 @@
     <div class="wrapper">
         <h2>Наши услуги</h2>
         <p>Разнообразный и богатый опыт новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям. Товарищи! дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Разнообразный и богатый опыт новая модель организационной деятельности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.</p>
-        <img src="img/map.jpg" alt="Карта">
+        <div id="map1" style="width: 100%; height: 200px"></div>
         <div class="contacts">
             <div class="left">
                 <h3>Связаться с нами</h3>
@@ -84,6 +84,28 @@
         </div>
     </div>
 </section>
+<section id="contacts">
+    <div id="map" style="width: 100%; height: 781px"></div>
+    <div class="overlay"></div>
+    <div class="form">
+        <div class="hide">свернуть</div>
+        <form action="#">
+            <h3>Связаться с нами</h3>
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" placeholder="Ваш телефон" required>
+            <input type="email" name="email" placeholder="Ваш E-mail" required>
+            <textarea name="message" placeholder="Ваше сообщение (не обязательно)"></textarea>
+            <input type="submit" value="Отправить">
+        </form>
+        <div class="info">
+            <h3>Наш адрес</h3>
+            <p>Юридическая компания «КОДЕКС»</p>
+            <p>Тюмень, ул. Дзержинского, 15, офис 307/5</p>
+            <a href="tel:73452500228">+7(3452) 500-228</a>
+            <a href="mailto:kodeks_5@mail.ru">kodeks_5@mail.ru</a>
+        </div>
+    </div>
+</section>
 <footer>
     <div class="wrapper">
         <a href="#">Кодекс72.рф</a>
@@ -91,8 +113,98 @@
         <a href="#">Политика конфиденциальности</a>
     </div>
 </footer>
+<div id="modal">
+    <h3>Оставить
+        заявку</h3>
+    <form action="#">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="name" placeholder="Ваш телефон" required>
+        <input type="submit" value="Отправить">
+        <p>Оставляя заявку в соглашаетесь с нашей</p>
+        <a href="#">политикой конфиденциальности</a>
+    </form>
+</div>
+<div id="overlay"></div>
 <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
+
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+    ymaps.ready(init);
+
+    function init () {
+        var myMap = new ymaps.Map("map", {
+            // Центр карты, указываем коордианты
+            center:[55.72600246137156,37.61339968581888],
+            // Масштаб, тут все просто
+            zoom: 15
+        });
+
+        var myGeoObjects = [];
+
+        // Наша метка, указываем коордианты
+        myGeoObjects = new ymaps.Placemark([55.72310476143472,37.616818063708365],{
+
+        },{
+            iconLayout: 'default#image',
+            // Путь до нашей картинки
+            iconImageHref: 'img/marker.png',
+            // Размер по ширине и высоте
+            iconImageSize: [52, 70],
+            // Смещение левого верхнего угла иконки относительно
+            // её «ножки» (точки привязки).
+            iconImageOffset: [-26, -35]
+        });
+
+        var clusterer = new ymaps.Clusterer({
+            clusterDisableClickZoom: false,
+            clusterOpenBalloonOnClick: false,
+        });
+
+        clusterer.add(myGeoObjects);
+        myMap.geoObjects.add(clusterer);
+        // Отлючаем возможность изменения масштаба
+        myMap.behaviors.disable('scrollZoom');
+
+    }
+    ymaps.ready(init2);
+
+    function init2 () {
+        var myMap = new ymaps.Map("map1", {
+            // Центр карты, указываем коордианты
+            center:[55.72310476143472,37.616818063708365],
+            // Масштаб, тут все просто
+            zoom: 15
+        });
+
+        var myGeoObjects = [];
+
+        // Наша метка, указываем коордианты
+        myGeoObjects = new ymaps.Placemark([55.72310476143472,37.616818063708365],{
+
+        },{
+            iconLayout: 'default#image',
+            // Путь до нашей картинки
+            iconImageHref: 'img/marker.png',
+            // Размер по ширине и высоте
+            iconImageSize: [52, 70],
+            // Смещение левого верхнего угла иконки относительно
+            // её «ножки» (точки привязки).
+            iconImageOffset: [-26, -35]
+        });
+
+        var clusterer = new ymaps.Clusterer({
+            clusterDisableClickZoom: false,
+            clusterOpenBalloonOnClick: false,
+        });
+
+        clusterer.add(myGeoObjects);
+        myMap.geoObjects.add(clusterer);
+        // Отлючаем возможность изменения масштаба
+        myMap.behaviors.disable('scrollZoom');
+
+    }
+</script>
 </body>
 </html>
