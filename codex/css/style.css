@@ -1143,7 +1143,7 @@ footer .wrapper {
   position: fixed;
   display: none;
   opacity: 0;
-  z-index: 5;
+  z-index: 11;
   text-align: center;
   width: 298px;
   height: 296px;
@@ -1219,7 +1219,7 @@ footer .wrapper {
 }
 
 #overlay {
-  z-index: 3;
+  z-index: 10;
   position: fixed;
   background-color: #000;
   opacity: 0.5;
