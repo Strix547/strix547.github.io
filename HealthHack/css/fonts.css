@@ -1,0 +1,222 @@
+@font-face {
+    font-family: "AGPBold";
+    src: url("../fonts/AkzidenzGroteskPro-Bold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPBoldCn";
+    src: url("../fonts/AkzidenzGroteskPro-BoldCn.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPBoldCnIt";
+    src: url("../fonts/AkzidenzGroteskPro-BoldCnIt.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPBoldBoldEx";
+    src: url("../fonts/AkzidenzGroteskPro-BoldEx.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPBoldExIt";
+    src: url("../fonts/AkzidenzGroteskPro-BoldExIt.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPBoldIt";
+    src: url("../fonts/AkzidenzGroteskPro-BoldIt.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPCn";
+    src: url("../fonts/AkzidenzGroteskPro-Cn.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPCnIt";
+    src: url("../fonts/AkzidenzGroteskPro-CnIt.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPExt";
+    src: url("../fonts/AkzidenzGroteskPro-Ext.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPExtIt";
+    src: url("../fonts/AkzidenzGroteskPro-ExtItalic.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPItalic";
+    src: url("../fonts/AkzidenzGroteskPro-It.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPLight";
+    src: url("../fonts/AkzidenzGroteskPro-Light.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPLightExtIt";
+    src: url("../fonts/AkzidenzGroteskPro-LigExtIt.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPLight";
+    src: url("../fonts/AkzidenzGroteskPro-Light.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPLightCn";
+    src: url("../fonts/AkzidenzGroteskPro-LightCn.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPLightCnIt";
+    src: url("../fonts/AkzidenzGroteskPro-LightCnItalic.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPLightEx";
+    src: url("../fonts/AkzidenzGroteskPro-LightEx.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPLightIt";
+    src: url("../fonts/AkzidenzGroteskPro-LightIt.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPMd";
+    src: url("../fonts/AkzidenzGroteskPro-Md.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPLightMdCn";
+    src: url("../fonts/AkzidenzGroteskPro-MdCn.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPLightMdCnIt";
+    src: url("../fonts/AkzidenzGroteskPro-MdCnIt.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPMdEx";
+    src: url("../fonts/AkzidenzGroteskPro-MdEx.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPMdIt";
+    src: url("../fonts/AkzidenzGroteskPro-MdIt.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPMdExIt";
+    src: url("../fonts/AkzidenzGroteskPro-MedExtIt.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPRegular";
+    src: url("../fonts/AkzidenzGroteskPro-Regular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPSuper";
+    src: url("../fonts/AkzidenzGroteskPro-Super.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPSuperIt";
+    src: url("../fonts/AkzidenzGroteskPro-SuperItalic.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPXBd";
+    src: url("../fonts/AkzidenzGroteskPro-XBd.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPXBdCn";
+    src: url("../fonts/AkzidenzGroteskPro-XBdCn.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPXBdCnIt";
+    src: url("../fonts/AkzidenzGroteskPro-XBdCnIt.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AGPXBdIt";
+    src: url("../fonts/AkzidenzGroteskPro-XBdIt.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PTN";
+    src: url("../fonts/PTNarrow.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PTNBold";
+    src: url("../fonts/PTNarrowBold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PTSans";
+    src: url("../fonts/PTSans.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PTSansBold";
+    src: url("../fonts/PTSansBold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PTSansBoldIt";
+    src: url("../fonts/PTSansBoldItalic.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PTSansIt";
+    src: url("../fonts/PTSansItalic.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
