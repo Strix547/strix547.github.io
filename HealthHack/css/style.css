@@ -258,7 +258,7 @@ header .wrapper > p::before {
   margin-top: -2px;
   left: 0;
   background-image: url(../img/sprite.png);
-  background-position: -29px -369px;
+  background-position: -24px -309px;
   background-repeat: no-repeat;
 }
 header .wrapper > p:first-of-type {
