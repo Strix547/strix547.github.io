@@ -1207,6 +1207,9 @@ header .btn-row:nth-child(6) a:last-child::before {
   font-size: 24px;
 }
 #choose .third .time .hover p:nth-of-type(6) {
+  font-family: AGPRegular;
+  font-size: 18px;
+  color: #fff;
   text-align: left;
   padding-right: 0;
   padding-left: 28px;
