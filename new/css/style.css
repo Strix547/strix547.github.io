@@ -1,0 +1,769 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'PTNarrow';
+}
+
+h2 {
+  font-family: 'PTNarrowBold';
+  font-size: 38px;
+  color: #333333;
+}
+
+.wrapper {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header .top-line {
+  height: 157px;
+  background: url("../img/background1.jpg") repeat;
+}
+header .top-line h1 {
+  text-align: center;
+  font-family: 'AkroBold';
+  font-size: 30px;
+  line-height: 33.5px;
+  color: #000;
+  white-space: pre-line;
+}
+header .top-line h1 span {
+  font-family: 'AkroBlack';
+  text-decoration: underline;
+}
+header .top-line .contacts a {
+  display: block;
+  text-align: center;
+  font-family: 'AkroExtraBold';
+  text-decoration: none;
+  color: #000;
+}
+header .top-line .contacts .tel {
+  font-size: 30.16px;
+}
+header .top-line .contacts .mail {
+  font-size: 24.13px;
+  padding-top: 8px;
+}
+header .top-line .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 157px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+header .top-line .buttons a {
+  position: relative;
+  display: block;
+  width: 158px;
+  height: 30px;
+  line-height: 30px;
+  font-family: 'AkroSemiBold';
+  font-size: 18.1px;
+  text-decoration: none;
+}
+header .top-line .buttons .call {
+  width: 131px;
+  border: 1px dashed #00a750;
+  color: #00a750;
+  margin-bottom: 4px;
+  padding-left: 27px;
+}
+header .top-line .buttons .call::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 15px;
+  top: 6px;
+  left: 9px;
+  background-image: url(../img/sprite.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+header .top-line .buttons .application {
+  width: 126px;
+  border: 1px dashed #ff0000;
+  color: #ff0000;
+  padding-left: 32px;
+}
+header .top-line .buttons .application::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 13px;
+  top: 8px;
+  left: 11px;
+  background-image: url(../img/sprite.png);
+  background-position: -18px 0;
+  background-repeat: no-repeat;
+}
+header .bottom-line {
+  max-height: 50px;
+  background: #000;
+}
+header .bottom-line ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+header .bottom-line ul li:first-child a span {
+  font-size: 12px;
+}
+header .bottom-line ul a {
+  display: block;
+  font-family: "PTNarrow";
+  font-size: 18px;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main {
+  margin-top: 46px;
+}
+.main .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main aside {
+  width: 275px;
+  margin-right: 20px;
+}
+.main aside ul {
+  padding: 25px 0;
+  background-color: #ecefef;
+}
+.main aside ul li:nth-child(1) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -99px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(1) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -99px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(2) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -149px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(2) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -149px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(3) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -199px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(3) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -199px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(4) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -249px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(4) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -249px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(5) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -299px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(5) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -299px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(6) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -349px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(6) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -349px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(7) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -399px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(7) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -399px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(8) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -449px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(8) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -449px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(9) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -499px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(9) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -499px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(10) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -549px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(10) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -549px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(11) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -599px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(11) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -599px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(12) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -649px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(12) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -649px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(13) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -699px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(13) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -699px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(14) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -749px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(14) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -749px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(15) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -799px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(15) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -799px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(16) a::before {
+  background-image: url(../img/sprite.png);
+  background-position: 0 -849px;
+  background-repeat: no-repeat;
+}
+.main aside ul li:nth-child(16) a:hover::before {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -849px;
+  background-repeat: no-repeat;
+}
+.main aside ul li a {
+  position: relative;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 80px;
+  font-family: 'PTNarrowBold';
+  font-size: 19px;
+  color: #444444;
+  text-decoration: none;
+}
+.main aside ul li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 79px;
+  height: 50px;
+}
+.main aside ul li a:hover {
+  color: #02984b;
+  background-color: #e1e5e5;
+}
+.main aside .news {
+  margin-top: 58px;
+}
+.main aside .news .top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main aside .news .top a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #0b9547;
+  font-size: 24px;
+}
+.main aside .news .top a:hover {
+  text-decoration: none;
+}
+.main aside .news article:last-child {
+  margin-top: 13px;
+}
+.main aside .news .date,
+.main aside .news .theme,
+.main aside .news .desc {
+  font-size: 18px;
+}
+.main aside .news .theme {
+  padding-top: 22px;
+  font-family: 'PTNarrowBold';
+}
+.main aside .news .date {
+  padding-top: 39px;
+  color: #6b6b6b;
+}
+.main aside .news .desc {
+  padding-top: 26px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main aside .news .desc p {
+  white-space: pre-line;
+}
+.main aside .news .more {
+  color: #35a55f;
+  font-size: 18px;
+}
+.main aside .news .more:hover {
+  text-decoration: none;
+}
+.main .content .breadcrumbs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  color: #333333;
+}
+.main .content .breadcrumbs a {
+  color: #333333;
+}
+.main .content .breadcrumbs a:hover {
+  text-decoration: none;
+}
+.main .content .breadcrumbs .current {
+  color: #999999;
+}
+.main .content h2 {
+  padding-top: 12px;
+}
+.main .content .offer {
+  width: 875px;
+  height: 358px;
+  margin-top: 40px;
+  border-radius: 3px;
+  background: url("../img/offer.jpg") 100% 0 no-repeat #ecefef;
+  position: relative;
+}
+.main .content .offer .triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 313px;
+  height: 101px;
+  background: url("../img/triangle.png");
+  font-family: "PTNarrowBold";
+  font-size: 25.38px;
+  color: #fff;
+  padding-left: 12px;
+  padding-top: 15px;
+}
+.main .content .offer .triangle div {
+  -webkit-transform: rotate(-19deg);
+      -ms-transform: rotate(-19deg);
+          transform: rotate(-19deg);
+}
+.main .content .offer p {
+  font-size: 18px;
+  color: #333333;
+  padding-left: 39px;
+  padding-bottom: 13px;
+}
+.main .content .offer p:first-of-type {
+  padding-top: 153px;
+}
+.main .content .offer a {
+  display: inline-block;
+  font-size: 18px;
+  color: #00a650;
+  margin-top: 55px;
+  margin-left: 39px;
+}
+.main .content .offer a:hover {
+  text-decoration: none;
+}
+.main .content .trucks-block {
+  margin-top: 40px;
+}
+.main .content .trucks-block .filter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .content .trucks-block .filter .left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main .content .trucks-block .filter .left a {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  border: 1px dashed #00a550;
+  color: #444444;
+  padding: 0 12px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.main .content .trucks-block .filter .left a:last-child {
+  margin-right: 0;
+}
+.main .content .trucks-block .filter .right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .content .trucks-block .filter .right p {
+  color: #444444;
+  padding-right: 9px;
+}
+.main .content .trucks-block .filter .right a {
+  display: block;
+  width: 34px;
+  height: 34px;
+  position: relative;
+  border: 1px dashed #00a550;
+}
+.main .content .trucks-block .filter .right a:first-of-type {
+  margin-right: 10px;
+}
+.main .content .trucks-block .filter .right a:first-of-type::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  width: 20px;
+  height: 15px;
+  background-image: url(../img/sprite.png);
+  background-position: -36px 0;
+  background-repeat: no-repeat;
+}
+.main .content .trucks-block .filter .right a:last-of-type::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 19px;
+  height: 18px;
+  background-image: url(../img/sprite.png);
+  background-position: -60px 0;
+  background-repeat: no-repeat;
+}
+.main .content .trucks-block ul {
+  width: 875px;
+  margin-top: 37px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .content .trucks-block ul li {
+  position: relative;
+  padding: 9px 9px 30px 9px;
+  margin-bottom: 20px;
+  border: 1px solid #eeeeee;
+}
+.main .content .trucks-block ul li .type {
+  font-size: 14px;
+  color: #6b6b6b;
+  padding-top: 11px;
+}
+.main .content .trucks-block ul li .model {
+  font-family: "PTNarrowBold";
+  font-size: 18px;
+  color: #020202;
+  padding-top: 5px;
+}
+.main .content .trucks-block ul li .desc {
+  padding-top: 7px;
+}
+.main .content .trucks-block ul li .desc p {
+  font-size: 13px;
+  color: #666666;
+  padding-top: 3px;
+}
+.main .content .trucks-block ul li .desc span {
+  font-family: "PTNarrowBold";
+  font-size: 13px;
+  color: #444444;
+}
+.main .content .trucks-block ul li .cost {
+  font-family: "PTNarrowBold";
+  font-size: 24px;
+  padding-top: 18px;
+}
+.main .content .trucks-block ul li .mileage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 94px;
+  height: 16px;
+  line-height: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background-color: #06a855;
+}
+.main .content .trucks-block .nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 47px;
+}
+.main .content .trucks-block .nav a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-family: "PTNarrowBold";
+  font-size: 18px;
+  margin-right: 10px;
+  border-radius: 2px;
+  color: #333333;
+  background-color: #ecefef;
+  text-decoration: none;
+}
+.main .content .trucks-block .nav a.prev {
+  background-image: url(../img/sprite.png);
+  background-position: -222px -291px;
+  background-repeat: no-repeat;
+}
+.main .content .trucks-block .nav a.start {
+  background-image: url(../img/sprite.png);
+  background-position: -185px -291px;
+  background-repeat: no-repeat;
+}
+.main .content .trucks-block .nav a.next {
+  background-image: url(../img/sprite.png);
+  background-position: -222px -325px;
+  background-repeat: no-repeat;
+}
+.main .content .trucks-block .nav a.end {
+  background-image: url(../img/sprite.png);
+  background-position: -185px -325px;
+  background-repeat: no-repeat;
+}
+.main .content .trucks-block .nav div {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-family: "PTNarrowBold";
+  font-size: 18px;
+  margin-right: 10px;
+  border-radius: 2px;
+  background-color: #ecefef;
+}
+.main .content .trucks-block .nav a.current {
+  color: #fff;
+  background-color: #06a855;
+}
+
+.why {
+  margin-top: 68px;
+  padding-bottom: 133px;
+  background: url("../img/background1.jpg") repeat;
+}
+.why h2 {
+  padding-top: 49px;
+}
+.why p {
+  font-size: 18px;
+  color: #444;
+  padding-top: 27px;
+}
+.why p:first-of-type {
+  padding-top: 33px;
+}
+
+.message {
+  height: 453px;
+  background: url("../img/radio.png") no-repeat, url("../img/background2.jpg") repeat;
+}
+.message h2 {
+  font-family: "PTNarrowBold";
+  font-size: 40.21px;
+  color: #fff;
+}
+.message p {
+  font-family: "PTNarrowBold";
+  font-size: 24.13px;
+  color: #bbbbbb;
+}
+
+footer {
+  margin-top: 47px;
+}
+footer .top-line {
+  max-height: 50px;
+  background: #000;
+}
+footer .top-line ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+footer .top-line ul li:first-child a span {
+  font-size: 12px;
+}
+footer .top-line ul a {
+  display: block;
+  font-family: "PTNarrow";
+  font-size: 18px;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+}

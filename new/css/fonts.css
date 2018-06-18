@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "AkroBlack";
+    src: url("../fonts/Akrobat-Black.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AkroBold";
+    src: url("../fonts/Akrobat-Bold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AkroExtraBold";
+    src: url("../fonts/Akrobat-ExtraBold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AkroSemiBold";
+    src: url("../fonts/Akrobat-SemiBold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PTNarrow";
+    src: url("../fonts/PT Sans Pro Narrow.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PTNarrowBold";
+    src: url("../fonts/PT Sans Pro Narrow Bold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
