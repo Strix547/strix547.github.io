@@ -34,3 +34,9 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/roboto-light.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
