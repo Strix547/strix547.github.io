@@ -28,25 +28,30 @@ $(document).ready(function() {
                 }
             );
     });
-    // $('.gallery-slider').owlCarousel({
-    //     loop: false,
-    //     margin: 20,
-    //     nav: true,
-    //     responsive:{
-    //         0:{
-    //             items:1
-    //         },
-    //         750:{
-    //             items:2
-    //         },
-    //         1020:{
-    //             items:3
-    //         },
-    //         1300:{
-    //             items:4
-    //         }
-    //     }
-    // });
+    $('.main-slider').owlCarousel({
+        loop: false,
+        dots: true,
+        items: 1
+    });
+    $('.parthers-slider').owlCarousel({
+        loop: false,
+        margin: 20,
+        nav: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            670:{
+                items:2
+            },
+            920:{
+                items:3
+            },
+            1200:{
+                items:4
+            }
+        }
+    });
     $(function() {
         $('form').submit(function(e) {
             var $form = $(this);
