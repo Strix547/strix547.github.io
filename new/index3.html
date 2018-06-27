@@ -31,6 +31,11 @@
         </div>
         <div class="bottom-line">
               <div class="wrapper">
+                  <div class="burger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
                   <nav>
                       <ul>
                           <li class="mini">
@@ -263,7 +268,6 @@
                 <a href="#" class="more">Дальше</a>
             </article>
         </div>
-        </div>
     </section>
     <section class="about">
         <div class="wrapper">
@@ -306,7 +310,7 @@
             <div class="block">
                 <h2>Мы на связи! Ответим на все Ваши вопросы</h2>
                 <p>Профессиональная консультация наших специалистов!</p>
-                <form action="#">
+                <form id="form1" class="ajax_form" action="send.php" method="post">
                     <input type="text" name="name" placeholder="Имя">
                     <input type="tel" name="tel" placeholder="Контактный телефон" required>
                     <input type="email" name="email" placeholder="Почта">
@@ -383,19 +387,19 @@
         </div>
     </footer>
     <div id="modal1" class="modal">
-        <form id="form2" class="ajax_form" action="send2.php" method="post" enctype="application/x-www-form-urlendoded">
+        <form id="form2" class="ajax_form" action="send2.php" method="post">
             <p>Введите ваш телефон и мы свяжемся с вами</p>
             <input type="text" name="name" placeholder="Ваше имя">
-            <input type="tel" placeholder="Ваш телефон" required>
+            <input type="tel" name="tel" placeholder="Ваш телефон" required>
             <input type="submit" value="Обратный звонок">
         </form>
         <div class="close">+</div>
     </div>
     <div id="modal2" class="modal">
-        <form id="form3" class="ajax_form" action="send2.php" method="post" enctype="application/x-www-form-urlendoded">
+        <form id="form3" class="ajax_form" action="send2.php" method="post">
             <p>Оставьте заявку и мы вам перезвоним</p>
             <input type="text" name="name" placeholder="Ваше имя">
-            <input type="tel" placeholder="Ваш телефон" required>
+            <input type="tel" name="tel" placeholder="Ваш телефон" required>
             <input type="submit" value="Оставить заявку">
         </form>
         <div class="close">+</div>
@@ -404,5 +408,31 @@
     <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $('.main-slider').owlCarousel({
+            loop: false,
+            dots: true,
+            items: 1
+        });
+        $('.parthers-slider').owlCarousel({
+            loop: false,
+            margin: 20,
+            nav: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                670:{
+                    items:2
+                },
+                920:{
+                    items:3
+                },
+                1200:{
+                    items:4
+                }
+            }
+        });
+    </script>
 </body>
 </html>

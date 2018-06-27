@@ -8,6 +8,11 @@ $(document).ready(function() {
                     .animate({opacity: 1, top: '50%'}, 200);
             });
     });
+    $('header .bottom-line .burger').click( function(event) {
+        event.preventDefault();
+        var menu = document.querySelector("header .bottom-line ul");
+        menu.classList.toggle("active");
+    });
 
     $('.submitApplication').click( function(event){
         event.preventDefault();
@@ -28,30 +33,7 @@ $(document).ready(function() {
                 }
             );
     });
-    $('.main-slider').owlCarousel({
-        loop: false,
-        dots: true,
-        items: 1
-    });
-    $('.parthers-slider').owlCarousel({
-        loop: false,
-        margin: 20,
-        nav: true,
-        responsive:{
-            0:{
-                items:1
-            },
-            670:{
-                items:2
-            },
-            920:{
-                items:3
-            },
-            1200:{
-                items:4
-            }
-        }
-    });
+
     $(function() {
         $('form').submit(function(e) {
             var $form = $(this);

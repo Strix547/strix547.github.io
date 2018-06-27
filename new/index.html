@@ -31,6 +31,11 @@
         <div class="bottom-line">
               <div class="wrapper">
                   <nav>
+                      <div class="burger">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </div>
                       <ul>
                           <li>
                               <a href="#">Каталог <span>▼</span></a>
@@ -291,7 +296,7 @@
             <div class="block">
                 <h2>Мы на связи! Ответим на все Ваши вопросы</h2>
                 <p>Профессиональная консультация наших специалистов!</p>
-                <form id="form1" class="ajax_form" action="send1.php" method="post" enctype="application/x-www-form-urlendoded">
+                <form id="form1" class="ajax_form" action="send.php" method="post">
                     <input type="text" name="name" placeholder="Имя">
                     <input type="tel" name="tel" placeholder="Контактный телефон" required>
                     <input type="email" name="email" placeholder="Почта">
@@ -368,19 +373,19 @@
         </div>
     </footer>
     <div id="modal1" class="modal">
-        <form id="form2" class="ajax_form" action="send2.php" method="post" enctype="application/x-www-form-urlendoded">
+        <form id="form2" class="ajax_form" action="send2.php" method="post">
             <p>Введите ваш телефон и мы свяжемся с вами</p>
             <input type="text" name="name" placeholder="Ваше имя">
-            <input type="tel" placeholder="Ваш телефон" required>
+            <input type="tel" name="tel" placeholder="Ваш телефон" required>
             <input type="submit" value="Обратный звонок">
         </form>
         <div class="close">+</div>
     </div>
     <div id="modal2" class="modal">
-        <form id="form3" class="ajax_form" action="send2.php" method="post" enctype="application/x-www-form-urlendoded">
+        <form id="form3" class="ajax_form" action="send2.php" method="post">
             <p>Оставьте заявку и мы вам перезвоним</p>
             <input type="text" name="name" placeholder="Ваше имя">
-            <input type="tel" placeholder="Ваш телефон" required>
+            <input type="tel" name="tel" placeholder="Ваш телефон" required>
             <input type="submit" value="Оставить заявку">
         </form>
         <div class="close">+</div>

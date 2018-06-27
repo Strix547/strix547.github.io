@@ -167,6 +167,24 @@ header .bottom-line {
   max-height: 50px;
   background: #000;
 }
+header .bottom-line .burger {
+  display: none;
+  cursor: pointer;
+  padding: 10px 0;
+}
+header .bottom-line .burger span {
+  display: block;
+  width: 24px;
+  height: 4px;
+  margin: 4px auto 0;
+  background: white;
+}
+header .bottom-line ul.active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 header .bottom-line ul {
   position: relative;
   display: -webkit-box;
@@ -188,7 +206,7 @@ header .bottom-line ul li:first-child .submenu {
   display: block;
   position: absolute;
   left: 20px;
-  top: 70px;
+  top: 50px;
   opacity: 0;
   width: 150px;
   height: 480px;
@@ -687,6 +705,9 @@ header .bottom-line ul a {
   padding-top: 5px;
   text-decoration: none;
 }
+.main .content .trucks-block .trucks li .model:hover {
+  text-decoration: underline;
+}
 .main .content .trucks-block .trucks li .desc {
   padding-top: 7px;
 }
@@ -819,11 +840,13 @@ header .bottom-line ul a {
   font-family: "PTNarrowBold";
   font-size: 40.21px;
   padding-top: 10px;
+  padding-left: 33px;
   color: #fff;
 }
 .message p {
   font-family: "PTNarrowBold";
   font-size: 24.13px;
+  padding-left: 33px;
   padding-top: 8px;
   color: #bbbbbb;
 }
@@ -904,7 +927,7 @@ footer .top-line ul li:first-child .submenu {
   display: block;
   position: absolute;
   left: 6px;
-  bottom: 70px;
+  bottom: 52px;
   opacity: 0;
   width: 150px;
   height: 480px;
@@ -1383,6 +1406,7 @@ footer .bottom-line .made p {
 }
 
 .about {
+  box-shadow: 18px 0 23px 12px rgba(35, 31, 32, 0.13);
   padding-bottom: 37px;
   background: url("../img/background1.jpg") repeat;
 }
@@ -1584,6 +1608,18 @@ section.parthers .parthers-slider .item {
   header .bottom-line ul li:first-child:hover .submenu {
     opacity: 1;
     visibility: visible;
+  }
+
+  .message form textarea {
+    width: 230px;
+  }
+
+  .message h2 {
+    padding-left: 0;
+  }
+
+  .message p {
+    padding-left: 0;
   }
 
   .main .wrapper {
@@ -1814,7 +1850,11 @@ section.parthers .parthers-slider .item {
   header .bottom-line {
     max-height: 100%;
   }
+  header .bottom-line .burger {
+    display: block;
+  }
   header .bottom-line ul {
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;

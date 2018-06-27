@@ -1,6 +1,6 @@
 <?php
 if((isset($_POST['name'])&&$_POST['name']!="") && (isset($_POST['tel'])&&$_POST['tel']!="") && (isset($_POST['email'])&&$_POST['email']!="") && (isset($_POST['mess'])&&$_POST['mess']!="")){
-        $to = 'example@mail.ru'; // Куда будет приходить
+        $to = 'info@iraandsonya.com'; // Куда будет приходить
         $subject = 'Заявка с формы';
         $message = '
                 <html>
