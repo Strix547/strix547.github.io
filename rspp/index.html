@@ -8,53 +8,56 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Сведения об образовательной организации</title>
 </head>
 <body>
-    <header>
-        <div class="top-line">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="top">
-                            <div class="left">
-                                <a href="#">Мероприятия</a>
-                                <a href="#">Социальные проекты</a>
-                                <a href="#">Клуб выпускников</a>
-                            </div>
-                            <div class="right">
-                                <a href="tel:+74596630404">+7 (459) 663-04-04</a>
-                                <a href="#">Вход</a>
-                            </div>
+<header>
+    <div class="top-line">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="top">
+                        <div class="left">
+                            <a href="#">Мероприятия</a>
+                            <a href="#">Социальные проекты</a>
+                            <a href="#">Клуб выпускников</a>
+                        </div>
+                        <div class="right">
+                            <a href="tel:+74596630404">+7 (459) 663-04-04</a>
+                            <a href="#">Вход</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bottom-line">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="bottom">
-                            <div class="logo">
-                                <a href="#"><img src="img/logo.png" alt="Бизнес-Школа РСПП" title="Логотип"></a>
-                            </div>
-                            <nav>
-                                <ul>
-                                    <li><a href="#">О Нас</a></li>
-                                    <li><a href="#">Образовательные программы</a></li>
-                                    <li><a href="#">Копрорациям</a></li>
-                                    <li><a href="#">Эксперты</a></li>
-                                    <li><a href="#">Партнеры</a></li>
-                                    <li><a href="#">Контакты</a></li>
-                                </ul>
-                            </nav>
+    </div>
+    <div class="bottom-line">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bottom">
+                        <div class="logo">
+                            <a href="#"><img src="img/logo.png" alt="Бизнес-Школа РСПП" title="Логотип"></a>
                         </div>
+                        <nav>
+                            <ul id="menu">
+                                <li><a href="#">О Нас</a></li>
+                                <li><a href="#">Образовательные программы</a></li>
+                                <li><a href="#">Корпорациям</a></li>
+                                <li><a href="#">Эксперты</a></li>
+                                <li><a href="#">Партнеры</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <button id="pull" class="c-hamburger c-hamburger-htx">
+                            <span></span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
     <main>
         <section id="first">
@@ -126,54 +129,56 @@
                         <h2>Основные сведения</h2>
                         <p>Научные разработки по созданию программ, тренингов, методологий с целью внедрения
                             в деятельность малого и среднего предпринимательства (МСП)</p>
-                        <table>
-                            <tr>
-                                <th>Наименование</th>
-                                <th>Время работы</th>
-                                <th>Специалист</th>
-                                <th>Контакты</th>
-                            </tr>
-                            <tr>
-                                <td>Генеральный директор</td>
-                                <td>10.00-18.00 пн-чт
-                                    10.00-18.00 пн-чт</td>
-                                <td>Бобрынева Светлана
-                                Александровна</td>
-                                <td>+7 (495) 663-04-04</td>
-                            </tr>
-                            <tr>
-                                <td>Генеральный директор</td>
-                                <td>10.00-18.00 пн-чт
-                                    10.00-18.00 пн-чт</td>
-                                <td>Бобрынева Светлана
-                                    Александровна</td>
-                                <td>+7 (495) 663-04-04</td>
-                            </tr>
-                            <tr>
-                                <td>Генеральный директор</td>
-                                <td>10.00-18.00 пн-чт
-                                    10.00-18.00 пн-чт</td>
-                                <td>Бобрынева Светлана
-                                    Александровна</td>
-                                <td>+7 (495) 663-04-04</td>
-                            </tr>
-                            <tr>
-                                <td>Генеральный директор</td>
-                                <td>10.00-18.00 пн-чт
-                                    10.00-18.00 пн-чт</td>
-                                <td>Бобрынева Светлана
-                                    Александровна</td>
-                                <td>+7 (495) 663-04-04</td>
-                            </tr>
-                            <tr>
-                                <td>Генеральный директор</td>
-                                <td>10.00-18.00 пн-чт
-                                    10.00-18.00 пн-чт</td>
-                                <td>Бобрынева Светлана
-                                    Александровна</td>
-                                <td>+7 (495) 663-04-04</td>
-                            </tr>
-                        </table>
+                        <div class="responsive-table">
+                            <table>
+                                <tr>
+                                    <th>Наименование</th>
+                                    <th>Время работы</th>
+                                    <th>Специалист</th>
+                                    <th>Контакты</th>
+                                </tr>
+                                <tr>
+                                    <td>Генеральный директор</td>
+                                    <td>10.00-18.00 пн-чт
+                                        10.00-18.00 пн-чт</td>
+                                    <td>Бобрынева Светлана
+                                        Александровна</td>
+                                    <td>+7 (495) 663-04-04</td>
+                                </tr>
+                                <tr>
+                                    <td>Генеральный директор</td>
+                                    <td>10.00-18.00 пн-чт
+                                        10.00-18.00 пн-чт</td>
+                                    <td>Бобрынева Светлана
+                                        Александровна</td>
+                                    <td>+7 (495) 663-04-04</td>
+                                </tr>
+                                <tr>
+                                    <td>Генеральный директор</td>
+                                    <td>10.00-18.00 пн-чт
+                                        10.00-18.00 пн-чт</td>
+                                    <td>Бобрынева Светлана
+                                        Александровна</td>
+                                    <td>+7 (495) 663-04-04</td>
+                                </tr>
+                                <tr>
+                                    <td>Генеральный директор</td>
+                                    <td>10.00-18.00 пн-чт
+                                        10.00-18.00 пн-чт</td>
+                                    <td>Бобрынева Светлана
+                                        Александровна</td>
+                                    <td>+7 (495) 663-04-04</td>
+                                </tr>
+                                <tr>
+                                    <td>Генеральный директор</td>
+                                    <td>10.00-18.00 пн-чт
+                                        10.00-18.00 пн-чт</td>
+                                    <td>Бобрынева Светлана
+                                        Александровна</td>
+                                    <td>+7 (495) 663-04-04</td>
+                                </tr>
+                            </table>
+                        </div>
                         <img src="img/skrep.png" alt="Скрепка" title="Скрепка">
                     </div>
                 </div>
@@ -231,7 +236,7 @@
                                 <ul>
                                     <li><a href="#">О Нас</a></li>
                                     <li><a href="#">Образовательные программы</a></li>
-                                    <li><a href="#">Копрорациям</a></li>
+                                    <li><a href="#">Корпорациям</a></li>
                                     <li><a href="#">Эксперты</a></li>
                                     <li><a href="#">Партнеры</a></li>
                                     <li><a href="#">Контакты</a></li>
@@ -268,6 +273,6 @@
 
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
