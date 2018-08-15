@@ -476,17 +476,23 @@ main #fourth .block .right .input input {
 }
 main #fourth .block .right .submit input {
   display: inline-block;
-  width: 191px;
-  height: 57px;
+  width: 189px;
+  height: 55px;
   margin-top: 40px;
   line-height: 57px;
   background: #FF9800;
-  border: none;
   outline: 0;
   font-family: HelveticaL;
   font-size: 20px;
   color: #fff;
   text-align: center;
+  border: 1px solid #FF9800;
+  transition: 0.3s;
+}
+main #fourth .block .right .submit input:hover {
+  background-color: #fff;
+  color: #FF9800;
+  transition: 0.3s;
 }
 main #fourth .block .right .submit p {
   display: inline-block;
