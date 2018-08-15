@@ -160,6 +160,7 @@ header .bottom-line .bottom .c-hamburger {
   appearance: none;
   box-shadow: none;
   border: none;
+  outline: 0;
   cursor: pointer;
   background: none;
   -webkit-transition: background 0.3s;
