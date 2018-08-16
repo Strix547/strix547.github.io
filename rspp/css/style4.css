@@ -162,7 +162,6 @@ header .bottom-line .bottom .c-hamburger {
   border: none;
   cursor: pointer;
   background: none;
-  outline: 0;
   -webkit-transition: background 0.3s;
           transition: background 0.3s;
 }
@@ -271,6 +270,7 @@ main #first .breadcrumbs p::before {
 }
 main #first .slider {
   max-width: 582px;
+  margin-top: 13px;
 }
 main #first .slider img {
   max-width: 100%;
@@ -657,11 +657,14 @@ footer .bottom-line .bottom .right a:last-of-type {
   header .bottom-line .bottom ul a {
     margin-right: 18px;
   }
-
+  footer .top-line  {
+    height: auto;
+  }
   footer .top-line .top {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+
   }
 
   footer .top-line .top .right {
@@ -772,7 +775,9 @@ footer .bottom-line .bottom .right a:last-of-type {
     display: block;
     margin-left: auto;
   }
-
+  footer .top-line {
+    height: 70px;
+  }
   footer .top-line .top .right {
     margin-left: auto;
   }

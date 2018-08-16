@@ -617,6 +617,9 @@ footer .bottom-line .bottom .right a:last-of-type {
   main #second .block3 {
     margin-left: 0;
   }
+  footer .top-line {
+    height: auto;
+  }
   footer .top-line .top {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -716,7 +719,9 @@ footer .bottom-line .bottom .right a:last-of-type {
   main #first {
     background: none;
   }
-
+  footer .top-line {
+    height: 70px;
+  }
   footer .top-line .top .right {
     margin-left: auto;
   }
