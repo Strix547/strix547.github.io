@@ -339,6 +339,9 @@ main #third {
   padding-top: 145px;
   padding-bottom: 143px;
 }
+main #third img {
+  margin-top: 4px;
+}
 main #third .col-md-12 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -851,6 +854,13 @@ footer .bottom-line .bottom .right a:last-of-type {
     padding-left: 0;
   }
 }
+
+@media screen and (max-width: 490px) {
+  main #third .col-md-12 p {
+    white-space: normal;
+  }
+}
+
 @media screen and (max-width: 416px) {
   header .top-line .top .left a:last-of-type {
     display: inline-block;
