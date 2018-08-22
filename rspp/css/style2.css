@@ -639,6 +639,11 @@ footer .bottom-line .bottom .right a:last-of-type {
     max-width: 500px;
   }
 }
+@media screen and (max-width: 1110px) {
+  main #first {
+    background: none;
+  }
+}
 @media screen and (max-width: 991px) {
   header .bottom-line .bottom ul a,
   footer .top-line .top ul a {
@@ -714,10 +719,6 @@ footer .bottom-line .bottom .right a:last-of-type {
   header .bottom-line .bottom #pull {
     display: block;
     margin-left: auto;
-  }
-
-  main #first {
-    background: none;
   }
   footer .top-line {
     height: 70px;

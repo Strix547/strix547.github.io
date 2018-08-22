@@ -338,12 +338,27 @@ main #first .row:nth-child(3) {
   margin-top: 50px;
 }
 main #first .row:nth-child(3) p {
+  position: relative;
   white-space: pre-line;
   padding-top: 13px;
   line-height: 25px;
+  padding-left: 16px;
+}
+main #first .row:nth-child(3) p::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 23px;
+  left: 3px;
+  background-color: #4F4F4F;
+  border-radius: 50%;
 }
 main #first .row:nth-child(3) p:first-of-type {
-  padding-top: 16px;
+   padding-top: 16px;
+}
+main #first .row:nth-child(3) p:first-of-type::before {
+  top: 27px;
 }
 main #second {
   margin-top: 141px;
@@ -390,11 +405,30 @@ main #second ul li {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 50px;
+  margin-top: 56px;
+}
+main #second ul li:nth-of-type(1) {
+  padding-right: 53px;
+}
+main #second ul li:nth-of-type(3) {
+  padding-left: 88px;
+}
+main #second ul li:nth-of-type(4) {
+  padding-right: 74px;
+  margin-top: 43px;
+}
+main #second ul li:nth-of-type(5) {
+  margin-top: 44px;
+  padding-left: 23px;
+}
+main #second ul li:nth-of-type(6) {
+  padding-left: 81px;
+  margin-top: 44px;
 }
 main #second ul li p:first-of-type {
   font-size: 20px;
   padding-top: 30px;
+  color: #000;
 }
 main #second ul li p:last-of-type {
   font-size: 16px;
@@ -767,6 +801,24 @@ footer .bottom-line .bottom .right a:last-of-type {
 
   main #second ul li {
     width: calc(100% / 2);
+  }
+  main #second ul li:nth-of-type(1) {
+    padding-right: 0;
+  }
+  main #second ul li:nth-of-type(3) {
+    padding-left: 0;
+  }
+  main #second ul li:nth-of-type(4) {
+    padding-right: 0;
+    margin-top: 56px;
+  }
+  main #second ul li:nth-of-type(5) {
+    margin-top: 56px;
+    padding-left: 0;
+  }
+  main #second ul li:nth-of-type(6) {
+    padding-left: 0;
+    margin-top: 56px;
   }
 
   main #fourth .block {

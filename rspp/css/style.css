@@ -301,8 +301,8 @@ main #first .row:nth-of-type(2) .col-md-9 p {
 }
 main #first .row:nth-of-type(2) .col-md-9 img {
   position: absolute;
-  width: 281px;
-  height: 271px;
+  width: 379px;
+  height: 362px;
   left: 651px;
   top: -57px;
   background: url("../img/plant.png") no-repeat;
@@ -325,9 +325,21 @@ main #second ul li:last-child {
   margin-bottom: 0;
 }
 main #second ul li p {
+  position: relative;
   line-height: 25px;
   font-size: 18px;
   white-space: pre-line;
+  padding-left: 11px;
+}
+main #second ul li p::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 10px;
+  left: 0;
+  background-color: #4F4F4F;
+  border-radius: 50%;
 }
 main #second img:first-of-type {
   position: absolute;
