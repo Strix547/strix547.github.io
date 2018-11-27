@@ -14,11 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="483">
               <caret line="111" column="69" lean-forward="true" selection-start-line="111" selection-start-column="69" selection-end-line="111" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6992">
+              <caret line="334" column="2" lean-forward="true" selection-start-line="334" selection-start-column="2" selection-end-line="341" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -52,7 +62,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="55" />
     <option name="y" value="13" />
     <option name="width" value="1431" />
@@ -126,15 +136,15 @@
       <workItem from="1534604393324" duration="719000" />
       <workItem from="1534876056473" duration="1381000" />
       <workItem from="1534888177934" duration="396000" />
-      <workItem from="1534935567293" duration="4268000" />
+      <workItem from="1534935567293" duration="4595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6764000" />
+    <option name="totallyTimeSpent" value="7091000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="13" width="1431" height="1070" extended-state="1" />
+    <frame x="55" y="13" width="1431" height="1070" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24946997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -285,14 +295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="334" column="2" lean-forward="true" selection-start-line="334" selection-start-column="2" selection-end-line="341" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -313,6 +315,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="111" column="69" lean-forward="true" selection-start-line="111" selection-start-column="69" selection-end-line="111" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6992">
+          <caret line="334" column="2" lean-forward="true" selection-start-line="334" selection-start-column="2" selection-end-line="341" selection-end-column="21" />
           <folding />
         </state>
       </provider>
