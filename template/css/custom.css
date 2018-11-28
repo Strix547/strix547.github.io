@@ -117,7 +117,7 @@ body {
 }
 
 .header-top-message span {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .header-top-message>span:first-child {
@@ -127,7 +127,7 @@ body {
 .header-top-message .req-call {
     font-family: 'OSSemiBold';
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 14px;
     color: #fff;
 }
 
@@ -150,7 +150,6 @@ body {
 
 .mainmenu nav ul {
     display: flex;
-    margin-left: 23px;
 }
 
 .mainmenu nav ul li {
@@ -158,7 +157,7 @@ body {
 }
 
 .mainmenu nav ul li a {
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
@@ -180,12 +179,12 @@ body {
 }
 
 .header-cart ul li:nth-child(2) .right p:first-child {
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(68, 68, 68, 0.5);
 }
 
 .header-cart ul li:nth-child(2) .right p:last-child {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: -3px;
     color: #444444;
 }
@@ -669,6 +668,15 @@ aside.widget {
 
 /* BREADCRUMBS  */
 
+.breadcrumbs-area2.register {
+    background: rgba(0, 0, 0, 0) url("../img/register-bg.jpg") no-repeat scroll center center;
+}
+.breadcrumbs-area2.account {
+    background: rgba(0, 0, 0, 0) url("../img/account-bg.jpg") no-repeat scroll center center;
+}
+.breadcrumbs-area2.order {
+    background: rgba(0, 0, 0, 0) url("../img/order-bg.jpg") no-repeat scroll center center;
+}
 .breadcrumbs-area2 {
     background: rgba(0, 0, 0, 0) url("../img/breadcrumbs-bg.jpg") no-repeat scroll center center;
     color: #fefefe;
@@ -697,22 +705,353 @@ aside.widget {
     font-weight: normal;
 }
 
-
 /* END BREADCRUMBS  */
 
+/* PRODUCT SIMPLE AREA */
+.single-product-details > h4 {
+    font-size: 14px;
+    color: #E2B846;
+}
+.product-price {
+    margin-bottom: 30px;
+}
+.product-price h2 {
+    font-size: 34px;
+    color: #444444;
+}
+.product-price h2 span {
+    font-size: 22px;
+    color: rgba(68, 68, 68, 0.5);
+}
+.prev-price {
+    position: relative;
+    font-size: 22px;
+    color: rgba(68, 68, 68, 0.5);
+}
+.prev-price::before {
+    content: '';
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5px;
+    left: 0;
+    background: rgba(68, 68, 68, 0.5);
+}
+.single-shop-select label {
+    font-family: "OSSemiBold";
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #444444;
+}
+.single-shop-select > select {
+    background: #fbfbfb url("../img/shop/down.png") no-repeat scroll right center;
+    font-family: "OSSemiBold";
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #777777
+}
+.single-product-details .cart-btn {
+    background: #e2b846 none repeat scroll 0 0;
+    color: #ffffff;
+    display: block;
+    height: 55px;
+    line-height: 53px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.single-product-details .buy-one-touch a {
+    display: block;
+    width: 200px;
+    height: 55px;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid #e2b846;
+    font-family: "OSSemiBold";
+    text-transform: uppercase;
+    color: #e2b846;
+}
+
+.single-product-details .char p {
+    font-family: "OSSemiBold";
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #444444;
+}
+.single-product-details .char table {
+    margin-bottom: 30px;
+}
+.single-product-details .char table tr:not(:last-of-type) {
+    border-bottom: 1px solid #E1E1E1;
+    font-size: 16px;
+    color: #777777;
+}
+
+.single-product-details .char table td {
+    width: 250px;
+    height: 52px;
+    border-bottom: 1px solid #E1E1E1;
+    font-size: 16px;
+    color: #777777;
+}
+
+.product-attributes > span {
+    margin-bottom: 15px;
+}
+
+/* END PRODUCT SIMPLE AREA */
+
+/* RELATED PRODUCT AREA */
+.section-title h2 {
+    font-family: "OSSemiBold";
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #444444;
+    font-weight: normal;
+}
+.featured-product-list .overlay-content h2 {
+    font-family: "OSSemiBold";
+    font-size: 24px;
+    color: #5A5A5A;
+    font-weight: normal;
+}
+.overlay-content h4 {
+    font-family: "OSSemiBold";
+    line-height: normal;
+    font-size: 18px;
+    bottom: 16px;
+    color: #5A5A5A;
+}
+
+/* END RELATED PRODUCT AREA */
+
+/* MY ACCOUNT AREA */
+.my-account-area .p-details-tab {
+    margin-top: 30px;
+}
+
+.my-account-area .section-title2 h2 {
+    font-size: 34px;
+    color: #444444;
+}
+.p-details-tab ul.p-details-nav-tab li.active a {
+    font-family: "OSSemiBold";
+    font-size: 16px;
+    color: #444444;
+    font-weight: normal;
+}
+.p-details-tab ul.p-details-nav-tab li a {
+    font-family: "OSSemiBold";
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(68, 68, 68, 0.5);
+}
+
+.panel-group .address h4 {
+    font-family: "OSSemiBold";
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #444444
+}
+.panel-group .address p {
+    font-size: 18px;
+    color: #777777;
+    margin-bottom: 0;
+}
+
+.form-row > label {
+    font-size: 18px;
+    color: #777777;
+}
+.checbox-info {
+    font-size: 18px;
+    color: #777777;
+    font-weight: normal;
+}
+.panel-body.border {
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 27px;
+}
+.personal-data input[type="submit"] {
+    width: 180px;
+    height: 54px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #E2B846;
+    border: none;
+}
+
+.stocks .stock-body {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(214, 212, 212, 0.5);
+}
+
+.stocks .stock-body p {
+    padding: 7px 0;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.stocks .stock-body p:first-child {
+    color: #444444;
+    
+}
+.stocks .stock-body p:last-child {
+    color: #777777;
+}
+
+.stocks .stock-body:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.panel-group .order {
+    background: #fff;
+}
+.panel-group .order .order-body {
+    padding: 15px;
+    border-bottom: 1px solid #D6D4D4;
+}
+.panel-group .order .order-body:last-child {
+    border-bottom: none;
+}
+.panel-group .order .order-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.panel-group .order .order-head p:first-child {
+    font-size: 18px;
+    color: #777777;
+}
+.panel-group .order .order-head p:last-child {
+    font-family: "OSSemiBold";
+    font-size: 18px;
+}
+.panel-group .order .order-head p.delivered {
+    color: #3DD97B;
+}
+.panel-group .order .order-head p.new {
+    color: #777777;
+    background: transparent;
+}
+.panel-group .order .order-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.panel-group .order .order-product .right {
+    display: flex;
+    align-items: center;
+}
+.panel-group .order .order-product .name {
+    font-family: "OSSemiBold";
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #777777
+}
+
+.panel-group .order .order-product .quantity {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #777777;
+    padding-right: 50px;
+}
+.panel-group .order .order-product .price {
+    font-family: "OSSemiBold";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #444444;
+}
+
+.order .panel-body {
+    padding: 0;
+}
+.panel-group .order .order-total {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(214, 212, 212, 0.5);
+}
+.panel-group .order .order-total p {
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+.panel-group .order .order-total p:first-child {
+    font-family: "OSSemiBold";
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #777777;
+}
+
+.panel-group .order .order-total p:last-child {
+    font-family: "OSSemiBold";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #444444;
+}
+
+.panel-group .order .order-total.gold {
+    border-color: #E0B645;
+}
+/* END MY ACCOUNT AREA */
+
+.shop-pagination.center {
+    text-align: center;
+    float: none;
+}
+.panel-body .form-row.custom.single-shop-select > label {
+    font-family: "OS";
+    font-size: 18px;
+    color: #777777;
+    text-transform: none;
+    font-weight: normal;
+}
+.panel-body .form-row.custom.single-shop-select > select {
+    background: #eaeaea url("../img/shop/down.png") no-repeat scroll right center;
+    border: medium none;
+    cursor: pointer;
+    text-transform: none;
+    font-family: "OS";
+    font-size: 16px;
+    font-weight: normal;
+    color: #777777
+}
+#payment-form li.control label, ul.form-list li.control label {
+    font-size: 18px;
+    color: #777777;
+}
+.panel-group input[type="submit"] {
+    width: 247px;
+    height: 54px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #E2B846;
+    border: none;
+    font-family: "OSSemiBold";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 45px;
+}
+#entity {
+    display: none;
+}
 @media (max-width: 1459px) {
     .mainmenu nav ul li a {
         font-size: 16px;
         text-transform: uppercase;
     }
-    .header-cart ul li:nth-child(2) .right {
-        margin-left: 0;
-    }
     .header-cart ul li:nth-child(2) {
         flex-wrap: wrap;
+        margin-left: 23px;
     }
-
-
     .shop-right-area .shop-left-tab {
         width: 70%;
     }
@@ -731,12 +1070,6 @@ aside.widget {
     }
     .header-cart ul li:nth-child(2) .right {
         display: none;
-    }
-    .header-cart ul li:nth-child(1) {
-        display: none;
-    }
-    .header-cart ul li:nth-child(2) {
-        margin-left: 0;
     }
     .mainmenu nav ul li a {
         font-size: 14px;
@@ -782,10 +1115,18 @@ aside.widget {
 }
 
 @media (max-width: 991px) {
-    .mainmenu nav ul li a {
-        font-size: 13px;
+    .mainmenu {
+        margin-top: 7px;
     }
-
+    .header-cart ul li:nth-child(1) {
+        display: none;
+    }
+    .header-cart ul li:nth-child(2) {
+        margin-left: 0;
+    }
+    .header-cart {
+        margin-top: 2px;
+    }
     .shop-right-area .shop-left-tab {
         width: 60%;
     }
@@ -795,6 +1136,12 @@ aside.widget {
     }
     .widget .list li a {
         padding-left: 5px;
+    }
+    .panel-group .order .order-product .quantity {
+        padding-right: 15px;
+    }
+    #payment-form li.control label, ul.form-list li.control label {
+        font-size: 16px;
     }
 }
 
@@ -842,7 +1189,7 @@ aside.widget {
         font-size: 10px;
     }
     .breadcrumbs-area2 h2 {
-        font-size: 50px;
+        font-size: 35px;
     }
     .shop-list-single .left,
     .shop-list-single .right {
@@ -850,5 +1197,17 @@ aside.widget {
     }
     .shop-list-single .left img {
         margin-bottom: 10px;
+    }
+    .panel-group .order .order-product {
+        flex-wrap: wrap;
+    }
+    #payment-form li.control label, ul.form-list li.control label {
+        font-size: 11px;
+    }
+    #payment-form li.control label, ul.form-list li.control label {
+        margin-left: 0;
+    }
+    #payment-form li.control input.radio {
+        margin-right: 2px;
     }
 }

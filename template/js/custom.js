@@ -3,6 +3,14 @@ $(".select-name, .select-size").chosen();
 let widgetHeader = document.querySelectorAll('.widget-header');
 let container = document.querySelectorAll('.chosen-container');
 
+$('#cbox').click(function(){
+	if ($('#cbox').is(':checked')){
+		$('#entity').slideDown();
+	} else {
+		$('#entity').slideUp();
+	}
+});
+
 for (let i = 0; i < widgetHeader.length; i++) {
     widgetHeader[i].addEventListener('click', function (evt) {
         evt.currentTarget.classList.toggle('active');
