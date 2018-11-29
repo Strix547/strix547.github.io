@@ -178,185 +178,51 @@
         </div>
         <!-- Mobile Menu End -->
         <!-- Breadcrumbs Area Start -->
-        <div class="breadcrumbs-area2 order">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-                        <h2>Оформление заказа</h2>
-					</div>
-				</div>
-			</div>
-        </div>
-        <!-- Breadcrumbs Area End -->
-		<!--Check Out Area Start-->
-        <div class="check-out-area">
+        <div class="breadcrumbs-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 col-sm-12">
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingOne">
-									<h4 class="panel-title">
-										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-										   <span>1</span>
-										   Данные пользователя
-										</a>
-									</h4>
-								</div>
-								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-									<div class="panel-body border">
-										<div class="row">
-											<div class="col-md-6 col-sm-6">
-												<p class="form-row">
-                                                    <label>Имя<span class="required">*</span></label>
-                                                    <input type="text" name="name" required>
-                                                </p>
-                                                <p class="form-row">
-                                                    <label>Фамилия<span class="required">*</span></label>
-                                                    <input type="text" name="last-name" required>
-                                                </p>
-											</div>
-											<div class="col-md-6 col-sm-6">
-												<p class="form-row">
-                                                    <label>Телефон<span class="required">*</span></label>
-                                                    <input type="tel" name="tel" required>
-                                                </p>
-                                                <p class="form-row">
-                                                    <label>E-mail<span class="required">*</span></label>
-                                                    <input type="email" name="email" required>
-                                                </p>
-											</div>
-                                        </div>
-                                        <label class="checbox-info">
-                                            <input type="checkbox" id="cbox">
-                                            Оплата для юридических лиц
-                                        </label>
-                                        <div id="entity" class="entity">
-                                            <p class="form-row">
-                                                <label>Инн (для юридических лиц)</label>
-                                                <input type="text" name="inn">
-                                            </p>
-                                            <p class="form-row">
-                                                <label>Наименование организации (для юридических лиц)</label>
-                                                <input type="text" name="org-name">
-                                            </p>
-                                            <p class="form-row">
-                                                <label>Юридический адрес организации (для юридических лиц)</label>
-                                                <input type="text" name="org-address">
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="panel-body">
-										<div class="row">
-											<div class="col-md-6 col-sm-6">
-												<p class="form-row custom single-shop-select">
-                                                    <label>Страна</label>
-                                                     <select>
-                                                         <option>Россия</option>
-                                                         <option>Россия</option>
-                                                         <option>Россия</option>
-                                                     </select>
-                                                 </p>
-                                                <p class="form-row">
-                                                    <label>Город</label>
-                                                    <input type="text" name="city">
-                                                </p>
-											</div>
-											<div class="col-md-6 col-sm-6">
-												<p class="form-row custom single-shop-select">
-                                                    <label>Область / Край / Регион</label>
-                                                     <select>
-                                                         <option>Московская область</option>
-                                                         <option>Московская область</option>
-                                                         <option>Московская область</option>
-                                                     </select>
-                                                 </p>
-                                                 <p class="form-row">
-                                                    <label>Почтовый индекс</label>
-                                                    <input type="text" name="index">
-                                                </p>
-											</div>
-                                        </div>
-                                        <p class="form-row">
-                                            <label>Адрес</label>
-                                            <input type="text" name="address">
-                                        </p>
-									</div>
-								</div>
-							</div>			
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingFour">
-									<h4 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-										   <span>2</span>
-										   Способ доставки
-										</a>
-									</h4>
-								</div>
-								<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-									<div class="panel-body no-padding">
-										<div class="payment-met">
-											<form action="#" id="payment-form">
-												<ul class="form-list">
-													<li class="control">
-														<input type="radio" class="radio" id="pickup" name="payment-delivery" title="Самовывоз">
-														<label for="pickup">Самовывоз</label>
-													</li>
-													<li class="control">
-														<input type="radio" class="radio" id="delivery-russia-mail" name="payment-delivery" title="Доставка Почтой России">
-														<label for="delivery-russia-mail">Доставка Почтой России</label>
-                                                    </li>
-                                                    <li class="control">
-														<input type="radio" class="radio" id="delivery-dpd" name="payment-delivery" title="Доставка DPD">
-														<label for="delivery-dpd">Доставка DPD</label>
-													</li>
-												</ul>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingThree">
-									<h4 class="panel-title">
-										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-										   <span>3</span>
-										   Способ оплаты
-										</a>
-									</h4>
-								</div>
-								<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-									<div class="panel-body no-padding">
-										<div class="payment-met">
-											<form action="#" id="payment-form">
-												<fieldset>
-                                                    <ul class="form-list">
-                                                        <li class="control">
-                                                            <input type="radio" class="radio" value="cash" name="payment-type" id="cash" title="Оплата наличными при получении">
-                                                            <label for="cash">Оплата наличными при получении</label>
-                                                        </li>
-                                                        <li class="control">
-                                                            <input type="radio" class="radio" value="cashless" name="payment-type" id="cashless" title="Безналичный расчет для юридических лиц">
-                                                            <label for="cashless">Безналичный расчет для юридических лиц</label>
-                                                        </li>
-                                                        <li class="control">
-                                                            <input type="radio" class="radio" value="card" name="payment-type" id="card" title="Оплата банковской картой">
-                                                            <label for="card">Оплата банковской картой</label>
-                                                        </li>
-                                                    </ul>
-                                                </fieldset>
-											</form>
-										</div>
-									</div>
-								</div>
-                            </div>
-                            <input type="submit" value="Оформить заказ">
-						</div>                        
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="breadcrumb-single">
+                            <ul class="breadcrumbs">
+                                <li><a href="main.html" title="Return to Home">
+                                        Главная
+                                    </a></li>
+                                    <li>
+                                            <span><i class="fa fa-angle-right"></i></span>
+                                        </li>
+                                <li>Доставка</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Check Out Area End-->
+        <!-- Breadcrumbs Area End -->
+        <!-- About Area Start -->
+        <div class="about-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="welcome-left">
+                            <div class="about-title">
+                                <h3>Our Stroy</h3>
+                            </div>
+                            <div class="welcome-left">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitss ed do eiusmod tempor
+                                    incididunt ut labore et dolore mag na aliqua. Utes enim ad minim veniam, quis
+                                    nostrud exerck itation ullam co laboris nisi ut aliquip ex ea commodo coes nsequat.
+                                    Duis aute irure dolor in reprehenderit in.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitss ed do eiusmod tempor
+                                    incididunt ut labore et dolore mag na aliqua. Utes enim ad minim veniam, quis
+                                    nostrud exerck itation ullam co laboris nisi ut aliquip ex ea commodo coes nsequat.
+                                    Duis aute irure dolor in reprehenderit in. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Area End -->
         <!-- Footer Area Start -->
         <div class="footer-top-area">
             <div class="container">
