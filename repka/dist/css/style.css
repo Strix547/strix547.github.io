@@ -14741,7 +14741,7 @@ This is for the horizontal layout
   color: #fff; }
 
 .sidebar-nav ul .sidebar-item {
-  border-bottom: 1px solid rgba(120, 130, 140, 0.13) !important; }
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13); }
   .sidebar-nav ul .sidebar-item:last-of-type {
     border-bottom: none; }
 
@@ -14787,3 +14787,12 @@ This is for the horizontal layout
   display: flex;
   align-items: center;
   line-height: normal; }
+
+.sidebar-nav ul .sidebar-item.selected > .sidebar-link {
+  background-color: #fff; }
+
+#main-wrapper .left-sidebar .sidebar-item .sidebar-link.active span {
+  font-weight: bold; }
+
+.table-striped-even tbody tr:nth-of-type(even) {
+  background-color: rgba(0, 0, 0, 0.05); }
