@@ -23,7 +23,7 @@ $(function() {
 
                 // Add Legend
                 legend: {
-                    data:['Max temp','Min temp']
+                    data:['Количество проектов','Количество пользователей']
                 },
 
                 // Add custom colors
@@ -54,7 +54,7 @@ $(function() {
                 // Add Series
                 series : [
                     {
-                        name:'Max temp',
+                        name:'Количество проектов',
                         type:'line',
                         data:[5, 15, 11, 15, 12, 13, 10],
                         markPoint : {
@@ -78,7 +78,7 @@ $(function() {
                         },
                     },
                     {
-                        name:'Min temp',
+                        name:'Количество пользователей',
                         type:'line',
                         data:[1, -2, 2, 5, 3, 2, 0],
                         markPoint : {
