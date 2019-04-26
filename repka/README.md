@@ -1,0 +1,2 @@
+# ample-admin-getbootstrap
+
