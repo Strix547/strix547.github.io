@@ -15,11 +15,14 @@
   color: #fff;
 }
 
-.sidebar-nav ul .sidebar-item {
+#sidebarnav > .sidebar-item {
   border-bottom: 1px solid rgba(120, 130, 140, .13);
 
   &:last-of-type {
     border-bottom: none;
+  }
+  ul a:hover {
+    color: #414e5d;
   }
 }
 
@@ -334,5 +337,52 @@ textarea.form-control.site-list {
   }
   .minicolors-theme-bootstrap .minicolors-swatch-color {
     cursor: pointer;
+  }
+}
+
+.sidebar-nav .has-arrow::after {
+  border-color: #54667a;
+}
+
+div.daterangepicker {
+  border-color: #d6d6d6;
+  background-color: #f1f2f6;
+  .ranges {
+    float: right;
+  }
+  .calendar {
+    background-color: #fff;
+  }
+  .calendar-table {
+    td.available {
+      min-width: auto;
+      width: 27px;
+      max-width: 27px;
+      border-radius: 50%;
+    }
+    td.start-date,
+    td.end-date {
+      background-color: #589e45;
+    }
+    td.in-range {
+      background-color: #81aa68;
+      color: #fff;
+    }
+    th {
+      color: #3e7288;
+      &:nth-child(6),
+      &:nth-child(7) {
+        color: #f56461;
+      }
+    }
+    th.month {
+      color: #5a5b5f;
+    }
+  }
+}
+
+@media (min-width: 730px) {
+  div.daterangepicker.ltr .ranges {
+    float: right;
   }
 }

@@ -14741,10 +14741,12 @@ This is for the horizontal layout
 .navbar-light .navbar-nav .nav-link:hover {
   color: #fff; }
 
-.sidebar-nav ul .sidebar-item {
+#sidebarnav > .sidebar-item {
   border-bottom: 1px solid rgba(120, 130, 140, 0.13); }
-  .sidebar-nav ul .sidebar-item:last-of-type {
+  #sidebarnav > .sidebar-item:last-of-type {
     border-bottom: none; }
+  #sidebarnav > .sidebar-item ul a:hover {
+    color: #414e5d; }
 
 .sidebar-nav ul .sidebar-item .sidebar-link {
   color: #54667a; }
@@ -14994,3 +14996,35 @@ textarea.form-control.site-list {
     padding-left: 46px; }
   .custom-picker .minicolors-theme-bootstrap .minicolors-swatch-color {
     cursor: pointer; }
+
+.sidebar-nav .has-arrow::after {
+  border-color: #54667a; }
+
+div.daterangepicker {
+  border-color: #d6d6d6;
+  background-color: #f1f2f6; }
+  div.daterangepicker .ranges {
+    float: right; }
+  div.daterangepicker .calendar {
+    background-color: #fff; }
+  div.daterangepicker .calendar-table td.available {
+    min-width: auto;
+    width: 27px;
+    max-width: 27px;
+    border-radius: 50%; }
+  div.daterangepicker .calendar-table td.start-date,
+  div.daterangepicker .calendar-table td.end-date {
+    background-color: #589e45; }
+  div.daterangepicker .calendar-table td.in-range {
+    background-color: #81aa68;
+    color: #fff; }
+  div.daterangepicker .calendar-table th {
+    color: #3e7288; }
+    div.daterangepicker .calendar-table th:nth-child(6), div.daterangepicker .calendar-table th:nth-child(7) {
+      color: #f56461; }
+  div.daterangepicker .calendar-table th.month {
+    color: #5a5b5f; }
+
+@media (min-width: 730px) {
+  div.daterangepicker.ltr .ranges {
+    float: right; } }

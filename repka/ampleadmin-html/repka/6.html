@@ -12,9 +12,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
   <title>Ample admin Template - The Ultimate Multipurpose admin template</title>
   <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="../../assets/libs/daterangepicker/daterangepicker.css">
   <link href="../../dist/css/style.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../../assets/libs/select2/dist/css/select2.min.css">
-  <link rel="stylesheet" type="text/css" href="../../assets/libs/@claviska/jquery-minicolors/jquery.minicolors.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -157,28 +156,48 @@
         <nav class="sidebar-nav">
           <ul id="sidebarnav">
             <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                <i class="mdi mdi-chart-bar"></i>
-                <span class="hide-menu">Статистика</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                <i class="mdi mdi-content-copy"></i>
-                <span class="hide-menu">Проекты</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                <i class="mdi mdi-account-multiple"></i>
-                <span class="hide-menu">Пользователи</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                <i class="mdi mdi-cloud-check"></i>
-                <span class="hide-menu">API</span>
-              </a>
+                <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                    <i class="mdi mdi-content-copy"></i>
+                    <span class="hide-menu">Проекты</span>
+                </a>
+                <ul aria-expanded="false" class="collapse first-level">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="mdi mdi-comment-processing-outline"></i>
+                            <span class="hide-menu">Настройка проекта</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="mdi mdi-bulletin-board"></i>
+                            <span class="hide-menu">Запросы</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="mdi mdi-bulletin-board"></i>
+                            <span class="hide-menu">Поисковики и регионы</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="mdi mdi-bulletin-board"></i>
+                            <span class="hide-menu">Маркировка площадок</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="mdi mdi-bulletin-board"></i>
+                            <span class="hide-menu">Списки площадок</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="mdi mdi-bulletin-board"></i>
+                            <span class="hide-menu">Доступ</span>
+                        </a>
+                    </li>
+                </ul>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
@@ -198,150 +217,78 @@
     <!-- ============================================================== -->
     <!-- Page wrapper  -->
     <!-- ============================================================== -->
-    <div class="page-wrapper" style="display: block;">
+    <div class="page-wrapper">
       <!-- ============================================================== -->
-      <!-- Container fluid  -->
+      <!-- Bread crumb and right sidebar toggle -->
       <!-- ============================================================== -->
-      <!-- ============================================================== -->
-      <!-- Start Page Content -->
-      <!-- ============================================================== -->
-      <!-- ============================================================== -->
-      <!-- Email App Part -->
-      <!-- ============================================================== -->
-      <div class="email-app">
-        <!-- ============================================================== -->
-        <!-- Left Part -->
-        <!-- ============================================================== -->
-        <div class="left-part">
-          <a class="ti-menu ti-close btn btn-success show-left-part d-block d-md-none" href="javascript:void(0)"></a>
-          <div class="scrollable ps-container ps-theme-default" style="height:100%;"
-            data-ps-id="0cbfbb91-fe7d-7250-02ca-e4b8416bdaab">
-            <div class="divider"></div>
-            <ul class="list-group">
-              <li class="list-group-item">
-                <h5 class="pt-4 pl-4 pb-1 font-medium text-uppercase mb-0"><strong>Настройки
-                    проектов</strong></h5>
-              </li>
-              <li class="list-group-item">
-                <hr>
-              </li>
-              <li class="list-group-item">
-                <a href="javascript:void(0)" class="list-group-item-action"> <i class="mdi mdi-comment-text"></i>
-                  Запросы </a>
-              </li>
-              <li class="list-group-item">
-                <a href="javascript:void(0)" class="list-group-item-action"> <i class="mdi mdi-search-web"></i>
-                  Поисковики и регионы </a>
-              </li>
-              <li class="list-group-item">
-                <a href="javascript:void(0)" class="list-group-item-action"> <i class="mdi mdi-seal"></i> Маркировка
-                </a>
-              </li>
-              <li class="list-group-item">
-                <a href="javascript:void(0)" class="list-group-item-action"> <i class="mdi mdi-star"></i> Списки
-                  площадок </a>
-              </li>
-              <li class="list-group-item">
-                <a href="javascript:void(0)" class="list-group-item-action"> <i class="mdi mdi-message-processing"></i>
-                  Поисковые подсказки </a>
-              </li>
-              <li class="list-group-item">
-                <a href="javascript:void(0)" class="list-group-item-action"> <i class="mdi mdi-key"></i>
-                  Доступ </a>
-              </li>
-            </ul>
-            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
-              <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-            </div>
-            <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;">
-              <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
-            </div>
+      <div class="page-breadcrumb border-bottom">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-xs-12 align-self-center">
+            <h5 class="font-medium text-uppercase mb-0"><strong>Выдача</strong></h5>
           </div>
-        </div>
-        <!-- ============================================================== -->
-        <!-- Right Part -->
-        <!-- ============================================================== -->
-        <div class="right-part mail-list bg-white">
-          <div class="p-5 b-b">
-            <h2>Маркировка площадок</h2>
-            <div class="row">
-              <div class="col-md-12">
-                <p class="pt-3 pb-2">Задача - собрать интерфейс проекта на основе
-                  готового шаблона, прототипы будут предоставлены. 90% используемых
-                  элементов уже имеются в шаблоне. На выходе нужен дизайн (можно в
-                  формате картинок без PSD,
-                  только для страниц содержащих элементы которых нет в шаблоне нужно
-                  PSD приложит. Страницу выдачи нужно в PSD точно. Ракета,
-                  стартовавшая с космического центра Кеннеди на мысе Канаверал во
-                  Флориде,
-                  выведет на орбиту саудовский спутник связи Arabsat-6A. После того,
-                  как бустеры выполнят свою задачу, они должны на собственных
-                  двигателях приземлиться в заданной точке для повторного
-                  использования. Пуск
-                  неоднократно переносился и ранее планировать запустить ракету 11
-                  апреля, но из-за сильного ветра его перенесли на сутки.
-                </p>
-              </div>
-            </div>
-            <div class="row mb-3">
-              <div class="col-md-12">
-                <div
-                  class="minicolors minicolors-theme-bootstrap minicolors-position-bottom minicolors-position-left custom-picker">
-                  <input type="text" id="hue-demo" class="form-control demo minicolors-input" data-control="hue"
-                    value="#ff5d5e" size="7">
-                  <p class="text-dark">Негативный</p>
-                  <button type="button" class="btn btn-warning btn-circle btn-very-small"><i class="fa fa-times"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-4">
-              <div class="col-md-12">
-                <div
-                  class="minicolors minicolors-theme-bootstrap minicolors-position-bottom minicolors-position-left custom-picker">
-                  <input type="text" id="hue-demo" class="form-control demo minicolors-input" data-control="hue"
-                    value="#6dc056" size="7">
-                  <p class="text-dark">Положительный</p>
-                  <button type="button" class="btn btn-warning btn-circle btn-very-small"><i class="fa fa-times"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-4">
-              <div class="col-md-12">
-                <div
-                  class="minicolors minicolors-theme-bootstrap minicolors-position-bottom minicolors-position-left custom-picker">
-                  <input type="text" id="hue-demo" class="form-control demo minicolors-input mb-2" data-control="hue"
-                    value="#6dc056" size="7">
-                    <input type="text" class="form-control mr-2 mb-2" placeholder="Какой-то текст">
-                    <button type="button" class="btn waves-effect waves-light btn-block btn-success mb-2">Добавить</button>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 mt-5">
-                <button type="button" class="btn waves-effect waves-light btn-block btn-info w-auto">Сохранить</button>
-              </div>
-            </div>
+          <div class="col-lg-9 col-md-8 col-xs-12 align-self-center">
+            <nav aria-label="breadcrumb" class="mt-2 float-md-right float-left">
+              <ol class="breadcrumb mb-0 justify-content-end p-0">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Статистика</li>
+              </ol>
+            </nav>
           </div>
         </div>
       </div>
       <!-- ============================================================== -->
-      <!-- End PAge Content -->
+      <!-- End Bread crumb and right sidebar toggle -->
       <!-- ============================================================== -->
       <!-- ============================================================== -->
-      <!-- Right sidebar -->
+      <!-- Container fluid  -->
       <!-- ============================================================== -->
-      <!-- .right-sidebar -->
-      <!-- ============================================================== -->
-      <!-- End Right sidebar -->
-      <!-- ============================================================== -->
+      <div class="page-content container-fluid">
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <!-- row -->
+        <div class="row full-height">
+          <div class="col-sm-12 col-lg-12">
+            <div class="card full-height">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                      <button type="button" class="btn waves-effect waves-light btn-info mr-3 w-auto">Обновить</button>
+                      <div class='input-group'>
+                          <input type='text' class="form-control shawCalRanges" />
+                          <div class="input-group-append">
+                              <span class="input-group-text">
+                                  <span class="ti-calendar"></span>
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End row -->
+        <!-- ============================================================== -->
+        <!-- End PAge Content -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Right sidebar -->
+        <!-- ============================================================== -->
+        <!-- .right-sidebar -->
+        <!-- ============================================================== -->
+        <!-- End Right sidebar -->
+        <!-- ============================================================== -->
+      </div>
       <!-- ============================================================== -->
       <!-- End Container fluid  -->
       <!-- ============================================================== -->
       <!-- ============================================================== -->
       <!-- footer -->
       <!-- ============================================================== -->
+      <footer class="footer text-center">
+        All Rights Reserved by Ample admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.
+      </footer>
       <!-- ============================================================== -->
       <!-- End footer -->
       <!-- ============================================================== -->
@@ -374,47 +321,188 @@
   <script src="../../dist/js/sidebarmenu.js"></script>
   <!--Custom JavaScript -->
   <script src="../../dist/js/custom.min.js"></script>
-  <!--This page JS -->
-  <script src="../../assets/libs/select2/dist/js/select2.full.min.js"></script>
-  <script src="../../assets/libs/select2/dist/js/select2.min.js"></script>
-  <script src="../../dist/js/pages/forms/select2/select2.init.js"></script>
-  <script src="../../assets/libs/jquery-asColor/dist/jquery-asColor.min.js"></script>
-  <script src="../../assets/libs/jquery-asGradient/dist/jquery-asGradient.js"></script>
-  <script src="../../assets/libs/jquery-asColorPicker/dist/jquery-asColorPicker.min.js"></script>
-  <script src="../../assets/libs/@claviska/jquery-minicolors/jquery.minicolors.min.js"></script>
+  <!-- This page JS -->
+  <script src="../../assets/libs/moment/moment.js"></script>
+  <script src="../../assets/libs/daterangepicker/daterangepicker.js"></script>
   <script>
-    $('.demo').each(function () {
-      //
-      // Dear reader, it's actually very easy to initialize MiniColors. For example:
-      //
-      //  $(selector).minicolors();
-      //
-      // The way I've done it below is just for the demo, so don't get confused
-      // by it. Also, data- attributes aren't supported at this time...they're
-      // only used for this demo.
-      //
-      $(this).minicolors({
-        control: $(this).attr('data-control') || 'hue',
-        defaultValue: $(this).attr('data-defaultValue') || '',
-        format: $(this).attr('data-format') || 'hex',
-        keywords: $(this).attr('data-keywords') || '',
-        inline: $(this).attr('data-inline') === 'true',
-        letterCase: $(this).attr('data-letterCase') || 'lowercase',
-        opacity: $(this).attr('data-opacity'),
-        position: $(this).attr('data-position') || 'bottom left',
-        swatches: $(this).attr('data-swatches') ? $(this).attr('data-swatches').split('|') : [],
-        change: function (value, opacity) {
-          if (!value) return;
-          if (opacity) value += ', ' + opacity;
-          if (typeof console === 'object') {
-            console.log(value);
-          }
-        },
-        theme: 'bootstrap'
-      });
-
+    /*******************************************/
+    // Basic Date Range Picker
+    /*******************************************/
+    $('.daterange').daterangepicker({
+      
     });
-  </script>
+
+    /*******************************************/
+    // Date & Time
+    /*******************************************/
+    $('.datetime').daterangepicker({
+        timePicker: true,
+        timePickerIncrement: 30,
+        locale: {
+            format: 'MM/DD/YYYY h:mm A'
+        }
+    });
+
+    /*******************************************/
+    //Calendars are not linked
+    /*******************************************/
+    $('.timeseconds').daterangepicker({
+        timePicker: true,
+        timePickerIncrement: 30,
+        timePicker24Hour: true,
+        timePickerSeconds: true,
+        locale: {
+            format: 'MM-DD-YYYY h:mm:ss'
+        }
+    });
+
+    /*******************************************/
+    // Single Date Range Picker
+    /*******************************************/
+    $('.singledate').daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: true
+    });
+
+    /*******************************************/
+    // Auto Apply Date Range
+    /*******************************************/
+    $('.autoapply').daterangepicker({
+        autoApply: true,
+    });
+
+    /*******************************************/
+    // Calendars are not linked
+    /*******************************************/
+    $('.linkedCalendars').daterangepicker({
+        linkedCalendars: false,
+    });
+
+    /*******************************************/
+    // Date Limit
+    /*******************************************/
+    $('.dateLimit').daterangepicker({
+        dateLimit: {
+            days: 7
+        },
+    });
+
+    /*******************************************/
+    // Show Dropdowns
+    /*******************************************/
+    $('.showdropdowns').daterangepicker({
+        showDropdowns: true,
+    });
+
+    /*******************************************/
+    // Show Week Numbers
+    /*******************************************/
+    $('.showweeknumbers').daterangepicker({
+        showWeekNumbers: true,
+    });
+
+    /*******************************************/
+    // Date Ranges
+    /*******************************************/
+    $('.dateranges').daterangepicker({
+        ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+    });
+
+    /*******************************************/
+    // Always Show Calendar on Ranges
+    /*******************************************/
+    $('.shawCalRanges').daterangepicker({
+          language: 'ru',
+          locale: {
+            "format": "MM.DD.YY",
+            "separator": " - ",
+            "applyLabel": "Применить",
+            "cancelLabel": "Отмена",
+            "fromLabel": "От",
+            "toLabel": "До",
+            "customRangeLabel": "Свой",
+            "daysOfWeek": [
+                "Вс",
+                "Пн",
+                "Вт",
+                "Ср",
+                "Чт",
+                "Пт",
+                "Сб"
+            ],
+            "monthNames": [
+                "Январь",
+                "Февраль",
+                "Март",
+                "Апрель",
+                "Май",
+                "Июнь",
+                "Июль",
+                "Август",
+                "Сентябрь",
+                "Октябрь",
+                "Ноябрь",
+                "Декабрь"
+            ],
+            "firstDay": 1
+        },
+        ranges: {
+            'Последние 7 дней': [moment().subtract(6, 'days'), moment()],
+            'Последние 30 дней': [moment().subtract(29, 'days'), moment()],
+            'Прошлый месяц': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        },
+        alwaysShowCalendars: true,
+    });
+
+    /*******************************************/
+    // Top of the form-control open alignment
+    /*******************************************/
+    $('.drops').daterangepicker({
+        drops: "up" // up/down
+    });
+
+    /*******************************************/
+    // Custom button options
+    /*******************************************/
+    $('.buttonClass').daterangepicker({
+        drops: "up",
+        buttonClasses: "btn",
+        applyClass: "btn-info",
+        cancelClass: "btn-danger"
+    });
+
+    /*******************************************/
+    // Language
+    /*******************************************/
+    $('.localeRange').daterangepicker({
+        ranges: {
+            "Aujourd'hui": [moment(), moment()],
+            'Hier': [moment().subtract('days', 1), moment().subtract('days', 1)],
+            'Les 7 derniers jours': [moment().subtract('days', 6), moment()],
+            'Les 30 derniers jours': [moment().subtract('days', 29), moment()],
+            'Ce mois-ci': [moment().startOf('month'), moment().endOf('month')],
+            'le mois dernier': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
+        },
+        locale: {
+            applyLabel: "Vers l'avant",
+            cancelLabel: 'Annulation',
+            startLabel: 'Date initiale',
+            endLabel: 'Date limite',
+            customRangeLabel: 'SÃ©lectionner une date',
+            // daysOfWeek: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi','Samedi'],
+            daysOfWeek: ['Di', 'Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa'],
+            monthNames: ['Janvier', 'fÃ©vrier', 'Mars', 'Avril', 'ÐœÐ°i', 'Juin', 'Juillet', 'AoÃ»t', 'Septembre', 'Octobre', 'Novembre', 'Decembre'],
+            firstDay: 1
+        }
+    });
+    </script>
 </body>
 
 </html>
