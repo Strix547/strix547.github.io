@@ -226,3 +226,113 @@ div.dataTables_length {
   padding: 6px;
   font-size: 12px;
 }
+
+.table td, .table th {
+  padding: 0.9375rem 1.2rem;
+}
+
+@media screen and (max-width: 757px) {
+  table.dataTable .list-inline-item {
+    a {
+      display: flex;
+      align-items: center;
+    }
+    &:not(:last-child) {
+      margin-right: 0 !important;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.smiles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  & > span:last-child {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+#example-basic.wizard.wizard-circle {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+textarea.form-control.site-list {
+  height: 100px;
+  resize: none;
+}
+
+.row:nth-of-type(4) .custom-picker {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.custom-picker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 290px;
+  & > .form-control {
+    width: 350px;
+  }
+  & > .btn-success {
+    width: 143px;
+  }
+  .btn-very-small {
+    min-width: 30px;
+    margin-left: auto;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  & > .minicolors {
+    margin-right: 10px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 33px;
+      width: 27px;
+      height: 33px;
+      border: 1px solid #8897aa;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 42px;
+      top: 15px;
+      border-top: .3em solid #8897aa;
+      border-right: .3em solid transparent;
+      border-left: .3em solid transparent;
+      border-bottom: 0;
+    }
+  }
+  .minicolors-input {
+    border-radius: 0;
+    border: 1px solid #8897aa;
+    color: transparent;
+    font-size: 0;
+    cursor: pointer;
+    height: 33px;
+  }
+  .minicolors-theme-bootstrap .minicolors-swatch {
+    border: none;
+    border-radius: 0;
+    top: 4px;
+    left: 4px;
+    width: 25px;
+    height: 25px;
+  }
+  .minicolors-theme-bootstrap .minicolors-input {
+    padding-left: 46px;
+  }
+  .minicolors-theme-bootstrap .minicolors-swatch-color {
+    cursor: pointer;
+  }
+}
