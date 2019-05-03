@@ -345,28 +345,111 @@ textarea.form-control.site-list {
 }
 
 div.daterangepicker {
-  border-color: #d6d6d6;
-  background-color: #f1f2f6;
+  .btn-primary {
+    background-color: #2dabe5;
+    border-color: #2dabe5;
+  }
   .ranges {
     float: right;
+    ul {
+      width: 210px;
+    }
+    li {
+      width: 200px;
+      height: 35px;
+      margin-bottom: 7px;
+      text-align: center;
+      line-height: 35px;
+      background-color: #8897aa;
+      color: #fff;
+      padding: 0;
+      &.active {
+        background-color: #8897aa;
+      }
+    }
   }
   .calendar {
     background-color: #fff;
+    &.left {
+      width: 277px;
+      padding: 11px 0 14px 14px;
+    }
+    &.right {
+      width: 287px;
+      padding: 11px 14px 14px 7px;
+      .calendar-table {
+        padding-right: 17px;
+      }
+      .calendar-table table thead tr:last-child {
+        width: 232px;
+      }
+    }
   }
   .calendar-table {
+    background-color: #f1f2f6;
+    table {
+      table-layout: fixed;
+      margin: 11px 7px 7px 7px;
+      background-color: #f1f2f6;
+    }
+    thead tr:last-child {
+      border: 1px solid #dadbdf;
+      border-bottom: none;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding-top: 5px;
+      width: 100.5%;
+      th {
+        text-transform: uppercase;
+      }
+    }
+    tbody {
+      border: 1px solid #dadbdf;
+      border-top: none;
+      border-radius: 5px;
+      tr:last-child {
+        margin-bottom: 15px;
+      }
+    }
     td.available {
-      min-width: auto;
-      width: 27px;
-      max-width: 27px;
       border-radius: 50%;
     }
-    td.start-date,
-    td.end-date {
-      background-color: #589e45;
+    td.active {
+      background-color: #57a245;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: -4px;
+        top: -4px;
+        width: 33px;
+        height: 33px;
+        border: 1px solid #57a245;
+        border-radius: 50%;
+      }
     }
     td.in-range {
-      background-color: #81aa68;
+      background-color: #7eaf5e;
       color: #fff;
+      &.active {
+        background-color: #57a245;
+      }
+    }
+    td.off {
+      background-color: transparent;
+      &.in-range {
+        background-color: #7eaf5e;
+      }
+      &.active {
+        background-color: #57a245;
+        color: #fff;
+      }
+    }
+    th,
+    td {
+      flex: 0 0 27px;
+      height: 27px;
+      min-width: auto;
     }
     th {
       color: #3e7288;
@@ -374,15 +457,59 @@ div.daterangepicker {
       &:nth-child(7) {
         color: #f56461;
       }
+      &.month {
+        color: #5a5b5f;
+      }
     }
-    th.month {
-      color: #5a5b5f;
+    tr {
+      display: flex;
+      justify-content: space-between; 
+      padding: 0 10px;
     }
+    
   }
 }
-
+@media (min-width: 564px) {
+  .daterangepicker.ltr .calendar.left .calendar-table {
+    padding-right: 15px;
+  }
+}
 @media (min-width: 730px) {
   div.daterangepicker.ltr .ranges {
     float: right;
   }
+}
+
+.square {
+  display: block;
+  width: 18px;
+  height: 18px;
+  &.bordered {
+    margin: 2px;
+  }
+}
+
+.negative {
+  background-color: #fa6060;
+}
+
+.positive {
+  background-color: #569642;
+}
+
+.btn-danger.fix-after {
+  background-color: #fa6060;
+  border-color: #fa6060;
+  &::after {
+    margin-bottom: 5px;
+    margin-left: -4px;
+  }
+}
+
+.customtab .nav-link.active.red, .customtab .nav-link.red:hover {
+  border-color: #fa6060;
+}
+
+.nav-tabs .nav-link.red:hover {
+  color: #fa6060;
 }

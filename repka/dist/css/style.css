@@ -15000,31 +15000,132 @@ textarea.form-control.site-list {
 .sidebar-nav .has-arrow::after {
   border-color: #54667a; }
 
-div.daterangepicker {
-  border-color: #d6d6d6;
+div.daterangepicker .btn-primary {
+  background-color: #2dabe5;
+  border-color: #2dabe5; }
+
+div.daterangepicker .ranges {
+  float: right; }
+  div.daterangepicker .ranges ul {
+    width: 210px; }
+  div.daterangepicker .ranges li {
+    width: 200px;
+    height: 35px;
+    margin-bottom: 7px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #8897aa;
+    color: #fff;
+    padding: 0; }
+    div.daterangepicker .ranges li.active {
+      background-color: #8897aa; }
+
+div.daterangepicker .calendar {
+  background-color: #fff; }
+  div.daterangepicker .calendar.left {
+    width: 277px;
+    padding: 11px 0 14px 14px; }
+  div.daterangepicker .calendar.right {
+    width: 287px;
+    padding: 11px 14px 14px 7px; }
+    div.daterangepicker .calendar.right .calendar-table {
+      padding-right: 17px; }
+    div.daterangepicker .calendar.right .calendar-table table thead tr:last-child {
+      width: 232px; }
+
+div.daterangepicker .calendar-table {
   background-color: #f1f2f6; }
-  div.daterangepicker .ranges {
-    float: right; }
-  div.daterangepicker .calendar {
-    background-color: #fff; }
+  div.daterangepicker .calendar-table table {
+    table-layout: fixed;
+    margin: 11px 7px 7px 7px;
+    background-color: #f1f2f6; }
+  div.daterangepicker .calendar-table thead tr:last-child {
+    border: 1px solid #dadbdf;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 5px;
+    width: 100.5%; }
+    div.daterangepicker .calendar-table thead tr:last-child th {
+      text-transform: uppercase; }
+  div.daterangepicker .calendar-table tbody {
+    border: 1px solid #dadbdf;
+    border-top: none;
+    border-radius: 5px; }
+    div.daterangepicker .calendar-table tbody tr:last-child {
+      margin-bottom: 15px; }
   div.daterangepicker .calendar-table td.available {
-    min-width: auto;
-    width: 27px;
-    max-width: 27px;
     border-radius: 50%; }
-  div.daterangepicker .calendar-table td.start-date,
-  div.daterangepicker .calendar-table td.end-date {
-    background-color: #589e45; }
+  div.daterangepicker .calendar-table td.active {
+    background-color: #57a245;
+    position: relative; }
+    div.daterangepicker .calendar-table td.active::before {
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: -4px;
+      width: 33px;
+      height: 33px;
+      border: 1px solid #57a245;
+      border-radius: 50%; }
   div.daterangepicker .calendar-table td.in-range {
-    background-color: #81aa68;
+    background-color: #7eaf5e;
     color: #fff; }
+    div.daterangepicker .calendar-table td.in-range.active {
+      background-color: #57a245; }
+  div.daterangepicker .calendar-table td.off {
+    background-color: transparent; }
+    div.daterangepicker .calendar-table td.off.in-range {
+      background-color: #7eaf5e; }
+    div.daterangepicker .calendar-table td.off.active {
+      background-color: #57a245;
+      color: #fff; }
+  div.daterangepicker .calendar-table th,
+  div.daterangepicker .calendar-table td {
+    flex: 0 0 27px;
+    height: 27px;
+    min-width: auto; }
   div.daterangepicker .calendar-table th {
     color: #3e7288; }
     div.daterangepicker .calendar-table th:nth-child(6), div.daterangepicker .calendar-table th:nth-child(7) {
       color: #f56461; }
-  div.daterangepicker .calendar-table th.month {
-    color: #5a5b5f; }
+    div.daterangepicker .calendar-table th.month {
+      color: #5a5b5f; }
+  div.daterangepicker .calendar-table tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px; }
+
+@media (min-width: 564px) {
+  .daterangepicker.ltr .calendar.left .calendar-table {
+    padding-right: 15px; } }
 
 @media (min-width: 730px) {
   div.daterangepicker.ltr .ranges {
     float: right; } }
+
+.square {
+  display: block;
+  width: 18px;
+  height: 18px; }
+  .square.bordered {
+    margin: 2px; }
+
+.negative {
+  background-color: #fa6060; }
+
+.positive {
+  background-color: #569642; }
+
+.btn-danger.fix-after {
+  background-color: #fa6060;
+  border-color: #fa6060; }
+  .btn-danger.fix-after::after {
+    margin-bottom: 5px;
+    margin-left: -4px; }
+
+.customtab .nav-link.active.red, .customtab .nav-link.red:hover {
+  border-color: #fa6060; }
+
+.nav-tabs .nav-link.red:hover {
+  color: #fa6060; }
