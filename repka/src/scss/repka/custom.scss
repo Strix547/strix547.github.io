@@ -280,7 +280,7 @@ textarea.form-control.site-list {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 290px;
+  width: 315px;
   & > .form-control {
     width: 350px;
   }
@@ -349,10 +349,39 @@ div.daterangepicker {
     background-color: #2dabe5;
     border-color: #2dabe5;
   }
+  .drp-buttons {
+    position: absolute;
+    right: 210px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    .drp-selected {
+      position: absolute;
+      font-size: .875rem;
+      width: 200px;
+      text-align: center;
+      padding: 0;
+      top: 24px;
+    }
+    .applyBtn {
+      position: absolute;
+      width: 200px;
+      margin: 0;
+      padding: 0;
+      top: 232px;
+      font-weight: normal;
+      height: 35px;
+      line-height: 35px;
+    }
+    .cancelBtn {
+      display: none;
+    }
+  }
   .ranges {
     float: right;
     ul {
       width: 210px;
+      margin-top: 50px;
     }
     li {
       width: 200px;
@@ -363,6 +392,12 @@ div.daterangepicker {
       background-color: #8897aa;
       color: #fff;
       padding: 0;
+      &:last-child {
+        display: none;
+      }
+      &:hover {
+        background-color: #8897aa;
+      }
       &.active {
         background-color: #8897aa;
       }
@@ -512,4 +547,151 @@ div.daterangepicker {
 
 .nav-tabs .nav-link.red:hover {
   color: #fa6060;
+}
+
+.table-custom.table {
+  td {
+    min-width: 232px;
+    &:hover {
+      background-color: #FDFECC;
+    }
+    a {
+      word-break: break-all;
+    }
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  div.daterangepicker {
+      width: 477px;
+      .calendar.left {
+        width: 254px;
+        padding: 11px 0 0px 7px;
+      }
+  }
+}
+
+@media screen and (max-width: 823px) {
+  div.daterangepicker:after,
+  div.daterangepicker:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 729px) {
+  div.daterangepicker {
+    width: 264px;
+    .ranges ul {
+      width: 200px;
+      margin: 50px 0 0 32px;
+    }
+    .calendar.left {
+      margin-top: 65px;
+    }
+    .calendar.right {
+      width: 256px;
+      padding: 11px 0px 14px 7px;
+    }
+    .drp-buttons .applyBtn {
+      top: 208px;
+      left: -20px;
+    }
+    .drp-selected {
+      left: -16px;
+  }
+  }
+}
+
+li.select2-results__option {
+  position: relative;
+  padding: 6px 6px 6px 35px;
+  height: 30px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+  }
+  &:nth-child(1)::before {
+    background-color: red;
+    border-top-left-radius: 4px;
+  }
+  &:nth-child(2)::before {
+    background-color: green;
+  }
+  &:nth-child(3)::before {
+    background-color: blue;
+  }
+  &:nth-child(4)::before {
+    background-color: yellow;
+  }
+  &:nth-child(5)::before {
+    background-color: orange;
+  }
+  &:nth-child(6)::before {
+    background-color: black;
+  }
+  &:nth-child(7)::before {
+    background-color: purple;
+  }
+  &:nth-child(8)::before {
+    background-color: pink;
+  }
+  &:nth-child(9)::before {
+    background-color: gray;
+  }
+}
+
+.select2-container .select2-selection--single {
+  height: 32px !important;
+}
+
+.select2-container {
+  width: 150px !important;
+  margin-right: 10px !important;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 35px !important;
+  line-height: 32px !important;
+  position: relative ;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered[title="Желтый"]::before {
+  background-color: yellow;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered[title="Красный"]::before {
+  background-color: red;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered[title="Серый"]::before {
+  background-color: gray;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered[title="Фиолетовый"]::before {
+  background-color: purple;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered[title="Розовый"]::before {
+  background-color: pink;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered[title="Синий"]::before {
+  background-color: blue;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered[title="Зеленый"]::before {
+  background-color: green;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered[title="Черный"]::before {
+  background-color: black;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered[title="Оранжевый"]::before {
+  background-color: orange;
 }

@@ -26,6 +26,9 @@ $("#select2-with-placeholder").select2({
 $("#select2-search-hide").select2({
     minimumResultsForSearch: Infinity
 });
+$("#select21-search-hide").select2({
+    minimumResultsForSearch: Infinity
+});
 
 //***********************************//
 // Select With Icon
