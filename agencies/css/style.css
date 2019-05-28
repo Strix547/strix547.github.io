@@ -1,0 +1,168 @@
+main {
+  background-color: #f3f4f9;
+  padding-bottom: 42px;
+}
+
+main h2 {
+  padding-top: 31px;
+  margin: 0 auto;
+}
+
+main .catalog {
+  margin-top: 33px;
+}
+
+main .catalog .row .col-xl-4 > li {
+  padding: 10px 14px 14px 14px;
+  margin-bottom: 30px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+main .catalog .row .col-xl-4 > li.vip .content {
+  margin-top: 7px;
+}
+
+main .catalog .row .col-xl-4 > li .top-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .catalog .row .col-xl-4 > li .top-line .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .catalog .row .col-xl-4 > li .top-line .stars li {
+  width: 18px;
+  height: 17px;
+  background: url("../img/icons.png") 0 -25px;
+}
+
+main .catalog .row .col-xl-4 > li .top-line .stars li.empty {
+  background: url("../img/icons.png") -19px -25px;
+}
+
+main .catalog .row .col-xl-4 > li .top-line .location {
+  position: relative;
+  font-size: 15px;
+}
+
+main .catalog .row .col-xl-4 > li .top-line .location::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 17px;
+  left: -24px;
+  background: url("../img/icons.png") -78px 0;
+}
+
+main .catalog .row .col-xl-4 > li .vip {
+  width: 47px;
+  height: 22px;
+  margin-top: 10px;
+  background-color: #fdde52;
+  font-family: "Merriweather";
+  text-align: center;
+  line-height: 22px;
+  color: #fff;
+}
+
+main .catalog .row .col-xl-4 > li .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 39px;
+}
+
+main .catalog .row .col-xl-4 > li .content .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 109px;
+  height: 90px;
+  border: 1px solid #b1b0b0;
+}
+
+main .catalog .row .col-xl-4 > li .content .desc {
+  margin-left: 14px;
+}
+
+main .catalog .row .col-xl-4 > li .content .desc p:first-child {
+  font-family: "Merriweather";
+  font-size: 19px;
+}
+
+main .catalog .row .col-xl-4 > li .content .desc p:nth-child(2) {
+  font-size: 15px;
+  padding-top: 14px;
+}
+
+main .catalog .row .col-xl-4 > li .content .desc p:nth-child(3) {
+  position: relative;
+  font-size: 15px;
+  padding-top: 6px;
+  padding-left: 24px;
+}
+
+main .catalog .row .col-xl-4 > li .content .desc p:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 17px;
+  background: url("../img/icons.png") -101px 0;
+}
+
+main .catalog .row .col-xl-4 > li .bottom-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 19px;
+}
+
+main .catalog .row .col-xl-4 > li .bottom-line a {
+  text-decoration: none;
+  font-family: "OpenSansSemibold";
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+main .catalog .row .col-xl-4 > li .bottom-line a:first-child {
+  display: block;
+  width: 128px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  color: #fff;
+  background-color: #b52f2f;
+}
+
+main .catalog .row .col-xl-4 > li .bottom-line a:last-child {
+  padding-left: 24px;
+  color: #b52f2f;
+}
+
+main .catalog .row.col-xl-4 > li:nth-child(7),
+main .catalog .row.col-xl-4 > li:nth-child(8),
+main .catalog .row.col-xl-4 > li:nth-child(9) {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */

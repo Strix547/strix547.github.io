@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "OpenSans";
+	src: url("../fonts/OpenSans.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansSemibold";
+	src: url("../fonts/OpenSansSemibold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansLight";
+	src: url("../fonts/OpenSansLight.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Merriweather";
+	src: url("../fonts/Merriweather.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "MerriweatherBold";
+	src: url("../fonts/MerriweatherBold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}

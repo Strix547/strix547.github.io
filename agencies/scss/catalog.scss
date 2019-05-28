@@ -1,0 +1,114 @@
+main {
+  background-color: #f3f4f9;
+  padding-bottom: 42px;
+  h2 {
+    padding-top: 31px;
+    margin: 0 auto;
+  }
+  .catalog {
+    margin-top: 33px;
+    & .row .col-xl-4 > li {
+      padding: 10px 14px 14px 14px;
+      margin-bottom: 30px;
+      border: 1px solid #e6e6e6;
+      border-radius: 5px;
+      background-color: #fff;
+      &.vip .content {
+        margin-top: 7px;
+      }
+      .top-line {
+        display: flex;
+        justify-content: space-between;
+        .location {
+          position: relative;
+          font-size: 15px;
+          &::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 17px;
+            left: -24px;
+            background: url('../img/icons.png') -78px 0;
+          }
+        }
+      }
+      .vip {
+        width: 47px;
+        height: 22px;
+        margin-top: 10px;
+        background-color: #fdde52;
+        font-family: "Merriweather";
+        text-align: center;
+        line-height: 22px;
+        color: #fff;
+      }
+      .content {
+        display: flex;
+        margin-top: 39px;
+        .img {
+          display: flex;
+          flex-shrink: 0;
+          justify-content: center;
+          align-items: center;
+          width: 109px;
+          height: 90px;
+          border: 1px solid #b1b0b0;
+        }
+        .desc {
+          margin-left: 14px;
+          p:first-child {
+            font-family: "Merriweather";
+            font-size: 19px;
+          }
+          p:nth-child(2) {
+            font-size: 15px;
+            padding-top: 14px;
+          }
+          p:nth-child(3) {
+            position: relative;
+            font-size: 15px;
+            padding-top: 6px;
+            padding-left: 24px;
+            &::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              width: 16px;
+              height: 17px;
+              background: url('../img/icons.png') -101px 0;
+            }
+          }
+        }
+      }
+      .bottom-line {
+        display: flex;
+        align-items: center;
+        margin-top: 19px;
+        a {
+          text-decoration: none;
+          font-family: "OpenSansSemibold";
+          font-size: 15px;
+          border-radius: 3px;
+        }
+        a:first-child {
+          display: block;
+          width: 128px;
+          height: 33px;
+          line-height: 33px;
+          text-align: center;
+          color: #fff;
+          background-color: #b52f2f;
+        }
+        a:last-child {
+          padding-left: 24px;
+          color: #b52f2f;
+        }
+      }
+    }
+    & .row.col-xl-4 > li:nth-child(7),
+    & .row.col-xl-4 > li:nth-child(8), 
+    & .row.col-xl-4 > li:nth-child(9) {
+      margin-bottom: 0;
+    }
+  }
+}
