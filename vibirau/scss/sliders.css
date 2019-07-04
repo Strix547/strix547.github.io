@@ -317,6 +317,9 @@
 }
 
 @media screen and (max-width: 562px) {
+  .product-slider {
+    padding: 0 30px;
+  }
   .product-slider .slick-slide {
     margin: 0 10px;
   }
