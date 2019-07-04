@@ -1,0 +1,446 @@
+.btn {
+  display: inline-block;
+  padding: 6px 9px;
+  border-radius: 5px;
+  background-color: #50c878;
+  font-family: "Montserrat-Medium";
+  font-size: 11px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-appearance: none;
+}
+
+.btn.medium {
+  padding: 12px 26px;
+  font-family: "Montserrat-SemiBold";
+  font-size: 16px;
+  color: #f8f8f8;
+}
+
+.btn.large {
+  padding: 11px 35px;
+  font-family: "Montserrat-SemiBold";
+  font-size: 16px;
+  color: #f8f8f8;
+}
+
+.custom-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-family: "Montserrat-Medium";
+  font-size: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.custom-checkbox p > span {
+  font-family: "Montserrat-Light";
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.custom-checkbox .checkmark:after {
+  content: "\f00c";
+  position: absolute;
+  display: none;
+  left: 2.5px;
+  top: 2px;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 9px;
+  color: #50c878;
+}
+
+.checkbox-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 120px;
+}
+
+.checkbox-colors .custom-checkbox {
+  padding-left: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.checkbox-colors .custom-checkbox:nth-child(5n+5) {
+  margin-right: 0;
+}
+
+.checkbox-colors .custom-checkbox:nth-last-of-type(-n+5) {
+  margin-bottom: 0;
+}
+
+.checkbox-colors .custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-colors .custom-checkbox .checkmark.white {
+  background-color: #fff;
+}
+
+.checkbox-colors .custom-checkbox .checkmark.white::after {
+  color: #4b4b4b;
+}
+
+.checkbox-colors .custom-checkbox .checkmark.yellow {
+  background-color: #f7c600;
+}
+
+.checkbox-colors .custom-checkbox .checkmark.red {
+  background-color: #e05c5a;
+}
+
+.checkbox-colors .custom-checkbox .checkmark.blue {
+  background-color: #3060dc;
+}
+
+.checkbox-colors .custom-checkbox .checkmark.green {
+  background-color: #37a156;
+}
+
+.checkbox-colors .custom-checkbox .checkmark.brown {
+  background-color: #e4c896;
+}
+
+.checkbox-colors .custom-checkbox .checkmark.purple {
+  background-color: #8742b6;
+}
+
+.checkbox-colors .custom-checkbox .checkmark.light-blue {
+  background-color: #93b3cc;
+}
+
+.checkbox-colors .custom-checkbox .checkmark.gray {
+  background-color: #aaaaaa;
+}
+
+.checkbox-colors .custom-checkbox .checkmark.black {
+  background-color: #1c1c1c;
+}
+
+.checkbox-colors .custom-checkbox .checkmark:after {
+  left: 5px;
+  top: 4px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.custom-search {
+  position: relative;
+}
+
+.custom-search input {
+  position: relative;
+  width: 80px;
+  height: 19px;
+  line-height: 19px;
+  padding-left: 6px;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+  font-family: "Montserrat-Light";
+  font-size: 12px;
+  color: #a1a1a1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1;
+  outline: none;
+  border: none;
+}
+
+.custom-search input:focus {
+  border: 1px solid #e6e6e6;
+  color: #4b4b4b;
+}
+
+.custom-search label {
+  position: absolute;
+  display: none;
+  z-index: 2;
+  right: 6px;
+  top: 1px;
+  cursor: pointer;
+}
+
+.custom-search label i {
+  font-size: 12px;
+  color: #adadad;
+}
+
+.custom-range {
+  margin-top: 18px;
+}
+
+.custom-range .theme-green .back-bar {
+  height: 1px;
+  border-radius: 1px;
+  background: #cdcdcd;
+}
+
+.custom-range .theme-green .back-bar .selected-bar {
+  background: #50c878;
+}
+
+.custom-range .theme-green .back-bar .pointer {
+  top: -6px;
+  width: 13px;
+  height: 13px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border: 5px solid #50c878;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.selectric-custom-select .selectric {
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.selectric-custom-select .selectric .label {
+  min-width: 143px;
+  margin: 5px 40px 5px 15px;
+  line-height: normal;
+  height: auto;
+  font-family: "Montserrat-Medium";
+  font-size: 12px;
+  color: #50c878;
+}
+
+.selectric-custom-select .selectric .button {
+  width: 15px;
+  height: 27px;
+  right: 10px;
+  background: transparent;
+}
+
+.selectric-custom-select .selectric .button::after {
+  content: "\f107";
+  margin: auto 0;
+  border: none;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-weight: 900;
+  font-size: 23px;
+  width: 15px;
+  height: 26px;
+  color: #50c878;
+}
+
+.selectric-custom-select .selectric-items {
+  margin-top: 10px;
+  left: 1px;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+}
+
+.selectric-custom-select .selectric-items li:hover {
+  color: #50c878;
+  background: none;
+}
+
+.selectric-custom-select .selectric-items li.selected,
+.selectric-custom-select .selectric-items li.highlighted {
+  color: #50c878;
+  background: none;
+}
+
+.input {
+  position: relative;
+  display: block;
+  width: 200px;
+  text-align: left;
+  margin-bottom: 9px;
+}
+
+.input.hidden > i.fa-eye {
+  position: absolute;
+  bottom: 8px;
+  right: 11px;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 13px;
+  color: #adadad;
+}
+
+.input.active input {
+  border-color: #50c878;
+}
+
+.input.editable input {
+  border: 1px solid #e6e6e6;
+}
+
+.input.editable .complete {
+  display: none;
+}
+
+.input.completed .complete {
+  display: block;
+}
+
+.input.completed .edit-input {
+  display: none;
+}
+
+.input.completed input {
+  border-color: #50c878;
+}
+
+.input.small {
+  width: 100px;
+}
+
+.input.wrong input {
+  border-color: #ff9f9f;
+  color: red;
+}
+
+.input.disabled input {
+  border: 1px solid #e6e6e6;
+  background-color: #e8e8e8;
+}
+
+.input:last-of-type {
+  margin-bottom: 0;
+}
+
+.input:nth-child(3) {
+  margin-right: 0;
+}
+
+.input p {
+  font-family: "Montserrat";
+  font-size: 9px;
+  padding-left: 14px;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.input input {
+  width: 100%;
+  height: 28px;
+  padding-left: 14px;
+  line-height: 28px;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 12px;
+  color: #4b4b4b;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.input .edit-input {
+  position: absolute;
+  bottom: 3px;
+  right: -28px;
+  cursor: pointer;
+  margin-right: 0;
+}
+
+.input .complete {
+  position: absolute;
+  right: -28px;
+  bottom: 5px;
+  width: 18px;
+  height: 18px;
+  background: url("../img/complete.png");
+  cursor: pointer;
+}
+
+.count-block {
+  position: relative;
+  width: 70px;
+  height: 23px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.count-block input::-webkit-outer-spin-button,
+.count-block input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.count-block input {
+  width: 100%;
+  height: 100%;
+  padding: 0 26px;
+  border-radius: 5px;
+  font-family: "Montserrat-Bold";
+  font-size: 12px;
+  color: #4b4b4b;
+  text-align: center;
+  outline: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.count-block .controls > div {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  height: 23px;
+  cursor: pointer;
+  color: #c3c3c3;
+}
+
+.count-block .controls > div.plus {
+  right: 0;
+  padding-right: 10px;
+}
+
+.count-block .controls > div.minus {
+  left: 0;
+  padding-left: 10px;
+}
+/*# sourceMappingURL=ui.css.map */
