@@ -1,0 +1,62 @@
+@font-face {
+	font-family: "SFUID";
+	src: url("../fonts/SFUIDisplay-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "SFUID-Black";
+	src: url("../fonts/SFUIDisplay-Black.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "SFUID-Bold";
+	src: url("../fonts/SFUIDisplay-Bold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "SFUID-Semibold";
+	src: url("../fonts/SFUIDisplay-Semibold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "SFUID-Medium";
+	src: url("../fonts/SFUIDisplay-Medium.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "SFUID-Light";
+	src: url("../fonts/SFUIDisplay-Light.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "SFUID-Heavy";
+	src: url("../fonts/SFUIDisplay-Heavy.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Monteserrat-Medium";
+	src: url("../fonts/Montserrat-Medium.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "TTNorms";
+	src: url("../fonts/TTNorms-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
