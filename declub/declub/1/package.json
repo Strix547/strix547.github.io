@@ -35,7 +35,7 @@
     "babel-eslint": "^4.1.1",
     "babel-loader": "^5.3.3",
     "babelify": "^6.4.0",
-    "bootstrap": "3.3.5",
+    "bootstrap": "3.4.1",
     "browserify": "^11.2.0",
     "css-loader": "^0.21.0",
     "del": "^2.2.0",
