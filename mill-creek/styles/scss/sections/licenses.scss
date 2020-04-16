@@ -1,0 +1,16 @@
+#licenses {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .left {
+    max-width: 375px;
+    p:last-child {
+      padding-top: 35px;
+    }
+  }
+  #license-slider {
+    margin-right: 150px;
+  }
+}

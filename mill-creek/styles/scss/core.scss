@@ -1,0 +1,434 @@
+@import "constants.scss";
+
+.wrapper {
+  max-width: 1364px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+// TYPOGRAPHY
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "PN-Bold";
+  color: $black;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+  .red {
+    display: inline;
+    color: $red;
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.p1 {
+  font-size: 24px;
+  &.semi {
+    font-family: "PN-Semibold";
+  }
+}
+
+.p2 {
+  font-size: 20px;
+}
+
+.p3 {
+  font-size: 18px;
+}
+
+span.br {
+  display: block;
+}
+
+.subtitle {
+  padding-top: 10px;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+// UI
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 243px;
+  height: 55px;
+  background: $red;
+  box-shadow: 0px 4px 0px #9d2216;
+  border-radius: 2px;
+  border: none;
+  font-family: "PN-Bold";
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+  &:hover {
+    background: #ff3b28;
+    transition: 0.3s;
+  }
+  &:active {
+    transform: translateY(4px);
+    box-shadow: none;
+  }
+
+  &.border {
+    box-shadow: none;
+    border: 2px solid #ffffff;
+    background: transparent;
+    &:hover {
+      background: #fff;
+      color: $red;
+    }
+    &:active {
+      transform: none;
+    }
+  }
+
+  &.gray {
+    width: 158px;
+    background: #484848;
+    box-shadow: 0px 4px 0px #232323;
+  }
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  &.offset-min > span {
+    padding-left: 15px;
+  }
+  & > span {
+    font-size: 20px;
+    padding-left: 30px;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.show-more {
+  margin-top: 90px;
+  transition: 0.3s;
+  &:hover svg {
+    transform: rotate(360deg);
+    transition: 0.3s;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $black;
+    text-decoration: none;
+  }
+
+  span {
+    margin-left: 22px;
+  }
+}
+
+.show-all {
+  a {
+    display: flex;
+    align-items: center;
+    color: $black;
+    text-decoration: none;
+  }
+
+  span {
+    margin-right: 15px;
+  }
+
+  .icon {
+    transform: rotate(180deg);
+    fill: $red;
+  }
+}
+
+.btn-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.form-field {
+  position: relative;
+  width: 243px;
+  box-shadow: 0px 4px 0px #bfbfbf;
+  input {
+    width: 243px;
+    height: 55px;
+    padding-left: 17px;
+    padding-right: 10px;
+    background: #f2f2f2;
+    border: none;
+    font-family: "PN-Regular";
+    font-size: 16px;
+    color: #000;
+    box-sizing: border-box;
+    outline: none;
+    &::placeholder {
+      color: #9c9c9c;
+    }
+  }
+  &.white input {
+    background-color: #fff;
+  }
+  &.icon {
+    &.offset-max svg {
+      left: 17px;
+    }
+    &.offset-min svg {
+      left: 12px;
+    }
+    svg {
+      position: absolute;
+      top: 50%;
+      margin-top: -12.5px;
+    }
+    input {
+      padding-left: 48px;
+    }
+  }
+}
+
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  .checkmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border: 2px solid #ee3523;
+    background: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    &::before {
+      content: "";
+      display: none;
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 12px;
+      height: 12px;
+      background-color: $red;
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+    &:checked ~ .checkmark::before {
+      display: block;
+    }
+  }
+}
+
+.book-room-form {
+  max-width: 319px;
+  padding: 38px;
+  background: #ffffff;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  box-sizing: border-box;
+  p {
+    padding-bottom: 21px;
+    font-family: "PN-Bold";
+    font-size: 22px;
+  }
+  .form-field {
+    margin-bottom: 10px;
+  }
+  .btn {
+    margin: 21px 0;
+  }
+  .checkbox {
+    align-items: flex-start;
+    color: #9c9c9c;
+  }
+}
+
+// COMMON
+
+.logo {
+  a {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    text-decoration: none;
+    font-family: "PN-Bold";
+    font-size: 18px;
+    color: $black;
+    img {
+      margin-right: 15px;
+    }
+  }
+}
+
+article.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 435px;
+  min-height: 100%;
+  color: #fff;
+  overflow: hidden;
+  &:hover .desc {
+    bottom: 77px;
+    transition: 0.3s;
+  }
+  
+  &:hover .bottom-line {
+    bottom: 0;
+    transition: 0.3s;
+  }
+  .preview {
+    width: 100%;
+  }
+  .desc,
+  .bottom-line {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  .desc {
+    width: calc(100% - 60px);
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-bottom: 40px;
+    margin-top: auto;
+
+    .price {
+      flex-shrink: 0;
+      font-family: "PN-Bold";
+      font-size: 24px;
+    }
+  }
+  .bottom-line {
+    bottom: -77px;
+    padding: 15px 0;
+    background-color: $red;
+    .btn {
+      margin: 0 auto;
+    }
+  }
+  &.big {
+    max-width: 666px;
+    .p1 {
+      padding-right: 50px;
+    }
+    .desc {
+      width: calc(100% - 90px);
+      padding: 0 45px;
+      .price {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+.call-back {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .checkbox {
+    margin-top: 21px;
+  }
+}
+
+.hover-block {
+  color: #9c9c9c;
+}
+
+svg.icon {
+  fill: #9c9c9c;
+}
+
+@media screen and (max-width: 750px) {
+  .show-more {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .call-back {
+    .btn {
+      margin-top: 15px;;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  article.product-card.big {
+    .desc {
+      width: calc(100% - 30px);
+      padding: 0 15px;
+    }
+    .price {
+      display: none;
+    }
+    .p1 {
+      padding-right: 0;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  article.product-card {
+    .desc {
+      width: calc(100% - 30px);
+      padding: 0 15px;
+    }
+    .price {
+      display: none;
+    }
+    .p1 {
+      padding-right: 0;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .checkbox {
+    align-items: flex-start;
+  }
+}

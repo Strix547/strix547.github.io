@@ -1,0 +1,206 @@
+@import "../constants.scss";
+
+#header {
+  .top-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80px;
+    background-color: #fff;
+    #mobile-menu-btn {
+      display: none;
+      cursor: pointer;
+      &.menu-active {
+        .bar:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+        .bar:nth-child(2) {
+          opacity: 0;
+        }
+        .bar:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+      .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #3f3f3f;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .middle {
+      display: flex;
+      justify-content: space-between;
+      margin-left: auto;
+      a {
+        display: flex;
+        align-items: center;
+        color: $black;
+        text-decoration: none;
+      }
+      & > div {
+        margin-right: 86px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .btn {
+      margin-left: 86px;
+    }
+    .icon-text span {
+      font-family: "PN-Semibold";
+      padding-left: 10px;
+    }
+  }
+  .bottom-line {
+    display: flex;
+    justify-content: center;
+    height: 82px;
+    nav,
+    .nav {
+      height: 100%;
+    }
+    .nav {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(7, auto);
+      justify-content: center;
+      grid-gap: 77px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 977px;
+        height: 1px;
+        background-color: #e4e4e4;
+      }
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          font-family: "PN-Semibold";
+          font-size: 22px;
+          color: inherit;
+          text-decoration: none;
+          transition: 0.3s;
+          &:hover {
+            color: $red;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  #header {
+    .top-line {
+      height: auto;
+      padding: 15px 0;
+      .logo {
+        width: calc(100% - 243px);
+        order: 1;
+      }
+      .middle {
+        margin: 15px auto 0;
+        order: 3;
+      }
+      .btn {
+        margin-left: 0;
+        order: 2;
+      }
+    }
+    .bottom-line {
+      display: block;
+      .nav {
+        &::before {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1185px) {
+  #header {
+    .bottom-line {
+      height: auto;
+      .nav {
+        padding: 15px 0;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: auto;
+        grid-gap: 15px 77px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  #header {
+    height: 87px;
+    .top-line {
+      position: fixed;
+      z-index: 11;
+      justify-content: space-between;
+      padding: 15px;
+      width: 100%;
+      margin-left: -15px;
+      border-bottom: 2px solid $red;
+      box-sizing: border-box;
+      &.menu-active {
+        position: fixed;
+      }
+      #mobile-menu-btn {
+        display: block;
+      }
+      .logo {
+        width: auto;
+        order: 0;
+      }
+      .middle {
+        display: none;
+      }
+      .btn {
+        display: none;
+      }
+    }
+    .bottom-line {
+      position: fixed;
+      top: 85px;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      height: calc(100% - 85px);
+      padding: 15px 0;
+      background-color: #fff;
+      transform: translateX(-100%);
+      transition: 0.3s;
+      box-sizing: border-box;
+      &.menu-active {
+        transform: translateX(0);
+        transition: 0.3s;
+      }
+      .nav {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(7, auto);
+        padding: 0;
+        &::before {
+          display: none;
+        }
+        li {
+          width: 100%;
+          a {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

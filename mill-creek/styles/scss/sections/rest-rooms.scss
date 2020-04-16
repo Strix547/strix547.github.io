@@ -1,0 +1,53 @@
+#rest-rooms {
+  margin: 100px 0;
+  .top-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  #rest-rooms .service-list {
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  #rest-rooms .service-list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #rest-rooms {
+    margin: 50px 0;
+    .top-line {
+      flex-direction: column;
+    }
+    .show-all {
+      margin-top: 30px;
+    }
+    .service-list {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 515px) {
+  #rest-rooms {
+    .top-line {
+      align-items: flex-start;
+    }
+  }
+}

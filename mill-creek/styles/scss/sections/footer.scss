@@ -1,0 +1,172 @@
+#footer {
+  margin-top: 100px;
+  padding-bottom: 70px;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    border-top: 1px solid #e4e4e4;
+  }
+  .nav-block {
+    .nav {
+      margin-top: 40px;
+      li {
+        margin-bottom: 30px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          font-family: "PN-Semibold";
+          color: #484848;
+          text-decoration: none;
+        }
+      }
+    }
+    .logo {
+      margin-top: 80px;
+    }
+  }
+  .contacts {
+    max-width: 538px;
+    .address {
+      margin-top: 40px;
+      font-family: "PN-Semibold";
+      font-size: 20px;
+    }
+    .icon-text.offset-min {
+      font-family: "PN-Semibold";
+    }
+    .admin .icon-text {
+      align-items: flex-start;
+      & > span {
+        line-height: 24px;
+      }
+    }
+    .admin .icon-text,
+    .railway-worker .icon-text {
+      margin-top: 10px;
+    }
+    .table {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px 80px;
+      margin-top: 30px;
+    }
+    .services,
+    .room,
+    .medical-profile,
+    .how-get {
+      max-width: 257px;
+      .subtitle {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+  .updates-subscribe {
+    max-width: 243px;
+    h3 {
+      line-height: 27px;
+    }
+    form {
+      margin-top: 20px;
+      .form-field.icon svg {
+        margin-top: -9px;
+      }
+      .btn {
+        margin-top: 20px;
+      }
+      .checkbox {
+        align-items: flex-start;
+        margin-top: 20px;
+        color: #9c9c9c;
+      }
+    }
+    .search {
+      margin-top: 70px;
+      .form-field {
+        margin-top: 15px;
+      }
+    }
+    .license {
+      display: block;
+      margin-top: 75px;
+      color: #484848;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .copyright {
+      padding-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  #footer {
+    .wrapper {
+      max-width: 538px;
+      justify-content: space-between;
+    }
+    .nav-block {
+      order: 1;
+      .logo {
+        margin-top: 50px;
+      }
+    }
+    .updates-subscribe {
+      order: 2;
+      .search {
+        margin-top: 49px;
+      }
+      .license {
+        margin-top: 25px;
+      }
+      .copyright {
+        padding-top: 15px;
+      }
+    }
+    .contacts {
+      width: 100%;
+      margin-top: 30px;
+      order: 3;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #footer {
+    .contacts {
+      .table {
+        grid-template-columns: 1fr;
+      }
+      .services,
+      .room,
+      .medical-profile,
+      .how-get {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #footer {
+    margin-top: 50px;
+    .wrapper {
+      padding-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 465px) {
+  #footer {
+    .updates-subscribe {
+      margin-top: 30px;
+    }
+    .nav-block .logo {
+      display: none;
+    }
+  }
+}

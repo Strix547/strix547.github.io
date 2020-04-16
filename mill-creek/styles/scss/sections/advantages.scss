@@ -1,0 +1,49 @@
+#advantages {
+  margin: 100px 0;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .advantage-list {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 100px;
+    grid-row-gap: 65px;
+    li {
+      &:nth-child(2) > span {
+        letter-spacing: -0.08em;
+      }
+      & > span {
+        font-family: "PN-Black";
+        font-size: 72px;
+        color: #DDDDDD;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+  .right {
+    max-width: 476px;
+    margin-left: 100px;
+  }
+  .image-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 219px 184px;
+    grid-gap: 21px;
+    margin-top: 100px;;
+    li:nth-child(4) {
+      grid-column-start: 3;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #advantages {
+    margin: 50px 0;
+    .image-list {
+      margin-top: 50px;
+    }
+  }
+}
