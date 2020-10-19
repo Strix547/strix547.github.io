@@ -72,18 +72,21 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault()
 
       const inputs = Array.from(e.target.querySelectorAll('input[name]'))
+      const formData = new FormData()
 
       const fields =
         inputs
-          .map(({ name, value }) => ({ [name]: value }))
-          .reduce((prev, curr) => ({ ...prev, ...curr }))
+          .map(({ name, value }) => ({ name, value }))
+          .forEach(({ name, value }) => {
+            formData.append(`${name}`, value)
+          })
 
-      console.log(fields);
+      console.log(formData);
 
       try {
         const response = await fetch('./php/sendEmail.php', {
           method: 'POST',
-          body: JSON.stringify(fields)
+          body: formData
         })
 
         const json = await response.json();

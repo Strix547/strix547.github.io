@@ -1,48 +1,56 @@
 <?php
-  use PHPMailer\PHPMailer\PHPMailer;
-  if (
-    isset($_POST['name']) &&
-    isset($_POST['email']) &&
-    isset($_POST['tel']) &&
-    isset($_POST['subject'])
-  ) {
-    $name = $_POST['name'];
-    $email $_POST['email'];
-    $tel $_POST['tel'];
-    $subject = $_POST['subject'];
+// Файлы phpmailer
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+require 'phpmailer/Exception.php';
 
-    require_once "PHPMailer/PHPMailer.php";
-    require_once "PHPMailer/SMTP.php";
-    require_once "PHPMailer/Exception.php";
+// Переменные, которые отправляет пользователь
+$name = $_POST['name'];
+$email = $_POST['email'];
+$tel = $_POST['tel'];
 
-    $mail = new PHPMailer()
+// Формирование самого письма
+$title = "Заголовок письма";
+$body = "
+<h2>Новое письмо</h2>
+<b>Имя:</b> $name<br>
+<b>Почта:</b> $email<br><br>
+<b>Телефон:</b><br>$tel
+";
 
-    //smtp settings
-    $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = "alexxx547@gmail.com";
-    $mail->Password = '06081974';
-    $mail->Port = 465;
-    $Mail->SMTPSecure = 'ssl';
+// Настройки PHPMailer
+$mail = new PHPMailer\PHPMailer\PHPMailer();
+try {
+    $mail->isSMTP();   
+    $mail->CharSet = "UTF-8";
+    $mail->SMTPAuth   = true;
+    //$mail->SMTPDebug = 2;
+    $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
-    //email settings
-    $mail->isHTML(true);
-    $mail->setFrom($email, $name);
-    $mail->addAddress('alexxx547@gmail.com');
-    $mail->Subject = ('$email ($subject)');
-    $mail->Body = ('test')
+    // Настройки вашей почты
+    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'strix547@mail.com'; // Логин на почте
+    $mail->Password   = 'qJ[8ca6NexAD'; // Пароль на почте
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port       = 465;
+    $mail->setFrom('strix547@mail.com', 'Имя отправителя'); // Адрес самой почты и имя отправителя
 
-    if (!$mail->send()) {
-      echo('Error')
-      // $status = 'success';
-      // $response = 'Email is sent';
-    } else {
-      header('location: thank-you.html')
-      // $status = 'failed';
-      // $response = 'Something is wrong: <br>' . $mail->ErrorInfo;
-    }
+    // Получатель письма
+    $mail->addAddress('alexxx547@gmail.com');  
 
-    // exit(json_encode(array('status' => $status, 'response' => $ErrorInfo)));
-  }
-?>
+// Отправка сообщения
+$mail->isHTML(true);
+$mail->Subject = $title;
+$mail->Body = $body;    
+
+// Проверяем отравленность сообщения
+if ($mail->send()) {$result = "success";} 
+else {$result = "error";}
+
+} catch (Exception $e) {
+    $result = "error";
+    $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+}
+
+// Отображение результата
+echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
