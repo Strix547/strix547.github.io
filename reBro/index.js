@@ -88,9 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
           method: 'POST',
           body: formData
         })
-
-        const json = await response.json();
-        console.log('Успех:', JSON.stringify(json));
+        console.log(response);
       } catch (err) {
         throw new Error(err)
       }
