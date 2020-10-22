@@ -21,6 +21,8 @@ a,
 button,
 input {
   outline: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 
   &:focus,
   &:active {
@@ -2174,6 +2176,10 @@ footer {
     li {
       margin-bottom: 7px;
     }
+  }
+
+  #franchise ul {
+    grid-gap: 27px 20px;
   }
 }
 
