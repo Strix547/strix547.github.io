@@ -1,22 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
   function createModalEvents() {
-    const modal = document.querySelector('#modal')
-    const overlay = document.querySelector('.overlay')
+    const overlays = document.querySelectorAll('.overlay')
     const openModalBtns = document.querySelectorAll('.open-modal')
-    const closeBtn = document.querySelector('.close-btn')
+    const closeBtns = document.querySelectorAll('.close-btn')
 
     function closeModal() {
-      overlay.classList.remove('open')
-      modal.classList.remove('open')
+      const openedModal = document.querySelector('.modal.open')
+      openedModal.parentElement.classList.remove('open')
+      openedModal.classList.remove('open')
     }
 
-    function openModal() {
-      overlay.classList.add('open')
+    function openModal(e) {
+      const modalId = e.target.dataset.modal
+      const modal = document.querySelector(`#modal${modalId}`)
+      modal.parentElement.classList.add('open')
       modal.classList.add('open')
     }
 
     function overlayHandler(e) {
-      if (e.target === overlay) {
+      if (e.target.classList.contains('overlay')) {
         closeModal()
       }
     }
@@ -24,8 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     openModalBtns
       .forEach(btn => btn.addEventListener('click', openModal))
 
-    closeBtn.addEventListener('click', closeModal)
-    overlay.addEventListener('click', overlayHandler)
+    closeBtns.forEach(btn => btn.addEventListener('click', closeModal))
+    overlays.forEach(overlay => overlay.addEventListener('click', overlayHandler))
   }
 
   function createLocationSlider() {

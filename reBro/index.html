@@ -2,10 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
     <meta name="format-detection" content="telephone=no">
     <title>re:Bro</title>
     <link rel="stylesheet" href="css/reset.min.css" />
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/fonts.min.css" />
     <link rel="stylesheet" href="css/common.min.css" />
     <link rel="stylesheet" href="css/index.min.css" />
@@ -20,7 +21,7 @@
 
           <div class="right">
             <a href="tel:84951270777">8 495 127 0 777</a>
-            <button class="btn outline open-modal">Заказать звонок</button>
+            <button class="btn outline open-modal" data-modal="1">Заказать звонок</button>
           </div>
         </div>
       </div>
@@ -91,7 +92,7 @@
                 программы сети в своем городе!
               </p>
 
-              <button class="btn">Присоединиться</button>
+              <button class="btn open-modal" data-modal="2">Присоединиться</button>
             </div>
             <div class="map">
               <img src="img/map.png" alt="Карта" />
@@ -321,7 +322,7 @@
 
             <p>Посмотрите полную смету актуальной <span class="br">продукции Apple</span></p>
 
-            <button class="btn">Посмотреть</button>
+            <button class="btn open-modal" data-modal="3">Посмотреть</button>
           </div>
 
           <div class="right">
@@ -499,7 +500,7 @@
 
             <p>Получите подробную презентацию франшизы Re:Bro</p>
 
-            <button class="btn">Получить</button>
+            <button class="btn open-modal" data-modal="4">Получить</button>
           </div>
         </div>
       </section>
@@ -553,7 +554,7 @@
             </li>
             <li>
               <div class="icon"></div>
-              <p>Прямые контракты<span class="br">поставщиков</span></p>
+              <p>Прямые контакты<span class="br">поставщиков</span></p>
             </li>
             <li>
               <div class="icon"></div>
@@ -620,7 +621,7 @@
   
             <p>Скачайте полную презентацию франшизы</p>
   
-            <button class="btn">Скачать</button>
+            <button class="btn open-modal" data-modal="5">Скачать</button>
           </div>
 
           <div class="img">
@@ -658,18 +659,17 @@
 
         <div class="right">
           <a href="tel:84951270777">8 495 127 0 777</a>
-          <button class="btn outline open-modal">Заказать звонок</button>
+          <button class="btn outline open-modal" data-modal="1">Заказать звонок</button>
         </div>
       </div>
     </footer>
 
     <div class="overlay">
-      <section class="modal" id="modal">
-
+      <section class="modal" id="modal1">
         <div class="content">
           <div class="header">
             <h2>Заполните данные</h2>
-            <button class="close-btn"><img src="img/close.jpg" alt="закрыть"></button>
+            <button class="close-btn"><i class="far fa-times-circle"></i></button>
           </div>
 
           <div class="body">
@@ -678,6 +678,86 @@
               <input type="tel" name="tel" class="form-field" placeholder="Телефон" required>
               <input type="email" name="email" class="form-field" placeholder="E-mail" required>
               <input type="submit" class="btn" value="Заказать звонок">
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="overlay">
+      <section class="modal" id="modal2">
+        <div class="content">
+          <div class="header">
+            <h2>Присоединяйтесь к команде Re:Bro</h2>
+            <button class="close-btn"><i class="far fa-times-circle"></i></button>
+          </div>
+
+          <div class="body">
+            <form action="#">
+              <input type="text" name="name" class="form-field"  placeholder="Имя" required>
+              <input type="tel" name="tel" class="form-field" placeholder="Телефон" required>
+              <input type="email" name="email" class="form-field" placeholder="E-mail" required>
+              <input type="submit" class="btn" value="Присоединиться">
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="overlay">
+      <section class="modal" id="modal3">
+        <div class="content">
+          <div class="header">
+            <h2>Посмотрите полную смету актуальной продукции Apple</h2>
+            <button class="close-btn"><i class="far fa-times-circle"></i></button>
+          </div>
+
+          <div class="body">
+            <form action="#">
+              <input type="text" name="name" class="form-field"  placeholder="Имя" required>
+              <input type="tel" name="tel" class="form-field" placeholder="Телефон" required>
+              <input type="email" name="email" class="form-field" placeholder="E-mail" required>
+              <input type="submit" class="btn" value="Посмотреть">
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="overlay">
+      <section class="modal" id="modal4">
+        <div class="content">
+          <div class="header">
+            <h2>Получите подробную презентацию франшизы Re:Bro</h2>
+            <button class="close-btn"><i class="far fa-times-circle"></i></button>
+          </div>
+
+          <div class="body">
+            <form action="#">
+              <input type="text" name="name" class="form-field"  placeholder="Имя" required>
+              <input type="tel" name="tel" class="form-field" placeholder="Телефон" required>
+              <input type="email" name="email" class="form-field" placeholder="E-mail" required>
+              <input type="submit" class="btn" value="Получить">
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="overlay">
+      <section class="modal" id="modal5">
+        <div class="content">
+          <div class="header">
+            <h2>Скачайте полную презентацию франшизы</h2>
+            <button class="close-btn"><i class="far fa-times-circle"></i></button>
+          </div>
+
+          <div class="body">
+            <form action="#">
+              <input type="text" name="name" class="form-field"  placeholder="Имя" required>
+              <input type="tel" name="tel" class="form-field" placeholder="Телефон" required>
+              <input type="email" name="email" class="form-field" placeholder="E-mail" required>
+              <input type="submit" class="btn" value="Скачать">
             </form>
           </div>
         </div>

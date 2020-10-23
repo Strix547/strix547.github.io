@@ -54,7 +54,7 @@ h3 {
 
 header {
   height: 667px;
-  background: url("../img/header-bg.jpg") 50% 0 no-repeat;
+  background: url("../img/header-bg.png") 50% 0 no-repeat;
 
   .top-line {
     height: 60px;
@@ -80,6 +80,8 @@ header {
 
       .btn {
         margin-left: 20px;
+        height: 38px;
+padding: 0 24px;
       }
     }
   }
@@ -293,8 +295,8 @@ header {
     ul {
       display: grid;
       grid-template-columns: auto auto;
-      grid-gap: 50px 65px;
-      margin-top: 45px;
+      grid-gap: 50px 21px;
+      margin-top: 36px;
       margin-left: 80px;
 
       p {
@@ -384,9 +386,12 @@ header {
   padding-bottom: 75px;
 
   ul {
+    position: relative;
     display: flex;
     justify-content: center;
+    max-width: 895px;
     margin: 55px auto 0;
+    height: 105px;
 
     .icon {
       position: relative;
@@ -406,6 +411,8 @@ header {
     li {
       width: 262px;
       text-align: center;
+      position: absolute;
+      top: 0;
 
       h3 {
         padding-top: 13px;
@@ -413,7 +420,7 @@ header {
       }
 
       &:nth-child(1) {
-        padding-right: 6%;
+        left: -24px;
 
         .icon::before {
           width: 50px;
@@ -423,8 +430,6 @@ header {
       }
 
       &:nth-child(2) {
-        padding-right: 8%;
-
         .icon::before {
           width: 45px;
           height: 45px;
@@ -432,10 +437,14 @@ header {
         }
       }
 
-      &:nth-child(3) .icon::before {
-        width: 44px;
-        height: 43px;
-        background: url(../img/icons/statistics.png) no-repeat;
+      &:nth-child(3) {
+        right: -30px;
+
+        .icon::before {
+          width: 44px;
+          height: 43px;
+          background: url(../img/icons/statistics.png) no-repeat;
+        }
       }
     }
   }
@@ -451,12 +460,12 @@ header {
   padding-top: 186px;
   padding-bottom: 140px;
   margin-top: 350px;
-  background: url("../img/iphones-bottom.png") 50% 100% no-repeat #f6f6f6;
+  background: url("../img/iphones-bottom.png") 58% 100% no-repeat #f6f6f6;
 
   ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 360px));
-    grid-gap: 30px 20px;
+    grid-gap: 20px 30px;
     margin: 50px auto 0;
 
     li {
@@ -666,7 +675,6 @@ header {
       left: 280px;
       padding: 18px 22px;
       border-radius: 20px;
-      box-shadow: 1px 1.7px 18.1px 2.9px rgba(0, 0, 0, 0.17);
       background-color: #f6f6f6;
 
       p {
@@ -808,7 +816,7 @@ header {
       }
 
       &:nth-child(3) {
-        right: 29px;
+        right: 43px;
 
         .icon::before {
           width: 33px;
@@ -854,7 +862,8 @@ header {
         &::before {
           content: "";
           position: absolute;
-          left: 0;
+          left: 50%;
+    transform: translateX(-50%);
           top: 0;
         }
       }
@@ -881,7 +890,7 @@ header {
 #advantages {
   padding-top: 65px;
   padding-bottom: 70px;
-  background: url(../img/employee-7.jpg) 100% 100% no-repeat #050506;
+  background: url(../img/employee-7.jpg) 50% 100% no-repeat #050506;
   color: #fff;
 
   .left {
@@ -1021,6 +1030,7 @@ header {
   position: relative;
   background-color: #f6f6f6;
   height: 650px;
+  overflow: hidden;
 
   .wrapper {
     width: 100%;
@@ -1079,6 +1089,7 @@ header {
     top: 0;
     left: 50%;
     margin-left: -489px;
+    height: 650px;
 
     img {
       max-width: 100%;
@@ -1088,6 +1099,7 @@ header {
 
   .btn {
     margin-top: 30px;
+    min-width: 143px;
   }
 }
 
@@ -1095,8 +1107,8 @@ header {
   padding: 60px 0;
 
   .form-block {
-    padding-left: 60px;
-    padding-top: 40px;
+    padding-left: 70px;
+    padding-top: 50px;
     padding-bottom: 40px;
     background: url("../img/employee-6.png") calc(100% - 20px) 100% #1c1e22 no-repeat;
 
@@ -1130,6 +1142,8 @@ footer {
 
     .btn {
       margin-left: 20px;
+      height: 38px;
+padding: 0 24px;
     }
   }
 }
@@ -1183,8 +1197,8 @@ footer {
 
     .close-btn {
       position: absolute;
-      top: -20px;
-      right: -20px;
+      top: -30px;
+      right: -30px;
       font-size: 27px;
       color: #000;
       font-weight: bold;
@@ -1242,11 +1256,21 @@ footer {
     grid-template-areas: none;
 
     li {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 40px;
+      p:first-child {
+        margin-top: auto;
+      }
       &:first-child {
         padding-left: 35px;
+        background-size: 212px;
+        background-color: #f6f6f6;
+        background-position: 100% 0;
+
         p {
           &:nth-child(1) {
-            padding-top: 90px;
+            padding-top: 0;
             font-size: 65px;
           }
 
@@ -1427,6 +1451,10 @@ footer {
     }
   }
 
+  #advantages {
+    background: url(../img/employee-7.jpg) 100% 100% no-repeat #050506;
+  }
+
   #support-after-open {
     flex-direction: column;
     padding-top: 30px;
@@ -1445,7 +1473,7 @@ footer {
     .img {
       position: static;
       margin: 35px auto 0;
-
+      height: auto;
       img {
         max-width: calc(100% + 30px);
         transform: translateX(-15px);
@@ -1462,11 +1490,36 @@ footer {
   }
 
   #price-compare .table {
-    overflow-x: scroll;
 
     ul {
+      width: calc(100% / 6);
+      margin-top: 30 auto 0;
+
+      &:nth-child(3) li:first-child {
+        width: 100%;
+
+        img {
+          padding: 0;
+        }
+      }
+
+      li:first-child {
+        width: calc(100% - 10px);
+
+        img {
+          max-width: 100%;
+          padding: 0 5px;
+        }
+
+      }
+
       &:first-child li {
         padding-left: 10px;
+
+        
+        &:first-child {
+          width: auto;
+        }
       }
     }
   }
@@ -1557,12 +1610,18 @@ footer {
     ul {
       flex-direction: column;
       margin-top: 30px;
+      height: auto;
 
       li {
         display: flex;
         align-items: center;
         width: auto;
         margin-bottom: 15px;
+        position: static;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
 
         .icon {
           margin: 0 10px 0 0;
@@ -1737,6 +1796,26 @@ footer {
   }
 }
 
+// @media (max-width: 650px) {
+//   #price-compare .table {
+//     font-size: 9px;
+
+//     ul {
+//       li {
+//         &:first-child p {
+//           font-size: 12px;
+//         }
+//       }
+//     }
+//   }
+// }
+@media (max-width: 650px) {
+  #price-compare .table ul:first-child li {
+    padding-left: 0;
+  }
+}
+
+
 @media (max-width: 595px) {
   #advantages {
     position: relative;
@@ -1790,13 +1869,67 @@ footer {
       grid-template-rows: repeat(5, 285px);
 
       li {
-        padding: 0 20px;
+        padding: 0 20px 40px 20px;
 
         span.br {
           display: inline;
         }
       }
     }
+  }
+  #price-compare .table ul li:first-child {
+    height: 61px;
+    padding-top: 0;
+  padding-bottom: 0;
+  }
+  
+  #price-compare .table ul:first-child li:first-child {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  #price-compare .table ul:last-child li:first-child p {
+    font-size: 7px;
+  }
+
+  #price-compare {
+    h2 {
+      font-size: 24px;
+    }
+
+    .table {
+      width: 100vw;
+      height: auto;
+      margin-left: -15px;
+      margin-top: 28px;
+      border-radius: 0;
+      padding-left: 5px;
+
+      ul:first-child {
+        width: calc(100% / 6 + 6px);
+        li:first-child {
+          
+        }
+      }
+  
+      ul li {
+        font-size: 9px;
+        padding-bottom: 22px;
+      }
+    }
+  }
+
+  #price-compare .table ul:nth-child(3) li:first-child {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #price-compare .table ul:last-child li:first-child span {
+    font-size: 7px;
   }
 }
 
@@ -1944,8 +2077,54 @@ footer {
 
   #why-apple {
     ul {
+      margin-top: 35px;
       li {
-        margin-bottom: 7px;
+        margin-bottom: 21px;
+
+        .icon {
+          margin-right: 13px;
+        }
+
+        &:nth-child(1) {
+          padding-right: 50px;
+
+          .icon {
+            width: 41px;
+            height: 41px;
+
+            &::before {
+              width: 100%;
+              height: 100%;
+              background-size: contain;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          margin-bottom: 14px;
+
+          .icon {
+            width: 37px;
+            height: 37px;
+
+            &::before {
+              width: 100%;
+              height: 100%;
+              background-size: contain;
+            }
+          }
+        } 
+
+        &:nth-child(3) .icon {
+          width: 36px;
+          height: 35px;
+
+          &::before {
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+          }
+        }
 
         h3 {
           font-size: 14px;
@@ -1958,7 +2137,7 @@ footer {
     }
 
     .video {
-      margin-top: 30px;
+      margin-top: 45px;
     }
   }
 
@@ -2031,13 +2210,67 @@ footer {
     padding-bottom: 0;
 
     ul {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 0;
       margin-top: 30px;
+
+      li {
+        width: 100%;
+        padding: 0 27px 40px 27px;
+        box-sizing: border-box;
+        margin-bottom: 13px;
+        
+        &:first-child {
+          padding-left: 27px;
+          background-size: 212px;
+background-color: #f6f6f6;
+background-position: 100% 0;
+          p:first-child {
+            padding-top: 115px;
+          }
+        }
+        &:nth-child(2) {
+          padding-bottom: 32px;
+          background-size: 100%;
+        background-color: #f6f6f6;
+        background-position: 100% 0;
+        }
+        &:nth-child(3) {
+          padding-bottom: 60px;
+          background-size: 100%;
+        background-color: #f6f6f6;
+        background-position: 100% 0;
+        }
+        &:nth-child(4) {
+          padding-bottom: 37px;
+          background-size: 100%;
+        background-color: #f6f6f6;
+        background-position: 100% 0;
+        }
+        &:nth-child(5) {
+          padding-bottom: 28px;
+          background-size: 100%;
+        background-position: 100% 0;
+          background-color: #e53050;
+        }
+        p:first-child {
+          padding-top: 97px;
+        }
+      }
     }
   }
 
   #form {
     padding-top: 40px;
     padding-bottom: 25px;
+
+    .form-block {
+      padding-bottom: 190px;
+      background-size: auto 190px;
+    background-position: 40% 100%;
+    
+    }
   }
 
   #franchise {
@@ -2172,7 +2405,8 @@ footer {
   #advantages .left .advantages {
     margin-top: 27px;
     padding-left: 13px;
-
+    padding-right: 0;
+    
     li {
       margin-bottom: 7px;
     }
@@ -2192,6 +2426,16 @@ footer {
 @media (max-width: 326px) {
   #formats {
     padding-top: 220px;
+  }
+}
+
+@media (max-width: 400px) {
+  #advantages {
+    background: url('../img/franchise-bg.png') 0 0 no-repeat;
+    background-size: cover;
+    &::before {
+      display: none;
+    }
   }
 }
 
