@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.querySelector('#locations .slider-buttons .next')
 
     const step = 210
-    const maxLength = slider.scrollWidth - parseFloat(getComputedStyle(slider).width)
+    const maxLength = 1130 - parseFloat(getComputedStyle(slider).width)
+    console.log('max', maxLength, slider.scrollWidth, parseFloat(getComputedStyle(slider).width))
 
     function setSliderLength(length) {
       slider.style.transform = `translateX(-${length}px)`
@@ -44,10 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getSliderLength() {
       const sliderTransform = getComputedStyle(slider).transform
+      console.log('if', sliderTransform !== 'none' ? Math.abs(parseInt(sliderTransform.slice(19))) : 0);
+      console.log('value', Math.abs(parseInt(sliderTransform.slice(19))));
       return sliderTransform !== 'none' ? Math.abs(parseInt(sliderTransform.slice(19))) : 0
     }
 
     function prevSlide() {
+      console.log('length', getSliderLength());
       if (getSliderLength() - step <= 0) {
         setSliderLength(0)
       } else {
@@ -56,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function nextSlide() {
+      console.log('length', getSliderLength())
       if (getSliderLength() + step >= maxLength) {
         setSliderLength(maxLength)
       } else {
@@ -72,6 +77,15 @@ document.addEventListener('DOMContentLoaded', () => {
   
   document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
+  });
+
+  var doubleTouchStartTimestamp = 0;
+  document.addEventListener("touchstart", function (event) {
+      var now = +(new Date());
+      if (doubleTouchStartTimestamp + 500 > now) {
+          event.preventDefault();
+      }
+      doubleTouchStartTimestamp = now;
   });
 })
 
