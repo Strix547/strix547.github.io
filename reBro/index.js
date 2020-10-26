@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.querySelector('#locations .slider-buttons .next')
 
     const step = 210
-    const maxLength = slider.scrollWidth - window.innerWidth + 30
+    const maxLength = slider.scrollWidth - parseFloat(getComputedStyle(slider).width)
 
     function setSliderLength(length) {
       slider.style.transform = `translateX(-${length}px)`
@@ -69,5 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   createModalEvents()
   createLocationSlider()
+  
+  document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+  });
 })
 

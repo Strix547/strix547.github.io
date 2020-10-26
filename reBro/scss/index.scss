@@ -2429,7 +2429,7 @@ background-position: 100% 0;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   #advantages {
     background: url('../img/franchise-bg.png') 0 0 no-repeat;
     background-size: cover;
@@ -2442,5 +2442,17 @@ background-position: 100% 0;
 @media (max-width: 310px) {
   header .main .features p {
     font-size: 14px;
+  }
+
+  #about-us ul li {
+    padding-left: 50px;
+  }
+
+  #formats ul {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 360px));
+  }
+
+  #uniq-features {
+    overflow: hidden;
   }
 }
