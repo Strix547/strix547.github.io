@@ -751,7 +751,7 @@ body {
     margin-top: 28px;
   }
 
-  #main .left .articles > div:not(:last-child) {
+  #main .left .articles > article:not(:last-child) {
     margin-bottom: 8px;
   }
 
