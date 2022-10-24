@@ -664,6 +664,7 @@ body {
 
   #footer {
     display: none;
+    padding-bottom: 0;
   }
 
   #footer.bottom {
@@ -746,8 +747,12 @@ body {
 
   #main .left .articles {
     grid-template-rows: 200px;
-    grid-gap: 8px;
+    grid-gap: 0;
     margin-top: 28px;
+  }
+
+  #main .left .articles > div:not(:last-child) {
+    margin-bottom: 8px;
   }
 
   #main .left .articles article > img {
