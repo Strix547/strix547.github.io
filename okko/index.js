@@ -124,6 +124,13 @@ const swiper = new Swiper('.swiper', {
   }
 })
 
+if (window.screen.width >= 1300) {
+  const sidebar = new StickySidebar('#main .wrapper > .left', {
+    topSpacing: 114,
+    innerWrapperSelector: '.inner-wrapper-sticky'
+  })
+}
+
 dayTimeSwitch()
 meetupsSlider()
 donutsSoldByTimeRange()
